@@ -3,11 +3,153 @@
 Multichar_Symbols
 
 ! Part of speech categories
-%<n%>   ! Noun
+%<n%>           ! Noun
+%<post%>        ! Postposition
+%<det%>         ! Determiner
+%<v%>           ! Verb
+
+%<cnjcoo%>        ! Co-ordinating conjunction
+%<cnjsub%>        ! Subordinating conjunction
+%<cnjadv%>        ! Adverbial conjunction
+%<num%>           ! Numeral
+%<prn%>           ! Pronoun
+%<dem%>           ! Demonstrative
+%<adv%>           ! Adverb
+%<adj%>           ! Adjective
+%<barb%>          ! Barbarisme
+%<ij%>            ! Interjection
+%<sym%>           ! Symbol
+%<postadv%> !-dA equivalent
+%<qst%>           ! Question word
+%<qnt%>           ! quantifier 
+
+%<guess%>         ! Guess
+
+%<dub%>           ! dubitative
+%<nec%>           ! necessitive
 
 ! Number morphology
-%<pl%>  ! Plural
-%<sg%>  ! Singular
+%<p1%>            ! First person
+%<p2%>            ! Second person
+%<p3%>            ! Third person
+%<sg%>            ! Singular
+%<pl%>            ! Plural
+
+%<px1sg%>         ! First person, singular possessive
+%<px2sg%>         ! Second person, singular possessive
+%<px3sp%>         ! Third person possessive
+%<px1pl%>         ! First person, plural possesssive
+%<px2pl%>         ! Second person, plural possessive
+%<frm%>           ! formal
+%<hon%>           ! deferential
+
+%<nom%>           ! Nominative
+%<abl%>           ! Ablative
+%<dat%>           ! Dative
+%<loc%>           ! Locative
+%<gen%>           ! Genitive
+%<acc%>           ! Accusative
+%<ter%>           ! Terminative
+
+%<attr%>          ! Attributive
+%<subst%>         ! Substantitve
+%<advl%>          ! Adverbial
+
+%<top%>
+
+%<pers%>          ! Personal
+%<ref%>           ! Reflexive
+
+%<iv%>            ! Intransitive
+%<tv%>            ! Transitive
+%<TD%>            ! Unspecified transitivity
+%<pass%>          ! passive
+%<cop%>           ! Copula
+%<gm%>           ! to-be copula
+%<neg%>           ! Negative
+
+%<np%>            ! Proper noun
+%<ant%>           ! Anthroponym (personal name)
+%<cog%>
+%<org%>           ! organization
+%<m%>             ! Masculine
+%<mf%>
+%<f%>             ! Feminine
+
+%<fut%>           ! future, -ecek -acak (tho with a more "certain" mood)
+%<prog%>         ! Present continous (-iyor)
+%<ifi%>           ! Past eyewitness
+%<past%>          ! Past general
+%<past2%>         ! -mış -miş but mostly for story telling
+%<past3%>         ! ^^
+%<past4%>         ! -mışmış
+%<prc_perf%>      ! Perfect participle
+%<gna_perf%>      ! Perfect verbal adverb
+%<abil%>          ! Abilitative
+%<aor%>           ! Aorist
+%<evid%>		! evidential"
+%<prc_impf%>      ! Imperfect participle
+%<ger%>           ! Gerund (aorist)
+%<ger_inf%>       !
+%<ger_past%>      ! Past gerund bolghanliqini = olduğunu 
+%<gpr_past%>      ! Past gerund
+%<imp%>           ! Imperative
+%<gpr_rsub%>      ! fiilden sıfat
+%<gpr_rsub2%>     ! ^^^
+%<gpr_rsub3%>     ! ^^^
+%<gpr_rsub4%>     ! kötürghüchi = götüren
+%<ger_pabs%>      ! bol"ghan" = yap"mış"
+%<gna_cond%>      ! Conditional verbal adverb 
+%<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
+%<gna_neg%>       ! -madan
+%<gna_neg2%>      ! ^^ 
+%<gna_neg3%>      ! -m{A}sli{K} = neg gerund (ketmeslik = gitmeme)
+%<aorp%>          ! -ardı, -irdi "geçmiş zamanın hikayesi"
+%<iver%>		! suffix conveying ease/speed of action
+%<itg%>           ! Interrogative
+
+%<dek%>           !"x kadar"
+%<che%>           !"x kadar"
+
+%<dem%>           ! Demonstrative
+%<ord%>           ! Ordinal
+
+%<sent%>          ! Sentence marker
+%<guio%>          ! Hyphen
+%<cm%>            ! Comma
+%<apos%>          ! Apostrophe
+%<rquot%>         ! Quote marker (right)
+%<lquot%>         ! Quote marker (left)
+%<rpar%>          ! Parenthetical marker (right)
+%<lpar%>          ! Parenthetical marker (left)
+
+
+%{🂡%}             !
+%{乚%}
+
+%{G%}                 ! realised as گ or ك or غ or ق
+%{K%}                 ! realised as ك or ق
+%{A%}                 ! realised as ا or ە or sometimes ى
+%{E%}                 ! realised as ا or ە or sometimes ى and also ي
+%{D%}                 ! realised as د or ت
+%{i%}                 ! epenthetic ى : realised as ى/ۇ/ۈ
+%{û%}                 ! for unepenthesis in isim, orun etc.
+%{I%}                 ! realised as ى
+%{U%}                 ! realised as ى/ۇ/ۈ
+%{ü%}                 ! realised as ۇ/ۈ
+%{s%}                 ! realised as س or null
+!%{n%}                 ! realised as ن or null
+%{☫%}                 ! "loanword" - blocks certain processes
+                      ! needed after ا that doesn't change to ى
+%{q%}		      ! for loanwords, devoicing suffixes
+%{ğ%}                 ! ^^ opposite
+%{e%}                 ! forces front harmony
+%{a%}                 ! forces back harmony
+%{L%}                 ! for passive: ل or ن
+%{l%}                 ! for l deletion 
+%{y%}                 ! realised as ي 
+
+
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -20,7 +162,8 @@ Multichar_Symbols
 LEXICON Root
 
 NounRoot ;
-
+Nouns ;
+!POSSESSION ;
 
 LEXICON RegNounInfl
 
@@ -28,13 +171,88 @@ LEXICON RegNounInfl
 %<n%>%<pl%>:%>s # ;
 
 
+
+LEXICON N1
+
+
+%<n%>%<attr%>: # ;
+
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+
 LEXICON NounRoot
 
 house:house RegNounInfl ; ! A noun
+ئېغىرلىق:ئېغىرلىق RegNounInfl ; ! ""
+زىيان:زىيان RegNounInfl ; ! "
+LEXICON Nouns
+ئيو:ئيو N1 ;
+مكتب:مكتب N1 ;
+خستاخانا:خستاخانا N1 ; 
+گول:گول  N1 ;
+أفَندي:أفَندي N1 ;
+تَئلبه:تَئلبه N1 ;
+أوشاغ:أوشاغ N1 ;
+قيز:قيز N1 ;
+اوغلان:اوغلان N1 ;
+بالاه:بالاه N1 ;
+!گه نج:گه نج N1 ;!
+ءختيار:ءختيار N1 ;
+ارواد:ارواد N1 ;
+ادام:ادام N1 ;
+عته:عته N1 ;
+دايزا:دايزا N1 ;
+دايئ:دايئ N1 ;
+!عه مي:عه مي N1 ;!
+نينه:نينه N1 ;
+ده%ده:ده%ده N1 ;
+عنّه:عنّه N1 ;
+بابا:بابا N1 ;
+قاراش:قاراش N1 ;
+باجئ:باجئ N1 ;
+پانكا:پانكا N1 ;
+پرده:پرده N1 ;
+كوليّه:كوليّه N1 ;
+جامعه:جامعه N1 ;
+آمانه:آمانه N1 ;
+اسپاب:اسپاب N1 ;
+گوز:گوز N1 ;
+بورون:بورون N1 ; 
+قولاغ:قولاغ N1 ;
+اغئز:اغئز N1 ;
+كيپرك:كيپرك N1 ;
+قاش:قاش N1 ;
+ساچ:ساچ N1 ;
+دئرناغ:دئرناغ N1 ;
+دئرناغ%بياغئ:دئرناغ%بياغئ N1 ;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,4 +264,5 @@ house:house RegNounInfl ; ! A noun
 ! https://github.com/hfst/
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
 ! http://wiki.apertium.org/wiki/Hfst
+
 
