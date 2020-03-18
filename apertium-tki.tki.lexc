@@ -164,6 +164,7 @@ LEXICON Root
 NounRoot ;
 Nouns ;
 Numerals ;
+Conjunctions ;
 !POSSESSION ;
 
 LEXICON RegNounInfl
@@ -171,14 +172,25 @@ LEXICON RegNounInfl
 %<n%>%<sg%>: # ;
 %<n%>%<pl%>:%>s # ;
 
+LEXICON CC 
+
+%<cnjcoo%>: # ; 
+
+!LEXICON CS
+
+!%<cnjsub%>: # ; 
+
+LEXICON CA
+! 
+! make Uyghur
+%<cnjadv%>: # ;
+
 
 LEXICON NUM 
 
 %<num%>: # ; 
 
 LEXICON N1
-
-
 %<n%>%<attr%>: # ;
 
 
@@ -187,6 +199,14 @@ LEXICON N1
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Conjunctions 
+وَه:وَه CC ; ! and
+چئونكو:چئونكو CA ; ! "because"
+ھەم:ھەم CC ; ! "and"
+يآدا:يآدا CC ; ! or
+ئەمما:ئەمما  CC ; ! but
+بەلكى:بەلكى CC ; ! 
 
 LEXICON Numerals
 
