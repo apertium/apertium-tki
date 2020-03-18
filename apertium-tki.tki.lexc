@@ -166,6 +166,7 @@ Nouns ;
 Numerals ;
 Conjunctions ;
 !POSSESSION ;
+Postpositions ;
 
 LEXICON RegNounInfl
 
@@ -193,12 +194,27 @@ LEXICON NUM
 LEXICON N1
 %<n%>%<attr%>: # ;
 
+LEXICON POST 
+
+%<post%>: # ;
+
+	
+
 
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON Postpositions 
+مَنمدن:مَنمدن POST ; !with 
+ئيچن:ئيچن POST ; ! for
+بويىچە:بويىچە POST ; ! "along, througout"
+عيَنن:عيَنن POST ; ! such as
+ئچينن:ئچينن POST ; ! Through 
+ھەققىدە:ھەققىدە POST ; ! "about" 
+ئاساسەن:ئاساسەن POST ; ! "based on"
+
 
 LEXICON Conjunctions 
 وَه:وَه CC ; ! and
@@ -359,9 +375,7 @@ LEXICON Nouns
 زالملغ:زالملغ N1 ;
 اصئل:اصئل N1 ;
 دينسيز:دينسيز N1 ;
-إيمانسز:إيمانسز N1 ;
-اسابى:اسابى N1 ;
-جاي:جاي N1 ;
+إيمانسز:إيمانسز N1 ;	
 سوت:سوت N1 ;
 شَربت:شَربت N1 ;
 عيرَن:عيرَن N1 ;
@@ -524,4 +538,6 @@ LEXICON Nouns
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
 ! http://wiki.apertium.org/wiki/Hfst
 
-
+ 
+اسابى:اسابى N1 ;
+جاي:جاي N1 ;
