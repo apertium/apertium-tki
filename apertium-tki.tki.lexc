@@ -167,6 +167,7 @@ Numerals ;
 Conjunctions ;
 !POSSESSION ;
 Postpositions ;
+Determiners ;
 
 LEXICON RegNounInfl
 
@@ -198,7 +199,32 @@ LEXICON POST
 
 %<post%>: # ;
 
+LEXICON DET-QNT
+
+%<det%>%<qnt%>: # ;
 	
+LEXICON DET-DEM
+
+%<det%>%<dem%>: # ;
+
+LEXICON DET-IND
+
+%<det%>%<ind%>: # ;
+
+LEXICON DET-ITG
+
+%<det%>%<itg%>: # ;
+
+LEXICON DET-NEG
+
+%<det%>%<neg%>: # ;
+
+LEXICON DET-REF
+
+%<det%>%<ref%>: # ;
+
+
+
 
 
 
@@ -206,6 +232,54 @@ LEXICON POST
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON Determiners
+بو:بو DET-DEM ;
+اوْ:اوْ DET-DEM ;
+بيرچوخ:بيرچوخ DET-QNT ; 
+إشته%بو:إشته%بو DET-DEM ;
+إشته:إشته DET-DEM ;
+حبسي:حبسي DET-QNT ;
+هپ:هپ DET-QNT ;
+بوتون:بوتون DET-QNT ;
+قاچ:قاچ DET-QNT ;
+هر%بير:هر%بير DET-QNT ;
+بير:بير DET-IND ;
+باشقا:باشقا DET-IND ;
+بيرقاچ:بيرقاچ DET-IND ;
+بلَه:بلَه DET-IND ;
+بيراَز:بيراَز DET-QNT ;
+هيچ%بير:هيچ%بير DET-NEG ;
+بير%تاخم:بير%تاخم DET-QNT ;
+بيرچوخ:بيرچوخ DET-QNT ;
+بير%ميقدار:بير%ميقدار DET-QNT ;
+بَعزي:بَعزي DET-QNT ;
+كيمي:كيمي DET-QNT ;
+بير%قسيم:بير%قسيم DET-QNT ;
+بو%قدَر:بو%قدَر DET-QNT ;
+او%قدر:او%قدر DET-QNT ;
+نه%قدَر:نه%قدَر DET-QNT ;
+چوخ:چوخ DET-QNT ;
+چوخو:چوخو DET-QNT ;
+توم:توم DET-QNT ;
+عيّني:عيّني DET-QNT ;
+اوبير:اوبير DET-DEM ;
+تَك:تَك DET-IND ;
+ناخسى:ناخسى DET-ITG ;
+ناخسى%بير:ناخسى%بير DET-IND ;
+اوزو:اوزو DET-REF ;
+
+
+
+
+
+
+
+
+
+
+
+
+
 LEXICON Postpositions 
 مَنمدن:مَنمدن POST ; !with 
 ئيچن:ئيچن POST ; ! for
@@ -249,7 +323,8 @@ LEXICON Numerals
 بيين:بيين NUM ;
 مليّون:مليّون NUM ; 
 مليار:مليار NUM ;	
-تيريليون:تيريليون NUM ; 
+تيريليون:تيريليون NUM ;
+بوچوغ:بوچوغ NUM ; 
  
 
 
