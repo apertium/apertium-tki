@@ -178,9 +178,9 @@ LEXICON CC
 
 %<cnjcoo%>: # ; 
 
-!LEXICON CS
+LEXICON CS
 
-!%<cnjsub%>: # ; 
+%<cnjsub%>: # ; 
 
 LEXICON CA
 ! 
@@ -265,8 +265,10 @@ LEXICON Determiners
 اوبير:اوبير DET-DEM ;
 تَك:تَك DET-IND ;
 ناخسى:ناخسى DET-ITG ;
+هاسى:هاسى DET-ITG ; !which
 ناخسى%بير:ناخسى%بير DET-IND ;
 اوزو:اوزو DET-REF ;
+
 
 
 
@@ -283,7 +285,7 @@ LEXICON Determiners
 LEXICON Postpositions 
 مَنمدن:مَنمدن POST ; !with 
 ئيچن:ئيچن POST ; ! for
-بويىچە:بويىچە POST ; ! "along, througout"
+بويىجە:بويىجە POST ; ! "along, througout"
 عيَنن:عيَنن POST ; ! such as
 ئچينن:ئچينن POST ; ! Through 
 ھەققىدە:ھەققىدە POST ; ! "about" 
@@ -297,6 +299,37 @@ LEXICON Conjunctions
 يآدا:يآدا CC ; ! or
 ئەمما:ئەمما  CC ; ! but
 بەلكى:بەلكى CC ; ! 
+ئيچينده:ئيچينده CC ;
+ئگر:ئگر CC ;
+همده:همده CC ;
+يَعني:يَعني CC ;
+انجاغ:انجاغ CC ;
+زايد:زايد CC ; ! Plus
+ها:ها CC ;
+هَم:هَم CC ;
+هرنيسه:هرنيسه CC ;
+ئيكّيسي:ئيكّيسي CC ;
+إيلّى:إيلّى CC ;
+نه:نه CC ;
+وَا:وَا CC ; ! and
+يا%دا:يا%دا CC ; 
+يا:يا CC ;
+چونكو:چونكو CC ;
+عكسينه:عكسينه CC ;
+كيمي:كيمي CA ;
+ديّه:ديّه CS ;
+بَلكي:بَلكي CA ;
+بيلعكس:بيلعكس CA ;
+بيله:بيله CA ;
+دَمغ:دَمغ CA ;
+حَتّى:حَتّى CA ;
+هلَى:هلَى CA ;
+ئيشته:ئيشته CA ;
+ئيستر:ئيستر CA ;
+كشكَه:كشكَه CA ;
+
+
+  
 
 LEXICON Numerals
 
