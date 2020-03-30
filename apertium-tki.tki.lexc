@@ -170,6 +170,46 @@ Postpositions ;
 Determiners ;
 Adverbs ;
 Adjectives ;
+
+
+!LEXICON CASE
+!%<nom%>: Copula;
+!%<nom%>: #;
+!%<dat%>:%>%{G%}%{A%} # ;
+!%<dat%>:%>%{G%}%{A%} # ;
+!%<loc%>:%>%{D%}%{A%} # ;
+!%<loc%>:%>%{D%}%{A%} # ;
+!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+!%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;
+!%<loc%>%<subst%>%<pl%>:%>%{D%}%{A%}%>كى%>ل%{A%}ر # ;
+!%<abl%>:%>%{D%}ىن # ;
+!%<gen%>:%>نىڭ # ;
+!%<gen%>:%>نىڭ # ;
+!%<gen%>%<subst%>:%>نىڭكى # ;
+!%<gen%>%<subst%>%<pl%>:%>نىڭكى%>ل%{A%}ر # ;
+!%<acc%>:%>نى # ;
+!%<acc%>:%>نى # ;
+!%<ter%>:%>%{G%}ىچە # ;
+
+
+!LEXICON POSSESSION
+
+!CASE ;
+!%<px1sg%>:%>%{i%}م CASE ; ! Dir/LR
+!%<px1sg%>:%>%{U%}م CASE ; 
+!%<px2sg%>:%>%{i%}ن CASE ; ! Dir/LR
+!%<px2sg%>:%>%{U%}ڭ CASE ; 
+!%<px2pl%>:%>%{i%}ڭلار CASE ; ! Dir/LR
+!%<px2pl%>:%>%{U%}ڭلار CASE ; 
+!%<px3sp%>:%>%{s%}ى CASE ;
+!%<px1pl%>:%>%{i%}م%{I%}ز CASE ; ! Dir/LR
+!%<px1pl%>:%>%{U%}م%{I%}ز CASE ; 
+!%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
+!%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
+!%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
+!%<px3pl%>:%>لىرى CASE ;
+
+
 LEXICON RegNounInfl
 
 %<n%>%<sg%>: # ;
