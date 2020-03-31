@@ -147,7 +147,7 @@ Multichar_Symbols
 %{a%}                 ! forces back harmony
 %{L%}                 ! for passive: ل or ن
 %{l%}                 ! for l deletion 
-%{y%}                 ! realised as ي 
+%{y%}                 ! realised as ي or null
 
 
 
@@ -170,44 +170,81 @@ Postpositions ;
 Determiners ;
 Adverbs ;
 Adjectives ;
+ProperNouns ;
 
 
-!LEXICON CASE
-!%<nom%>: Copula;
-!%<nom%>: #;
-!%<dat%>:%>%{G%}%{A%} # ;
-!%<dat%>:%>%{G%}%{A%} # ;
-!%<loc%>:%>%{D%}%{A%} # ;
-!%<loc%>:%>%{D%}%{A%} # ;
-!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
-!%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;
-!%<loc%>%<subst%>%<pl%>:%>%{D%}%{A%}%>كى%>ل%{A%}ر # ;
-!%<abl%>:%>%{D%}ىن # ;
-!%<gen%>:%>نىڭ # ;
-!%<gen%>:%>نىڭ # ;
-!%<gen%>%<subst%>:%>نىڭكى # ;
-!%<gen%>%<subst%>%<pl%>:%>نىڭكى%>ل%{A%}ر # ;
-!%<acc%>:%>نى # ;
-!%<acc%>:%>نى # ;
-!%<ter%>:%>%{G%}ىچە # ;
 
+LEXICON CASE
+%<gen%>:%>ن%{I%}ىن # ; 
+%<gen%>:%>نىڭ # ; 
+%<gen%>%<subst%>:%>نىڭكى # ;    
+%<dat%>:%>%{y%}%{A%} # ;   
+%<acc%>:%>%{y%}%{I%} # ;
+%<acc%>:%>نى # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;   
+%<abl%>:%>%{D%}%{A%}n # ;
+%<abl%>:%>%{D%}ىن # ;  
+%<ins%>:%>%{y%}l%{A%} # ;
+  
 
-!LEXICON POSSESSION
+LEXICON POSSESSION
 
-!CASE ;
-!%<px1sg%>:%>%{i%}م CASE ; ! Dir/LR
-!%<px1sg%>:%>%{U%}م CASE ; 
-!%<px2sg%>:%>%{i%}ن CASE ; ! Dir/LR
-!%<px2sg%>:%>%{U%}ڭ CASE ; 
-!%<px2pl%>:%>%{i%}ڭلار CASE ; ! Dir/LR
-!%<px2pl%>:%>%{U%}ڭلار CASE ; 
-!%<px3sp%>:%>%{s%}ى CASE ;
+CASE ;
+%<px1sg%>:%>%{i%}م CASE ; ! Dir/LR
+%<px1sg%>:%>%{U%}م CASE ; 
+%<px2sg%>:%>%{i%}ن CASE ; ! Dir/LR
+%<px2sg%>:%>%{U%}ڭ CASE ; 
+%<px2pl%>:%>%{i%}ڭيلار CASE ; ! Dir/LR
+%<px2pl%>:%>%{U%}ڭيلار CASE ; 
+%<px3sp%>:%>%{s%}ى CASE ;
 !%<px1pl%>:%>%{i%}م%{I%}ز CASE ; ! Dir/LR
 !%<px1pl%>:%>%{U%}م%{I%}ز CASE ; 
 !%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
 !%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 !%<px3pl%>:%>لىرى CASE ;
+
+LEXICON NP-COMMON
+
+POSSESSION ;
+
+LEXICON N-COMMON
+
+NP-COMMON ;
+%<pl%>:%>ل%{A%}ر NP-COMMON ;
+!POST-SUFFIX ; 
+
+LEXICON N1
+
+%<n%>: N-COMMON ;
+%<n%>%<attr%>: # ;
+
+LEXICON NP-AL 
+
+%<np%>%<al%>: NP-COMMON ;
+
+
+LEXICON NP-COG-MF
+
+%<np%>%<cog%>%<mf%>: NP-COMMON ;
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: NP-COMMON ;
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: NP-COMMON ;
+
+LEXICON NP-ORG
+
+%<np%>%<org%>: NP-COMMON ;
 
 
 LEXICON RegNounInfl
@@ -233,8 +270,8 @@ LEXICON NUM
 
 %<num%>: # ; 
 
-LEXICON N1
-%<n%>%<attr%>: # ;
+!LEXICON N1
+!%<n%>%<attr%>: # ;
 
 LEXICON POST 
 
@@ -878,6 +915,19 @@ LEXICON Nouns
 مومسيٍل:مومسيٍل N1 ; ! actor
 جاسوس:جاسوس N1 ; !agent
 بيرٍنجيليغ:بيرٍنجيليغ N1 ;
+نوبيل:نوبيل NP-AL ;
+تويتر:تويتر NP-AL ;
+فيسبوك:فيسبوك NP-AL ;
+گوگول:گوگول NP-AL ;
+دونيا%كوپاسى:دونيا%كوپاسى NP-AL ;
+LEXICON ProperNouns 
+پوتين:پوتين NP-COG-MF ;
+أزَل:أزَل NP-ANT-M ;
+سيولاي:سيولاي NP-ANT-F ;
+توركيٍا:توركيٍا NP-TOP ;
+سامسونك:سامسونك NP-ORG ;
+
+
 
 
 
