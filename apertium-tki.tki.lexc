@@ -171,6 +171,7 @@ Determiners ;
 Adverbs ;
 Adjectives ;
 ProperNouns ;
+Verbs ;
 
 
 
@@ -309,8 +310,12 @@ LEXICON A1
 
 %<adj%>: # ;
 
+LEXICON V-IV
+%<v%>%<iv%>:# ;
 
+LEXICON V-TV 
 
+%<v%>%<tv%>: # ;
 
 
 
@@ -1043,6 +1048,41 @@ LEXICON ProperNouns
 حلّه:حلّه NP-TOP ;
 تاوّغ:تاوّغ NP-TOP ;
 تزّه:تزّه NP-TOP ;
+اكسو:اكسو NP-TOP ;
+فرات:فرات NP-TOP ;
+چاي:چاي NP-TOP ; 
+LEXICON Verbs
+اوخو:اوخو V-TV ;
+ياز:ياز V-TV ;
+مشغول%اول:مشغول%اول V-IV ;
+يات:يات V-IV ;
+قاخ:قاخ V-IV ;
+اوتو:اوتو V-IV ;
+گيت:گيت V-IV ;
+گَل:گَل V-IV ;
+يى:يى V-TV ;
+اچ:اچ V-TV ;
+باخ:باخ V-IV ;
+قوخلا:قوخلا V-TV ;
+إفير:إفير V-TV ;
+سيل:سيل V-TV ;
+ياديّدان%چاخرت:ياديّدان%چاخرت V-TV ;
+
+
+
+ 
+
+
+
+
+  
+ 
+
+
+
+
+
+
 
 
 
