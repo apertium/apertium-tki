@@ -176,18 +176,23 @@ Verbs ;
 
 
 LEXICON CASE
-%<gen%>:%>ن%{I%}ىن # ; 
-%<gen%>:%>نىڭ # ; 
-%<gen%>%<subst%>:%>نىڭكى # ;    
-%<dat%>:%>%{y%}%{A%} # ;   
-%<acc%>:%>%{y%}%{I%} # ;
-%<acc%>:%>نى # ;
-%<loc%>:%>%{D%}%{A%} # ;
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
-%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;   
-%<abl%>:%>%{D%}%{A%}n # ;
-%<abl%>:%>%{D%}ىن # ;  
-%<ins%>:%>%{y%}l%{A%} # ;
+%<nom%>:# ;
+%<gen%>:%>%{n%}%{I%}ىن # ; !uşağ->uşağnın
+%<gen%>:%>%{n%}%{U%}ىن # ;  !kurt->kurtun
+%<gen%>:%>%{y%}%{U%}ىن # ;  !gözlüğ->gözlüğyün
+%<gen%>:%>%{y%}%{I%}ىن # ;  !baba->babayın
+!%<gen%>:%>نىڭ # ; 
+!%<gen%>%<subst%>:%>نىڭكى # ; 
+%<acc%>:%>%{n%}%{I%} # ; !hurma->hurmanı yedim, uşağ->uşağı yahadım
+%<acc%>:%>%{n%}%{U%} # ; !kurt->kurtu, karğa->karğanı tututtums 
+!%<acc%>:%>نى # ;   
+%<dat%>:%>%{y%}%{A%} # ; !baş->başa, göz->gözye, üz->üzye  
+%<loc%>:%>%{D%}%{A%} # ; !kiş->kişte, dam-damda
+!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+!%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;   
+%<abl%>:%>%{D%}%{A%}n # ; !dam->damdan, dar->dardan
+%<abl%>:%>ىن{A%}%{N%} # ; !nerdewan->nerdewnan, yalan->yalanan
+%<ins%>:%>%{y%}%{%D}%{A%}ىن # ; !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
   
 
 LEXICON POSSESSION
