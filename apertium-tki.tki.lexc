@@ -1,5 +1,5 @@
 ! Morphological Transducer for Turkmen of Iraq
-
+!Bayat ağzında soru eki +mI/+mU herhangi bir şekilde bulunmaktadır
 Multichar_Symbols
 
 ! Part of speech categories
@@ -171,6 +171,7 @@ Determiners ;
 Adverbs ;
 Adjectives ;
 ProperNouns ;
+Pronouns ;
 Verbs ;
 
 
@@ -216,6 +217,56 @@ CASE ;
 !%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
+
+
+LEXICON PRON-PERS-MAN 
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+
+LEXICON PRON-PERS-SEN 
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ئيي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ئي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+
+LEXICON PRON-PERS-O
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:نون # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:نو # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:نا # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:ندى # ;
+!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+
+LEXICON PRON-PERS-BIZ
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+
+LEXICON PRON-PERS-SIZ
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ئي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+
+LEXICON PRON-PERS-OLAR
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىن # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دا # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+
 
 LEXICON NP-COMMON
 
@@ -333,6 +384,21 @@ LEXICON V-TV
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Pronouns 
+
+
+
+
+مىن:مىن PRON-PERS-MAN ;
+سىن:سىن PRON-PERS-SEN ;
+بيز:بيز PRON-PERS-BIZ ;
+سيز:سيز PRON-PERS-SIZ ;
+اولار:اولار PRON-PERS-OLAR ;
+او:او PRON-PERS-O ;
+
+
+
 
 LEXICON Adjectives
 گوزَل:گوزَل A1 ;
@@ -963,6 +1029,7 @@ LEXICON Nouns
 كاتيب:كاتيب N1 ;
 براءت:براءت N1 ;
 سس:سس N1 ;
+قانات:قانات N1 ;
 موفاجئه:موفاجئه N1 ;
 سأحه:سأحه N1 ;
 سوپريز:سوپريز N1 ;
