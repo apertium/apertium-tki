@@ -225,7 +225,7 @@ LEXICON PRON-PERS-MAN
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
-!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن  # ; !
 
 LEXICON PRON-PERS-SEN 
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
@@ -233,7 +233,7 @@ LEXICON PRON-PERS-SEN
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ئي # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
-!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:نىن # ; !
 
 LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
@@ -241,7 +241,7 @@ LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:نو # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:نا # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:ندى # ;
-!%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن ان # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:نىن  # ; !
 
 LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
@@ -266,6 +266,14 @@ LEXICON PRON-PERS-OLAR
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+
+LEXICON PRON-PERS-OZ
+%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:من # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ين # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:يه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:يده # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:يدان # ; !
 
 
 LEXICON NP-COMMON
@@ -389,7 +397,7 @@ LEXICON Pronouns
 
 
 
-
+اوزو:اوزو PRON-PERS-OZ ;
 مىن:مىن PRON-PERS-MAN ;
 سىن:سىن PRON-PERS-SEN ;
 بيز:بيز PRON-PERS-BIZ ;
