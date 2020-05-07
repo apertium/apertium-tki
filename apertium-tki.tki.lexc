@@ -413,12 +413,26 @@ LEXICON V-TV
 
 %<v%>%<tv%>: # ;
 
+LEXICON PRON-ITG-INFL
+%<prn%>%<itg%>: # ;
+
 
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON PRON-ITG 
+كيم:كيم PRON-ITG-INFL ;
+نه:نه  PRON-ITG-INFL ;
+نىيي:نىيي PRON-ITG-INFL ;
+نيچن:نيچن PRON-ITG-INFL ;
+هاسى:هاسى PRON-ITG-INFL ;
+ناخسى:ناخسى PRON-ITG-INFL ;
+نأدي:نأدي PRON-ITG-INFL ;
+هاراى:هاراى PRON-ITG-INFL ;
+نانجا:نانجا PRON-ITG-INFL ;
+
 
 LEXICON Pronouns 
 
@@ -431,6 +445,7 @@ LEXICON Pronouns
 سيز:سيز PRON-PERS-SIZ ;
 اولار:اولار PRON-PERS-OLAR ;
 او:او PRON-PERS-O ;
+PRON-ITG ;
 
 
 
