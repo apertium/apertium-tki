@@ -228,20 +228,20 @@ LEXICON PRON-PERS-MAN
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن  # ; !
 
 LEXICON PRON-PERS-SEN 
-%<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ئيي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ئي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:نىن # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>: # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ئيي # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ئي # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ى # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نىن # ; !
 
 LEXICON PRON-PERS-O
-%<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:نون # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:نو # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:نا # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:ندى # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:نىن  # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>: # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نون # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نو # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نا # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندى # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نىن # ; !
 
 LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
@@ -252,28 +252,55 @@ LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-SIZ
-%<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ئي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>: # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئي # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-OLAR
-%<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىن # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دا # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>: # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:ىن # ; ! 
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:دا # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-OZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:من # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ين # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:يه # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:يده # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:يدان # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:م # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ي # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:ين # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:مى # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:يى # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:مه # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:يه # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:مده # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:يده # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نده # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:مدان # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:يدان # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ندان # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:موز # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:يوز # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:لاري # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:موزى # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:يوزى # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:لارى # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:موزه # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:يوزه # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:لارنه # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:موزده # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:يوزده # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:لارنده # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:موزدان # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:يوزدان # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:لاريندان # ; !
+
+
 
 
 LEXICON NP-COMMON
