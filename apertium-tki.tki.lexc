@@ -413,8 +413,18 @@ LEXICON V-TV
 
 %<v%>%<tv%>: # ;
 
+
 LEXICON PRON-ITG-INFL
-%<prn%>%<itg%>: # ;
+%<prn%>%<itg%>: N-COMMON ;
+
+
+
+
+
+
+!LEXICON SUBST
+!N-INFL-COMMON ;
+!%<pl%>:%>ل%{A%}ر # ; !N-INFL-COMMON ;
 
 
 
