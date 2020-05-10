@@ -434,7 +434,7 @@ LEXICON PRON-ITG-INFL
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON PRON-ITG 
 كيم:كيم PRON-ITG-INFL ;
-نه:نه  PRON-ITG-INFL ;
+نه:نه PRON-ITG-INFL ;
 نىيي:نىيي PRON-ITG-INFL ;
 نيچن:نيچن PRON-ITG-INFL ;
 هاسى:هاسى PRON-ITG-INFL ;
@@ -442,6 +442,9 @@ LEXICON PRON-ITG
 نأدي:نأدي PRON-ITG-INFL ;
 هاراى:هاراى PRON-ITG-INFL ;
 نانجا:نانجا PRON-ITG-INFL ;
+هانى:هانى PRON-ITG-INFL ;
+هرا:هرا PRON-ITG-INFL ;
+نيى:نيى PRON-ITG-INFL ;
 
 
 LEXICON Pronouns 
