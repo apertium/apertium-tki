@@ -401,6 +401,26 @@ LEXICON DET-REF !determiner reflexive
 LEXICON ADV
 
 %<adv%>: # ;
+!%<adv%>: V-COP ;
+%<adv%>%<attr%>: # ;
+
+LEXICON ADV2
+
+%<adv%>: # ;
+!%<adv%>: V-COP ;
+%<adv%>%<attr%>: # ;
+
+LEXICON ADV3
+
+%<adv%>: # ;
+!%<adv%>: V-COP ;
+
+LEXICON ADV4
+
+%<adv%>: # ; ! this is for when the adverb is used as an adverb
+!%<adv%>: V-COP ;
+!%<adv%>%<subst%>: SUBST ;
+%<adv%>%<attr%>:%>k%{I%} # ;
 
 LEXICON A1
 
@@ -580,6 +600,7 @@ LEXICON Adjectives
 بىسلمه:بىسلمه A1 ;
 خويلو:خويلو A1 ;
 مازاقچى:مازاقچى A1 ;
+بعزى:بعزى A1 ;
 اوتاندرجى:اوتاندرجى A1 ;
 قرآنى:قرآنى A1 ;
 رحمان:رحمان A1 ;
@@ -643,6 +664,8 @@ LEXICON Adjectives
 أتلى:أتلى A1 ;
 يانمش:يانمش A1 ;
 نيجا:نيجا A1 ;
+أوگ:أوگ A1 ;
+آرخا:آرخا A1 ;
 	
 
 
@@ -763,6 +786,19 @@ LEXICON Adverbs
 هر% زامان:هر% زامان ADV ;
 هر% واخت:هر% واخت ADV ;
 هر% گلن:هر% گلن ADV ;
+بويزا:بويزا ADV ;
+يوخارى:يوخارى ADV ;
+يازدا:يازدا ADV ;
+آشاغدآ:آشاغدآ ADV ;
+آلتا:آلتا ADV ;
+إيسته:إيسته ADV ;
+أن% إيسته:أن% إيسته ADV ;
+بيلفيعل:بيلفيعل ADV2 ;
+سوزده:سوزده ADV3 ;
+صورآ:صورآ ADV4 ;
+أول:أول ADV4 ;
+
+
 
 
 
@@ -825,6 +861,7 @@ LEXICON Determiners
 بيرچوخ:بيرچوخ DET-QNT ;
 بير%ميقدار:بير%ميقدار DET-QNT ; 
 بَعزي:بَعزي DET-QNT ;
+بعزى:بعزى DET-QNT ;
 كيمي:كيمي DET-QNT ;
 بير%قسيم:بير%قسيم DET-QNT ;
 بو%قدَر:بو%قدَر DET-QNT ;
@@ -867,6 +904,8 @@ LEXICON Postpositions
 ئچينن:ئچينن POST ; ! Through 
 ھەققىدە:ھەققىدە POST ; ! "about" 
 ئاساسەن:ئاساسەن POST ; ! "based on"
+قانشار:قانشار POST ;
+
 
 
 LEXICON Conjunctions 
