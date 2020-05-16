@@ -1,48 +1,44 @@
-!Alphabet
-!
-!آأإب ت ث ج چ ح خ ر دذرزژس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ي ى !
+Alphabet
+
+آأإب پ ت ث ج چ ح خ دذرزس ش ص ض ط ظ ع غ ف ق ك گ ل م ن و ه ى 
+%{A%}:a %>:0  ;
 
 
-!%{ğ%}:0
-!%{q%}:0
-!%{G%}:غ
+!%{ğ%}:غ
+!%{G%}:گ
 !%{K%}:ق
 !%{A%}:ا
 !%{E%}:ا
 !%{D%}:د
 !%{i%}:0
 !%{I%}:ى
-!%{U%}:ى
+!%{U%}:آو
 !%{s%}:0
 !%{n%}:0 
-!%{☫%}:0
 !%{a%}:0
 !%{e%}:0
-!%{L%}:ل
-!%{l%}:ل
-!%{û%}:ى
 !%{y%}:0
-!%{ü%}:ۈ
+!%{ü%}:أو
 !%>:0 ;
 
-!Sets
-!Consonant= ب ت ث ج چ ح خ ردذرزژس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ي ى ء
-!Vowel = آأإوي ى
-!SoftVow=ه أإ
-!HardVow= آو
-
-
-
-
-Alphabet
- A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z
- a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
- %{A%}:a %>:0  ;
-
 Sets
+Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
+Vowel = آأإوى ;    !AEIUİ
+SoftVow =  إأه ; 
+HardVow = آو ى; 
 
-Vowel = A E Ä I O Ö U Ü Y Ý 
-        a e ä i o ö u ü y ý ;
+   
+
+
+!Alphabet
+ !A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z گ ل
+! a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
+ !%{A%}:a %>:0  ;
+
+!Sets
+
+!Vowel = A E Ä I O Ö U Ü Y Ý 
+!        a e ä i o ö u ü y ý ;
 
 Rules 
 
