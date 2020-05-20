@@ -138,7 +138,7 @@ Multichar_Symbols
 %{U%}                 ! realised as ى/ۇ/ۈ
 %{ü%}                 ! realised as ۇ/ۈ
 %{s%}                 ! realised as س or null
-!%{n%}                 ! realised as ن or null
+%{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
                       ! needed after ا that doesn't change to ى
 %{q%}		      ! for loanwords, devoicing suffixes
@@ -178,20 +178,14 @@ Verbs ;
 
 LEXICON CASE
 %<nom%>:# ;
-%<gen%>:%>%{i%}ىن # ;      !uşağ->uşağımın
-%<gen%>:%>%{U%}ن # ;      !kurt->kurtun
-%<gen%>:%>%{U%}ن # ;      !gözlüğ->gözlüğyün
-%<gen%>:%>%{y%}%{I%}ىن # ;      !baba->babayın
-!%<gen%>:%>نىڭ # ; 
-!%<gen%>%<subst%>:%>نىڭكى # ; 
-%<acc%>:%>%{n%}%{I%} # ;        !hurma->hurmanı yedim, uşağ->uşağı yahadım
-%<acc%>:%>%{n%}%{U%} # ;        !kurt->kurtu, karğa->karğanı tututtums 
-!%<acc%>:%>نى # ;   
+%<gen%>:%>%{n%}%{I%}ن # ;      !uşağ->uşağımın
+%<gen%>:%>%{n%}%{U%}ن # ;      !kurt->kurtun      
+%<gen%>:%>%{y%}%{I%}ن # ;      !baba->babayın !gözlüğ->gözlüğyün
+%<acc%>:%>%{n%}%{I%} # ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
+%<acc%>:%>%{n%}%{U%} # ;        !kurt->kurtu, karğa->karğanı tututtums   
 %<dat%>:%>%{y%}%{A%} # ;        !baş->başa, göz->gözye, üz->üzye  
-%<loc%>:%>%{D%}%{A%} # ;        !kiş->kişte, dam-damda
-!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
-!%<loc%>%<subst%>:%>%{D%}%{A%}%>كى # ;   
-%<abl%>:%>%{D%}%{A%}n # ;      !dam->damdan, dar->dardan
+%<loc%>:%>%{D%}%{A%} # ;        !kiş->kişte, dam-damda   
+%<abl%>:%>%{D%}%{A%}ن # ;      !dam->damdan, dar->dardan
 %<abl%>:%>ىن{A%}%{N%} # ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{%D}%{A%}ىن # ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
   
@@ -203,10 +197,6 @@ CASE ;
 %<px1sg%>:%>%{u%}م CASE ; ! Dir/LR      !konşu->konşum, gün->günüm
 %<px2sg%>:%>%{i%}ي CASE ; ! Dir/LR      !iş->işiy, yazı->yazıy 
 %<px2sg%>:%>%{u%}ي CASE ; ! Dir/LR      !konuşu-> konşuy, yol->yoluy
-!%<px2sg%>:%>%{i%}ن CASE ; ! Dir/LR
-!%<px2sg%>:%>%{U%}ڭ CASE ; 
-!%<px2pl%>:%>%{i%}ڭيلار CASE ; ! Dir/LR
-!%<px2pl%>:%>%{U%}ڭيلار CASE ; 
 %<px3sp%>:%>%{s%}%{%I} CASE ;           !ad->adı, yuwa->yuwası 
 %<px3sp%>:%>%{s%}%{%U} CASE ;           !okul->okulu, suru->surusu
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
@@ -1033,7 +1023,9 @@ house:house RegNounInfl ; ! A noun
 ئېغىرلىق:ئېغىرلىق RegNounInfl ; ! ""
 زىيان:زىيان RegNounInfl ; ! "
 LEXICON Nouns
-ئيو:ئيو N1 ;
+آلله:آلله N1 ;
+إيو:إيو N1 ;
+چوپان:چوپان N1 ; 
 حاكت:حاكت N1 ;
 مكتب:مكتب N1 ;
 خستاخانا:خستاخانا N1 ; 
@@ -1075,6 +1067,8 @@ LEXICON Nouns
 كيپرك:كيپرك N1 ;
 قاش:قاش N1 ;
 ساچ:ساچ N1 ;
+يوى:يوى N1 ;
+قوتو:قوتو N1 ;
 دئرناغ:دئرناغ N1 ;
 دئرناغ%بياغئ:دئرناغ%بياغئ N1 ;
 جدّه:جدّه N1 ;
@@ -1154,6 +1148,7 @@ LEXICON Nouns
 زولوم:زولوم N1 ;
 زالملغ:زالملغ N1 ;
 اصئل:اصئل N1 ;
+قارغا:قارغا N1 ;
 دينسيز:دينسيز N1 ;
 إيمانسز:إيمانسز N1 ;	
 سوت:سوت N1 ;
@@ -1201,6 +1196,7 @@ LEXICON Nouns
 ماراق:ماراق N1 ;
 دأوير:دأوير N1 ;
 شوٌكوٌٌر:شوٌكوٌٌر N1 ;
+أوز:أوز N1 ;
 ئهرامات:ئهرامات N1 ;
 عاقْللغ:عاقْللغ N1 ;
 تداول:تداول N1 ;
