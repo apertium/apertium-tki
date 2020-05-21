@@ -129,18 +129,15 @@ Multichar_Symbols
 
 %{G%}                 ! realised as گ or ك or غ or ق
 %{K%}                 ! realised as ك or ق
-%{A%}                 ! realised as ا or ە or sometimes ى
-%{E%}                 ! realised as ا or ە or sometimes ى and also ي
+%{A%}                 ! realised as آ or أ sometimes ى
+%{E%}                 ! realised as إ or  or sometimes ى and also ي
 %{D%}                 ! realised as د or ت
-%{i%}                 ! epenthetic ى : realised as ى/ۇ/ۈ
-%{û%}                 ! for unepenthesis in isim, orun etc.
-%{I%}                 ! realised as ى
-%{U%}                 ! realised as ى/ۇ/ۈ
-%{ü%}                 ! realised as ۇ/ۈ
+%{i%}                 ! epenthetic ى : realised as 
+%{I%}                 ! realised as إ orى or ى
+%{U%}                 ! realised as و and أ
+%{ü%}                 ! realised as و
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
-%{☫%}                 ! "loanword" - blocks certain processes
-                      ! needed after ا that doesn't change to ى
 %{q%}		      ! for loanwords, devoicing suffixes
 %{ğ%}                 ! ^^ opposite
 %{e%}                 ! forces front harmony
@@ -188,21 +185,27 @@ LEXICON CASE
 %<abl%>:%>%{D%}%{A%}ن # ;      !dam->damdan, dar->dardan
 %<abl%>:%>ىن{A%}%{N%} # ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{%D}%{A%}ىن # ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+
+!LEXICON GENPOSS-ETC 
+
+!%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
+!%<loc%>:%>%{D%}%{A%}كى ATTR-SUBST ;
+!%<sim%>:%>%{C%}%{A%} CLIT-GENERAL ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
   
 
 LEXICON POSSESSION
 
 CASE ;
-%<px1sg%>:%>%{i%}م CASE ; ! Dir/LR      !ad->adım, baba->babam
-%<px1sg%>:%>%{u%}م CASE ; ! Dir/LR      !konşu->konşum, gün->günüm
-%<px2sg%>:%>%{i%}ي CASE ; ! Dir/LR      !iş->işiy, yazı->yazıy 
-%<px2sg%>:%>%{u%}ي CASE ; ! Dir/LR      !konuşu-> konşuy, yol->yoluy
+%<px1sg%>:%>%{I%}م CASE ; ! Dir/LR      !ad->adım, baba->babam, kiz->kizim
+%<px1sg%>:%>%{U%}م CASE ; ! Dir/LR      !konşu->konşum, gün->günüm, yol->yolum
+%<px2sg%>:%>%{I%}ي CASE ; ! Dir/LR      !iş->işiy, yazı->yazıy 
+%<px2sg%>:%>%{U%}ي CASE ; ! Dir/LR      !konuşu-> konşuy, yol->yoluy
 %<px3sp%>:%>%{s%}%{%I} CASE ;           !ad->adı, yuwa->yuwası 
 %<px3sp%>:%>%{s%}%{%U} CASE ;           !okul->okulu, suru->surusu
-%<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
+%<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
 %<px1pl%>:%>%{U%}م%{U%}ز CASE ;         !ruh->ruhumuz, göz-gözümüz
-%<px2pl%>:%>%{i%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız 
-%<px2pl%>:%>%{u%}ي%{U%}ز CASE ; !       !top->topyuz, göz->gözyüz
+%<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız 
+%<px2pl%>:%>%{U%}ي%{U%}ز CASE ; !       !top->topyuz, göz->gözyüz
 !%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
 !%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
@@ -333,6 +336,10 @@ LEXICON NP-COMMON
 
 POSSESSION ;
 
+LEXICON SUBST
+!N-INFL-COMMON ;
+%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
+
 LEXICON N-COMMON
 
 NP-COMMON ;
@@ -341,6 +348,7 @@ NP-COMMON ;
 
 LEXICON N1
 %<n%>: N-COMMON ;
+%<n%>: SUBST ;
 %<n%>%<attr%>: # ;
 
 
@@ -473,9 +481,7 @@ LEXICON ADV-ITG
 
 
 
-!LEXICON SUBST
-!N-INFL-COMMON ;
-!%<pl%>:%>ل%{A%}ر # ; !N-INFL-COMMON ;
+
 
 
 
@@ -1138,6 +1144,7 @@ LEXICON Nouns
 سَفر:سَفر N1 ;
 نوٌر:نوٌر N1 ;
 پغمبر:پغمبر N1;
+آدم:آدم N1 ;
 گون:گون N1 ;
 ايّ:ايّ N1 ;
 دوشك:دوشك N1 ;
@@ -1235,6 +1242,7 @@ LEXICON Nouns
 تَفريقه:تَفريقه N1 ;
 حيسّه:حيسّه N1 ;
 سورو:سورو N1 ;
+يول:يول N1 ;
 اٌوُمود:اٌوُمود N1 ; ! Hope
 قُمشولوغ:قُمشولوغ N1 ; ! neighborhod
 دين%آدامى:دين%آدامى N1 ;
@@ -1441,6 +1449,7 @@ LEXICON Verbs
 يور:يور V-TV ;
 يورول:يورول V-IV ;
 يُوم:يُوم V-TV ;
+
 
 
 
