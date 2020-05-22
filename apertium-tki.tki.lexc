@@ -129,13 +129,15 @@ Multichar_Symbols
 
 %{G%}                 ! realised as گ or ك or غ or ق
 %{K%}                 ! realised as ك or ق
-%{A%}                 ! realised as آ or أ sometimes ى
+%{A%}                 ! realised as آ or أ sometimes ى or null
 %{E%}                 ! realised as إ or  or sometimes ى and also ي
 %{D%}                 ! realised as د or ت
 %{i%}                 ! epenthetic ى : realised as 
 %{I%}                 ! realised as إ orى or ى
 %{U%}                 ! realised as و and أ
-%{ü%}                 ! realised as و
+%{ü%}                 ! realised as و or null
+%{u%}                 ! realised as و or null 
+%{a%}                 ! realised as و or null
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
 %{q%}		      ! for loanwords, devoicing suffixes
@@ -145,6 +147,8 @@ Multichar_Symbols
 %{L%}                 ! for passive: ل or ن
 %{l%}                 ! for l deletion 
 %{y%}                 ! realised as ي or null
+%{r%}                 ! realised as  or ل or null
+
 
 
 
@@ -461,11 +465,11 @@ LEXICON A1
 %<adj%>: # ;
 
 LEXICON V-IV
-%<v%>%<iv%>:# ;
+%<v%>%<iv%>: V-COMMON ;
 
 LEXICON V-TV 
 
-%<v%>%<tv%>: # ;
+%<v%>%<tv%>: V-COMMON ;
 
 LEXICON PRON-ITG-INFL !inflectional suffix
 %<prn%>%<itg%>: N-COMMON ; 
@@ -477,6 +481,32 @@ LEXICON PRON-QNT
 LEXICON ADV-ITG
 %<adv%>%<itg%>: V-COP # ; 
 %<adv%>%<itg%>: # ;!SUBST ;
+
+
+
+LEXICON V-AOR-PERS
+%<p1%>%<sg%>:م # ;
+%<p1%>%<pl%>:غ # ;
+%<p1%>%<sg%>:سان # ;
+%<p1%>%<pl%>:سيز # ;
+
+LEXICON V-AOR
+
+%<aor%>:%>%{A%}ر # ; 
+%<aor2%>:%>%{U%}ر # ; 
+%<aor3%>:%>%{U%}%{r%} # ;
+%<aor4%>:%>%{A%}%{r%} # ;
+%<aor5%>:%>%{U%}ل V-AOR-PERS ;
+%<aor6%>:%>%{A%}ل V-AOR-PERS ;
+%<aor7%>:%>ر V-AOR-PERS ;
+%<aor8%>:%>ل V-AOR-PERS ;
+%<aor9%>:%>ا V-AOR-PERS ;
+!%<aor%>%<qst%>:%>%{A%}م V-AOR-QST-PERS ;
+!%<aor2%>:%>%{A%}ر V-COP-PERS ; 
+!%<neg%>%<aor%>:%>م%{A%}س V-COP-PERS ; ! Dir/LR
+
+LEXICON V-COMMON
+V-AOR ;
 
 
 
