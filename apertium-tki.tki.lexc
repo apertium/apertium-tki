@@ -482,6 +482,16 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: V-COP # ; 
 %<adv%>%<itg%>: # ;!SUBST ;
 
+LEXICON V-IFI-PERS
+
+%<p1%>%<sg%>:م # ;!CLITICS ;
+%<p2%>%<sg%>:ن # ;!CLITICS ;
+!%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
+%<p3%>%<sg%>:ى # ; !CLITICS ;
+%<p1%>%<pl%>:يغ # ; ! CLITICS ;
+%<p2%>%<pl%>:نيز # ; ! CLITICS ;
+%<p3%>%<pl%>:ل%{A%} # ; ! CLITICS ;
+
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
 %<p1%>%<pl%>:غ # ;
@@ -518,13 +528,20 @@ LEXICON V-PROG
 %<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
 %<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<prog%>:%>%{y%}ر V-PROG-PERS ;
-%<neg%>%<prog%>:%>م%{A%} V-COP-PERS ; 
+%<neg%>%<prog%>:%>م%{A%} V-COP-PERS ;
+
+LEXICON V-IFI
+
+%<ifi%>:%>%{D%}%{DI%} V-IFI-PERS ; 
+%<ifi%>:%>%{D%}%{U%} V-IFI-PERS ;
+%<neg%>%<ifi%>:%>م%{A%} V-COP-PERS ;
 
 
 
 LEXICON V-COMMON
 V-AOR ;
 V-PROG ;
+V-IFI ;
 
 
 
