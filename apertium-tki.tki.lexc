@@ -482,11 +482,19 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: V-COP # ; 
 %<adv%>%<itg%>: # ;!SUBST ;
 
-
+LEXICON V-PROG-PERS
+%<p1%>%<sg%>:م # ;
+%<p1%>%<pl%>:غ # ;
+%<p2%>%<sg%>:سان # ;
+%<p2%>%<pl%>:سز # ;
 
 LEXICON V-AOR-PERS
 %<p1%>%<sg%>:م # ;
+%<p2%>%<sg%>:سان # ;
 %<p1%>%<pl%>:غ # ;
+%<p2%>%<pl%>:سز # ;
+%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<sg%>: # ;
 %<p1%>%<sg%>:سان # ;
 %<p1%>%<pl%>:سيز # ;
 
@@ -495,18 +503,28 @@ LEXICON V-AOR
 %<aor%>:%>%{A%}ر # ; 
 %<aor2%>:%>%{U%}ر # ; 
 %<aor3%>:%>%{U%}%{r%} # ;
-%<aor4%>:%>%{A%}%{r%} # ;
-%<aor5%>:%>%{U%}ل V-AOR-PERS ;
-%<aor6%>:%>%{A%}ل V-AOR-PERS ;
-%<aor7%>:%>ر V-AOR-PERS ;
-%<aor8%>:%>ل V-AOR-PERS ;
-%<aor9%>:%>ا V-AOR-PERS ;
-!%<aor%>%<qst%>:%>%{A%}م V-AOR-QST-PERS ;
-!%<aor2%>:%>%{A%}ر V-COP-PERS ; 
-!%<neg%>%<aor%>:%>م%{A%}س V-COP-PERS ; ! Dir/LR
+%<aor%>:%>%{A%}%{r%} # ;
+%<aor%>:%>%{U%}ل V-AOR-PERS ;
+%<aor%>:%>%{A%}ل V-AOR-PERS ;
+%<aor%>:%>ر V-AOR-PERS ;
+%<aor%>:%>ل V-AOR-PERS ;
+%<aor%>:%>ا V-AOR-PERS ;
+%<neg%>%<aor%>:%>م%{A%} V-COP-PERS ; 
+%<neg%>%<aor%>:%>م%{A%}ز V-COP-PERS ;
+
+LEXICON V-PROG
+%<prog%>:%>%{y%}%{I%}ر V-PROG-PERS ;
+%<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
+%<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
+%<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
+%<prog%>:%>%{y%}ر V-PROG-PERS ;
+%<neg%>%<prog%>:%>م%{A%} V-COP-PERS ; 
+
+
 
 LEXICON V-COMMON
 V-AOR ;
+V-PROG ;
 
 
 
