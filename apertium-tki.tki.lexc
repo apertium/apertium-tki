@@ -482,6 +482,16 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: V-COP # ; 
 %<adv%>%<itg%>: # ;!SUBST ;
 
+LEXICON V-PAST-PERS
+
+%<p1%>%<sg%>:%>م # ;!CLITICS ; 
+%<p2%>%<sg%>:%>سەن # ;!CLITICS ; 
+!%<p2%>%<sg%>%<frm%>:%>سىز CLITICS ; 
+%<p3%>%<sg%>: # ;  ! CLITICS ; 
+%<p1%>%<pl%>:%>يغ # ; ! CLITICS ; 
+%<p2%>%<pl%>:%>سز # ; ! CLITICS ; 
+%<p3%>%<pl%>:%>ل%{A%}ر # ; ! CLITICS ;
+
 LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:م # ;!CLITICS ;
@@ -536,12 +546,28 @@ LEXICON V-IFI
 %<ifi%>:%>%{D%}%{U%} V-IFI-PERS ;
 %<neg%>%<ifi%>:%>م%{A%} V-COP-PERS ;
 
+LEXICON V-PAST
+
+%<past%>:%>م%{I%}ش V-PAST-PERS ;
+%<past%>:%>م%{U%}ش V-PAST-PERS ;
+%<past%>:%>%{y%}%{I%}ب V-PAST-PERS ;
+%<past%>:%>%{y%}%{U%}ب V-PAST-PERS ;
+%<past%>:%>%{I%}پ V-PAST-PERS ;
+
+LEXICON V-FUT
+%<fut%>:%>%{A%}ج%{A%}غ V-COP-PERS ;
+!%<fut%>%<dub%>:%>%{E%}%>دى%{G%}%{A%}ن V-COP-PERS ;
+
+
+
 
 
 LEXICON V-COMMON
 V-AOR ;
 V-PROG ;
 V-IFI ;
+V-PAST ;
+V-FUT ;
 
 
 
