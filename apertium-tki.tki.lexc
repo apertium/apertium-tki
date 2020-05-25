@@ -464,12 +464,7 @@ LEXICON A1
 
 %<adj%>: # ;
 
-LEXICON V-IV
-%<v%>%<iv%>: V-COMMON ;
 
-LEXICON V-TV 
-
-%<v%>%<tv%>: V-COMMON ;
 
 LEXICON PRON-ITG-INFL !inflectional suffix
 %<prn%>%<itg%>: N-COMMON ; 
@@ -481,6 +476,15 @@ LEXICON PRON-QNT
 LEXICON ADV-ITG
 %<adv%>%<itg%>: V-COP # ; 
 %<adv%>%<itg%>: # ;!SUBST ;
+
+LEXICON V-FUT-PERS
+%<p1%>%<sg%>:%>م # ; 
+%<p2%>%<sg%>:%>سەن # ; 
+%<p3%>%<sg%>:%> # ; 
+%<p1%>%<pl%>:%>غ # ; 
+%<p2%>%<pl%>:%>سز # ; 
+%<p3%>%<pl%>:%>ل%{A%}ر # ;
+
 
 LEXICON V-PAST-PERS
 
@@ -496,34 +500,36 @@ LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:م # ;!CLITICS ;
 %<p2%>%<sg%>:ن # ;!CLITICS ;
-!%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p3%>%<sg%>:ى # ; !CLITICS ;
+!%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p1%>%<pl%>:يغ # ; ! CLITICS ;
 %<p2%>%<pl%>:نيز # ; ! CLITICS ;
 %<p3%>%<pl%>:ل%{A%} # ; ! CLITICS ;
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
-%<p1%>%<pl%>:غ # ;
 %<p2%>%<sg%>:سان # ;
+%<p3%>%<sg%>:ى # ;
+%<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
+%<p3%>%<pl%>:ل%{A%} # ;
 
 LEXICON V-AOR-PERS
 %<p1%>%<sg%>:م # ;
 %<p2%>%<sg%>:سان # ;
+%<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
 %<p3%>%<pl%>:ل%{A%}ر # ;
-%<p3%>%<sg%>: # ;
-%<p1%>%<sg%>:سان # ;
-%<p1%>%<pl%>:سيز # ;
+
 
 LEXICON V-AOR
 
-%<aor%>:%>%{A%}ر # ; 
-%<aor2%>:%>%{U%}ر # ; 
-%<aor3%>:%>%{U%}%{r%} # ;
-%<aor%>:%>%{A%}%{r%} # ;
+%<aor%>:%>%{A%}ر V-AOR-PERS ; 
+%<aor2%>:%>%{U%}ر V-AOR-PERS ; 
+%<aor3%>:%>%{U%}%{r%} V-AOR-PERS ;
+%<aor%>:%>%{A%}%{r%} V-AOR-PERS ;
+%<aor%>:%>%{A%} V-AOR-PERS ;
 %<aor%>:%>%{U%}ل V-AOR-PERS ;
 %<aor%>:%>%{A%}ل V-AOR-PERS ;
 %<aor%>:%>ر V-AOR-PERS ;
@@ -538,13 +544,13 @@ LEXICON V-PROG
 %<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
 %<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<prog%>:%>%{y%}ر V-PROG-PERS ;
-%<neg%>%<prog%>:%>م%{A%} V-COP-PERS ;
+%<neg%>%<prog%>:%>م%{A%}%{y%}%{I%}ر V-COP-PERS ;
 
 LEXICON V-IFI
 
-%<ifi%>:%>%{D%}%{DI%} V-IFI-PERS ; 
+%<ifi%>:%>%{D%}%{I%} V-IFI-PERS ; 
 %<ifi%>:%>%{D%}%{U%} V-IFI-PERS ;
-%<neg%>%<ifi%>:%>م%{A%} V-COP-PERS ;
+%<neg%>%<ifi%>:%>م%{A%}%{D%}%{I%} V-COP-PERS ;
 
 LEXICON V-PAST
 
@@ -553,10 +559,33 @@ LEXICON V-PAST
 %<past%>:%>%{y%}%{I%}ب V-PAST-PERS ;
 %<past%>:%>%{y%}%{U%}ب V-PAST-PERS ;
 %<past%>:%>%{I%}پ V-PAST-PERS ;
+%<past%>:%>م%{A%}م%{I%}ش V-PAST-PERS ;
 
 LEXICON V-FUT
-%<fut%>:%>%{A%}ج%{A%}غ V-COP-PERS ;
+%<fut%>:%>%{A%}ج%{A%}غ V-FUT-PERS ;
+%<fut%>%<fut%>:%>م%{A%}ي%{A%}ج%{A%}غ V-FUT-PERS ;
 !%<fut%>%<dub%>:%>%{E%}%>دى%{G%}%{A%}ن V-COP-PERS ;
+
+LEXICON V-ABIL-PERS
+%<p1%>%<sg%>:م # ;
+%<p2%>%<sg%>:سون # ;
+%<p2%>%<sg%>:سن # ;
+%<p1%>%<pl%>:غن # ;
+%<p1%>%<pl%>:غ # ;
+%<p2%>%<pl%>:سز # ;
+%<p3%>%<pl%>:ن%{A%} # ;
+%<p3%>%<pl%>:ل%{A%}ر # ;
+
+
+LEXICON V-TENSE-ABIL
+%<abil%>:%>%{y%}%{I%} V-ABIL-PERS ;
+%<abil%>:%>%{y%}%{U%} V-ABIL-PERS ;
+%<abil%>:%>%{y%}%{A%} V-ABIL-PERS ;
+%<abil%>:%>س%{A%}ن V-ABIL-PERS ;      
+%<abil%>:%>س%{U%}ن V-ABIL-PERS ;
+%<abil%>:%>%{A%} V-ABIL-PERS ;
+%<abil%>:%> V-ABIL-PERS ;
+
 
 
 
@@ -568,8 +597,16 @@ V-PROG ;
 V-IFI ;
 V-PAST ;
 V-FUT ;
+V-TENSE-ABIL ;	
 
+LEXICON V-IV
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: # ;
 
+LEXICON V-TV 
+
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: # ;
 
 
 
@@ -1425,6 +1462,7 @@ LEXICON Verbs
 گَل:گَل V-IV ;
 يى:يى V-TV ;
 اچ:اچ V-TV ;
+أوتور:أوتور V-IV ;
 باخ:باخ V-IV ;
 قوخلا:قوخلا V-TV ;
 إفير:إفير V-TV ;
@@ -1513,6 +1551,7 @@ LEXICON Verbs
 أورت:أورت V-TV ;
 أوك:أوك V-TV ;
 صال:صال V-TV ;
+ور:ور V-TV ;
 سات:سات V-TV ;
 سَو:سَو V-TV ;
 ساي:ساي V-TV ;
@@ -1525,7 +1564,6 @@ LEXICON Verbs
 سوي:سوي V-TV ;
 سور:سور V-TV ;
 سيپير:سيپير V-TV ;
-سور:سور V-TV ;
 تاراش%أت:تاراش%أت V-TV ;
 تَرك%أت:تَرك%أت V-TV ;
 توت:توت V-TV ;
@@ -1540,6 +1578,7 @@ LEXICON Verbs
 يور:يور V-TV ;
 يورول:يورول V-IV ;
 يُوم:يُوم V-TV ;
+گل:گل V-IV ;
 
 
 
