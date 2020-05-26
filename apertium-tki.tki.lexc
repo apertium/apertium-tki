@@ -586,9 +586,27 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
 
+LEXICON IMP-PERS
+%<p1%>%<sg%>:%>%{y%}%{I%}م # ;
+%<p1%>%<sg%>:%>%{y%}%{U%}م # ;
+%<p2%>%<sg%>: # ;
+%<p2%>%<sg%>:گ%{I%}ن%{A%}ن # ;
+%<p2%>%<sg%>:گ%{U%}ن%{A%}ن # ;
+%<p3%>%<sg%>:%>س%{I%}ن # ;
+%<p3%>%<sg%>:%>س%{U%}ن # ;
+%<p1%>%<pl%>:%>ي%{A%}غ # ;
+%<p1%>%<pl%>:%>ي%{A%}غن # ;
+%<p2%>%<pl%>:%>ي%{I%}ن # ; 
+%<p2%>%<pl%>:%>%{y%}%{U%}ن # ;
+%<p3%>%<pl%>:%>س{I%}نل%{A%}ر # ;
+%<p3%>%<pl%>:%>س{I%}نن%{A%} # ;
+%<p3%>%<pl%>:%>س{U%}نل%{A%}ر # ;
+%<p3%>%<pl%>:%>س{U%}نن%{A%} # ;
 
 
-
+LEXICON V-IMP
+%<imp%>: IMP-PERS ;
+%<imp%>%<neg%>:م%{A%} IMP-PERS ;
 
 
 LEXICON V-COMMON
@@ -598,6 +616,7 @@ V-IFI ;
 V-PAST ;
 V-FUT ;
 V-TENSE-ABIL ;	
+V-IMP ;
 
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
