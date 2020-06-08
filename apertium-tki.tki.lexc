@@ -216,8 +216,13 @@ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
 
 
+LEXICON CLITICS
+# ;
+%+ki%<cnjadv%>:ki # ;
+
+
 LEXICON PRON-PERS-MAN 
-%<prn%>%<pers%>%<p1%>%<sg%>: # ;
+%<prn%>%<pers%>%<p1%>%<sg%>: CLITICS;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
@@ -296,6 +301,8 @@ LEXICON PRON-PERS-OZ
 %<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:موزدان # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:يوزدان # ; !
 %<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:لاريندان # ; !
+
+
 
 LEXICON V-COP-IFI-PERS 
 
@@ -630,12 +637,11 @@ LEXICON V-TV
 
 
 
-
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 LEXICON PRON-ITG 
 كيم:كيم PRON-ITG-INFL ;
 كيم% كيمه:كيم% كيمه PRON-ITG-INFL ;
@@ -654,8 +660,6 @@ LEXICON PRON-ITG
 
 
 LEXICON Pronouns 
-
-
 
 اوزو:اوزو PRON-PERS-OZ ;
 مىن:مىن PRON-PERS-MAN ;
@@ -847,39 +851,6 @@ LEXICON Adjectives
 آرخا:آرخا A1 ;
 	
 
-
-
- 
- 
- 
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LEXICON Adverbs
 نيجا:نيجا ADV-ITG ;
 يىلارجە:يىلارجە ADV ; !
@@ -973,48 +944,7 @@ LEXICON Adverbs
 بيلفيعل:بيلفيعل ADV2 ;
 سوزده:سوزده ADV3 ;
 صورآ:صورآ ADV4 ;
-أول:أول ADV4 ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
+أول:أول ADV4 ; 
 
 LEXICON Determiners
 بو:بو DET-DEM ;
@@ -1057,19 +987,6 @@ LEXICON Determiners
 هرشيكلدن:هرشيكلدن DET-QNT ;
 ئوندان:ئوندان DET-QNT ;
 هَر:هَر DET-DEM ; ! each
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
