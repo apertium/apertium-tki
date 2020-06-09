@@ -7,7 +7,7 @@ Alphabet
 %{ğ%}:غ
 %{G%}:گ
 %{K%}:ق
-%{A%}:آ ! it could be {إ, آ, أ}
+%{A%}:ا ! it could be {إ, آ, أ}
 %{E%}:إ
 %{D%}:د
 %{C%}:ج
@@ -43,7 +43,7 @@ HardVow = آو ى;
 !        a e ä i o ö u ü y ý ;
 
 Rules 
-!%{A%}:آ %>:0  ;
+!%{A%}:ا ;
 !%{i%}:0 %>:0  ;
 
 "Remove suffix vowel with vowel-ending stem"

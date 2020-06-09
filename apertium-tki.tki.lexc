@@ -221,6 +221,8 @@ LEXICON CLITICS
 %+ki%<cnjadv%>:ki # ;
 
 
+
+
 LEXICON PRON-PERS-MAN 
 %<prn%>%<pers%>%<p1%>%<sg%>: CLITICS;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
@@ -593,6 +595,8 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
 
+
+
 LEXICON IMP-PERS
 %<p1%>%<sg%>:%>%{y%}%{I%}م # ;
 %<p1%>%<sg%>:%>%{y%}%{U%}م # ;
@@ -615,6 +619,19 @@ LEXICON V-IMP
 %<imp%>: IMP-PERS ;
 %<imp%>%<neg%>:م%{A%} IMP-PERS ;
 
+LEXICON V-COND-PERS
+
+%<p1%>%<sg%>:%>م CLITICS ; 
+%<p2%>%<sg%>:%>ن CLITICS ; ! Dir/LR
+%<p3%>%<sg%>: CLITICS ; 
+%<p1%>%<pl%>:%>%{K%} CLITICS ; 
+%<p2%>%<sg%>:%>ين CLITICS ; 
+%<p2%>%<pl%>:%>نيز CLITICS ; 
+%<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
+
+LEXICON V-COND 
+%<gna_cond%>:%>س%{A%} V-COND-PERS ;
+
 
 LEXICON V-COMMON
 V-AOR ;
@@ -624,6 +641,7 @@ V-PAST ;
 V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
+V-COND ;
 
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
@@ -1011,6 +1029,7 @@ LEXICON Conjunctions
 بەلكى:بەلكى CC ; ! 
 إيچينده:إيچينده CC ;
 أگر:أگر CC ;
+دا:دا CC ;
 همده:همده CC ;
 يعني:يعني CC ;
 انجاغ:انجاغ CC ;
@@ -1467,6 +1486,7 @@ LEXICON Verbs
 إت:إت V-TV ;
 قاپ:قاپ V-TV ;
 اپار:اپار V-TV ;
+بيل:بيل V-TV ;
 قابول%أت:قابول%أت V-TV ;
 كَشفت:كَشفت V-TV ;
 قير:قير V-TV ;
