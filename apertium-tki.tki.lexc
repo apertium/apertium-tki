@@ -617,23 +617,36 @@ LEXICON IMP-PERS
 
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
-%<imp%>%<neg%>:م%{A%} IMP-PERS ;
+!%<imp%>%<neg%>:م%{A%} IMP-PERS ;
 
 LEXICON V-COND-PERS
 
 %<p1%>%<sg%>:%>م CLITICS ; 
-%<p2%>%<sg%>:%>ن CLITICS ; ! Dir/LR
+%<p2%>%<sg%>:%>ي CLITICS ; ! Dir/LR
 %<p3%>%<sg%>: CLITICS ; 
-%<p1%>%<pl%>:%>%{K%} CLITICS ; 
+%<p1%>%<pl%>:%>غ CLITICS ; 
 %<p2%>%<sg%>:%>ين CLITICS ; 
-%<p2%>%<pl%>:%>نيز CLITICS ; 
+%<p2%>%<pl%>:%>يز CLITICS ; 
 %<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
 
 LEXICON V-COND 
 %<gna_cond%>:%>س%{A%} V-COND-PERS ;
 
+LEXICON V-NEG
+%<neg%>:م%{A%} V-NEG-COMMON ;
+
+LEXICON V-NEG-COMMON
+V-AOR ;
+V-PROG ;
+V-IFI ;
+V-PAST ;
+V-FUT ;
+V-TENSE-ABIL ;	
+V-IMP ;
+V-COND ;
 
 LEXICON V-COMMON
+V-NEG ;
 V-AOR ;
 V-PROG ;
 V-IFI ;
@@ -1017,6 +1030,9 @@ LEXICON Postpositions
 حه% قنده:حه% قنده POST ; ! "about" 
 أساسەن:أساسەن POST ; ! "based on"
 قانشار:قانشار POST ;
+گرك:گرك POST ;
+گرأ:گرأ POST ; !necessity
+گرغين:گرغين POST ;
 
 
 
@@ -1119,13 +1135,13 @@ LEXICON Nouns
 مكتب:مكتب N1 ;
 خستاخانا:خستاخانا N1 ; 
 گول:گول  N1 ;
-أفَندي:أفَندي N1 ;
-تَئلبه:تَئلبه N1 ;
+أفندي:أفندي N1 ;
+تلابه:تلابه N1 ;
 أوشاغ:أوشاغ N1 ;
 قيز:قيز N1 ;
 اوغلان:اوغلان N1 ;
 بالاه:بالاه N1 ;
-!گه نج:گه نج N1 ;!
+گه% نج:گه% نج N1 ;!
 ءختيار:ءختيار N1 ;
 ارواد:ارواد N1 ;
 ادام:ادام N1 ;
