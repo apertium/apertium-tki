@@ -586,6 +586,8 @@ LEXICON V-ABIL-PERS
 %<p3%>%<pl%>:ل%{A%}ر # ;
 
 
+
+
 LEXICON V-TENSE-ABIL
 %<abil%>:%>%{y%}%{I%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{U%} V-ABIL-PERS ;
@@ -594,6 +596,8 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>س%{U%}ن V-ABIL-PERS ;
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
+%<abil%>:%>%{y%}%{A%}بیل V-ABIL-PERS ;
+%<abil%>%<neg%>:%>%{y%}%{A%}بیلم V-ABIL-PERS ;
 
 
 
@@ -658,12 +662,12 @@ V-COND ;
 
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
-%<v%>%<iv%>: # ;
+%<v%>%<iv%>: V-NEG-COMMON ;
 
 LEXICON V-TV 
 
 %<v%>%<tv%>: V-COMMON ;
-%<v%>%<tv%>: # ;
+%<v%>%<tv%>: V-NEG-COMMON ;
 
 
 
@@ -1487,6 +1491,7 @@ LEXICON Verbs
 سخشتير:سخشتير V-TV ;
 اويدور:اويدور V-TV ;
 بيتير:بيتير V-TV ;
+گور:گور V-IV ;
 بولوشتور:بولوشتور V-TV ;
 چئلدر:چئلدر V-TV ;
 خوروزلان:خوروزلان V-IV ;
@@ -1528,6 +1533,7 @@ LEXICON Verbs
 سَو:سَو V-TV ;
 ساي:ساي V-TV ;
 سچ:سچ V-TV ;
+کوپ:کوپ V-IV ;
 سَر:سَر V-TV ;
 سَرپ:سَرپ V-TV ;
 سيخ:سيخ V-TV ;
