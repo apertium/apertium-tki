@@ -179,22 +179,22 @@ Verbs ;
 
 LEXICON CASE
 %<nom%>:# ;
-%<gen%>:%>%{n%}%{I%}ن # ;      !uşağ->uşağımın
-%<gen%>:%>%{n%}%{U%}ن # ;      !kurt->kurtun      
-%<gen%>:%>%{y%}%{I%}ن # ;      !baba->babayın !gözlüğ->gözlüğyün
-%<acc%>:%>%{n%}%{I%} # ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
-%<acc%>:%>%{n%}%{U%} # ;        !kurt->kurtu, karğa->karğanı tututtums   
-%<dat%>:%>%{y%}%{A%} # ;        !baş->başa, göz->gözye, üz->üzye  
-%<loc%>:%>%{D%}%{A%} # ;        !kiş->kişte, dam-damda   
-%<abl%>:%>%{D%}%{A%}ن # ;      !dam->damdan, dar->dardan
-%<abl%>:%>ىن{A%}%{N%} # ;      !nerdewan->nerdewnan, yalan->yalanan
-%<ins%>:%>%{y%}%{%D}%{A%}ىن # ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-ETC ;      !uşağ->uşağımın
+%<gen%>:%>%{n%}%{U%}ن GENPOSS-ETC ;      !kurt->kurtun      
+%<gen%>:%>%{y%}%{I%}ن GENPOSS-ETC ;      !baba->babayın !gözlüğ->gözlüğyün
+%<acc%>:%>%{n%}%{I%} GENPOSS-ETC ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
+%<acc%>:%>%{n%}%{U%} GENPOSS-ETC ;        !kurt->kurtu, karğa->karğanı tututtums   
+%<dat%>:%>%{y%}%{A%} GENPOSS-ETC ;        !baş->başa, göz->gözye, üz->üzye  
+%<loc%>:%>%{D%}%{A%} GENPOSS-ETC ;        !kiş->kişte, dam-damda
+%<loc%>:%>%{D%}%{A%}كى GENPOSS-ETC ;   
+%<abl%>:%>%{D%}%{A%}ن GENPOSS-ETC ;      !dam->damdan, dar->dardan
+%<abl%>:%>ىن{A%}%{N%} GENPOSS-ETC ;      !nerdewan->nerdewnan, yalan->yalanan
+%<ins%>:%>%{y%}%{%D}%{A%}ىن GENPOSS-ETC ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
-!LEXICON GENPOSS-ETC 
-
+LEXICON GENPOSS-ETC 
+# ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
-!%<loc%>:%>%{D%}%{A%}كى ATTR-SUBST ;
-!%<sim%>:%>%{C%}%{A%} CLIT-GENERAL ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
+%<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
   
 
 LEXICON POSSESSION
@@ -350,7 +350,10 @@ LEXICON NP-COMMON
 POSSESSION ;
 
 LEXICON SUBST
+# ;
 !N-INFL-COMMON ;
+GENPOSS-ETC ;
+CASE ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 
 LEXICON N-COMMON
@@ -618,6 +621,19 @@ LEXICON IMP-PERS
 %<p3%>%<pl%>:%>س{U%}نل%{A%}ر # ;
 %<p3%>%<pl%>:%>س{U%}نن%{A%} # ;
 
+LEXICON V-GER
+%<gpr_rsub%>:%>%{y%}%{A%}ن  SUBST ; ! 
+%<gpr_rsub%>:%>%{y%}%{a%}ن  SUBST ; ! 
+%<gpr_rsub%>:%>ن%{A%}ن  SUBST ; !
+%<gpr_impf%>:%>%{y%}%{A%}ن  SUBST ; !
+%<gpr_past%>%<subst%>:%>%{D%}%{I%}غ  SUBST ; !
+%<gpr_past%>:%>%{D%}%{I%}غ  SUBST ; !
+%<gpr_past%>:%>%{D%}%{I%}ه  SUBST ; !
+%<gpr_when%>:%>%{y%}%{I%}نج%{A%}  SUBST ; !nead to be tested
+%<gna_when%>:%>%{I%}نج%{A%}  SUBST ; !nead to be tested
+%<gna_perf%>:%>%{y%}%{I%}%{P%}  SUBST ; !nead to be tested
+%<gna_aor%>:%>كن  SUBST ; !nead to be tested Ex:geçerken
+%<gna_neg%>:%>م%{A%}د%{A%}ن  SUBST ; !nead to be tested Ex:olmadan
 
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
@@ -644,6 +660,7 @@ V-AOR ;
 V-PROG ;
 V-IFI ;
 V-PAST ;
+V-GER ;
 V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
@@ -654,6 +671,7 @@ V-NEG ;
 V-AOR ;
 V-PROG ;
 V-IFI ;
+V-GER ;
 V-PAST ;
 V-FUT ;
 V-TENSE-ABIL ;	
@@ -1444,7 +1462,7 @@ LEXICON Verbs
 سيل:سيل V-TV ;
 ياديّدان%چاخرت:ياديّدان%چاخرت V-TV ;
 مَكله:مَكله V-IV ;
-أسير%دوش:أسير%دوش V-IV ;
+أسير% دوش:أسير% دوش V-IV ;
 رام%ات:رام%ات V-TV ;
 حساب%صور:حساب%صور V-IV ;
 حمد%ئت:حمد%ئت V-IV ;
@@ -1508,6 +1526,7 @@ LEXICON Verbs
 قاپ:قاپ V-TV ;
 اپار:اپار V-TV ;
 بيل:بيل V-TV ;
+بیت:بیت V-IV ;
 قابول%أت:قابول%أت V-TV ;
 كَشفت:كَشفت V-TV ;
 قير:قير V-TV ;
@@ -1557,7 +1576,11 @@ LEXICON Verbs
 يورول:يورول V-IV ;
 يُوم:يُوم V-TV ;
 گل:گل V-IV ;
-
+اخ:اخ V-IV ;
+یان:یان V-IV ;
+چال:چال V-TV ;
+دوش:دوش V-IV ;
+اول:اول V-IV ;
 
 
 
