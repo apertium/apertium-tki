@@ -178,7 +178,7 @@ Verbs ;
 
 
 LEXICON CASE
-%<nom%>:# ;
+%<nom%>: # ;
 %<gen%>:%>%{n%}%{I%}ن GENPOSS-ETC ;      !uşağ->uşağımın
 %<gen%>:%>%{n%}%{U%}ن GENPOSS-ETC ;      !kurt->kurtun      
 %<gen%>:%>%{y%}%{I%}ن GENPOSS-ETC ;      !baba->babayın !gözlüğ->gözlüğyün
@@ -200,10 +200,10 @@ LEXICON GENPOSS-ETC
 LEXICON POSSESSION
 
 CASE ;
-%<px1sg%>:%>%{I%}م CASE ; ! Dir/LR      !ad->adım, baba->babam, kiz->kizim
-%<px1sg%>:%>%{U%}م CASE ; ! Dir/LR      !konşu->konşum, gün->günüm, yol->yolum
-%<px2sg%>:%>%{I%}ي CASE ; ! Dir/LR      !iş->işiy, yazı->yazıy 
-%<px2sg%>:%>%{U%}ي CASE ; ! Dir/LR      !konuşu-> konşuy, yol->yoluy
+%<px1sg%>:%>%{I%}م CASE ;       !ad->adım, baba->babam, kiz->kizim, ana>anam
+%<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
+%<px2sg%>:%>%{I%}ي CASE ;       !iş->işiy, yazı->yazıy 
+%<px2sg%>:%>%{U%}ي CASE ;       !konuşu-> konşuy, yol->yoluy
 %<px3sp%>:%>%{s%}%{%I} CASE ;           !ad->adı, yuwa->yuwası 
 %<px3sp%>:%>%{s%}%{%U} CASE ;           !okul->okulu, suru->surusu
 %<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
@@ -1598,7 +1598,8 @@ LEXICON Nouns
 إفتار:إفتار N1 ;
 ساغما:ساغما N1 ;
 فاتمى% انا:فاتمى% انا N1 ;
-عمر:عمر N1 ; 
+عمر:عمر N1 ;
+آنا:آنا N1 ; 
 صدقات:صدقات N1 ;
 زاحمت:زاحمت N1 ;
 واعز:واعز N1 ;
@@ -1908,6 +1909,40 @@ LEXICON Verbs
 رددت:رددت V-TV ;
 رسمت:رسمت V-TV ;
 سال:سال V-TV ;
+سات:سات V-TV ;
+سای:سای V-TV ;
+سایلدی:سایلدی V-IV ;
+سچ:سچ V-TV ;
+سر:سر V-TV ;
+سرپ:سرپ V-TV ;
+سو:سو V-TV ;
+سيك:سيك V-TV ;
+سيخ:سيخ V-TV ;
+سيل:سيل V-TV ;
+سيلك:سيلك V-TV ;
+سوك:سوك V-TV ;
+سور:سور V-TV ;
+سوي:سوي V-IV ;
+سور:سور V-TV ;
+سوز:سوز V-TV ;
+تاك:تاك V-TV ;
+تارت:تارت V-TV ;
+ضاد:ضاد V-TV ;
+تمسيل% ات:تمسيل% ات V-TV ;
+تپ:تپ V-IV ;
+ترکت:ترکت V-TV ;
+تك:تك V-IV ;
+توكت:توكت V-TV ;
+توت:توت V-TV ;
+اونوت:اونوت V-TV ;
+اوت:اوت V-TV ;
+أوز:أوز V-IV ;
+ور:ور V-TV ;
+وىر:وىر V-TV ;
+يار:يار V-TV ;
+ياي:ياي V-TV ;
+ياز:ياز V-TV ;
+
 
 
 
