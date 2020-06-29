@@ -191,7 +191,8 @@ LEXICON CASE
 %<abl%>:%>ىن{A%}%{N%} GENPOSS-ETC ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{%D}%{A%}ىن GENPOSS-ETC ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
-LEXICON GENPOSS-ETC 
+LEXICON GENPOSS-ETC
+V-COP ; 
 # ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
 %<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"

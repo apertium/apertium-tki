@@ -45,8 +45,8 @@ HardVow = آو ى;
 
 Rules 
 
-"{I} become ى after a vowel"
-%{I%}:ى <=> :HardVow _ ;
+!"{I} become ى after a vowel"
+!%{I%}:ى <=> :HardVow _ ;
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
