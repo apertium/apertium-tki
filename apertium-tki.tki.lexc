@@ -178,7 +178,7 @@ Verbs ;
 
 
 LEXICON CASE
-%<nom%>: # ;
+%<nom%>: GENPOSS-ETC ;
 %<gen%>:%>%{n%}%{I%}ن GENPOSS-ETC ;      !uşağ->uşağımın
 %<gen%>:%>%{n%}%{U%}ن GENPOSS-ETC ;      !kurt->kurtun      
 %<gen%>:%>%{y%}%{I%}ن GENPOSS-ETC ;      !baba->babayın !gözlüğ->gözlüğyün
@@ -200,7 +200,7 @@ V-COP ;
 
 LEXICON POSSESSION
 
-CASE ;
+!CASE ;
 %<px1sg%>:%>%{I%}م CASE ;       !ad->adım, baba->babam, kiz->kizim, ana>anam
 %<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{I%}ي CASE ;       !iş->işiy, yazı->yazıy 
@@ -215,6 +215,7 @@ CASE ;
 !%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
+%<px3sg%>:%>ل%{A%}ر%{I%} CASE ; 
 
 
 LEXICON CLITICS
@@ -353,7 +354,7 @@ POSSESSION ;
 LEXICON SUBST
 # ;
 !N-INFL-COMMON ;
-GENPOSS-ETC ;
+!GENPOSS-ETC ;
 CASE ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 
@@ -1202,6 +1203,7 @@ LEXICON Nouns
 دیرناغ:دیرناغ N1 ;
 دیرناغ% بیاغی:دئرناغ% بیاغی N1 ;
 جده:جده N1 ;
+گوناح:گوناح N1 ;
 سوقاق:سوقاق N1 ;
 مه‌حله:مه‌حله N1 ;
 دكان:دكان N1 ;
@@ -1648,6 +1650,7 @@ LEXICON Nouns
 فتر:فتر N1 ;
 ديولوك:ديولوك N1 ;
 رزيليغ:رزيليغ N1 ;
+يار:يار N1 ;
 
 
 
@@ -1994,6 +1997,37 @@ LEXICON Verbs
 أمرت:أمرت V-IV ;
 گتیر:گتیر V-TV ;
 أس:أس V-IV ;
+جوتلی:جوتلی V-TV ;
+أز:أز V-TV ;
+گوم:گوم V-TV ;
+گوندر:گوندر V-TV ;
+گور:گور V-TV ;
+گوستر:گوستر V-TV ;
+گوون:گوون V-IV ;
+خبرلش:خبرلش V-IV ;
+حالت:حالت V-TV ;
+حبست:حبست V-TV ;
+قینت:قینت V-TV ;
+هازمت:هازمت V-TV ;
+حیست:حیست V-TV ;
+حوکمت:حوکمت V-IV ;
+إعادى% أت:إعادى% أت V-TV ;
+إچ:إچ V-TV ;
+أن:أن V-IV ;
+إنجیت:إنجیت V-TV ;
+دیشلی:دیشلی V-TV ;
+إیشت:إیشت V-TV ;
+إیت:إیت V-TV ;
+إعتراف% ات:إعتراف% ات V-TV ;
+قاخ:قاخ V-IV ;
+قاپ:قاپ V-TV ;
+قاتلت:قاتلت V-TV ;
+قاور:قاور V-TV ;
+قاز:قاز V-TV ;
+قاور:قاور V-TV ;
+قایر:قایر V-TV ;
+قازان:قازان V-TV ;
+ 
 
 
 
