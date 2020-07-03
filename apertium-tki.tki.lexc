@@ -659,6 +659,11 @@ LEXICON V-COND
 LEXICON V-NEG
 %<neg%>:م%{A%} V-NEG-COMMON ;
 
+LEXICON V-DERIV
+V-COMMON ;
+V-NEG-COMMON ;
+
+
 LEXICON V-NEG-COMMON
 V-AOR ;
 V-PROG ;
@@ -669,6 +674,7 @@ V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
 V-COND ;
+
 
 LEXICON V-COMMON
 V-NEG ;
@@ -685,11 +691,12 @@ V-COND ;
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
 %<v%>%<iv%>: V-NEG-COMMON ;
+%<v%>%<iv%>%<pass%>: V-DERIV  ;
 
 LEXICON V-TV 
-
 %<v%>%<tv%>: V-COMMON ;
 %<v%>%<tv%>: V-NEG-COMMON ;
+%<v%>%<tv%>%<pass%>:%>%{i%}ل V-DERIV ;
 
 
 
@@ -2027,6 +2034,8 @@ LEXICON Verbs
 قاور:قاور V-TV ;
 قایر:قایر V-TV ;
 قازان:قازان V-TV ;
+چالن:چالن V-IV ;
+کوالا:کوالا V-TV ;
  
 
 

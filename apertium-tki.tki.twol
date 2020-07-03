@@ -10,6 +10,7 @@ Alphabet
 %{A%}:ا ! it could be {إ, آ, أ}
 %{E%}:إ
 %{D%}:د
+%{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0
 %{I%}:ى !it could be {إ,و,ى,ي}
