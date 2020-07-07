@@ -174,8 +174,11 @@ ProperNouns ;
 Pronouns ;
 Verbs ;
 Punctuation ;
+Abbreviations ;
 
+LEXICON ABBR
 
+%<abbr%>: # ;
 
 LEXICON CASE
 %<nom%>: GENPOSS-ETC ;
@@ -2148,6 +2151,22 @@ LEXICON Verbs
 زینجیرلی:زینجیرلی V-TV ;
 زورلی:زورلی V-TV ;
 اخسی:اخسی V-IV ;
+LEXICON Abbreviations
+کم:کم ABBR ;
+سم:سم ABBR ;
+م:م ABBR ;
+کغم:کغم ABBR ;
+غرام:غرام ABBR ;
+قم:قم ABBR ;
+بم:بم ABBR ;
+د:د ABBR ;
+م:م ABBR ;
+ا:ا ABBR ;
+
+
+
+
+
 
 LEXICON Punctuation
 
