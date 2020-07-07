@@ -1,5 +1,6 @@
 ! Morphological Transducer for Turkmen of Iraq
-!Bayat ağzında soru eki +mI/+mU herhangi bir şekilde bulunmaktadır
+! Bayat ağzında soru eki +mI/+mU herhangi bir şekilde bulunmaktadır
+
 Multichar_Symbols
 
 ! Part of speech categories
@@ -150,8 +151,6 @@ Multichar_Symbols
 %{r%}                 ! realised as  or ل or null
 
 
-
-
 ! Other symbols
 %>      ! Morpheme boundary
 
@@ -174,6 +173,7 @@ Adjectives ;
 ProperNouns ;
 Pronouns ;
 Verbs ;
+Punctuation ;
 
 
 
@@ -1163,7 +1163,8 @@ house:house RegNounInfl ; ! A noun
 LEXICON Nouns
 آلله:آلله N1 ;
 إيو:إيو N1 ;
-چوپان:چوپان N1 ; 
+چوپان:چوپان N1 ;
+تورکمانجا:تورکمانجا N1 ; 
 حاكت:حاكت N1 ;
 مكتب:مكتب N1 ;
 خستاخانا:خستاخانا N1 ; 
@@ -1355,6 +1356,7 @@ LEXICON Nouns
 كاتيب:كاتيب N1 ;
 براءت:براءت N1 ;
 سس:سس N1 ;
+تركمانجى:تركمانجى N1 ;
 سلام:سلام N1 ;
 قانات:قانات N1 ;
 موفاجئه:موفاجئه N1 ;
@@ -2146,6 +2148,35 @@ LEXICON Verbs
 زینجیرلی:زینجیرلی V-TV ;
 زورلی:زورلی V-TV ;
 اخسی:اخسی V-IV ;
+
+LEXICON Punctuation
+
+%۰%<sent%>:%۰ # ;
+%۰%۰%<sent%>:%۰%۰ # ;
+%.%.%.%<sent%>:%.%.%. # ;
+…%<sent%>:… # ;
+%؛%<sent%>:%؛ # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%ـ%<guio%>:%ـ # ;
+%–%<guio%>:%– # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%؟%<sent%>:%؟ # ;
+%ُ%<apos%>:%ُ  # ;
+%ٌ%<apos%>:%ٌُ  # ;
+%،%<apos%>:%، # ;
+%"%<quot%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
 
 
 
