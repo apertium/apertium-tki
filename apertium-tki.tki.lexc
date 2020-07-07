@@ -1017,43 +1017,42 @@ LEXICON Determiners
 بو:بو DET-DEM ;
 اوْ:اوْ DET-DEM ;
 بيرچوخ:بيرچوخ DET-QNT ; 
-إشته%بو:إشته%بو DET-DEM ;
+إشته% بو:إشته% بو DET-DEM ;
 إشته:إشته DET-DEM ;
 حبسي:حبسي DET-QNT ;
 هپ:هپ DET-QNT ;
 بوتون:بوتون DET-QNT ;
 قاچ:قاچ DET-QNT ;
-هر%بير:هر%بير DET-QNT ;
+هر% بير:هر% بير DET-QNT ;
 بير:بير DET-IND ;
 باشقا:باشقا DET-IND ;
 بيرقاچ:بيرقاچ DET-IND ;
-بلَه:بلَه DET-IND ;
-بيراَز:بيراَز DET-QNT ;
+بله:بله DET-IND ;
+بیراز:بیراز DET-QNT ;
 نچچا:نچچا DET-QNT ;
-هيچ%بير:هيچ%بير DET-NEG ;
-بير%تاخم:بير%تاخم DET-QNT ;
+هيچ% بير:هيچ% بير DET-NEG ;
+بير% تاخم:بير% تاخم DET-QNT ;
 بيرچوخ:بيرچوخ DET-QNT ;
-بير%ميقدار:بير%ميقدار DET-QNT ; 
-بَعزي:بَعزي DET-QNT ;
-بعزى:بعزى DET-QNT ;
+بير% ميقدار:بير% ميقدار DET-QNT ; 
+بعزی:بعزی DET-QNT ;
 كيمي:كيمي DET-QNT ;
-بير%قسيم:بير%قسيم DET-QNT ;
-بو%قدَر:بو%قدَر DET-QNT ;
-او%قدر:او%قدر DET-QNT ;
-نه%قدَر:نه%قدَر DET-QNT ;
+بير% قسيم:بير% قسيم DET-QNT ;
+بو% قدر:بو% قدر DET-QNT ;
+او% قدر:او% قدر DET-QNT ;
+نه% قدر:نه% قدر DET-QNT ;
 چوخ:چوخ DET-QNT ;
 چوخو:چوخو DET-QNT ;
 توم:توم DET-QNT ;
-عيّني:عيّني DET-QNT ;
+عینی:عینی DET-QNT ;
 اوبير:اوبير DET-DEM ;
-تَك:تَك DET-IND ;
+تك:تك DET-IND ;
 ناخسى:ناخسى DET-ITG ;
 هاسى:هاسى DET-ITG ; !which
-ناخسى%بير:ناخسى%بير DET-IND ;
+ناخسى% بير:ناخسى% بير DET-IND ;
 اوزو:اوزو DET-REF ;
 هرشيكلدن:هرشيكلدن DET-QNT ;
-ئوندان:ئوندان DET-QNT ;
-هَر:هَر DET-DEM ; ! each
+اوندان:اوندان DET-QNT ;
+هر:هر DET-DEM ; ! each
 
 
 
