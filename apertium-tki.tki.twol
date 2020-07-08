@@ -13,10 +13,10 @@ Alphabet
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0
-%{I%}:ى !it could be {إ,و,ى,ي}
+%{I%}:ی !it could be {إ,و,ى,ي}
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
-%{s%}:0 %{s%}:س
+%{s%}:س %{s%}:0
 %{n%}:0 %{n%}:n
 %{a%}:0
 %{e%}:0
@@ -46,8 +46,8 @@ HardVow = آو ى;
 
 Rules 
 
-" elif become ى at end of word"
-ا:ی <=> : _.#.;
+!" elif become ى at end of word"
+!ا:ی <=> : _.#.;
 
 "Consonant alternation in passive"
 %{L%}:ن <=>  [ :Vow | :0* ]  %>: %{i%}: _ ; 
