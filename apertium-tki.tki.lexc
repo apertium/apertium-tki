@@ -1611,11 +1611,11 @@ LEXICON Adverbs
 
 LEXICON Determiners
 بو:بو DET-DEM ;
-اوْ:اوْ DET-DEM ;
-بيرچوخ:بيرچوخ DET-QNT ; 
+او:او DET-DEM ;
+بير% چوخ:بير% چوخ DET-QNT ; 
 إشته% بو:إشته% بو DET-DEM ;
 إشته:إشته DET-DEM ;
-حبسي:حبسي DET-QNT ;
+حبسی:حبسی DET-QNT ;
 هپ:هپ DET-QNT ;
 بوتون:بوتون DET-QNT ;
 قاچ:قاچ DET-QNT ;
@@ -1628,7 +1628,7 @@ LEXICON Determiners
 نچچا:نچچا DET-QNT ;
 هيچ% بير:هيچ% بير DET-NEG ;
 بير% تاخم:بير% تاخم DET-QNT ;
-بيرچوخ:بيرچوخ DET-QNT ;
+
 بير% ميقدار:بير% ميقدار DET-QNT ; 
 بعزی:بعزی DET-QNT ;
 كيمي:كيمي DET-QNT ;
@@ -1640,13 +1640,13 @@ LEXICON Determiners
 چوخو:چوخو DET-QNT ;
 توم:توم DET-QNT ;
 عینی:عینی DET-QNT ;
-اوبير:اوبير DET-DEM ;
+او% بير:او% بير DET-DEM ;
 تك:تك DET-IND ;
 ناخسى:ناخسى DET-ITG ;
 هاسى:هاسى DET-ITG ; !which
-ناخسى% بير:ناخسى% بير DET-IND ;
+ناخسى% بيری:ناخسى% بيری DET-IND ;
 اوزو:اوزو DET-REF ;
-هرشيكلدن:هرشيكلدن DET-QNT ;
+هر% شيكلدن:هر% شيكلدن DET-QNT ;
 اوندان:اوندان DET-QNT ;
 هر:هر DET-DEM ; ! each
 
