@@ -332,7 +332,7 @@ LEXICON V-COP-PERS
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر  # ;
 %<p1%>%<pl%>:%>%{y%}%{I%}ز  # ;
 %<p2%>%<pl%>:%>s%{I%}n%{I%}ز  # ;
-%<p3%>%<pl%>:%>l%{A%}ر  # ;
+%<p3%>%<pl%>:%>l%{A%}ر # ;
 
 LEXICON COPULA-P3-PERS
 
@@ -386,11 +386,11 @@ LEXICON NP-COG-MF
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>%<nom%>: NP-COMMON ;
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>%<nom%>: NP-COMMON ;
 
 LEXICON NP-TOP
 
@@ -735,12 +735,12 @@ LEXICON PRON-ITG
 كيم:كيم PRON-ITG-INFL ;
 كيم% كيمه:كيم% كيمه PRON-ITG-INFL ;
 نه:نه PRON-ITG-INFL ;
-نىيي:نىيي PRON-ITG-INFL ;
+نيي:نيي PRON-ITG-INFL ;
 نيچن:نيچن PRON-ITG-INFL ;
 هاسى:هاسى PRON-ITG-INFL ;
 ناخسى:ناخسى PRON-ITG-INFL ;
-نأدي:نأدي PRON-ITG-INFL ;
-هاراى:هاراى PRON-ITG-INFL ;
+نادی:نادی PRON-ITG-INFL ;
+هاردا:هاردا PRON-ITG-INFL ;
 نانجا:نانجا PRON-ITG-INFL ;
 هانى:هانى PRON-ITG-INFL ;
 هرا:هرا PRON-ITG-INFL ;
@@ -792,8 +792,11 @@ LEXICON Adjectives
 اورتا% حالی:اورتا% حالی A1 ;
 يارم:يارم A1 ;
 إسلامی:إسلامی A1 ;
+کیفلی:کیفلی A2 ;
+کوچوك:کوچوك A2 ;
 بیرنجی:بیرنجی A1 ;
 إكينجى:إكينجى A1 ;
+ساوغ:ساوغ A1 ;
 تكشر:تكشر A1 ;
 إكشر:إكشر A1 ;
 دوردر:دوردر A1 ;
@@ -1106,6 +1109,7 @@ LEXICON Adjectives
 سجاق% قانلی:سجاق% قانلی A1 ;
 مراقلی:مراقلی A1 ;
 یاغلی:یاغلی A1 ;
+سجاغ:سجاغ A1 ;
 کارشلغلی:کارشلغلی A4 ;
 مانتقلی:مانتقلی A1 ;
 رنکلی:رنکلی A1 ;
@@ -1297,12 +1301,15 @@ LEXICON Adjectives
 
 LEXICON Adverbs
 نيجا:نيجا ADV-ITG ;
+هاردا:هاردا ADV-ITG ;
 يلارجە:يلارجە ADV1 ; !
 أيلارجه:أيلارجه ADV1 ; !
 گونلارجه:گونلارجه ADV1 ; !
 بوگون:بوگون ADV1 ;
 پەك:پەك ADV1 ; ! clean
 نھايت:نھايت ADV1 ;
+أندی:أندی ADV1 ;
+إيجه:إيجه ADV3 ;
 دونن:دونن ADV1  ;  
 دأم:دأم ADV1 ;
 أن:أن ADV1 ;
@@ -1696,6 +1703,7 @@ LEXICON Conjunctions
 بەلكى:بەلكى CC ; ! 
 إيچينده:إيچينده CC ;
 أگر:أگر CC ;
+أما:أما CC ;
 دا:دا CC ;
 همده:همده CC ;
 يعني:يعني CC ;
@@ -1778,10 +1786,17 @@ house:house RegNounInfl ; ! A noun
 LEXICON Nouns
 آلله:آلله N1 ;
 إيو:إيو N1 ;
+ساوغ:ساوغ N1 ;
+أحمد:أحمد N1 ;
 چوپان:چوپان N1 ;
+یاش:یاش N1 ;
+وار:وار N1 ;
+کوپك:کوپك N1 ;
+سجاغ:سجاغ N1 ;
 تورکمانجه:تورکمانجه N1 ; 
 حاكت:حاكت N1 ;
 مكتب:مكتب N1 ;
+باخچا:باخچا N1 ;
 خستاخانه:خستاخانه N1 ; 
 گول:گول  N1 ;
 أفندي:أفندي N1 ;
@@ -2100,6 +2115,7 @@ LEXICON Nouns
 إشارت:إشارت N1 ;
 مسوليت:مسوليت N1 ;
 ریازی:ریازی N1 ;
+یازی:یازی N1 ;
 نوروز:نوروز N1 ;
 سکرترلیك:سکرترلیك N1 ;
 تکمی:تکمی N1 ;
@@ -2292,6 +2308,8 @@ LEXICON Nouns
 LEXICON ProperNouns 
 پوتين:پوتين NP-COG-MF ;
 أزل:أزل NP-ANT-M ;
+أحمد:أحمد NP-ANT-M ;
+نورسن:نورسن NP-ANT-F ;
 سيولاي:سيولاي NP-ANT-F ;
 توركيا:توركيا NP-TOP ;
 سامسونك:سامسونك NP-ORG ;
@@ -2326,6 +2344,7 @@ LEXICON Verbs
 ياز:ياز V-TV ;
 مشغول% اول:مشغول% اول V-IV ;
 يات:يات V-IV ;
+اوینا:اوینا V-TV ;
 قاخ:قاخ V-IV ;
 اوتو:اوتو V-IV ;
 گيت:گيت V-IV ;
