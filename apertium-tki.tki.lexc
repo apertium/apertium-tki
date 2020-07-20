@@ -175,6 +175,7 @@ Pronouns ;
 Verbs ;
 Punctuation ;
 Abbreviations ;
+Interjections ;
 
 LEXICON ABBR
 
@@ -526,7 +527,9 @@ LEXICON V-FUT-PERS
 %<p2%>%<pl%>:%>سز # ; 
 %<p3%>%<pl%>:%>ل%{A%}ر # ;
 
+LEXICON INTERJ
 
+%<ij%>: # ;
 LEXICON V-PAST-PERS
 
 %<p1%>%<sg%>:%>م # ;!CLITICS ; 
@@ -746,6 +749,9 @@ LEXICON PRON-ITG
 هرا:هرا PRON-ITG-INFL ;
 نيى:نيى PRON-ITG-INFL ;
 
+LEXICON Interjections
+یو:یو INTERJ ;
+
 
 
 LEXICON Pronouns 
@@ -791,6 +797,7 @@ LEXICON Adjectives
 اوخومش:اوخومش A1 ;
 اورتا% حالی:اورتا% حالی A1 ;
 يارم:يارم A1 ;
+بربر:بربر A1 ;
 إسلامی:إسلامی A1 ;
 کیفلی:کیفلی A2 ;
 کوچوك:کوچوك A2 ;
@@ -1306,10 +1313,12 @@ LEXICON Adverbs
 أيلارجه:أيلارجه ADV1 ; !
 گونلارجه:گونلارجه ADV1 ; !
 بوگون:بوگون ADV1 ;
+بربر:بربر ADV3 ;
 پەك:پەك ADV1 ; ! clean
 نھايت:نھايت ADV1 ;
 أندی:أندی ADV1 ;
 إيجه:إيجه ADV3 ;
+بربر:بربر ADV3 ;
 دونن:دونن ADV1  ;  
 دأم:دأم ADV1 ;
 أن:أن ADV1 ;
@@ -1786,8 +1795,10 @@ house:house RegNounInfl ; ! A noun
 LEXICON Nouns
 آلله:آلله N1 ;
 إيو:إيو N1 ;
+پیسیگ:پیسیگ N1 ;
 ساوغ:ساوغ N1 ;
 أحمد:أحمد N1 ;
+یو:یوخ N1 ;
 چوپان:چوپان N1 ;
 یاش:یاش N1 ;
 وار:وار N1 ;
