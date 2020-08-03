@@ -183,20 +183,20 @@ LEXICON ABBR
 
 LEXICON CASE
 # ;
-%<nom%>: GENPOSS-ETC ;
-%<gen%>:%>%{n%}%{I%}ن GENPOSS-ETC ;      !uşağ->uşağımın
-%<gen%>:%>%{n%}%{U%}ن GENPOSS-ETC ;      !kurt->kurtun      
-%<gen%>:%>%{y%}%{I%}ن GENPOSS-ETC ;      !baba->babayın !gözlüğ->gözlüğyün
-%<acc%>:%>%{n%}%{I%} GENPOSS-ETC ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
-%<acc%>:%>%{n%}%{U%} GENPOSS-ETC ;        !kurt->kurtu, karğa->karğanı tututtums   
-%<dat%>:%>%{y%}%{A%} GENPOSS-ETC ;        !baş->başa, göz->gözye, üz->üzye  
-%<loc%>:%>%{D%}%{A%} GENPOSS-ETC ;        !kiş->kişte, dam-damda
-%<loc%>:%>%{D%}%{A%}كى GENPOSS-ETC ;   
-%<abl%>:%>%{D%}%{A%}ن GENPOSS-ETC ;      !dam->damdan, dar->dardan
-%<abl%>:%>ىن{A%}%{N%} GENPOSS-ETC ;      !nerdewan->nerdewnan, yalan->yalanan
-%<ins%>:%>%{y%}%{%D}%{A%}ىن GENPOSS-ETC ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+%<nom%>: GENPOSS-GENERAL ;
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın
+%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
+%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
+%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
+%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
+%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
+%<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
+!%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
+%<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
+%<abl%>:%>ىن{A%}%{N%} GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
+%<ins%>:%>%{y%}%{%D}%{A%}ىن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
-LEXICON GENPOSS-ETC
+LEXICON GENPOSS-GENERAL
 V-COP ; 
 # ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
@@ -204,7 +204,7 @@ V-COP ;
   
 
 LEXICON POSSESSION
-!CASE ;
+CASE ;
 %<px1sg%>:%>%{I%}م CASE ;       !ad->adım, baba->babam, kiz->kizim, ana>anam
 %<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{I%}ي CASE ;       !iş->işiy, yazı->yazıy 
@@ -349,7 +349,8 @@ LEXICON V-COP
 %+i%<cop%>%<dub%>%<aor%>:i%>م%{I%}ش V-COP-PERS ;
 # ;
 
-
+LEXICON GENPOSS-ETC
+%<loc%>%<subst%>:%>%{D%}%{A%}کی CASE ;
 
 LEXICON NP-COMMON
 
@@ -358,7 +359,7 @@ POSSESSION ;
 LEXICON SUBST
 # ;
 !N-INFL-COMMON ;
-!GENPOSS-ETC ;
+GENPOSS-ETC ;
 CASE ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 
@@ -1838,7 +1839,7 @@ LEXICON Nouns
 مه‌یز:مه‌یز N1 ;
 أسكى:أسكى N1 ;
 ساوغ:ساوغ N1 ;
-أحمد:أحمد N1 ;
+
 اویون:اویون N1 ;
 أتراف:أتراف N1 ;
 بویوك:بویوك N1 ;
