@@ -182,39 +182,42 @@ LEXICON ABBR
 %<abbr%>: # ;
 
 LEXICON CASE
-# ;
+!# ;
 %<nom%>: GENPOSS-GENERAL ;
-%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın
-%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
+!%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın
+!%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 %<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
-%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
+!%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
 %<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
-%<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
+%<loc%>:%>%{n%}%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
 !%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
-%<abl%>:%>ىن{A%}%{N%} GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
-%<ins%>:%>%{y%}%{%D}%{A%}ىن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+%<abl%>:%>ن%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
+%<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
 LEXICON GENPOSS-GENERAL
 V-COP ; 
 # ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
 %<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
+%<attr%>:%>كى # ;
   
 
 LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%>%{I%}م CASE ;       !ad->adım, baba->babam, kiz->kizim, ana>anam
-%<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
+!%<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{I%}ي CASE ;       !iş->işiy, yazı->yazıy 
-%<px2sg%>:%>%{U%}ي CASE ;       !konuşu-> konşuy, yol->yoluy
-%<px3sp%>:%>%{s%}%{%I} CASE ;           !ad->adı, yuwa->yuwası 
-%<px3sp%>:%>%{s%}%{%U} CASE ;           !okul->okulu, suru->surusu
+!%<px2sg%>:%>%{I%}ن CASE ;      !iş->işiy, yazı->yazıy
+!%<px2sg%>:%>%{U%}ي CASE ;       !konuşu-> konşuy, yol->yoluy
+!%<px2sg%>:%>%{U%}ن CASE ;       !konuşu-> konşuy, yol->yoluy
+%<px3sp%>:%>%{s%}%{I%} CASE ;           !ad->adı, yuwa->yuwası 
+!%<px3sp%>:%>%{s%}%{U%} CASE ;           !okul->okulu, suru->surusu
 %<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
-%<px1pl%>:%>%{U%}م%{U%}ز CASE ;         !ruh->ruhumuz, göz-gözümüz
+!%<px1pl%>:%>%{U%}م%{U%}ز CASE ;         !ruh->ruhumuz, göz-gözümüz
 %<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız 
-%<px2pl%>:%>%{U%}ي%{U%}ز CASE ; !       !top->topyuz, göz->gözyüz
+!%<px2pl%>:%>%{U%}ي%{U%}ز CASE ; !       !top->topyuz, göz->gözyüz
 !%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
 !%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
@@ -388,7 +391,7 @@ LEXICON NP-COG-MF
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>%<nom%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>: NP-COMMON ;
 
 LEXICON NP-ANT-F
 
@@ -589,6 +592,7 @@ LEXICON V-AOR
 
 LEXICON V-PROG
 %<prog%>:%>%{y%}%{I%}ر V-PROG-PERS ;
+%<prog%>:%>%{y%}%{I%}ر V-COP ;
 %<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
 %<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
 %<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
@@ -1691,6 +1695,7 @@ LEXICON Determiners
 هر% شيكلدن:هر% شيكلدن DET-QNT ;
 اوندان:اوندان DET-QNT ;
 هر:هر DET-DEM ; ! each
+بير:بير DET-IND ;
 
 
 
@@ -1824,6 +1829,7 @@ LEXICON Nouns
 آلله:آلله N1 ;
 إيو:إيو N1 ;
 شی:شی N1 ;
+أوگ:أوگ N1 ;
 یوکسك:یوکسك N1 ;
 إختیار:إختیار N1 ;
 أترأف:أترأف N1 ;
@@ -1848,7 +1854,7 @@ LEXICON Nouns
 چوپان:چوپان N1 ;
 یاش:یاش N1 ;
 وار:وار N1 ;
-کوپك:کوپك N1 ;
+کوپگ:کوپگ N1 ;
 اغاج:اغاج N1 ;
 سجاغ:سجاغ N1 ;
 تورکمانجه:تورکمانجه N1 ; 
