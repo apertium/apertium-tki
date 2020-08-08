@@ -184,9 +184,9 @@ LEXICON ABBR
 LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
-!%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın
+%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
-%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
+!%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
 %<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
@@ -206,20 +206,11 @@ V-COP ;
 
 LEXICON POSSESSION
 CASE ;
-%<px1sg%>:%>%{I%}م CASE ;       !ad->adım, baba->babam, kiz->kizim, ana>anam
-!%<px1sg%>:%>%{U%}م CASE ;       !konşu->konşum, gün->günüm, yol->yolum
-%<px2sg%>:%>%{I%}ي CASE ;       !iş->işiy, yazı->yazıy 
-!%<px2sg%>:%>%{I%}ن CASE ;      !iş->işiy, yazı->yazıy
-!%<px2sg%>:%>%{U%}ي CASE ;       !konuşu-> konşuy, yol->yoluy
-!%<px2sg%>:%>%{U%}ن CASE ;       !konuşu-> konşuy, yol->yoluy
-%<px3sp%>:%>%{s%}%{I%} CASE ;           !ad->adı, yuwa->yuwası 
-!%<px3sp%>:%>%{s%}%{U%} CASE ;           !okul->okulu, suru->surusu
-%<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız
-!%<px1pl%>:%>%{U%}م%{U%}ز CASE ;         !ruh->ruhumuz, göz-gözümüz
-%<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız 
-!%<px2pl%>:%>%{U%}ي%{U%}ز CASE ; !       !top->topyuz, göz->gözyüz
-!%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
-!%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
+%<px1sg%>:%>%{I%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
+%<px2sg%>:%>%{I%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
+%<px3sp%>:%>%{s%}%{I%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
+%<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
+%<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
 %<px3sg%>:%>ل%{A%}ر%{I%} CASE ; 
@@ -336,7 +327,7 @@ LEXICON V-COP-PERS
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر  # ;
 %<p1%>%<pl%>:%>%{y%}%{I%}ز  # ;
 %<p2%>%<pl%>:%>s%{I%}n%{I%}ز  # ;
-%<p3%>%<pl%>:%>l%{A%}ر # ;
+%<p3%>%<pl%>:%>ل%{A%}ر # ;
 
 LEXICON COPULA-P3-PERS
 
@@ -351,6 +342,12 @@ LEXICON V-COP
 %+i%<cop%>%<aor%>: COPULA-P3-PERS ;
 %+i%<cop%>%<dub%>%<aor%>:i%>م%{I%}ش V-COP-PERS ;
 # ;
+
+LEXICON V-COP-COMMON 
+%+i%<cop%>:%>%{y%} V-COP-IFI ;
+%+i%<cop%>%<aor%>: V-COP-PERS ;
+%+i%<cop%>%<aor%>: COPULA-P3-PERS ;
+%+i%<cop%>%<dub%>%<aor%>:i%>م%{I%}ش V-COP-PERS ;
 
 LEXICON GENPOSS-ETC
 %<loc%>%<subst%>:%>%{D%}%{A%}کی CASE ;
@@ -395,7 +392,7 @@ LEXICON NP-ANT-M
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>%<nom%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>: NP-COMMON ;
 
 LEXICON NP-TOP
 
@@ -524,7 +521,7 @@ LEXICON PRON-NEG
 %<prn%>%<neg%>: CASE ;
 
 LEXICON ADV-ITG
-%<adv%>%<itg%>: V-COP # ; 
+%<adv%>%<itg%>: V-COP ; 
 %<adv%>%<itg%>: # ;!SUBST ;
 
 LEXICON V-FUT-PERS
@@ -564,7 +561,7 @@ LEXICON V-PROG-PERS
 %<p3%>%<sg%>:ى # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
-%<p3%>%<pl%>:ل%{A%} # ;
+%<p3%>%<pl%>:ل%{A%}ر # ;
 
 LEXICON V-AOR-PERS
 %<p1%>%<sg%>:م # ;
@@ -585,15 +582,15 @@ LEXICON V-AOR
 %<aor%>:%>%{U%}ل V-AOR-PERS ;
 %<aor%>:%>%{A%}ل V-AOR-PERS ;
 %<aor%>:%>ر V-AOR-PERS ;
-%<aor%>:%>ل V-AOR-PERS ;
+%<aor%>: V-AOR-PERS ;
 %<aor%>:%>ا V-AOR-PERS ;
 %<neg%>%<aor%>:%>م%{A%} V-COP-PERS ; 
-%<neg%>%<aor%>:%>م%{A%}ز V-COP-PERS ;
+%<neg%>%<aor%>:%>م%{A%}ز V-COP-COMMON ;
 
 LEXICON V-PROG
 %<prog%>:%>%{y%}%{I%}ر V-PROG-PERS ;
 %<prog%>:%>%{y%}%{I%}ر V-COP ;
-%<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
+!%<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
 %<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
 %<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<prog%>:%>%{y%}ر V-PROG-PERS ;
@@ -636,12 +633,15 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{y%}%{I%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{U%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{A%} V-ABIL-PERS ;
+%<abil%>:%>%{y%}%{A%} V-AOR ;
 %<abil%>:%>س%{A%}ن V-ABIL-PERS ;      
 %<abil%>:%>س%{U%}ن V-ABIL-PERS ;
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{A%}بیل V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}بیلم V-ABIL-PERS ;
+%<abil%>%<neg%>:%>%{y%}%{A%}م V-PROG ;
+
 
 
 
@@ -663,18 +663,19 @@ LEXICON IMP-PERS
 %<p3%>%<pl%>:%>س{U%}نن%{A%} # ;
 
 LEXICON V-GER
-%<gpr_rsub%>:%>%{y%}%{A%}ن  SUBST ; ! 
-%<gpr_rsub%>:%>%{y%}%{a%}ن  SUBST ; ! 
-%<gpr_rsub%>:%>ن%{A%}ن  SUBST ; !
-%<gpr_impf%>:%>%{y%}%{A%}ن  SUBST ; !
-%<gpr_past%>%<subst%>:%>%{D%}%{I%}غ  SUBST ; !
-%<gpr_past%>:%>%{D%}%{I%}غ  SUBST ; !
-%<gpr_past%>:%>%{D%}%{I%}ه  SUBST ; !
-%<gpr_when%>:%>%{y%}%{I%}نج%{A%}  SUBST ; !nead to be tested
-%<gna_when%>:%>%{I%}نج%{A%}  SUBST ; !nead to be tested
-%<gna_perf%>:%>%{y%}%{I%}%{P%}  SUBST ; !nead to be tested
-%<gna_aor%>:%>كن  SUBST ; !nead to be tested Ex:geçerken
-%<gna_neg%>:%>م%{A%}د%{A%}ن  SUBST ; !nead to be tested Ex:olmadan
+%<gpr_rsub%>:%>%{y%}%{A%}ن SUBST ; ! 
+%<gpr_rsub%>:%>%{y%}%{a%}ن SUBST ; ! 
+%<gpr_rsub%>:%>ن%{A%}ن SUBST ; !
+%<gpr_impf%>:%>%{y%}%{A%}ن SUBST ; !
+%<gpr_past%>%<subst%>:%>%{D%}%{I%}غ SUBST ; !
+%<gpr_past%>:%>%{D%}%{I%}غ SUBST ; !
+%<gpr_past%>:%>%{D%}%{I%}ه SUBST ; !
+%<gpr_when%>:%>%{y%}%{I%}نج%{A%} SUBST ; !nead to be tested
+%<gna_when%>:%>%{I%}نج%{A%} SUBST ; !nead to be tested
+%<gna_perf%>:%>%{y%}%{I%}%{P%} SUBST ; !nead to be tested
+%<gna_aor%>:%>كن SUBST ; !nead to be tested Ex:geçerken
+%<gna_neg%>:%>م%{A%}د%{A%}ن SUBST ; !nead to be tested Ex:olmadan
+%<ger_past%>:%>%{D%}%{I%}غ NP-COMMON ;
 
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
@@ -695,6 +696,7 @@ LEXICON V-COND
 
 LEXICON V-NEG
 %<neg%>:م%{A%} V-NEG-COMMON ;
+
 
 LEXICON V-DERIV
 V-COMMON ;
@@ -806,6 +808,7 @@ LEXICON Adjectives
 باغرساغ:باغرساغ A1 ;
 بویوك:بویوك A1 ;
 إختیار:إختیار A1 ;
+تابی:تابی A1 ;
 إیی:إیی A1 ;
 ارخا:ارخا A1 ;
 یوکسك:یوکسك A1 ;
@@ -1740,6 +1743,7 @@ LEXICON Conjunctions
 ھەم:ھەم CC ; ! "and"
 يآدا:يآدا CC ; ! or
 أەما:أەما  CC ; ! but
+تابی% کی:تابی% کی CA ;
 بەلكى:بەلكى CC ; ! 
 إيچينده:إيچينده CC ;
 أگر:أگر CC ;
