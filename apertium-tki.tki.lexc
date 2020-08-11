@@ -190,7 +190,7 @@ LEXICON CASE
 %<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
 %<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
-%<loc%>:%>%{n%}%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
+%<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
 !%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
 %<abl%>:%>ن%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
@@ -208,7 +208,7 @@ LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%>%{I%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{I%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
-%<px3sp%>:%>%{s%}%{I%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
 %<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
 %<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
@@ -1838,12 +1838,14 @@ LEXICON Nouns
 إختیار:إختیار N1 ;
 أترأف:أترأف N1 ;
 زمان:زمان N1 ;
+باش:باش N1 ;
 پنجره:پنجره N1 ;
 سوال:سوال N1 ;
 إیی:إیی N1 ;
 پیسیگ:پیسیگ N1 ;
 حیوان:حیوان N1 ;
 أل:أل N1 ;
+یوا:یوا N1 ;
 إیسکمبیل:إیسکمبیل N1 ;
 جواب:جواب N1 ;
 مه‌یز:مه‌یز N1 ;
@@ -2320,6 +2322,7 @@ LEXICON Nouns
 فالجلك:فالجلك N1 ;
 يلانجلك:يلانجلك N1 ;
 قحر:قحر N1 ;
+بابا:بابا N1 ;
 آدم% بابا:آدم% بابا N1 ;
 مسيحى:مسيحى N1 ;
 بابلى:بابلى N1 ;

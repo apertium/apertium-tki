@@ -13,12 +13,13 @@ Alphabet
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0
-%{I%}:و
-%{I%}:ي !it could be {إ,و,ى,ي} 
 %{I%}:ى !it could be {إ,و,ى,ي}
+%{I%}:و
+!%{I%}:ي !it could be {إ,و,ى,ي} 
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
-%{s%}:س %{s%}:0
+%{s%}:0
+%{s%}:س
 %{n%}:ن %{n%}:0
 %{a%}:0
 %{e%}:0
@@ -29,9 +30,9 @@ Alphabet
 
 Sets
 Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
-Vowel = آأإوى ;    !AEIUİ
-SoftVow =  إأه ; 
-HardVow = آو ى; 
+Vowel = آ أ إ و ى ا ;    !AEIUİ
+SoftVow =  إ أ ه ; 
+HardVow = آ و ى; 
 
    
 
@@ -48,17 +49,25 @@ HardVow = آو ى;
 
 Rules 
 
-!" elif become ى at end of word"
+
 !ا:ی <=> : _.#.;
 
 "Consonant alternation in passive"
-%{L%}:ن <=>  [ :Vow | :0* ]  %>: %{i%}: _ ; 
+%{L%}:ن <=>  [ :Vowel | :0* ]  %>: %{i%}: _ ; 
              [ %{e%}: | :ل | 0* ]  %>: %{i%}:i _ ; 
 
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
+"I becomes و when last vowel is و in a word"
+%{I%}:و <=>[:و :Consonant :Consonant*] / :0* _ ;
+
+"realize {s} as س if after morpheme-final vowel "
+%{s%}:س <=> :Vowel :0  _ ;
+
+"realize {n} as n if it is before locative case "
+%{n%}:ن <=> _ [%{D%}: | :0] ;
 
 
 ! Resources:
