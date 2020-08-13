@@ -18,8 +18,7 @@ Alphabet
 !%{I%}:ي !it could be {إ,و,ى,ي} 
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
-%{s%}:0
-%{s%}:س
+%{s%}:0 %{s%}:س
 %{n%}:ن %{n%}:0
 %{a%}:0
 %{e%}:0
@@ -54,20 +53,21 @@ Rules
 
 "Consonant alternation in passive"
 %{L%}:ن <=>  [ :Vowel | :0* ]  %>: %{i%}: _ ; 
-             [ %{e%}: | :ل | 0* ]  %>: %{i%}:i _ ; 
+             [ %{e%}: | :ل | :0* ]  %>: %{i%}:i _ ; 
 
-
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+!"Remove suffix vowel with vowel-ending stem"
+!i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
 "I becomes و when last vowel is و in a word"
-%{I%}:و <=>[:و :Consonant :Consonant*] / :0* _ ;
+%{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
 
 "realize {s} as س if after morpheme-final vowel "
-%{s%}:س <=> :Vowel :0  _ ;
+%{s%}:س <=> :Vowel :0* _ ;
+
+!@ د ا ي ز ا >:0 {s}:س {I}:ى {n}:-1
 
 "realize {n} as n if it is before locative case "
-%{n%}:ن <=> _ [%{D%}: | :0] ;
+%{n%}:ن <=> _ %>: %{D%}: ;
 
 
 ! Resources:
@@ -76,4 +76,5 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 ! https://github.com/hfst/
 ! http://wiki.apertium.org/wiki/Twol
 ! http://wiki.apertium.org/wiki/Hfst
+
 
