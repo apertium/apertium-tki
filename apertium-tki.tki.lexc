@@ -341,6 +341,7 @@ LEXICON V-COP
 %+i%<cop%>%<aor%>: V-COP-PERS ;
 %+i%<cop%>%<aor%>: COPULA-P3-PERS ;
 %+i%<cop%>%<dub%>%<aor%>:i%>م%{I%}ش V-COP-PERS ;
+%+i%<cop%>: COP-AOR ;
 # ;
 
 LEXICON V-COP-COMMON 
@@ -349,6 +350,12 @@ LEXICON V-COP-COMMON
 %+i%<cop%>%<aor%>: COPULA-P3-PERS ;
 %+i%<cop%>%<dub%>%<aor%>:i%>م%{I%}ش V-COP-PERS ;
 
+LEXICON COP-AOR
+%<aor%>: PERS-COP-PERS ;
+
+LEXICON PERS-COP-PERS
+%<p3%>%<pl%>:%>ل%{A%}ر # ;
+
 LEXICON GENPOSS-ETC
 %<loc%>%<subst%>:%>%{D%}%{A%}کی CASE ;
 
@@ -356,9 +363,20 @@ LEXICON NP-COMMON
 
 POSSESSION ;
 
+LEXICON CASE-NONOM
+%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
+%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;   
+%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
+%<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
+%<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;  
+%<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ; 
+
+LEXICON N-INFL-COMMON
+CASE-NONOM ;
+
 LEXICON SUBST
 # ;
-!N-INFL-COMMON ;
+N-INFL-COMMON ;
 GENPOSS-ETC ;
 CASE ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
