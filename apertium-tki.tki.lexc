@@ -176,6 +176,8 @@ Verbs ;
 Punctuation ;
 Abbreviations ;
 Interjections ;
+DIGITLEX ;
+BARB ;
 
 LEXICON ABBR
 
@@ -2922,22 +2924,24 @@ LEXICON Abbreviations
 
 LEXICON Punctuation
 
-%۰%<sent%>:%۰ # ;
-%۰%۰%<sent%>:%۰%۰ # ;
-%.%.%.%<sent%>:%.%.%. # ;
-…%<sent%>:… # ;
-%؛%<sent%>:%؛ # ;
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%؛%<sent%>:%؛ # ; 
 %:%<sent%>:%: # ;
+%،%<cm%>:%، # ;
 %!%<sent%>:%! # ;
-%ـ%<guio%>:%ـ # ;
-%–%<guio%>:%– # ;
+%-%<guio%>:%- # ;
+%--%<guio%>:%-- # ;
+%---%<guio%>:%--- # ;
 %—%<guio%>:%— # ;
+%–%<guio%>:%– # ;
 ,%<cm%>:, # ;
+%?%<sent%>:%? # ;
 %؟%<sent%>:%؟ # ;
-%ُ%<apos%>:%ُ  # ;
-%ٌ%<apos%>:%ٌُ  # ;
-%،%<apos%>:%، # ;
-%"%<quot%>:%" # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
 %«%<lquot%>:%« # ;
 %»%<rquot%>:%» # ;
 %”%<rquot%>:%” # ;
@@ -2947,7 +2951,65 @@ LEXICON Punctuation
 %[%<lpar%>:%[ # ;
 %)%<rpar%>:%) # ;
 %\%<sent%>:%\ # ;
-%/%<sent%>:%/ # ; 
+%/%<sent%>:%/ # ;
+
+%【:%【%<lpar%> # ;
+%】:%】%<rpar%> # ;
+（:（%<lpar%> # ;
+）:）%<rpar%> # ;
+‹‹%<lquot%>:‹‹ # ;
+››%<rquot%>:›› # ;
+《%<lquot%>:《 # ;
+》%<rquot%>:》 # ;
+‹%<lquot%>:‹ # ;
+›%<rquot%>:› # ;
+，%<cm%>:， # ;
+、%<cm%>:、 # ;
+：:：%<sent%> # ;
+。:。%<sent%> # ;
+？:？%<sent%> # ;
+！:！%<sent%> # ;
+
+
+
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+
+LEXICON DIGITLEX
+
+%<num%>: # ; 
+!%<num%>%<subst%>: SUBST-2 ;
+
+LEXICON BARB
+
+%<barb%>: # ;
+
+!%۰%<sent%>:%۰ # ;
+!%۰%۰%<sent%>:%۰%۰ # ;
+!%.%.%.%<sent%>:%.%.%. # ;
+!…%<sent%>:… # ;
+%؛%<sent%>:%؛ # ;
+!%:%<sent%>:%: # ;
+!%!%<sent%>:%! # ;
+%ـ%<guio%>:%ـ # ;
+!%–%<guio%>:%– # ;
+!%—%<guio%>:%— # ;
+!,%<cm%>:, # ;
+%؟%<sent%>:%؟ # ;
+!%ُ%<apos%>:%ُ  # ;
+!%ٌ%<apos%>:%ٌُ  # ;
+!%،%<apos%>:%، # ;
+!%"%<quot%>:%" # ;
+!%«%<lquot%>:%« # ;
+!%»%<rquot%>:%» # ;
+!%”%<rquot%>:%” # ;
+!%“%<lquot%>:%“ # ;
+!%(%<lpar%>:%( # ;
+!%]%<rpar%>:%] # ;
+!%[%<lpar%>:%[ # ;
+!%)%<rpar%>:%) # ;
+!%\%<sent%>:%\ # ;
+!%/%<sent%>:%/ # ; 
 
 
 ! Resources:
