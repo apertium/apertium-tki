@@ -573,7 +573,7 @@ LEXICON V-IFI-PERS
 !%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p1%>%<pl%>:يغ # ; ! CLITICS ;
 %<p2%>%<pl%>:نيز # ; ! CLITICS ;
-%<p3%>%<pl%>:ل%{A%} # ; ! CLITICS ;
+%<p3%>%<pl%>:ل%{A%}ر # ; ! CLITICS ;
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
@@ -619,7 +619,7 @@ LEXICON V-PROG
 LEXICON V-IFI
 
 %<ifi%>:%>%{D%}%{I%} V-IFI-PERS ; 
-%<ifi%>:%>%{D%}%{U%} V-IFI-PERS ;
+!%<ifi%>:%>%{D%}%{U%} V-IFI-PERS ;
 %<neg%>%<ifi%>:%>م%{A%}%{D%}%{I%} V-COP-PERS ;
 
 LEXICON V-PAST
@@ -661,6 +661,7 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{y%}%{A%}بیل V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}بیلم V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}م V-PROG ;
+%<abil%>%<neg%>:%>%{y%}%{A%}م%{A%} V-IFI ;
 
 
 
@@ -2296,14 +2297,14 @@ LEXICON Nouns
 أرواد% كيشى:أرواد% كيشى N1 ;
 تداوي% اولما:تداوي% اولما N1 ;
 مشغول% اولما:مشغول% اولما N1 ;
-جمعى:جمعى N1 ;
+جمعه:جمعه N1 ;
 اوخما% یازما:اوخما% یازما N1 ;
 سوفی:سوفی N1 ;
 موسلمنشما:موسلمنشما N1 ;
 دونیا:دونیا N1 ;
-دمی:دمی N1 ;
-أكلمى:أكلمى N1 ;
-إيشلمى:إيشلمى N1 ;
+دمه:دمه N1 ;
+أكلمه:أكلمه N1 ;
+إيشلمه:إيشلمه N1 ;
 شاعيرى:شاعيرى N1 ;
 مسيح:مسيح N1 ;
 شيعى:شيعى N1 ;

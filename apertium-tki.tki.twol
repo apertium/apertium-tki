@@ -22,7 +22,7 @@ Alphabet
 %{n%}:ن %{n%}:0
 %{a%}:0
 %{e%}:0
-%{y%}:0 %{y%}:ي %{y%}:ى
+%{y%}:0 %{y%}:ي	 !%{y%}:ى
 %{ü%}:أو
 %{P%}:ب
 %>:0 ;
@@ -68,6 +68,9 @@ Rules
 
 "realize {n} as n if it is before locative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
+
+"realize {y} as y after a morpheme-final vowel "
+%{y%}:ي <=> :Vowel :0* _ ;
 
 
 ! Resources:
