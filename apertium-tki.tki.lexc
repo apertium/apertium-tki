@@ -195,7 +195,7 @@ LEXICON CASE
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
 !%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
-%<abl%>:%>ن%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
+!%<abl%>:%>%{N%}%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
 LEXICON GENPOSS-GENERAL
@@ -382,6 +382,7 @@ N-INFL-COMMON ;
 GENPOSS-ETC ;
 CASE ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
+%<pl%>:%>ل%{A%}ر CASE ;
 
 LEXICON N-COMMON
 
@@ -503,15 +504,17 @@ LEXICON ADV4
 
 LEXICON A1
 
-%<adj%>: # ;
+%<adj%>: N-COMMON ;
 %<adj%>: V-COP ;
 %<adj%>%<subst%>: N-COMMON ;
+%adj%>:SUBST ;
 %<adj%>%<advl%>: # ;
 
 LEXICON A2
 
-%<adj%>: # ;
+%<adj%>: N-COMMON ;
 %<adj%>: V-COP ;
+%<adj%>:SUBST ;
 %<adj%>%<subst%>: N-COMMON ;
 %<adj%>%<advl%>: # ;
 
@@ -698,6 +701,10 @@ LEXICON V-GER
 %<gna_neg%>:%>م%{A%}د%{A%}ن SUBST ; !nead to be tested Ex:olmadan
 %<ger_past%>:%>%{D%}%{I%}غ NP-COMMON ;
 
+LEXICON V-GERUNDS-AOR-AR
+
+%<ger_aor%>:%>%{A%}ر SUBST ; 
+
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
 !%<imp%>%<neg%>:م%{A%} IMP-PERS ;
@@ -742,6 +749,7 @@ V-AOR ;
 V-PROG ;
 V-IFI ;
 V-GER ;
+V-GERUNDS-AOR-AR ;
 V-PAST ;
 V-FUT ;
 V-TENSE-ABIL ;	
@@ -2493,7 +2501,59 @@ LEXICON ProperNouns
 إنگیلتره‌:إنگیلتره‌ NP-TOP ;
 ارزروم:ارزروم NP-TOP ;
 امریکا:امریکا NP-TOP ;
-
+إسكندر:إسكندر NP-ANT-M ;
+جبار:جبار NP-ANT-M ;
+ناتلايا:ناتلايا NP-ANT-F ;
+رمزى:رمزى NP-ANT-M ;
+روسلان:روسلان NP-ANT-M ;
+جلال:جلال NP-ANT-M ;
+إلياس:إلياس NP-ANT-M ;
+فازل:فازل NP-ANT-M ;
+رامزان:رامزان NP-ANT-M ;
+إيبراهيم:إيبراهيم NP-ANT-M ;
+تاييب:تاييب NP-ANT-M ;
+سليم:سليم NP-ANT-M ;
+حريه:حريه NP-ANT-F ;
+نوريه:نوريه NP-ANT-F ;
+دريه:دريه NP-ANT-F ;
+عبدالرحمان:عبدالرحمان NP-ANT-M ;
+عبدالرحیم:عبدالرحیم NP-ANT-M ;
+عبدالله:عبدالله NP-ANT-M ;
+عبدالجليل:عبدالجليل NP-ANT-M ;
+عبدالقادر:عبدالقادر NP-ANT-M ;
+زاکیر:زاکیر NP-ANT-M ;
+عبدالرشيد:عبدالرشيد NP-ANT-M ;
+زكيه:زكيه NP-ANT-F ;
+سامى:سامى NP-ANT-M ;
+سامیه:سامیه NP-ANT-M ;
+إسحاق:إسحاق NP-ANT-M ;
+سلانه:سلانه NP-ANT-F ;
+نصرالدين:نصرالدين NP-ANT-M ;
+عبداللطيف:عبداللطيف NP-ANT-M ;
+عبدالجليل:عبدالجليل NP-ANT-M ;
+مريم:مريم NP-ANT-F ;
+بلال:بلال NP-ANT-M ;
+دجله:دجله NP-ANT-F ;
+فرات:فرات NP-ANT-F ;
+نيل:نيل NP-ANT-F ;
+عبدالمناف:عبدالمناف NP-ANT-M ;
+عبدالمطليب:عبدالمطليب NP-ANT-M ;
+عبدالكريم:عبدالكريم NP-ANT-M ;
+عبدالحكيم:عبدالحكيم NP-ANT-M ;
+عبدالعزيز:عبدالعزيز NP-ANT-M ;
+عبدالعالم:عبدالعالم NP-ANT-M ;
+عبدو:عبدو NP-ANT-M ;
+رزى:رزى NP-ANT-M ;
+يونس:يونس NP-ANT-M ;
+أشرف:أشرف NP-ANT-M ;
+جنگیز:جنگیز NP-ANT-M ;
+عبدالخالق:عبدالخالق NP-ANT-M ;
+عالیمه:عالیمه NP-ANT-F ;
+نوره:نوره NP-ANT-F ;
+سزگی:سزگی NP-ANT-F ;
+نریمان:نریمان NP-ANT-F ;
+عایشه‌:عایشه‌ NP-ANT-F ;
+فاتمه:فاتمه NP-ANT-F ;
 
 
 

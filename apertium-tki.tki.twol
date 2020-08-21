@@ -29,34 +29,19 @@ Alphabet
 
 Sets
 Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
-Vowel = آ أ إ و ى ا ;    !AEIUİ
+Vowel = آ أ إ و ى ا ;    
 SoftVow =  إ أ ه ; 
-HardVow = آ و ى; 
+HardVow = آ و ى ; 
+Nasal= م ن ;
 
-   
-
-
-!Alphabet
- !A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z گ ل
-! a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
- !%{A%}:a %>:0  ;
-
-!Sets
-
-!Vowel = A E Ä I O Ö U Ü Y Ý 
-!        a e ä i o ö u ü y ý ;
+  
 
 Rules 
-
-
-!ا:ی <=> : _.#.;
 
 "Consonant alternation in passive"
 %{L%}:ن <=>  [ :Vowel | :0* ]  %>: %{i%}: _ ; 
              [ %{e%}: | :ل | :0* ]  %>: %{i%}:i _ ; 
 
-!"Remove suffix vowel with vowel-ending stem"
-!i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
 "I becomes و when last vowel is و in a word"
 %{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
@@ -64,13 +49,17 @@ Rules
 "realize {s} as س if after morpheme-final vowel "
 %{s%}:س <=> :Vowel :0* _ ;
 
-!@ د ا ي ز ا >:0 {s}:س {I}:ى {n}:-1
 
 "realize {n} as n if it is before locative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
 
 "realize {y} as y after a morpheme-final vowel "
 %{y%}:ي <=> :Vowel :0* _ ;
+
+"realize {D} as n after a n or m "
+%{D%}:ن <=> :Nasal :0* _ ;
+
+
 
 
 ! Resources:
