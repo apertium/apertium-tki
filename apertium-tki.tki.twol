@@ -13,14 +13,14 @@ Alphabet
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0
-%{I%}:ى %{I%}:و !it could be {إ,و,ى,ي}
+%{I%}:ي %{I%}:و !it could be {إ,و,ى,ي}
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
 %{s%}:0 %{s%}:س
 %{n%}:0 %{n%}:ن
 %{a%}:0
 %{e%}:0
-%{y%}:ي %{y%}:0 !%{y%}:ى
+%{y%}:0 %{y%}:ى !%{y%}:ى
 %{ü%}:أو
 %{P%}:ب
 %>:0 ;
@@ -48,8 +48,9 @@ Rules
 %{s%}:س <=> :Vowel :0* _ ;
 
 
-"realize {n} as n if it is before locative case "
+"realize {n} as n if it is before locative case and accusative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
+            _ %>: %{y%}: ;
 
 "realize {y} as y after a morpheme-final vowel "
 %{y%}:ي <=> :Vowel :0* _ ;
