@@ -398,6 +398,15 @@ LEXICON N1
 %<n%>: SUBST ;
 %<n%>%<attr%>: # ;
 
+
+LEXICON N3 ! Nationalities which can form language, etc.
+           ! e.g. turk, turkçe
+
+%<n%>: SUBST ; 
+!%<adj%>: ADJ-CLIT ;
+%<adj%>%<subst%>: SUBST ;
+!%<n%>%+laş:%>l%{A%}ş V-IR-IV ;
+
 LEXICON N4
 %<n%>: N-COMMON ;
 
@@ -480,6 +489,11 @@ LEXICON DET-ITG
 LEXICON DET-NEG !determiner negative
 
 %<det%>%<neg%>: # ;
+
+
+LEXICON NUM-ROMAN
+
+%<num%>%<ord%>: # ;
 
 LEXICON DET-REF !determiner reflexive
 
@@ -1375,9 +1389,14 @@ LEXICON Adjectives
 فارقلى:فارقلى A1 ;
 نهايه:نهايه A2 ;
 تعلیم:تعلیم A1 ;
+ادلی:ادلی A2 ;
 او:او A1 ;
 دوگو:دوگو A1 ;
-
+اوزو:اوزو A1 ;
+اوزو:اوزو A4 ;
+تاریخلی:تاریخلی A2 ;
+سیاسی:سیاسی A2 ;
+داهى:داهى A1 ;
 
 
 
@@ -1712,6 +1731,8 @@ LEXICON Adverbs
 نیندن% دوغما:نیندن% دوغما ADV1 ;
 بیر% گون:بیر% گون ADV1 ;
 أوزرينه:أوزرينه ADV1 ;
+شكيلده:شكيلده ADV1 ;
+اوزو:اوزو ADV1 ;
  
 
 
@@ -1822,6 +1843,9 @@ LEXICON Postpositions
 رغمن:رغمن POST ; 
 إيلا:إيلا POST ;
 علاقلالى:علاقلالى POST ;
+إيسه:إيسه POST ;
+داهی:داهی POST ;
+
 
 
 
@@ -1867,6 +1891,9 @@ LEXICON Conjunctions
 كشكه:كشكه CA ;
 مسله:مسله CA ;
 نيسه:نيسه CA ;
+كى:كى CA ;
+كى:كى CC ;
+كى:كى CS ;
 صورا:صورا CA ;
 واي% حاصل:واي% حاصل CA ;
 يالغز:يالغز CA ;
@@ -1882,6 +1909,7 @@ LEXICON Conjunctions
 حاتا:حاتا CA ;
 ياعنى:ياعنى CC ;
 يادا:يادا CC ;
+إيسه:إيسه CC ;
 
 
 
@@ -1915,6 +1943,29 @@ LEXICON Numerals
 مليار:مليار NUM ;	
 تيريليون:تيريليون NUM ;
 بوچوغ:بوچوغ NUM ; 
+
+I:I NUM-ROMAN ; ! ""
+II:II NUM-ROMAN ; ! ""
+III:III NUM-ROMAN ; ! ""
+IV:IV NUM-ROMAN ; ! ""
+IX:IX NUM-ROMAN ; ! ""
+V:V NUM-ROMAN ; ! ""
+VI:VI NUM-ROMAN ; ! ""
+VII:VII NUM-ROMAN ; ! ""
+VIII:VIII NUM-ROMAN ; ! ""
+X:X NUM-ROMAN ; ! ""
+XI:XI NUM-ROMAN ; ! ""
+XII:XII NUM-ROMAN ; ! ""
+XIII:XIII NUM-ROMAN ; ! ""
+XIV:XIV NUM-ROMAN ; ! ""
+XIX:XIX NUM-ROMAN ; ! ""
+XV:XV NUM-ROMAN ; ! ""
+XVI:XVI NUM-ROMAN ; ! ""
+XVII:XVII NUM-ROMAN ; ! ""
+XVIII:XVIII NUM-ROMAN ; ! ""
+XX:XX NUM-ROMAN ; ! ""
+XXI:XXI NUM-ROMAN ; ! ""
+XXII:XXII NUM-ROMAN ; ! ""
  
 
 
@@ -1926,9 +1977,15 @@ house:house RegNounInfl ; ! A noun
 زىيان:زىيان RegNounInfl ; ! "
 LEXICON Nouns
 آلله:آلله N1 ;
+تپه:تپه N1 ;
+داهی:داهی N1 ;
 إيو:إيو N1 ;
+قرار:قرار N1 ;
 نهايه:نهايه N1 ;
 شی:شی N1 ;
+ا:ا N1 ;
+إيش:إيش N1 ;
+جمهوریت:جمهوریت N1 ;
 فیدیو:فیدیو N1 ;
 أوگ:أوگ N4 ;
 تاراف:تاراف N4 ;
@@ -2162,10 +2219,12 @@ LEXICON Nouns
 مقدار:مقدار N1 ;
 حكيملغ:حكيملغ N1 ;
 تعمير:تعمير N1 ;
-ترك:ترك N1 ;
+ترك:ترك N3 ;
 كاتيب:كاتيب N1 ;
 براءت:براءت N1 ;
 سس:سس N1 ;
+إیچری:إیچری N1 ;
+تلفون:تلفون N1 ;
 تركمانجه:تركمانجه N1 ;
 سلام:سلام N1 ;
 قانات:قانات N1 ;
@@ -2482,6 +2541,12 @@ LEXICON Nouns
 مجال:مجال N1 ;
 دستك:دستك N1 ;
 خبر:خبر N1 ;
+تاریخ:تاریخ N1 ;
+اد:اد N1 ;
+شكيل:شكيل N1 ;
+بيز:بيز N1 ;
+تسبیت:تسبیت N1 ;
+ابی:ابی N1 ;
 
 
 
@@ -2504,8 +2569,10 @@ LEXICON ProperNouns
 پوتين:پوتين NP-COG-MF ;
 أزل:أزل NP-ANT-M ;
 أحمد:أحمد NP-ANT-M ;
+کمال:کمال NP-ANT-M ;
 نورسن:نورسن NP-ANT-F ;
 سيولاي:سيولاي NP-ANT-F ;
+ممه‌د:ممه‌د NP-ANT-M ;
 توركيا:توركيا NP-TOP ;
 سامسونك:سامسونك NP-ORG ;
 غزى:غزى NP-TOP ;
@@ -2969,6 +3036,8 @@ LEXICON Verbs
 ياز:ياز V-TV ;
 مشغول% اول:مشغول% اول V-IV ;
 يات:يات V-IV ;
+أوزتله:أوزتله V-TV ;
+إن:إن V-IV ;
 دا:دا V-TV ;
 إيشيت:إيشيت V-TV ;
 سيو:سيو V-TV ;
@@ -3006,6 +3075,8 @@ LEXICON Verbs
 مكله:مكله V-IV ;
 أسير% دوش:أسير% دوش V-IV ;
 رام% ات:رام% ات V-TV ;
+ئت:ئت V-TV ;
+إديل:إديل V-IV ;
 حساب% صور:حساب% صور V-IV ;
 حمد% ئت:حمد% ئت V-IV ;
 إيمان% ئت:إيمان% ئت V-IV ;
