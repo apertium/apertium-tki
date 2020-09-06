@@ -847,6 +847,7 @@ LEXICON Interjections
 فلان:فلان INTERJ ;
 فلان% فستان:فلان% فستان INTERJ ;
 أى:أى INTERJ ;
+إه:إه INTERJ ;
 
 
 
@@ -884,6 +885,7 @@ LEXICON Pronouns
 بیرسی:بیرسی PRON-PERS-O ;
 بعزلاری:بعزلاری PRON-QNT ;
 بعزی:بعزی PRON-QNT ;
+كيم:كيم PRON-ITG ;
 PRON-ITG ;
 
 
@@ -1925,6 +1927,8 @@ LEXICON Postpositions
 داهی:داهی POST ;
 بوخصوص:بوخصوص POST ;
 ضد:ضد POST ;
+سببتن:سببتن POST ;
+تقدیرده:تقدیرده POST ;
 
 
 
@@ -2067,8 +2071,11 @@ LEXICON Nouns
 قسا:قسا N1 ;
 اوی:اوی N1 ;
 علام:علام N1 ;
+وثيقة:وثيقة N1 ;
+قوشاتن:قوشاتن N1 ;
 إنترنيت:إنترنيت N1 ;
 إيزين:إيزين N1 ;
+CD:CD N1 ;
 وتيقه:وتيقه N1 ;
 تمامن:تمامن N1 ;
 سيرى:سيرى N1 ;
@@ -2718,6 +2725,16 @@ LEXICON Nouns
 صحافه:صحافه N1 ;
 اوردا:اوردا N1 ;
 إنجى:إنجى N1 ;
+شهرة:شهرة N1 ;
+ك:ك N1 ;
+إه:إه N1 ;
+بيى:بيى N1 ;
+كيمسه:كيمسه N1 ;
+مجلس:مجلس N1 ;
+بیرلغ:بیرلغ N1 ;
+تقدیر:تقدیر N1 ;
+موراد:موراد N1 ;
+باشقانلغ:باشقانلغ N1 ;
 
 
 
@@ -2731,7 +2748,10 @@ LEXICON Nouns
 نوبيل:نوبيل NP-AL ;
 تويتر:تويتر NP-AL ;
 فيسبوك:فيسبوك NP-ORG ;
+ارگينيكون:ارگينيكون NP-ORG ;
 AKP:AKP NP-ORG ;
+CHP:CHP NP-ORG ;
+TCK:TCK NP-ORG ;
 گوگول:گوگول NP-AL ;
 اد:اد NP-AL ;
 PKK:PKK NP-ORG ;
@@ -2741,8 +2761,13 @@ CEE:CEE NP-AL ;
 WMTR:WMTR NP-AL ;
 LEXICON ProperNouns 
 پوتين:پوتين NP-COG-MF ;
+إوزتورك:إوزتورك NP-COG-MF ;
 أزل:أزل NP-ANT-M ;
+یوسف:یوسف NP-ANT-M ;
 صاحب:صاحب NP-ANT-M ;
+مراد:مراد NP-ANT-M ;
+اتاتورك:اتاتورك NP-ANT-M ;
+اتاتورك:اتاتورك NP-COG-MF ;
 تونجای:تونجای NP-ANT-M ;
 أحمد:أحمد NP-ANT-M ;
 مزفر:مزفر NP-ANT-M ;
@@ -3220,6 +3245,7 @@ LEXICON Verbs
 مشغول% اول:مشغول% اول V-IV ;
 يات:يات V-IV ;
 انلاش:انلاش V-IV ;
+گرك:گرك V-IV ;
 گچیر:گچیر V-IV ;
 گچیرل:گچیرل V-TV ;
 تانش:تانش V-TV ;
@@ -3687,6 +3713,7 @@ LEXICON Verbs
 زینجیرلی:زینجیرلی V-TV ;
 زورلی:زورلی V-TV ;
 اخسی:اخسی V-IV ;
+بليرت:بليرت V-TV ;
 LEXICON Abbreviations
 کم:کم ABBR ;
 سم:سم ABBR ;
@@ -3698,6 +3725,12 @@ LEXICON Abbreviations
 د:د ABBR ;
 م:م ABBR ;
 ا:ا ABBR ;
+ب:ب ABBR ;
+س:س ABBR ;
+چ:چ ABBR ;
+
+X:X NUM-ROMAN ; ! ""
+
 
 
 
