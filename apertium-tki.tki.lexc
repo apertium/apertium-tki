@@ -50,6 +50,7 @@ Multichar_Symbols
 %<loc%>           ! Locative
 %<gen%>           ! Genitive
 %<acc%>           ! Accusative
+%<ins%>           ! Instrumental=comitative
 %<ter%>           ! Terminative
 
 %<attr%>          ! Attributive
@@ -241,6 +242,21 @@ LEXICON PRON-PERS-SEN
 %<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دى # ;
 %<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نىن # ; !
 
+LEXICON PRON-DEM-BU
+
+%<prn%>%<dem%>: CASE-2 ;
+%<prn%>%<dem%>%<gen%>:نون # ;
+%<prn%>%<dem%>%<dat%>:نا #  ;
+%<prn%>%<dem%>%<acc%>:نو # ;
+%<prn%>%<dem%>%<abl%>:ندان # ;
+%<prn%>%<dem%>%<loc%>:ندا # ;
+!%<prn%>%<dem%>%<gen%>%<subst%>:nunki%{n%} CASE ;
+!%<prn%>%<dem%>%<loc%>%<attr%>:ndaki ATTR-SUBST ;
+%<prn%>%<dem%>%<ins%>:نونلا # ;
+!%<prn%>%<dem%>%<px3sp%>:nu%{n%} CASE ;
+!%<prn%>%<dem%>%<pl%>:nlar CASE-ETC ;
+!%<prn%>%<dem%>%<pl%>%<px3sp%>:nları%{n%} CASE ;
+
 LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p3%>%<sg%>: # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نون # ; ! 
@@ -258,12 +274,13 @@ LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-SIZ
-%<prn%>%<pers%>%<p2%>%<pl%>: # ;
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئي # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ئه # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئن # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ى # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ا # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:دان # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:يلا # ; !
 
 LEXICON PRON-PERS-OLAR
 %<prn%>%<pers%>%<p3%>%<pl%>: # ;
@@ -373,6 +390,19 @@ LEXICON CASE-NONOM
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;  
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;
+
+LEXICON CASE-2
+
+%<nom%>: # ;
+%<nom%>: V-COP ;
+!%<dat%>:%>%{G%}%{A%} CLITICS ;
+!%<loc%>:%>%{D%}%{A%} CLITICS ;
+!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
+!%<abl%>:%>%{D%}ىن CLITICS ;
+!%<gen%>:%>نىڭ CLITICS ;
+!%<acc%>:%>نى CLITICS ;
+
+
 
 LEXICON PP-PERS
 # ;
@@ -900,7 +930,7 @@ LEXICON Pronouns
 بیر:بیر PRON-PERS-O ;
 إیکیسی:إیکیسی PRON-PERS-O ;
 بیربیر:بیربیر PRON-PERS-BIZ ;
-بو:بو PRON-PERS-SEN ;
+بو:بو PRON-DEM-BU ;
 هیچ% بیر% شی:هیچ% بیر% شی PRON-PERS-MAN ;
 إیکی:إیکی PRON-QNT ;
 هیچ:هیچ PRON-QNT ;
@@ -1156,7 +1186,7 @@ LEXICON Adjectives
 الاجا:الاجا A1 ;
 قرارمش:قرارمش A1 ;
 قحرلی:قحرلی A1 ;
-زراعت:زراعت A1 ;
+
 اومتسوز:اومتسوز A1 ;
 ان% فازلا:ان% فازلا A1 ;
 قازاغ:قازاغ A1 ;
@@ -1635,6 +1665,8 @@ LEXICON Adjectives
 إلرله‌ين:إلرله‌ين A1 ;
 سياسي:سياسي A1 ;
 بسيط:بسيط A1 ;
+ساغلغلی:ساغلغلی A1 ;
+سكى:سكى A1 ;
  
 
 
@@ -2295,10 +2327,14 @@ LEXICON Nouns
 سلجوق:سلجوق N1 ;
 اجی:اجی N1 ;
 تصديق:تصديق N1 ;
-أوترو:أوترو N1 ;
+زراعت:زراعت N1 ;
+وارلك:وارلك N1 ;
+یونان:یونان N1 ;
+ياردم:ياردم N1 ;
 بيناء:بيناء N1 ;
 اولملو:اولملو N1 ;
 درس:درس N1 ;
+مشکله:مشکله N1 ;
 زیاده:زیاده N1 ;
 إحاله:إحاله N1 ;
 فرمان:فرمان N1 ;
@@ -3285,6 +3321,7 @@ CD:CD N1 ;
 إيفاد:إيفاد N1 ;
 محڵه:محڵه N1 ;
 شخصيه:شخصيه N1 ;
+أونجه:أونجه N1 ;
 قان:قان N1 ;
 إلغاء:إلغاء N1 ;
 أسنا:أسنا N1 ;
@@ -3381,6 +3418,7 @@ CD:CD N1 ;
 قائمه:قائمه N1 ;
 الأدب:الأدب N1 ;
 لغم:لغم N1 ;
+حاپیس:حاپیس N1 ;
 
 
 
@@ -3413,6 +3451,7 @@ WMTR:WMTR NP-AL ;
 LEXICON ProperNouns 
 پوتين:پوتين NP-COG-MF ;
 سلطان:سلطان NP-COG-MF ;
+پویرازز:پویرازز NP-COG-MF ;
 إوزتورك:إوزتورك NP-COG-MF ;
 گورسس:گورسس NP-COG-MF ;
 سلجوق:سلجوق NP-COG-MF ;
@@ -3431,6 +3470,7 @@ LEXICON ProperNouns
 اڵپ% ارسلان:اڵپ% ارسلان NP-COG-MF ;
 دمیرتاش:دمیرتاش NP-COG-MF ;
 بلنت:بلنت NP-ANT-M ;
+پکر:پکر NP-ANT-M ;
 فاروق:فاروق NP-ANT-M ;
 تانر:تانر NP-ANT-M ;
 فكرت:فكرت NP-ANT-M ;
@@ -4002,6 +4042,7 @@ LEXICON Verbs
 أوگرن:أوگرن V-TV ;
 اوی:اوی V-TV ;
 بارش:بارش V-IV ;
+إعلان% ات:إعلان% ات V-TV ;
 دور:دور V-IV ;
 گیون:گیون V-IV ;
 أويان:أويان V-IV ;
