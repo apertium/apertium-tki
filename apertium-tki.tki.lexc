@@ -205,6 +205,16 @@ LEXICON GENPOSS-GENERAL
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
 %<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
 %<attr%>:%>كى # ;
+
+LEXICON PRON-RECIP
+
+%<prn%>%<recip%>: POSSESSION ;
+
+LEXICON PRON-IND
+
+%<prn%>%<ind%>: N-COMMON ; ! FIXME: Check contlex
+
+
   
 
 LEXICON POSSESSION
@@ -411,6 +421,7 @@ LEXICON PP-PERS
 
 
 LEXICON LI-POSTPOSITION
+
 %+لی%<post%>:%>ل%{I%} PP-PERS ;  	
 
 LEXICON N-INFL-COMMON
@@ -568,6 +579,8 @@ LEXICON ADV1
 %<adv%>: # ;
 %<adv%>: V-COP ;
 %<adv%>%<attr%>: # ;
+%<adv%>%<attr%>:%>ک%{I%} # ;
+
 
 LEXICON ADV2
 
@@ -585,7 +598,7 @@ LEXICON ADV4
 %<adv%>: # ; ! this is for when the adverb is used as an adverb
 %<adv%>: V-COP ;
 !%<adv%>%<subst%>: SUBST ;
-%<adv%>%<attr%>:%>k%{I%} # ;
+%<adv%>%<attr%>:%>ک%{I%} # ;
 LEXICON PRON-ADV 
 
 %<prn%>%<adv%>: CASE-NONOM ;
@@ -623,7 +636,7 @@ LEXICON PRON-ITG-INFL !inflectional suffix
 %<prn%>%<itg%>: N-COMMON ; 
 
 LEXICON PRON-QNT
-%<prn%>%<qnt%>: # ;
+%<prn%>%<qnt%>: N-COMMON ;
 %<prn%>%<qnt%>%<pl%>:%>l%{A%}r # ;
 
 LEXICON PRON-NEG
@@ -802,6 +815,7 @@ LEXICON V-GER
 %<gna_aor%>:%>كن SUBST ; !nead to be tested Ex:geçerken
 %<gna_neg%>:%>م%{A%}د%{A%}ن SUBST ; !nead to be tested Ex:olmadan
 %<ger_past%>:%>%{D%}%{I%}غ NP-COMMON ;
+%<ger_impf%>:%>%{y%}%{A%}ن GER-SUBST ;
 %<ger%>:%>م%{A%} GER-SUBST ;
 
 LEXICON V-GERUNDS-AOR-AR
@@ -879,6 +893,7 @@ LEXICON V-TV
 
 LEXICON PRON-ITG 
 كيم:كيم PRON-ITG-INFL ;
+بیربیری:بیربیری PRON-RECIP ;
 كيم% كيمه:كيم% كيمه PRON-ITG-INFL ;
 نه:نه PRON-ITG-INFL ;
 نيي:نيي PRON-ITG-INFL ;
@@ -938,6 +953,7 @@ LEXICON Pronouns
 إیکی:إیکی PRON-QNT ;
 هیچ:هیچ PRON-QNT ;
 بیری:بیری PRON-PERS-O ;
+بیری:بیری PRON-IND ;
 هپ:هپ PRON-QNT ;
 هیچبیر% شی:هیچبیر% شی PRON-NEG ;
 هیچبیر:هیچبیر PRON-QNT ;
@@ -950,7 +966,7 @@ LEXICON Pronouns
 كيم:كيم PRON-ITG ;
 هبسى:هبسى PRON-QNT ;
 هبسى:هبسى DET-QNT ;
-!بیربیری:بیربیری PRON-RECIP ;
+بیربیری:بیربیر PRON-RECIP ;
 PRON-ITG ;
 
 
@@ -1790,6 +1806,9 @@ LEXICON Adjectives
 ترافسز:ترافسز A1 ;
 سسزيز:سسزيز A1 ;
 موفق:موفق A1 ;
+نیتلکلی:نیتلکلی A1 ;
+سرعتلا:سرعتلا A1 ;
+أولكى:أولكى A1 ;
 
 
 
@@ -1812,6 +1831,7 @@ LEXICON Adverbs
 هادئ:هادئ ADV1 ;
 تقریبا:تقریبا ADV1 ;
 إلرى:إلرى ADV3 ;
+کونترلو:کونترلو ADV1 ;
 نت:نت ADV1 ;
 تمامن:تمامن ADV3 ;
 هاردايسا:هاردايسا ADV3 ;
@@ -2334,6 +2354,7 @@ LEXICON Conjunctions
 عکسینه:عکسینه CA ;
 بیلعکس:بیلعکس CA ;
 بالنسبه:بالنسبه CA ;
+گونکو:گونکو CA ;
 بیله:بیله CA ;
 وأ:وأ CC ; ! and
 فيهوت:فيهوت CC ;
