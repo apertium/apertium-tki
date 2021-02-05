@@ -847,6 +847,14 @@ LEXICON V-DERIV
 V-COMMON ;
 !V-NEG-COMMON ;
 
+LEXICON V-PRC
+
+%<prc%>:%>مغ # ;
+%<neg%>%<prc%>:%>م%{A%}%>مغ # ;
+
+LEXICON V-GERUNDS
+%<ger_inf%>:%>مغ GER-SUBST ; 
+
 
 LEXICON V-NEG-COMMON
 V-AOR ;
@@ -858,6 +866,7 @@ V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
 V-COND ;
+V-PRC ;
 
 
 LEXICON V-COMMON
@@ -872,6 +881,10 @@ V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
 V-COND ;
+V-PRC ;
+V-GERUNDS ;
+
+
 
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
@@ -2957,6 +2970,7 @@ CD:CD N1 ;
 مددت:مددت N1 ;
 اناياسا:اناياسا N1 ;
 أمنيت:أمنيت N1 ;
+اوسلوب:اوسلوب N1 ;
 ماليه:ماليه N1 ;
 صاحب:صاحب N1 ;
 اوست:اوست N1 ;

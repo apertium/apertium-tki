@@ -42,7 +42,10 @@ Rules
 
 
 "I becomes و when last vowel is و in a word"
-%{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
+%{I%}:ا <=> [ :و :Consonant :Consonant* ]/:0* _ ;
+
+"I becomes ی when last vowel is  in a word"
+%{I%}:و <=> [ :ى :Consonant :Consonant* ]/:0* _ ;
 
 "realize {s} as س if after morpheme-final vowel "
 %{s%}:س <=> :Vowel :0* _ ;
