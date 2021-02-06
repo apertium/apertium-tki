@@ -220,7 +220,7 @@ LEXICON PRON-IND
 LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%>%{I%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
-%<px2sg%>:%>%{I%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
+%<px2sg%>:%>%{i%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
 %<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
 %<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
@@ -397,7 +397,8 @@ POSSESSION ;
 LEXICON CASE-NONOM
 %<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
 %<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;   
-%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
+!%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
+%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;  
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;
@@ -1538,6 +1539,7 @@ LEXICON Adjectives
 أيديولوجي:أيديولوجي A4 ;
 نفسى:نفسى A4 ;
 دستورى:دستورى A4 ;
+پیکسولجیك:پیکسولجیك A4 ; 
 بلا:بلا A1 ;
 اورتا:اورتا A1 ;
 شرق:شرق A1 ;
@@ -1822,6 +1824,7 @@ LEXICON Adjectives
 نیتلکلی:نیتلکلی A1 ;
 سرعتلا:سرعتلا A1 ;
 أولكى:أولكى A1 ;
+غریزی:غریزی A1 ;
 
 
 
@@ -2891,10 +2894,14 @@ TV:TV N1 ;
 معالجه:معالجه N1 ;
 أودمه:أودمه N1 ;
 مدير:مدير N1 ;
+إليرلمه:إليرلمه N1 ;
+فازلالشما:فازلالشما N1 ;
+قابلیت:قابلیت N1 ;
 الأركان% العامة:الأركان% العامة N1 ;
 درجه:درجه N1 ;
 ديمقراطية:ديمقراطية N1 ;
 یاردمجی:یاردمجی N1 ;
+فاز:فاز N1 ;
 تأسير:تأسير N1 ;
 میدان:میدان N1 ;
 حكوم:حكوم N1 ;
@@ -3288,7 +3295,7 @@ CD:CD N1 ;
 شيكات:شيكات N1 ; ! complaint
 أوجرة:أوجرة N1 ; !rent
 تعقيب:تعقيب N1 ; ! pursuit
-موافقا:موافقا N1 ; !approve
+قابول:قابول N1 ; !approve
 خاريج:خاريج N1 ; !aborad
 پارتي% عزو:پارتي% عزو N1 ;
 آصلى:آصلى N1 ; !origin
@@ -3664,6 +3671,7 @@ CD:CD N1 ;
 مداخله:مداخله N1 ;
 وطن:وطن N1 ;
 خط:خط N1 ;
+صبر:صبر N1 ;
 إحتياج:إحتياج N1 ;
 إتجاه:إتجاه N1 ;
 تدقیق:تدقیق N1 ;
@@ -3965,6 +3973,17 @@ CD:CD N1 ;
 خطر:خطر N1 ;
 زورونلوغ:زورونلوغ N1 ;
 توتوکلاما:توتوکلاما N1 ;
+پاتلاما:پاتلاما N1 ;
+سلبيه:سلبيه N1 ;
+عصبيه:عصبيه N1 ;
+إقتراح:إقتراح N1 ;
+زوق:زوق N1 ;
+خوی:خوی N1 ;
+عاطفى:عاطفى N1 ;
+ديمقراسى:ديمقراسى N1 ;
+باغلاما:باغلاما N1 ;
+قوجغلاما:قوجغلاما N1 ;
+رحتلامه:رحتلامه N1 ;
 
 
 
@@ -4683,6 +4702,7 @@ TBMM:TBMM NP-ORG ; !
 LEXICON Verbs
 اوخو:اوخو V-TV ;
 انلاد:انلاد V-TV ;
+قابول% أت:قابول% أت V-TV ;
 ياز:ياز V-TV ;
 إشله:إشله V-TV ;
 أوگرن:أوگرن V-TV ;
@@ -4690,6 +4710,7 @@ LEXICON Verbs
 دیله:دیله V-TV ;
 داین:داین V-IV ;
 يارات:يارات V-TV ;
+أيرد% أت:أيرد% أت V-TV ;
 توتوکلا:توتوکلا V-IV ;
 قارش:قارش V-IV ;
 أوزن:أوزن V-IV ;
@@ -5231,6 +5252,8 @@ LEXICON Verbs
 اخسی:اخسی V-IV ;
 بليرت:بليرت V-TV ;
 إنجله:إنجله V-TV ;
+سز:سز V-TV ;
+
 LEXICON Abbreviations
 کم:کم ABBR ;
 سم:سم ABBR ;
