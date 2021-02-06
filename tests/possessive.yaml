@@ -1,2 +1,16 @@
-خوی-ون-و
-إيو-ن-ى
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tur.autogen.hfst
+    Morph:  ../tur.automorf.hfst
+
+Tests:
+
+  "[twol] {I} aor after vowel":
+    خوی<n><px3sp><acc> : خویونو
+    إيو<n><px3sp><acc> : إيونى
+    التن<n><px3sp><acc> : التنىنى
+    کتاب<n><px3sp><acc> : کتابینی
+    باخچا<n><px3sp><acc> : باخچاسنی
+    
+
