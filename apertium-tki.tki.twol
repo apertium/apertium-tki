@@ -28,8 +28,8 @@ Alphabet
 Sets
 Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
 Vowel = آ أ إ و ى ا ;    
-SoftVow =  إ أ ه ; 
-HardVow = آ و ى ; 
+SoftVow =  ى إ أ ه ; 
+HardVow = آ و  ا ; 
 Nasal= م ن ;
 
   

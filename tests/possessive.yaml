@@ -6,11 +6,33 @@ Config:
 
 Tests:
 
-  "[twol] {I} aor after vowel":
+  "[twol] {i} after vowel":
     خوی<n><px3sp><acc> : خویونو
-    إيو<n><px3sp><acc> : إيونى
-    التن<n><px3sp><acc> : التنىنى
+    إيو<n><px3sp><acc> : أيوينى
     کتاب<n><px3sp><acc> : کتابینی
+  "[twol] {i} i:0" :
+    التن<n><px3sp><acc> : التننى
     باخچا<n><px3sp><acc> : باخچاسنی
+    اد<n><px1sg> : ادم
+    بابا<n><px1sg> : بابام
+    قيز<n><px1sg> : قيزيم
+    قونشو<n><px1sg> : قونشوم
+    گون<n><px1sg> : گونوم
+    إيش<n><px2sg> : إيشيى
+    يازى<n><px2sg> : يازيى
+    قونشو<n><px2sg> : قونشويو
+    يول<n><px2sg> : يولوى
+    روح<n><px1pl> : روحوموز	
+    گوز<n><px1pl> : گوزوموز
+    باخچا<n><px2pl> : باخچایز
+    توپ<n><px2pl> : توپویز
+	
+
+
+
+
+
+
+
     
 
