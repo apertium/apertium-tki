@@ -219,11 +219,11 @@ LEXICON PRON-IND
 
 LEXICON POSSESSION
 CASE ;
-%<px1sg%>:%>%{I%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
+%<px1sg%>:%>%{i%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{i%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
-%<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
-%<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
+%<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
+%<px2pl%>:%>%{i%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
 %<px3sg%>:%>ل%{A%}ر%{I%} CASE ; 
