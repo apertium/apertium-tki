@@ -38,7 +38,7 @@ Rules
 
 "Consonant alternation in passive"
 %{L%}:ن <=>  [ :Vowel | :0* ]  %>: %{i%}: _ ; 
-             [ %{e%}: | :ل | :0* ]  %>: %{i%}:i _ ; 
+             [ %{e%}: | :ل | :0* ]  %>: %{i%}: _ ; 
 
 
 "I becomes و when last vowel is و in a word"
