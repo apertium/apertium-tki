@@ -1,8 +1,8 @@
 Config: 
   hfst: 
     App:  hfst-lookup
-    Gen:  ../tur.autogen.hfst
-    Morph:  ../tur.automorf.hfst
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
 
 Tests:
 
@@ -10,6 +10,7 @@ Tests:
     خوی<n><px3sp><acc> : خویونو
     إيو<n><px3sp><acc> : أيوينى
     کتاب<n><px3sp><acc> : کتابینی
+
   "[twol] {i} i:0" :
     التن<n><px3sp><acc> : التننى
     باخچا<n><px3sp><acc> : باخچاسنی
@@ -22,17 +23,7 @@ Tests:
     يازى<n><px2sg> : يازيى
     قونشو<n><px2sg> : قونشويو
     يول<n><px2sg> : يولوى
-    روح<n><px1pl> : روحوموز	
+    روح<n><px1pl> : روحوموز
     گوز<n><px1pl> : گوزوموز
     باخچا<n><px2pl> : باخچایز
     توپ<n><px2pl> : توپویز
-	
-
-
-
-
-
-
-
-    
-
