@@ -757,7 +757,7 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{y%}%{I%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{U%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{A%} V-ABIL-PERS ;
-%<abil%>:%>%{y%}%{A%} V-AOR ;
+%<abil%>:%>%{y%}%{A%}بیل V-AOR ;
 %<abil%>:%>س%{A%}ن V-ABIL-PERS ;      
 %<abil%>:%>س%{U%}ن V-ABIL-PERS ;
 %<abil%>:%>%{A%} V-ABIL-PERS ;
@@ -2770,7 +2770,7 @@ LEXICON Nouns
 محاوله:محاوله N1 ;
 دگرلندرمه:دگرلندرمه N1 ;
 رسیم:رسیم N1 ;
-فارق:فارق N1 ;
+
 تقافه:تقافه N1 ;
 گونش:گونش N1 ;
 بومبا:بومبا N1 ;
