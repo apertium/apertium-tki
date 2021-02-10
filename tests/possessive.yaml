@@ -1,8 +1,8 @@
 Config: 
   hfst: 
     App:  hfst-lookup
-    Gen:  ../tur.autogen.hfst
-    Morph:  ../tur.automorf.hfst
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
 
 Tests:
 
@@ -10,29 +10,26 @@ Tests:
     خوی<n><px3sp><acc> : خویونو
     إيو<n><px3sp><acc> : أيوينى
     کتاب<n><px3sp><acc> : کتابینی
+
   "[twol] {i} i:0" :
     التن<n><px3sp><acc> : التننى
     باخچا<n><px3sp><acc> : باخچاسنی
-    اد<n><px1sg> : ادم
-    بابا<n><px1sg> : بابام
-    قيز<n><px1sg> : قيزيم
-    قونشو<n><px1sg> : قونشوم
-    گون<n><px1sg> : گونوم
-    إيش<n><px2sg> : إيشيى
-    يازى<n><px2sg> : يازيى
-    قونشو<n><px2sg> : قونشويو
-    يول<n><px2sg> : يولوى
-    روح<n><px1pl> : روحوموز	
-    گوز<n><px1pl> : گوزوموز
-    باخچا<n><px2pl> : باخچایز
-    توپ<n><px2pl> : توپویز
-	
 
+  "[twol] {i}C forms":
+    اد<n><px1sg><nom> : ادم
+    بابا<n><px1sg><nom> : بابام
+    قيز<n><px1sg><nom> : قيزم
+    قونشو<n><px1sg><nom> : قونشوم
+    گون<n><px1sg><nom> : گونوم
+    إيش<n><px2sg><nom> : إيشيى
+    يازى<n><px2sg><nom> : يازيى
+    قونشو<n><px2sg><nom> : قونشويو
+    يول<n><px2sg><nom> : يولوى
+    روح<n><px1pl><nom> : روحوموز
+    گوز<n><px1pl><nom> : گوزوموز
+    باخچا<n><px2pl><nom> : باخچایز
+    توپ<n><px2pl><nom> : توپویز
 
+خاترلاد<v><tv><ger_past><px3sp><acc>خاترلاديغيني 
 
-
-
-
-
-    
-
+خاترلاد<v><tv><ger_past><px3sp><acc>خاترلاديغينىي  "this wrong"
