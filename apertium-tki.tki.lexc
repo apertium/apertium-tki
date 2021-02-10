@@ -435,7 +435,7 @@ LEXICON SUBST
 !# ;
 N-INFL-COMMON ;
 GENPOSS-ETC ;
-POSSESSION ;
+!POSSESSION ;
 %<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 %<pl%>:%>ل%{A%}ر CASE ;
 
