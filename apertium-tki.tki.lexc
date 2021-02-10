@@ -187,6 +187,7 @@ LEXICON ABBR
 LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
+!%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 %<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
@@ -221,6 +222,7 @@ LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{i%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
+%<px2sg%>:%>%{y%}%{I%}%{n%} CASE ; 
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
 %<px2pl%>:%>%{i%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
@@ -1830,6 +1832,8 @@ LEXICON Adjectives
 إيرادلى:إيرادلى A1 ;
 حوزورسوز:حوزورسوز A1 ;
 إدراكى:إدراكى A1 ;
+عاطفى:عاطفى A1 ;
+پیسکولجیك:پیسکولجیك A1 ;
 
 
 
@@ -2526,6 +2530,7 @@ LEXICON Nouns
 دونوغلوغ:دونوغلوغ N1 ;
 اوزاما:اوزاما N1 ;
 إفتراء:إفتراء N1 ;
+انسجام:انسجام N1 ;
 چاتی:چاتی N1 ;
 زراعت:زراعت N1 ;
 نغمه:نغمه N1 ;
@@ -3009,7 +3014,7 @@ CD:CD N1 ;
 شی:شی N1 ;
 حركت:حركت N1 ;
 يل:يل N1 ;
-بلا:بلا N1 ;
+بالا:بالا N1 ;
 دولت:دولت N1 ;
 وازیفه:وازیفه N1 ;
 عدد:عدد N1 ;
@@ -3658,6 +3663,7 @@ CD:CD N1 ;
 بارش:بارش N1 ;
 مجلس% الدولة:مجلس% الدولة N1 ;
 یابانجی:یابانجی N1 ;
+خاص:خاص N1 ;
 دولار:دولار N1 ;
 بحت:بحت N1 ;
 سایی:سایی N1 ;
