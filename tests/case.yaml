@@ -1,0 +1,12 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {i} after const":
+  إحتياج<n><pl><px3sp><gen>: إحتياجلارينين
+  قابلیت<n><px3sp><dat>: قابلیتينا
+  

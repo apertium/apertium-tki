@@ -188,12 +188,13 @@ LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
 !%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
-%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
+!%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
+%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye 
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
 !%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
@@ -242,7 +243,7 @@ LEXICON PRON-PERS-MAN
 %<prn%>%<pers%>%<p1%>%<sg%>: CLITICS;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن  # ; !
 
@@ -250,7 +251,7 @@ LEXICON PRON-PERS-SEN
 %<prn%>%<pers%>%<p2%>%<sg%>: # ;
 %<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ئيي # ; ! 
 %<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ئي # ; ! 
-%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ى # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دى # ;
 %<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نىن # ; !
 
@@ -258,7 +259,7 @@ LEXICON PRON-DEM-BU
 
 %<prn%>%<dem%>: CASE-2 ;
 %<prn%>%<dem%>%<gen%>:نون # ;
-%<prn%>%<dem%>%<dat%>:نا #  ;
+%<prn%>%<dem%>%<dat%>:نه #  ;
 %<prn%>%<dem%>%<acc%>:نو # ;
 %<prn%>%<dem%>%<abl%>:ندان # ;
 %<prn%>%<dem%>%<loc%>:ندا # ;
@@ -273,7 +274,7 @@ LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p3%>%<sg%>: # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نون # ; ! 
 %<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نو # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نا # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نه # ; !
 %<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندى # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نىن # ; !
 
@@ -289,7 +290,7 @@ LEXICON PRON-PERS-SIZ
 %<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئن # ; ! 
 %<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ى # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ا # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:دان # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:يلا # ; !
@@ -397,8 +398,9 @@ LEXICON NP-COMMON
 POSSESSION ;
 
 LEXICON CASE-NONOM
+%<nom%>: V-COP ;
 %<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
-%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;   
+%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;   
 !%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
@@ -1834,6 +1836,8 @@ LEXICON Adjectives
 إدراكى:إدراكى A1 ;
 عاطفى:عاطفى A1 ;
 پیسکولجیك:پیسکولجیك A1 ;
+فسيولوجي:فسيولوجي A1 ;
+دیشن:دیشن A1 ;
 
 
 
@@ -2315,6 +2319,7 @@ LEXICON Postpositions
 قیاسلاندغندا:قیاسلاندغندا POST ;
 سراسندا:سراسندا POST ;
 یولیلا:یولیلا POST ;
+اولارغ:اولارغ POST ;
 اوغرونا:اوغرونا POST ;
 دایر:دایر POST ;
 أرتسى:أرتسى POST ;
@@ -2412,6 +2417,7 @@ LEXICON Conjunctions
 عكسينه:عكسينه CC ;
 كيمى:كيمى CA ;
 ديه:ديه CS ;
+اولارغ:اولارغ CS ;
 بلكى:بلكى CA ;
 بيلعكس:بيلعكس CA ;
 بكه:بكه CA ;
@@ -3597,6 +3603,7 @@ CD:CD N1 ;
 مندوب:مندوب N1 ;
 فایدا:فایدا N1 ;
 مشارك:مشارك N1 ;
+غريزى:غريزى N1 ;
 موناسبه:موناسبه N1 ;
 تعلیم:تعلیم N1 ;
 موسسه:موسسه N1 ;
@@ -4004,6 +4011,7 @@ CD:CD N1 ;
 واجب:واجب N1 ;
 بوزوغلوغ:بوزوغلوغ N1 ;
 کییف:کییف N1 ;
+مسامحه:مسامحه N1 ;
 
 
 نوبيل:نوبيل NP-AL ;

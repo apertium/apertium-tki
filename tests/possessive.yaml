@@ -30,11 +30,12 @@ Tests:
     باخچا<n><px2pl><nom> : باخچایز
     اویون<n><px2sg><nom> : اویونون
     توپ<n><px2pl><nom> : توپویز
-اوزو<adj><subst><px2sg><dat> : اوزويا
-خوی<n><px3sp><acc><@obj> : خويونو
-فات<n><pl><px3sp><acc><@obj>: سفاتلارنى
-خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني 
-بالا<n><px2sg><nom>: بالاي
+    گیون<n><px3sp><nom>: گیونی
+    اوزو<adj><subst><px2sg><dat> : اوزويا
+    خوی<n><px3sp><acc><@obj> : خويونو
+    فات<n><pl><px3sp><acc><@obj>: سفاتلارنى
+    خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني 
+    بالا<n><px2sg><nom>: بالاي
 
 
 
