@@ -200,6 +200,7 @@ LEXICON CASE
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
 !%<abl%>:%>%{N%}%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+%<ins%>:%>%{y%}ل%{A%} GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
 LEXICON GENPOSS-GENERAL
 !V-COP ; 
@@ -270,13 +271,23 @@ LEXICON PRON-DEM-BU
 !%<prn%>%<dem%>%<pl%>:nlar CASE-ETC ;
 !%<prn%>%<dem%>%<pl%>%<px3sp%>:nları%{n%} CASE ;
 
+LEXICON PRON-REF
+%<prn%>%<ref%>: CASE-ETC ;                
+!%<prn%>%<ref%>%<px1sg%>:%>%{i%}m CASE-ETC ;                
+%<prn%>%<ref%>%<px2sg%>:%>%{i%}ن CASE-ETC ;                 
+%<prn%>%<ref%>%<px3sg%>:%>%{s%}%{I%}ن CASE-ETC ; 
+%<prn%>%<ref%>%<px3sp%>:%>%{s%}%{I%}ن CASE-ETC ; 
+!%<prn%>%<ref%>%<px1pl%>:%>%{i%}m%{I%}z CASE-ETC ;           
+!%<prn%>%<ref%>%<px2pl%>:%>%{i%}n%{I%}z CASE-ETC ;      
+!%<prn%>%<ref%>%<px3pl%>:%>l%{A%}r%{I%}%{n%} CASE-ETC ;  
+
 LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p3%>%<sg%>: # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نون # ; ! 
 %<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نو # ; ! 
 %<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نه # ; !
 %<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندى # ;
-%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نىن # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نن # ; !
 
 LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
@@ -418,6 +429,9 @@ LEXICON CASE-2
 !%<gen%>:%>نىڭ CLITICS ;
 !%<acc%>:%>نى CLITICS ;
 
+LEXICON CASE-ETC
+CASE ;
+GENPOSS-ETC ;
 
 
 LEXICON PP-PERS
@@ -947,6 +961,7 @@ LEXICON Interjections
 LEXICON Pronouns 
 
 اوزو:اوزو PRON-PERS-OZ ;
+اوزو:اوزو PRON-REF ;
 بورا:بورا PRON-ADV ;
 اورا:اورا PRON-ADV ;
 مه‌ن:مه‌ن PRON-PERS-MAN ;
@@ -1835,9 +1850,10 @@ LEXICON Adjectives
 حوزورسوز:حوزورسوز A1 ;
 إدراكى:إدراكى A1 ;
 عاطفى:عاطفى A1 ;
-پیسکولجیك:پیسکولجیك A1 ;
+پیسکولجیك:پیسکولجیك A4 ;
 فسيولوجي:فسيولوجي A1 ;
 دیشن:دیشن A1 ;
+گلملی:گلملی A1 ;
 
 
 
@@ -1867,6 +1883,7 @@ LEXICON Adverbs
 هاردايسا:هاردايسا ADV3 ;
 دائم:دائم ADV3 ;
 درحل:درحل ADV3 ;
+عادة:عادة ADV3 ;
 هله:هله ADV3 ;
 آسانت:آسانت ADV1 ;
 فناا:فناا ADV1 ;
@@ -2530,6 +2547,7 @@ LEXICON Nouns
 قاپی:قاپی N1 ;
 يشيل:يشيل N1 ;
 هادئ:هادئ N1 ;
+گلمه:گلمه N1 ;
 مناقشه:مناقشه N1 ;
 گلیشیم:گلیشیم N1 ;
 اویانغلغ:اویانغلغ N1 ;
