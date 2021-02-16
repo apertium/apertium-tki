@@ -1,0 +1,9 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+ترك<n><sim>: ترکچه
+الا<n><px2sg><sim> : الانجا

@@ -2376,7 +2376,7 @@ LEXICON Postpositions
 اولمادغی% إیچین:اولمادغی% إیچین POST ;
 بلکی:بلکی POST ;
 بنزیه‌ین:بنزیه‌ین POST ;
-إيستينه:إيستينه POST ; 
+أوزره:أوزره POST ; 
 حالنه:حالنه POST ;
 كيمن:كيمن POST ; 
 خاص:خاص POST ;
@@ -4848,7 +4848,7 @@ LEXICON Verbs
 اوینا:اوینا V-IV ;
 گول:گول V-IV ;
 قاچ:قاچ V-IV ;
-ال:ال V-TV ;
+الا:الا V-TV ;
 ساخلان:ساخلان V-IV ;
 قاخ:قاخ V-IV ;
 اوتو:اوتو V-IV ;
@@ -5299,6 +5299,7 @@ LEXICON Verbs
 بليرت:بليرت V-TV ;
 إنجله:إنجله V-TV ;
 سز:سز V-TV ;
+دستکله:دستکله V-TV ;
 
 LEXICON Abbreviations
 کم:کم ABBR ;
