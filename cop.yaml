@@ -1,0 +1,8 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+Tests:
+
+إيستكلى<adj>+i<cop><aor><p3><pl> : إيستكليلر

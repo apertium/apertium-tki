@@ -832,6 +832,7 @@ LEXICON V-GER
 %<gna_when%>:%>%{I%}نج%{A%} SUBST ; !nead to be tested
 %<gna_perf%>:%>%{y%}%{I%}%{P%} SUBST ; !nead to be tested
 %<gna_aor%>:%>كن SUBST ; !nead to be tested Ex:geçerken
+%<gna_impf%>:%>%{y%}%{A%}ر%{A%}ك # ;
 %<gna_neg%>:%>م%{A%}د%{A%}ن SUBST ; !nead to be tested Ex:olmadan
 %<ger_past%>:%>%{D%}%{I%}غ NP-COMMON ;
 %<ger_impf%>:%>%{y%}%{A%}ن GER-SUBST ;
@@ -1854,6 +1855,7 @@ LEXICON Adjectives
 فسيولوجي:فسيولوجي A1 ;
 دیشن:دیشن A1 ;
 گلملی:گلملی A1 ;
+إيستكلى:إيستكلى A2 ;
 
 
 
@@ -2551,6 +2553,7 @@ LEXICON Nouns
 مناقشه:مناقشه N1 ;
 گلیشیم:گلیشیم N1 ;
 اویانغلغ:اویانغلغ N1 ;
+فاعل% خیر:فاعل% خیر N1 ;
 دونوغلوغ:دونوغلوغ N1 ;
 اوزاما:اوزاما N1 ;
 إفتراء:إفتراء N1 ;
@@ -4030,6 +4033,7 @@ CD:CD N1 ;
 بوزوغلوغ:بوزوغلوغ N1 ;
 کییف:کییف N1 ;
 مسامحه:مسامحه N1 ;
+توتار:توتار N1 ;
 
 
 نوبيل:نوبيل NP-AL ;
