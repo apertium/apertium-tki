@@ -188,8 +188,8 @@ LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
 !%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-!%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
+%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+!%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
@@ -4034,6 +4034,9 @@ CD:CD N1 ;
 کییف:کییف N1 ;
 مسامحه:مسامحه N1 ;
 توتار:توتار N1 ;
+إمبراطوريه:إمبراطوريه N1 ;
+عاصمه:عاصمه N1 ;
+
 
 
 نوبيل:نوبيل NP-AL ;
