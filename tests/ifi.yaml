@@ -1,0 +1,11 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {t}": 
+گچ<v><iv><ifi><p3><sg>: گچتيى
+گچ<v><tv><ifi><p3><sg>: گچتيى
