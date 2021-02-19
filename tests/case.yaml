@@ -34,10 +34,14 @@ Tests:
 يل<n><px2sg><loc>+i<cop><aor><p3><sg>: يلندا
 يل<n><px3sp><loc>+i<cop><aor><p3><sg>: يلندا
 گون<n><px1pl><dat>: گونيميزه
-گون<n><px1pl><dat>+i<cop><aor><p3><sg>: گونيميزه
-گون<adv>+i<cop><aor><p3><sg>: گونيميزه
+گون<n><px1pl><dat>+i<cop><aor><p3><sg>: گونوميزه
+گون<adv>+i<cop><aor><p3><sg>: گونوميزه
 خزمت<n><dat>: خزمته
 خزمت<n><dat>+i<cop><aor><p3><sg>: خزمته
+كييف<n><pl><px1sg><abl>: كييفلارمنن
+كييف<n><pl><px1sg><abl>+i<cop><aor><p3><sg>: كييفلارمنن
+صفحه‌<n><pl><dat>: صفحه‌لاره
+صفحه‌<n><pl><dat>+i<cop><aor><p3><sg>: صفحه‌لاره
 
 
   
