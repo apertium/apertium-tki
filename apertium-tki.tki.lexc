@@ -825,6 +825,7 @@ LEXICON V-GER
 %<gpr_rsub%>:%>%{y%}%{a%}ن SUBST ; ! 
 %<gpr_rsub%>:%>ن%{A%}ن SUBST ; !
 %<gpr_impf%>:%>%{y%}%{A%}ن SUBST ; !
+%<ger_fut%>:%>%{y%}%{A%}ج%{A%}غ%{v%} GER-SUBST ;
 %<gpr_past%>%<subst%>:%>%{D%}%{I%}غ SUBST ; !
 %<gpr_past%>:%>%{D%}%{I%}غ SUBST ; !
 %<gpr_past%>:%>%{D%}%{I%}ه SUBST ; !
@@ -4050,6 +4051,10 @@ CD:CD N1 ;
 حيمايه:حيمايه N1 ;
 مناخ:مناخ N1 ;
 گچیش:گچیش N1 ;
+برمجه:برمجه N1 ;
+درليجى:درليجى N1 ;
+مکنه‌:مکنه‌ N1 ;
+امر:امر N1 ;
 
 
 
@@ -4778,6 +4783,7 @@ LEXICON Verbs
 اوی:اوی V-TV ;
 دیله:دیله V-TV ;
 داین:داین V-IV ;
+ایشله:ایشله V-IV ;
 کسیش:کسیش V-IV ;
 يارات:يارات V-TV ;
 يوكله:يوكله V-TV ;
