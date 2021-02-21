@@ -36,7 +36,7 @@ Tests:
     فات<n><pl><px3sp><acc><@obj>: سفاتلارنى
     خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني 
     بالا<n><px2sg><nom>: بالاي
-
+انلا<v><tv><abil><ger_fut><px3sp><nom>: انلايابيلجغى
 إمبراطوريه‌<n><px2sg><dat>: إمبراطوريه‌سینه‌
 إمبراطوريه‌<n><px3sp><dat>: إمبراطوريه‌سین
 إمبراطوريه‌<n><px2sg><dat>+i<cop><aor><p3><sg>: إمبراطوريه‌سین
@@ -47,9 +47,9 @@ Tests:
 عاصمه<n><px3sp><nom>+i<cop><aor><p3><sg>: عاصمه‌سی
 حمایه‌<n><px3sp><dat>: حمایه‌سینه
 حمایه‌<n><px3sp><dat>+i<cop><aor><p3><sg>: حمایه‌سینه
-إستطنبول<np><top><px2sg><nom>
-İstanbul'un olacak
-
+إستطنبول<np><top><px2sg><nom>: إستطنبولون
+کود<n><px2sg><acc>: کودونو
+کود<n><px3sp><acc>: کودونو
 
 
 
