@@ -6,8 +6,8 @@ Config:
 
 Tests:
 
-  "[twol] {t}": 
-گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
-ئت<v><tv><aor>+i<cop><aor><p3><sg>: ئدر
-ئت<v><tv><pass><abil><aor>: ئديلابیلر
-قولان<v><tv><abil><aor>: قولانابيلر
+ "[twol] {t}": 
+   گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
+   ئت<v><tv><aor>+i<cop><aor><p3><sg>: ئدر
+   ئت<v><tv><pass><abil><aor>: ئديلابیلر
+   قولان<v><tv><abil><aor>: قولانابيلر
