@@ -6,8 +6,8 @@ Config:
 
 Tests:
 
-  "[twol] {L}": 
-گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
-قونوش <v><tv><pass><ger_impf><nom>: قونوشولن
-گوستر<v><tv><ger_impf><nom>
-gösteren olmalı
+ "[twol] {L}": 
+   گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
+   قونوش <v><tv><pass><ger_impf><nom>: قونوشولن
+   گوستر<v><tv><ger_impf><nom>: 0
+   gösteren olmalı : 0
