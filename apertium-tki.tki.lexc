@@ -357,7 +357,8 @@ LEXICON V-COP-IFI-PERS
 !%<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p1%>%<pl%>:%>ك # ;
 %<p2%>%<pl%>:%>%{i%}ن%{I%}ز # ;
-%<p3%>%<pl%>:%>ل%{A%}ر # ;
+!%<p3%>%<pl%>:%>ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 LEXICON V-COP-IFI
 %<ifi%>:%{D%}%{I%} V-COP-IFI-PERS ;
@@ -377,7 +378,8 @@ LEXICON COPULA-P3-PERS
 
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p3%>%<sg%>: # ;
-%<p3%>%<pl%>:%>l%{A%}ر # ;
+!%<p3%>%<pl%>:%>l%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 
 LEXICON V-COP
@@ -454,13 +456,16 @@ LEXICON SUBST
 N-INFL-COMMON ;
 GENPOSS-ETC ;
 !POSSESSION ;
-%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
-%<pl%>:%>ل%{A%}ر CASE ;
+!%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
+!%<pl%>:%>ل%{A%}ر CASE ;
+%<subst%>%<pl%>:لار CASE ; !N-INFL-COMMON ;
+%<pl%>:لار CASE ;
 
 LEXICON N-COMMON
 SUBST ;
 NP-COMMON ;
-%<pl%>:%>ل%{A%}ر NP-COMMON ;
+!%<pl%>:%>ل%{A%}ر NP-COMMON ;
+%<pl%>:لار NP-COMMON ;
 !POST-SUFFIX ; 
 
 LEXICON N1
@@ -474,7 +479,10 @@ LEXICON N2 ! Compound nouns with compulsory possession.
            ! e.g. dikiş makinası, dikiş makinaları, ...
 
 %<n%>: # ; !POSS-REAL ; 
-%<n%>%<pl%>:%>l%{A%}r # ; !POSS-REAL ; 
+!%<n%>%<pl%>:%>l%{A%}r # ; !POSS-REAL ;
+%<n%>%<pl%>:لار # ; !POSS-REAL ;
+
+ 
 
 
 LEXICON N3 ! Nationalities which can form language, etc.
@@ -656,7 +664,7 @@ LEXICON PRON-ITG-INFL !inflectional suffix
 
 LEXICON PRON-QNT
 %<prn%>%<qnt%>: N-COMMON ;
-%<prn%>%<qnt%>%<pl%>:%>l%{A%}r # ;
+%<prn%>%<qnt%>%<pl%>:%>لار # ;
 
 LEXICON PRON-NEG
 
@@ -672,7 +680,7 @@ LEXICON V-FUT-PERS
 %<p3%>%<sg%>:%> # ; 
 %<p1%>%<pl%>:%>غ # ; 
 %<p2%>%<pl%>:%>سز # ; 
-%<p3%>%<pl%>:%>ل%{A%}ر # ;
+%<p3%>%<pl%>:%>لار # ;
 
 LEXICON INTERJ
 
@@ -685,7 +693,7 @@ LEXICON V-PAST-PERS
 %<p3%>%<sg%>: # ;  ! CLITICS ; 
 %<p1%>%<pl%>:%>يغ # ; ! CLITICS ; 
 %<p2%>%<pl%>:%>سز # ; ! CLITICS ; 
-%<p3%>%<pl%>:%>ل%{A%}ر # ; ! CLITICS ;
+%<p3%>%<pl%>:لار # ; ! CLITICS ;
 
 LEXICON V-IFI-PERS
 
@@ -695,7 +703,7 @@ LEXICON V-IFI-PERS
 !%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p1%>%<pl%>:يغ # ; ! CLITICS ;
 %<p2%>%<pl%>:نيز # ; ! CLITICS ;
-%<p3%>%<pl%>:ل%{A%}ر # ; ! CLITICS ;
+%<p3%>%<pl%>:لار # ; ! CLITICS ;
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
@@ -703,7 +711,7 @@ LEXICON V-PROG-PERS
 %<p3%>%<sg%>:ى # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 LEXICON V-AOR-PERS
 %<p1%>%<sg%>:م # ;
@@ -711,7 +719,8 @@ LEXICON V-AOR-PERS
 %<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+!%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 
 LEXICON V-AOR
@@ -766,7 +775,7 @@ LEXICON V-ABIL-PERS
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
 %<p3%>%<pl%>:ن%{A%} # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 
 
@@ -4793,7 +4802,8 @@ LEXICON Verbs
 ياز:ياز V-TV ;
 إشله:إشله V-TV ;
 أوگرن:أوگرن V-TV ;
-اوی:اوی V-TV ;
+
+اوی:اوی V-IV ;
 دیله:دیله V-TV ;
 داین:داین V-IV ;
 إيلارله‌:إيلارله‌ V-IV ;
@@ -5348,6 +5358,7 @@ LEXICON Verbs
 إنجله:إنجله V-TV ;
 سز:سز V-TV ;
 دستکله:دستکله V-TV ;
+پودرلا:پودرلا V-TV ;
 
 LEXICON Abbreviations
 کم:کم ABBR ;
