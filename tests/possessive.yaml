@@ -5,15 +5,19 @@ Config:
     Morph:  ../tki.automorf.hfst
 
 Tests:
-
-  "[twol] {i} after vowel":
-    خوی<n><px3sp><acc> : خویونو
-    إيو<n><px3sp><acc> : أيوينى
-    کتاب<n><px3sp><acc> : کتابینی
+  
+    
+   
 
   "[twol] {i} i:0" :
     التن<n><px3sp><acc> : التننى
+    کتاب<n><px2sg><nom>: کتابی
+    اد<n><px3sp><nom>: ادی
+    عربه‌<n><px2sg><nom>: عربه‌ی
     باخچا<n><px3sp><acc> : باخچاسنی
+    إيش<n><px2sg><nom> : إيشي
+    يازى<n><px2sg><nom> : يازيى
+    بالا<n><px2sg><nom>: بالاي
 
   "[twol] {i}C forms":
     اد<n><px1sg><nom> : ادم
@@ -21,35 +25,36 @@ Tests:
     قيز<n><px1sg><nom> : قيزم
     قونشو<n><px1sg><nom> : قونشوم
     گون<n><px1sg><nom> : گونوم
-    إيش<n><px2sg><nom> : إيشيى
-    يازى<n><px2sg><nom> : يازيى
-    قونشو<n><px2sg><nom> : قونشويو
-    يول<n><px2sg><nom> : يولوى
-    روح<n><px1pl><nom> : روحوموز
-    گوز<n><px1pl><nom> : گوزوموز
-    باخچا<n><px2pl><nom> : باخچایز
-    اویون<n><px2sg><nom> : اویونون
-    توپ<n><px2pl><nom> : توپویز
-    گیون<n><px3sp><nom>: گیونی
-    اوزو<adj><subst><px2sg><dat> : اوزويا
-    خوی<n><px3sp><acc><@obj> : خويونو
-    فات<n><pl><px3sp><acc><@obj>: سفاتلارنى
-    خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني 
-    بالا<n><px2sg><nom>: بالاي
-انلا<v><tv><abil><ger_fut><px3sp><nom>: انلايابيلجغى
-إمبراطوريه‌<n><px2sg><dat>: إمبراطوريه‌سینه‌
-إمبراطوريه‌<n><px3sp><dat>: إمبراطوريه‌سین
-إمبراطوريه‌<n><px2sg><dat>+i<cop><aor><p3><sg>: إمبراطوريه‌سین
-إمبراطوريه‌<n><px3sp><dat>+i<cop><aor><p3><sg>: إمبراطوريه‌سین
 
-عاصمه<n><acc>: عاصمه‌سی
-عاصمه<n><px3sp><nom>: عاصمه‌سی
-عاصمه<n><px3sp><nom>+i<cop><aor><p3><sg>: عاصمه‌سی
-حمایه‌<n><px3sp><dat>: حمایه‌سینه
-حمایه‌<n><px3sp><dat>+i<cop><aor><p3><sg>: حمایه‌سینه
-إستطنبول<np><top><px2sg><nom>: إستطنبولون
-کود<n><px2sg><acc>: کودونو
-کود<n><px3sp><acc>: کودونو
+   
+  "[twol] {i} i:و":
+    قونشو<n><px2sg><nom> : قونشوي
+    يول<n><px2sg><nom> : یولوی
+    توپ<n><px2sg><nom>: توپوی
+    اویون<n><px2sg><nom> : اویونوی
+    سورو<n><px3sp><nom>: سوروسو
+    توپ<n><px2pl><nom> : توپیوز
+    گوز<n><px1pl><nom>: گوزوموز
+    خوی<n><px3sp><acc> : خویونو 
+    کود<n><px3sp><acc>: کودونو
+"[twol] {i} i:ی":
+    ال<n><px1pl><nom>: الیمیز
+    باخچا<n><px2pl><nom> : باخچایز
+    گیون<n><px3sp><nom>: گیونی
+    کتاب<n><px3sp><acc> : کتابینی
+    إيو<n><px3sp><acc> : أيوينى
+    عاصمه<n><px3sp><nom>: عاصمه‌سی
+    حمایه‌<n><px3sp><dat>: حمایه‌سینه
+    إمبراطوريه‌<n><px2sg><dat>: إمبراطوريه‌سینه‌
+    خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني
+    سفات<n><pl><px3sp><acc><@obj>: سفاتلارینی
+   اوزو<adj><subst><px2sg><dat> : اوزويا
+
+     
+    
+  
+
+
 
 
 

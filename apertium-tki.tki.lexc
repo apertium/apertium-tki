@@ -227,7 +227,8 @@ CASE ;
 %<px2sg%>:%>%{y%}%{I%}%{n%} CASE ; 
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
-%<px2pl%>:%>%{i%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
+!%<px2pl%>:%>%{i%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
+%<px2pl%>:%>ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz
 !%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
 %<px3sg%>:%>ل%{A%}ر%{I%} CASE ; 
