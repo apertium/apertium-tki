@@ -194,7 +194,8 @@ LEXICON CASE
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
 !%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
-%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye 
+!%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye 
+%<dat%>:%>ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
 !%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
@@ -246,7 +247,7 @@ LEXICON PRON-PERS-MAN
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ه # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن  # ; !
 
 LEXICON PRON-PERS-SEN 
@@ -254,7 +255,7 @@ LEXICON PRON-PERS-SEN
 %<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ئيي # ; ! 
 %<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ئي # ; ! 
 %<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ه # ; !
-%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نىن # ; !
 
 LEXICON PRON-DEM-BU
@@ -294,13 +295,13 @@ LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-SIZ
 %<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئن # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:‌ین # ; ! 
 %<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ى # ; ! 
 %<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دا # ;
@@ -309,7 +310,7 @@ LEXICON PRON-PERS-SIZ
 
 LEXICON PRON-PERS-OLAR
 %<prn%>%<pers%>%<p3%>%<pl%>: # ;
-%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:ىن # ; ! 
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:‌ین # ; ! 
 %<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:ي # ; ! 
 %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:ئه # ; !
 %<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:دا # ;
@@ -414,7 +415,8 @@ POSSESSION ;
 LEXICON CASE-NONOM
 %<nom%>: V-COP ;
 %<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
-%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;   
+!%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;   
+%<dat%>:%>ه GENPOSS-GENERAL ;
 !%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
@@ -4039,7 +4041,7 @@ CD:CD N1 ;
 يورو:يورو N1 ;
 سياده:سياده N1 ;
 أردم:أردم N1 ;
-ميرات:ميرات N1 ;
+ميراس:ميراس N1 ;
 إستخدام:إستخدام N1 ;
 إيجاب:إيجاب N1 ;
 موعد:موعد N1 ;
@@ -4076,6 +4078,7 @@ CD:CD N1 ;
 مکنه‌:مکنه‌ N1 ;
 امر:امر N1 ;
 حیسبلاما:حیسبلاما N1 ;
+هدیه:هدیه N1 ;
 
 
 
