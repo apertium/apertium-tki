@@ -1,0 +1,10 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[lexc] {i}:+ى":
+اوزان<v><iv><ger_inf><loc>+ى<cop><aor><p3><sg><gm>: اوزانمغتادر 

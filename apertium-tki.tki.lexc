@@ -462,13 +462,13 @@ GENPOSS-ETC ;
 !%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 !%<pl%>:%>ل%{A%}ر CASE ;
 %<subst%>%<pl%>:لار CASE ; !N-INFL-COMMON ;
-%<pl%>:لار CASE ;
+!%<pl%>:لار CASE ;
 
 LEXICON N-COMMON
 SUBST ;
 NP-COMMON ;
 !%<pl%>:%>ل%{A%}ر NP-COMMON ;
-%<pl%>:لار NP-COMMON ;
+%<pl%>:%>لار NP-COMMON ;
 !POST-SUFFIX ; 
 
 LEXICON N1
@@ -483,7 +483,7 @@ LEXICON N2 ! Compound nouns with compulsory possession.
 
 %<n%>: # ; !POSS-REAL ; 
 !%<n%>%<pl%>:%>l%{A%}r # ; !POSS-REAL ;
-%<n%>%<pl%>:لار # ; !POSS-REAL ;
+!%<n%>%<pl%>:لار # ; !POSS-REAL ;
 
  
 
@@ -792,7 +792,6 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>س%{U%}ن V-ABIL-PERS ;
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
-%<abil%>:%>%{y%}%{A%}بیل V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}بیلم V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}م V-PROG ;
 %<abil%>%<neg%>:%>%{y%}%{A%}م%{A%} V-IFI ;
@@ -821,10 +820,18 @@ LEXICON GER-CASE-ETC
 
 CASE ;
 !GER-GENPOSS-ETC ;
+LEXICON GER-POSS-REAL
+
+%<px1sg%>:%>%{i%}م GER-CASE-ETC ;
+%<px2sg%>:%>%{i%}ن GER-CASE-ETC ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} GER-CASE-ETC ;
+%<px1pl%>:%>%{i%}م%{I%}ز GER-CASE-ETC ;
+%<px2pl%>:%>%{i%}ن%{I%}ز GER-CASE-ETC ;
+%<px3pl%>:%>لار%{I%}%{n%} GER-CASE-ETC ;
 
 LEXICON GER-N-INFL-COMMON
 
-!GER-POSS-REAL ;
+GER-POSS-REAL ;
 GER-CASE-ETC ;
 
 LEXICON GER-SUBST
@@ -853,7 +860,7 @@ LEXICON V-GER
 
 LEXICON V-GERUNDS-AOR-AR
 
-%<ger_aor%>:%>%{A%}ر SUBST ; 
+%<ger_aor%>:%>%{A%}ر GER-N-INFL-COMMON ; 
 
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
@@ -3791,7 +3798,7 @@ CD:CD N1 ;
 موزف:موزف N1 ;
 ایچریك:ایچریك N1 ;
 یاشم:یاشم N1 ;
-ديشيكليك:ديشيكليك N1 ;
+ديشيغليغ:ديشيغليغ N1 ;
 یارگلما:یارگلما N1 ;
 أون:أون N1 ;
 دوغوم:دوغوم N1 ;
@@ -4079,6 +4086,7 @@ CD:CD N1 ;
 امر:امر N1 ;
 حیسبلاما:حیسبلاما N1 ;
 هدیه:هدیه N1 ;
+ديزى:ديزى N1 ;
 
 
 
