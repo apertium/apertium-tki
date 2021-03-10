@@ -201,7 +201,7 @@ LEXICON CASE
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
 !%<abl%>:%>%{N%}%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
-%<ins%>:%>%{y%}ل%{A%} GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+!%<ins%>:%>%{y%}ل%{A%} GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
 LEXICON GENPOSS-GENERAL
 !V-COP ; 
@@ -365,6 +365,10 @@ LEXICON V-COP-IFI-PERS
 LEXICON V-COP-IFI
 %<ifi%>:%{D%}%{I%} V-COP-IFI-PERS ;
 
+LEXICON V-IFI-COP
+%<cond%>:%>s%{A%} V-COND-PERS;
+
+
 LEXICON V-COP-PERS
 
 %<p1%>%<sg%>:%>%{y%}%{I%}م  # ;
@@ -372,7 +376,7 @@ LEXICON V-COP-PERS
 %<p3%>%<sg%>: # ;
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر  # ;
 !%<p1%>%<pl%>:%>%{y%}%{I%}ز  # ;
-%<p1%>%<pl%>:%>ز # ; 
+%<p1%>%<pl%>:%>غ # ; 
 %<p2%>%<pl%>:%>s%{I%}n%{I%}ز  # ;
 !%<p3%>%<pl%>:%>ل%{A%}ر # ;
 
@@ -386,6 +390,7 @@ LEXICON COPULA-P3-PERS
 
 LEXICON V-COP
 %+i%<cop%>:%>%{y%} V-COP-IFI ;
+%+i%<cop%>:%>%{y%} V-IFI-COP ;
 %+i%<cop%>%<aor%>: V-COP-PERS ;
 %+i%<cop%>%<aor%>: V-AOR-PERS ;
 %+i%<cop%>%<aor%>: COPULA-P3-PERS ;
@@ -878,6 +883,7 @@ LEXICON V-COND-PERS
 
 LEXICON V-COND 
 %<gna_cond%>:%>س%{A%} V-COND-PERS ;
+%<cond%>:%>س%{A%} V-COND-PERS ;
 
 LEXICON V-NEG
 %<neg%>:م%{A%} V-NEG-COMMON ;

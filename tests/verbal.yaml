@@ -1,0 +1,10 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {D} d:d" :
+اوخو<v><tv><pass><ger_past><px3sp><acc>: اوخونداغيني
