@@ -1,0 +1,14 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {L} l:m" :
+
+  "[twol] {L} l:n" :
+ دا<v><iv><pass><ger><dat>: داميه
+
+ باشلا<v><iv><pass><past>+i<cop><aor><p3><frm><sg>: باشلانمشتر

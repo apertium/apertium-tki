@@ -18,6 +18,8 @@ Tests:
     إيش<n><px2sg><nom> : إيشي
     يازى<n><px2sg><nom> : يازيى
     بالا<n><px2sg><nom>: بالاي
+    بول<v><tv><pass><aor>: بولنر
+    بليرت<v><tv><pass><aor>: بليرتنر
 
   "[twol] {i}C forms":
     اد<n><px1sg><nom> : ادم
@@ -49,6 +51,8 @@ Tests:
     خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني
     سفات<n><pl><px3sp><acc><@obj>: سفاتلارینی
    اوزو<adj><subst><px2sg><dat> : اوزويا
+   أردم<n><px3sp><nom>: أردمى
+   گیر<v><iv><ger_past><px1pl><loc>: گیرديغيميزدا
 "[twol] {s} s:س":
  حمایه‌<n><px3sp><dat>: حمایه‌سینه
  أونجه<n><px3sp><dat>: أونجه‌سینه
