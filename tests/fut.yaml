@@ -1,0 +1,14 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {A} A:0" :
+  گل<v><iv><fut>: گلر
+  گيت<v><iv><fut>: گيدر
+  "[twol] {A} A:ا" :
+  يات<v><iv><fut>: ياتار
+  ياز<v><iv><fut>: يازار

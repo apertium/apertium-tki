@@ -6,9 +6,18 @@ Config:
 
 Tests:
 
-  "[twol] {L} l:m" :
+  "[twol] {L} l:م" :
 
-  "[twol] {L} l:n" :
+  "[twol] {L} l:ن" :
  دا<v><iv><pass><ger><dat>: داميه
 
  باشلا<v><iv><pass><past>+i<cop><aor><p3><frm><sg>: باشلانمشتر
+  "[twol] {i} i:0" :
+حاسيبه<n><px2sg><nom>: حاسيبهي
+
+  "[twol] {L} l:ل" :
+اوخو<v><tv><pass><ger><px3sp><nom>: اوخونماسي
+
+
+ئت<v><tv><pass><ger><px3sp><nom>+i<cop><aor><p3><sg><gm>: ئديلماسي
+

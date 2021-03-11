@@ -6,6 +6,6 @@ Config:
 
 Tests:
 
-  "[twol] {D} d:d" :
-اوخو<v><tv><pass><ger_past><px3sp><acc>: اوخونداغيني
-  
+ "[twol] {D} d=d ": 
+اوخو<v><tv><pass><ger_past><px2sg><acc>: اوخوندوغنو
+

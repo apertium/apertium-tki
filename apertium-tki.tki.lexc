@@ -771,8 +771,10 @@ LEXICON V-PAST
 %<past%>:%>م%{A%}م%{I%}ش V-PAST-PERS ;
 
 LEXICON V-FUT
-%<fut%>:%>%{A%}ج%{A%}غ V-FUT-PERS ;
-%<fut%>%<fut%>:%>م%{A%}ي%{A%}ج%{A%}غ V-FUT-PERS ;
+!%<fut%>:%>%{A%}ج%{A%}غ V-FUT-PERS ;
+%<fut%>:%>%{A%}ر V-FUT-PERS ;
+!%<fut%>%<fut%>:%>م%{A%}ي%{A%}ج%{A%}غ V-FUT-PERS ;
+%<fut%>%<neg%>:%>م%{A%}ز V-FUT-PERS ;
 !%<fut%>%<dub%>:%>%{E%}%>دى%{G%}%{A%}ن V-COP-PERS ;
 
 LEXICON V-ABIL-PERS
@@ -5375,6 +5377,7 @@ LEXICON Verbs
 زینجیرلی:زینجیرلی V-TV ;
 زورلی:زورلی V-TV ;
 اخسی:اخسی V-IV ;
+ئديل:ئديل V-IV ;
 بليرت:بليرت V-TV ;
 إنجله:إنجله V-TV ;
 سز:سز V-TV ;
