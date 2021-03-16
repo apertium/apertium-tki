@@ -1,0 +1,15 @@
+Config: 
+  hfst: 
+    App:  hfst-lookup
+    Gen:  ../tki.autogen.hfst
+    Morph:  ../tki.automorf.hfst
+
+Tests:
+
+  "[twol] {L} l:ن" :
+گون<n><pl><gen>: گوننرین
+
+  "[twol] {L} l:ل" :
+أيو<n><pl><nom>: أيولار
+ 
+

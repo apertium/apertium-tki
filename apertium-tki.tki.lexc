@@ -359,8 +359,8 @@ LEXICON V-COP-IFI-PERS
 !%<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p1%>%<pl%>:%>ك # ;
 %<p2%>%<pl%>:%>%{i%}ن%{I%}ز # ;
-!%<p3%>%<pl%>:%>ل%{A%}ر # ;
-%<p3%>%<pl%>:لار # ;
+%<p3%>%<pl%>:%>%{L%}%{a%}ر # ;
+!%<p3%>%<pl%>:لار # ;
 
 LEXICON V-COP-IFI
 %<ifi%>:%{D%}%{I%} V-COP-IFI-PERS ;
@@ -384,8 +384,8 @@ LEXICON COPULA-P3-PERS
 
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p3%>%<sg%>: # ;
-!%<p3%>%<pl%>:%>l%{A%}ر # ;
-%<p3%>%<pl%>:لار # ;
+%<p3%>%<pl%>:%>%{L%}%{a%}ر # ;
+!%<p3%>%<pl%>:لار # ;
 
 
 LEXICON V-COP
@@ -466,14 +466,14 @@ GENPOSS-ETC ;
 !POSSESSION ;
 !%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
 !%<pl%>:%>ل%{A%}ر CASE ;
-%<subst%>%<pl%>:لار CASE ; !N-INFL-COMMON ;
+%<subst%>%<pl%>:%>%{L%}%{a%}ر CASE ; !N-INFL-COMMON ;
 !%<pl%>:لار CASE ;
 
 LEXICON N-COMMON
 SUBST ;
 NP-COMMON ;
-!%<pl%>:%>ل%{A%}ر NP-COMMON ;
-%<pl%>:%>لار NP-COMMON ;
+%<pl%>:%>%{L%}%{a%}ر NP-COMMON ;
+!%<pl%>:%>لار NP-COMMON ;
 !POST-SUFFIX ; 
 
 LEXICON N1
@@ -1936,6 +1936,7 @@ LEXICON Adverbs
 قاستن:قاستن ADV3 ;
 هاردا:هاردا ADV-ITG ;
 نيه:نيه ADV-ITG ;
+نچی:نچی ADV-ITG ;
 هارا:هارا ADV-ITG ;
 يلارجە:يلارجە ADV1 ; !
 أيلارجه:أيلارجه ADV1 ; !
