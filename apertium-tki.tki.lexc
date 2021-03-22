@@ -177,8 +177,8 @@ Verbs ;
 Punctuation ;
 Abbreviations ;
 Interjections ;
-DIGITLEX ;
-BARB ;
+!DIGITLEX ;
+!BARB ;
 
 LEXICON ABBR
 
@@ -444,14 +444,14 @@ CASE ;
 GENPOSS-ETC ;
 
 
-LEXICON PP-PERS
-# ;
+!LEXICON PP-PERS
+!# ;
 
 
 
 LEXICON LI-POSTPOSITION
 
-%+لی%<post%>:%>ل%{I%} PP-PERS ;  	
+%+لی%<post%>:%>ل%{I%} # ; !PP-PERS ;  	
 
 LEXICON N-INFL-COMMON
 CASE-NONOM ;
@@ -5465,16 +5465,16 @@ LEXICON Punctuation
 
 
 
-<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
-LEXICON DIGITLEX
+!LEXICON DIGITLEX
 
-%<num%>: # ; 
+!%<num%>: # ; 
 !%<num%>%<subst%>: SUBST-2 ;
 
-LEXICON BARB
+!LEXICON BARB
 
-%<barb%>: # ;
+!%<barb%>: # ;
 
 
 
