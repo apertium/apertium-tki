@@ -7,35 +7,23 @@ Config:
 Tests:
 
   "[twol] {y}:0":
-
- توركيا<np><top><gen>: تورکیانین
- توركيا<np><top><gen>+i<cop><aor><p3><sg>: تورکیانین 
- هدیه‌<n><gen>: هدیه‌نین
- هدیه‌<n><px2sg><gen>: هدیه‌نین
- هدیه‌<n><gen>+i<cop><aor><p3><sg>: هدیه‌نین
- هدیه‌<n><px2sg><gen>+i<cop><aor><p3><sg>: هدیه‌نین
- أوشاغ<n><gen>: أوشاغين
-
-
+    توركيا<np><top><gen>: تورکیانین
+    توركيا<np><top><gen>+i<cop><aor><p3><sg>: تورکیانین 
+    هدیە<n><gen>: هدیەنین
+    هدیە<n><px2sg><gen>: هدیەنین
+    هدیە<n><gen>+i<cop><aor><p3><sg>: هدیەنین
+    هدیە<n><px2sg><gen>+i<cop><aor><p3><sg>: هدیەنین
+    أوشاغ<n><gen>: أوشاغين
 
   "[twol] {D}:د":
-
-
-يل<n><px2sg><loc>: يلندا
-يل<n><px3sp><loc>: يلندا
-يل<n><px2sg><loc>+i<cop><aor><p3><sg>: يلندا
-يل<n><px3sp><loc>+i<cop><aor><p3><sg>: يلندا
+    يل<n><px2sg><loc>: يلندا
+    يل<n><px3sp><loc>: يلندا
+    يل<n><px2sg><loc>+i<cop><aor><p3><sg>: يلندا
+    يل<n><px3sp><loc>+i<cop><aor><p3><sg>: يلندا
 
   "[twol] {A}:0":
-
-
-كييف<n><pl><px1sg><abl>: كييفلارمنن
-
+    كييف<n><pl><px1sg><abl>: كييفلارمنن
 
   "[twol] {I}:ي":
-‌دیل<n><px2sg><acc>: ‌دیلینی
-‌دیل<n><px3sp><acc>: ‌دیلینی
-
-
-
-  
+    دیل<n><px2sg><acc>: دیلینی
+    دیل<n><px3sp><acc>: دیلینی
