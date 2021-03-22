@@ -142,6 +142,7 @@ Multichar_Symbols
 %{a%}                 ! realised as و or null
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
+%{N%}                 ! realised as ن or ي or null
 %{q%}		      ! for loanwords, devoicing suffixes
 %{ğ%}                 ! ^^ opposite
 %{e%}                 ! forces front harmony
@@ -188,7 +189,7 @@ LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
 !%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+%<gen%>:%>%{N%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
