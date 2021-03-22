@@ -6,30 +6,24 @@ Config:
 
 Tests:
 
- "[twol] {A} pass after soft vowel": 
-  
- گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
- "[twol] {A} pass after hard vowel": 
+"[twol] {A} pass after soft vowel": 
+  گوستر<v><tv><pass><ger_impf><nom>: گوستریلن
 
-اوی<v><iv><pass><ger_impf><nom>+i<cop><aor><p3><sg>: اویولان
+"[twol] {A} pass after hard vowel": 
+  اوی<v><iv><pass><ger_impf><nom>+i<cop><aor><p3><sg>: اویولان
    
-
-
- "[twol] {ت} aor after soft vowel":
+"[twol] {ت} aor after soft vowel":
   ئت<v><tv><aor>+i<cop><aor><p3><sg>: ئدر 
   گیت<v><iv><ger_aor><nom>+i<cop><aor><p3><sg>: گیدر
- "[twol] {ت} aor after hard vowel":
+
+"[twol] {ت} aor after hard vowel":
   توت<v><tv><aor>+i<cop><aor><p3><sg>: توتار
   یات<v><iv><aor>+i<cop><aor><p3><sg>: یاتار
 
- "[twol] {A} abil hard vowel":
- 
-قولان<v><tv><abil><aor>+i<cop><aor><p3><sg>: قولانابيلر
-اوزان<v><iv><abil><aor>+i<cop><aor><p3><sg>: اوزانابیلر
- "[twol] {A} abil soft vowel":
+"[twol] {A} abil hard vowel":
+  قولان<v><tv><abil><aor>+i<cop><aor><p3><sg>: قولانابيلر
+  اوزان<v><iv><abil><aor>+i<cop><aor><p3><sg>: اوزانابیلر
 
-سو<v><tv><abil><aor>+i<cop><aor><p3><sg>: سوه‌بیلر
-گیر<v><tv><pot><aor>+i<cop><aor><p3><sg>: گیره‌بیلر
-
-
-
+"[twol] {A} abil soft vowel":
+  سو<v><tv><abil><aor>+i<cop><aor><p3><sg>: سوەبیلر
+  گیر<v><tv><pot><aor>+i<cop><aor><p3><sg>: گیرەبیلر
