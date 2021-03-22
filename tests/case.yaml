@@ -6,6 +6,19 @@ Config:
 
 Tests:
 
+  "[twol] genitive in -nin":
+    توركيا<np><top><gen>: تورکیانین
+    هدیە<n><gen>: هدیەنین
+
+  "[twol] genitive in -in":
+    أوشاغ<n><gen>: أوشاغين
+    
+  "[twol] genitive in -un":
+    قورت<n><gen>: قورتون
+
+  "[twol] genitive in -yün":
+    گوزلوغ<n><gen>: گوزلوغيون
+
   "[twol] {y}:0":
     توركيا<np><top><gen>: تورکیانین
     توركيا<np><top><gen>+i<cop><aor><p3><sg>: تورکیانین 
