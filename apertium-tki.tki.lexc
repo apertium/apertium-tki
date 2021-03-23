@@ -142,6 +142,7 @@ Multichar_Symbols
 %{a%}                 ! realised as و or null
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
+%{N%}                 ! realised as ن or ي or null
 %{q%}		      ! for loanwords, devoicing suffixes
 %{ğ%}                 ! ^^ opposite
 %{e%}                 ! forces front harmony
@@ -177,8 +178,8 @@ Verbs ;
 Punctuation ;
 Abbreviations ;
 Interjections ;
-DIGITLEX ;
-BARB ;
+!DIGITLEX ;
+!BARB ;
 
 LEXICON ABBR
 
@@ -188,7 +189,7 @@ LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
 !%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+%<gen%>:%>%{N%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
@@ -444,14 +445,14 @@ CASE ;
 GENPOSS-ETC ;
 
 
-LEXICON PP-PERS
-# ;
+!LEXICON PP-PERS
+!# ;
 
 
 
 LEXICON LI-POSTPOSITION
 
-%+لی%<post%>:%>ل%{I%} PP-PERS ;  	
+%+لی%<post%>:%>ل%{I%} # ; !PP-PERS ;  	
 
 LEXICON N-INFL-COMMON
 CASE-NONOM ;
@@ -5468,16 +5469,16 @@ LEXICON Punctuation
 
 
 
-<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
-LEXICON DIGITLEX
+!LEXICON DIGITLEX
 
-%<num%>: # ; 
+!%<num%>: # ; 
 !%<num%>%<subst%>: SUBST-2 ;
 
-LEXICON BARB
+!LEXICON BARB
 
-%<barb%>: # ;
+!%<barb%>: # ;
 
 
 
