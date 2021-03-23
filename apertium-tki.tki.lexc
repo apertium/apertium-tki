@@ -10,7 +10,7 @@ Multichar_Symbols
 %<v%>           ! Verb
 
 %<cnjcoo%>        ! Co-ordinating conjunction
-%<cnjsub%>        ! Subordinating conjunction
+%<cnjsub%>        !  Subordinating conjunction
 %<cnjadv%>        ! Adverbial conjunction
 %<num%>           ! Numeral
 %<prn%>           ! Pronoun
@@ -1894,6 +1894,7 @@ LEXICON Adjectives
 حیسابی:حیسابی A1 ;
 معيارى:معيارى A1 ;
 عملى:عملى A1 ;
+مسل:مسل A1 ;
 
 
 
@@ -1911,6 +1912,7 @@ LEXICON Adverbs
 بیرقاچ:بیرقاچ ADV1 ;
 رسما:رسما ADV1 ;
 ساغلم:ساغلم ADV1 ;
+مسل:مسل ADV1 ;
 نيجا:نيجا ADV-ITG ;
 أوزرينده:أوزرينده ADV1 ;
 شبهسيز:شبهسيز ADV2 ;
@@ -3548,7 +3550,7 @@ CD:CD N1 ;
 د:د N1 ;
 إكيلى:إكيلى N1 ;
 ترس:ترس N1 ;
-مسلى:مسلى N1 ;
+مسل:مسل N1 ;
 سوچلاما:سوچلاما N1 ;
 وزین:وزین N1 ;
 عام:عام N1 ;
