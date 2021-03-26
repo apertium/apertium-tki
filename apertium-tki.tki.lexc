@@ -192,7 +192,7 @@ LEXICON CASE
 %<gen%>:%>%{N%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
-%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
+%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım öz -> özünü
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
 !%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
 !%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye 
@@ -992,11 +992,11 @@ LEXICON Interjections
 LEXICON Pronouns 
 
 اوزو:اوزو PRON-PERS-OZ ;
-اوزو:اوزو PRON-REF ;
+أوز:أوز PRON-REF ;
 بورا:بورا PRON-ADV ;
 اورا:اورا PRON-ADV ;
 مه‌ن:مه‌ن PRON-PERS-MAN ;
-سىن:سىن PRON-PERS-SEN ;
+سه‌ن:سه‌ن PRON-PERS-SEN ;
 بيز:بيز PRON-PERS-BIZ ;
 سيز:سيز PRON-PERS-SIZ ;
 اولار:اولار PRON-PERS-OLAR ;
@@ -2307,6 +2307,7 @@ LEXICON Adverbs
 متتوع:متتوع ADV1 ;
 مسلن:مسلن ADV1 ;
 عينن:عينن ADV1 ;
+انن:انن ADV1 ;
 
 
 
@@ -2377,6 +2378,7 @@ LEXICON Determiners
 
 LEXICON Postpositions 
 قیاسلا:قیاسلا POST ;
+انن:انن POST ;
 قیاسلاندغندا:قیاسلاندغندا POST ;
 سراسندا:سراسندا POST ;
 یولیلا:یولیلا POST ;
@@ -2465,7 +2467,7 @@ LEXICON Conjunctions
 أما:أما CC ;
 دا:دا CC ;
 همده:همده CC ;
-يعني:يعني CC ;
+يعنى:يعنى CC ;
 انجاغ:انجاغ CC ;
 زايد:زايد CC ; ! Plus
 ها:ها CC ;
@@ -2531,7 +2533,7 @@ LEXICON Numerals
 دورت:دورت NUM ; 
 بيش:بيش NUM ;
 التىِ:التىِ NUM ;
-يدي:يدي NUM ;	
+یدی:یدی NUM ;	
 سكيز:سكيز NUM ;
 دوقوز:دوقوز NUM ;
 آون:آون NUM ;
@@ -2986,7 +2988,7 @@ TV:TV N1 ;
 محامی:محامی N1 ;
 معالجه:معالجه N1 ;
 أودمه:أودمه N1 ;
-مدير:مدير N1 ;
+مودیر:مودیر N1 ;
 إليرلمه:إليرلمه N1 ;
 فازلالشما:فازلالشما N1 ;
 قابلیت:قابلیت N1 ;
@@ -3030,7 +3032,7 @@ TV:TV N1 ;
 گجه:گجه N1 ;
 درنك:درنك N1 ;
 علام:علام N1 ;
-وثيقة:وثيقة N1 ;
+وتيقه:وتيقه N1 ;
 قوشاتن:قوشاتن N1 ;
 إنترنيت:إنترنيت N1 ;
 إيزين:إيزين N1 ;
@@ -3204,7 +3206,7 @@ CD:CD N1 ;
 مخزن:مخزن N1 ;
 اسواق:اسواق N1 ;
 ماركت:ماركت N1 ;
-ير:ير N1 ;
+یر:یر N1 ;
 عصمان:عصمان N1;
 دوار:دوار N1 ;
 دام:دام N1 ;
@@ -3352,7 +3354,6 @@ CD:CD N1 ;
 س:س N1 ;
 إیچری:إیچری N1 ;
 تلفون:تلفون N1 ;
-تركمانجه:تركمانجه N1 ;
 سلام:سلام N1 ;
 قانات:قانات N1 ;
 موفاجئه:موفاجئه N1 ;
