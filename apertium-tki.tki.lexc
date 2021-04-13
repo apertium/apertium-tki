@@ -954,20 +954,20 @@ LEXICON V-TV
 
 
 LEXICON PRON-ITG 
-كيم:كيم PRON-ITG-INFL ;
+کیم:کیم PRON-ITG-INFL ;
 بیربیری:بیربیری PRON-RECIP ;
-كيم% كيمه:كيم% كيمه PRON-ITG-INFL ;
-نه:نه PRON-ITG-INFL ;
-نيي:نيي PRON-ITG-INFL ;
-نيچن:نيچن PRON-ITG-INFL ;
-هاسى:هاسى PRON-ITG-INFL ;
-ناخسى:ناخسى PRON-ITG-INFL ;
+کیم% کیمە:کیم% کیمە PRON-ITG-INFL ;
+نە:نە PRON-ITG-INFL ;
+نیی:نیی PRON-ITG-INFL ;
+نیچن:نیچن PRON-ITG-INFL ;
+هاسی:هاسی PRON-ITG-INFL ;
+ناخسی:ناخسی PRON-ITG-INFL ;
 نادی:نادی PRON-ITG-INFL ;
 هاردا:هاردا PRON-ITG-INFL ;
 نانجا:نانجا PRON-ITG-INFL ;
-هانى:هانى PRON-ITG-INFL ;
+هانی:هانی PRON-ITG-INFL ;
 هرا:هرا PRON-ITG-INFL ;
-نيى:نيى PRON-ITG-INFL ;
+نیی:نیی PRON-ITG-INFL ;
 هرناخسی:هرناخسی PRON-ITG-INFL ;
 ناخسی:ناخسی PRON-ITG-INFL ;
 
@@ -976,19 +976,19 @@ LEXICON Interjections
 یو:یو INTERJ ;
 فلان:فلان INTERJ ;
 فلان% فستان:فلان% فستان INTERJ ;
-أى:أى INTERJ ;
+أی:أی INTERJ ;
 إه:إه INTERJ ;
 هه:هه INTERJ ;
 مرحبا:مرحبا INTERJ ;
 إنشالله:إنشالله INTERJ ;
 پکی:پکی INTERJ ;
-مسله:مسله INTERJ ;
+مسله:مسلە INTERJ ;
 عجبا:عجبا INTERJ ;
-هادى:هادى INTERJ ;
-واى:واى INTERJ ;
+هادی:هادی INTERJ ;
+وای:وای INTERJ ;
 آه:آه INTERJ ;
 تمام:تمام INTERJ ;
-يو:يو INTERJ ;
+یو:یو INTERJ ;
 
 
 LEXICON Pronouns 
@@ -997,20 +997,20 @@ LEXICON Pronouns
 أوز:أوز PRON-REF ;
 بورا:بورا PRON-ADV ;
 اورا:اورا PRON-ADV ;
-مه‌ن:مه‌ن PRON-PERS-MAN ;
-سه‌ن:سه‌ن PRON-PERS-SEN ;
-بيز:بيز PRON-PERS-BIZ ;
-سيز:سيز PRON-PERS-SIZ ;
+مەن:مەن PRON-PERS-MAN ;
+سەن:سەن PRON-PERS-SEN ;
+بیز:بیز PRON-PERS-BIZ ;
+سیز:سیز PRON-PERS-SIZ ;
 اولار:اولار PRON-PERS-OLAR ;
 او:او PRON-PERS-O ;
-هامسى:هامسى PRON-QNT ;
-هر% شي:هر% شي PRON-QNT ;
-هيج:هيج PRON-QNT ;
-كيمسه:كيمسه PRON-QNT ;
+هامسی:هامسی PRON-QNT ;
+هر% شی:هر% شی PRON-QNT ;
+هیچ:هیچ PRON-QNT ;
+کیمسه:کیمسه PRON-QNT ;
 چوخو:چوخو PRON-QNT ;
-هيچ% بير:هيچ% بير PRON-QNT ;
-هر% بير:هر% بير PRON-QNT ;
-هركش:هركش PRON-QNT ;
+هیچ% بیر:هیچ% بیر PRON-QNT ;
+هر% بیر:هر% بیر PRON-QNT ;
+هرکش:هرکش PRON-QNT ;
 بیر:بیر PRON-PERS-O ;
 إیکیسی:إیکیسی PRON-PERS-O ;
 بیربیر:بیربیر PRON-PERS-BIZ ;
@@ -1021,48 +1021,48 @@ LEXICON Pronouns
 بیری:بیری PRON-PERS-O ;
 بیری:بیری PRON-IND ;
 هپ:هپ PRON-QNT ;
-هیچبیر% شی:هیچبیر% شی PRON-NEG ;
+هیجبیر% شی:هیچبیر% شی PRON-NEG ;
 هیچبیر:هیچبیر PRON-QNT ;
 بیرسی:بیرسی PRON-QNT ;
 بیرسی:بیرسی PRON-PERS-O ;
-بيربير:بيربير PRON-PERS-O ;
+بیربیر:بیربیر PRON-PERS-O ;
 بعزلاری:بعزلاری PRON-QNT ;
 بعزی:بعزی PRON-QNT ;
 هرکش:هرکش PRON-QNT ;
-كيم:كيم PRON-ITG ;
-هبسى:هبسى PRON-QNT ;
-هبسى:هبسى DET-QNT ;
-بیربیری:بیربیر PRON-RECIP ;
+کیم:کیم PRON-ITG ;
+هپسی:هپسی PRON-QNT ;
+هپسی:هپسی DET-QNT ;
+بیربیری:بیربیری PRON-RECIP ;
 PRON-ITG ;
 
 
 
 
 LEXICON Adjectives
-بير:بير A1 ;
+بیر:بیر A1 ;
 گوزل:گوزل A1 ;
 موجود:موجود A1 ;
-ديمقراطى:ديمقراطى A1 ;
+دیمقراطی:دیمقراطی A1 ;
 شیرین:شیرین A1 ;
 بزات:بزات A1 ;
-بشارلى:بشارلى A1 ;
+بشارلی:بشارلی A1 ;
 قاستن:قاستن A1 ;
 اولملو:اولملو A1 ;
 یالچن:یالچن A1 ;
 تمام:تمام A1 ;
 ازاب:ازاب A1 ;
-علاقلالى:علاقلالى A1 ;
+علاقلای:علاقلی A1 ;
 اوسته:اوسته A1 ;
-علاقلی:علاقلی A1 ;
+
 ساغلغلی:ساغلغلی A1 ;
 باغرساغ:باغرساغ A1 ;
 اوست:اوست A1 ;
 دار:دار A1 ;
-يرلى:يرلى A2 ;
+یرلی:یرلی A2 ;
 منحصر:منحصر A1 ;
 بویوك:بویوك A1 ;
 یاخن:یاخن A1 ;
-شخصى:شخصى A1 ;
+شخصی:شخصی A1 ;
 ارتغ:ارتغ A1 ;
 إختیار:إختیار A1 ;
 تابی:تابی A1 ;
@@ -1070,22 +1070,22 @@ LEXICON Adjectives
 ارخا:ارخا A1 ;
 یوکسك:یوکسك A1 ;
 بویوك:بویوك A2 ;
-سريع:سريع A2 ;
+سریع:سریع A2 ;
 عجله:عجله A2 ;
 اوخومش:اوخومش A1 ;
-اورتا% حالی:اورتا% حالی A1 ;
-يارم:يارم A1 ;
-أسكى:أسكى A1 ;
-أسكى:أسكى A2 ;
+اورتا% حالی:اورتا% ‌حالی A1 ;
+یارم:یارم A1 ;
+أسکی:أسکی A1 ;
+أسکی:أسکی A2 ;
 بربر:بربر A1 ;
 إسلامی:إسلامی A1 ;
 کیفلی:کیفلی A2 ;
 کوچوك:کوچوك A2 ;
 بیرنجی:بیرنجی A1 ;
-إكينجى:إكينجى A1 ;
+إکینجی:إکینجی A1 ;
 ساوغ:ساوغ A1 ;
-تكشر:تكشر A1 ;
-إكشر:إكشر A1 ;
+تکشر:تکشر A1 ;
+إکشر:إکشر A1 ;
 دوردر:دوردر A1 ;
 أوچونجو:أوچونجو A1 ;
 دوردونجو:دوردونجو A1 ;
@@ -5417,7 +5417,7 @@ LEXICON Abbreviations
 چ:چ ABBR ;
 ج:ج ABBR ;	
 د:د ABBR ;
-ي:ي ABBR ;
+ی:ی ABBR ;
 پ:پ ABBR ;
 
 X:X NUM-ROMAN ; ! ""
