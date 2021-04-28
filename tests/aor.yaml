@@ -13,7 +13,7 @@ Tests:
     اوی<v><iv><pass><ger_impf><nom>+i<cop><aor><p3><sg>: اویولان
    
   "[twol] {ت} aor after soft vowel":
-    ئت<v><tv><aor>+i<cop><aor><p3><sg>: ئدر 
+    ئت<v><tv><aor>+i<cop><aor><p3><sg>: ئدر
     گیت<v><iv><ger_aor><nom>+i<cop><aor><p3><sg>: گیدر
 
   "[twol] {ت} aor after hard vowel":
@@ -21,7 +21,7 @@ Tests:
     یات<v><iv><aor>+i<cop><aor><p3><sg>: یاتار
 
   "[twol] {A} abil hard vowel":
-    قولان<v><tv><abil><aor>+i<cop><aor><p3><sg>: قولانابيلر
+    قولان<v><tv><abil><aor>+i<cop><aor><p3><sg>: قولانابیلر
     اوزان<v><iv><abil><aor>+i<cop><aor><p3><sg>: اوزانابیلر
 
   "[twol] {A} abil soft vowel":

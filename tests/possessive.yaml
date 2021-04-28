@@ -10,52 +10,52 @@ Tests:
    
 
   "[twol] {i} i:0" :
-    التن<n><px3sp><acc> : التننى
+    التن<n><px3sp><acc> : التننی
     کتاب<n><px2sg><nom>: کتابی
     اد<n><px3sp><nom>: ادی
-    عربه‌<n><px2sg><nom>: عربه‌ی
+    عربه<n><px2sg><nom>: عربهی
     باخچا<n><px3sp><acc> : باخچاسنی
-    إيش<n><px2sg><nom> : إيشي
-    يازى<n><px2sg><nom> : يازيى
-    بالا<n><px2sg><nom>: بالاي
+    إیش<n><px2sg><nom> : إیشی
+    یازی<n><px2sg><nom> : یازیی
+    بالا<n><px2sg><nom>: بالای
     بول<v><tv><pass><aor>: بولنر
-    بليرت<v><tv><pass><aor>: بليرتنر
+    بلیرت<v><tv><pass><aor>: بلیرتنر
 
   "[twol] {i}C forms":
     اد<n><px1sg><nom> : ادم
     بابا<n><px1sg><nom> : بابام
-    قيز<n><px1sg><nom> : قيزم
+    قیز<n><px1sg><nom> : قیزم
     قونشو<n><px1sg><nom> : قونشوم
-    گون<n><px1sg><nom> : گونوم
+    گون<n><px1sg><nom> : گونونوم
 
    
   "[twol] {i} i:و":
-    قونشو<n><px2sg><nom> : قونشوي
-    يول<n><px2sg><nom> : یولوی
+    قونشو<n><px2sg><nom> : قونشوی
+    یول<n><px2sg><nom> : یولوی
     توپ<n><px2sg><nom>: توپوی
     اویون<n><px2sg><nom> : اویونوی
-    سورو<n><px3sp><nom>: سوروسو
+    سورو<n><px3sp><nom>: سورسو
     توپ<n><px2pl><nom> : توپیوز
-    گوز<n><px1pl><nom>: گوزوموز
+    گوز<n><px1pl><nom>: گوزموزو
     خوی<n><px3sp><acc> : خویونو 
     کود<n><px3sp><acc>: کودونو
 "[twol] {i} i:ی":
     ال<n><px1pl><nom>: الیمیز
     باخچا<n><px2pl><nom> : باخچایز
     گیون<n><px3sp><nom>: گیونی
-    کتاب<n><px3sp><acc> : کتابینی
-    إيو<n><px3sp><acc> : أيوينى
-    عاصمه<n><px3sp><nom>: عاصمه‌سی
-    حمایه‌<n><px3sp><dat>: حمایه‌سینه
-    إمبراطوريه‌<n><px2sg><dat>: إمبراطوريه‌سینه‌
-    خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلاديغيني
+    کتاپ<n><px3sp><acc> : کتابینی
+    إیو<n><px3sp><acc> : إیوینی
+    عاصمه<n><px3sp><nom>: عاصمسی
+    حمایه<n><px3sp><dat>: حمایه‌سینه حمایەسینە
+    إمبراطوریه<n><px2sg><dat>: إمبراطوریەسینه
+    خاترلاد<v><tv><ger_past><px3sp><acc>: خاترلادیغینی
     سفات<n><pl><px3sp><acc><@obj>: سفاتلارینی
-   اوزو<adj><subst><px2sg><dat> : اوزويا
-   أردم<n><px3sp><nom>: أردمى
-   گیر<v><iv><ger_past><px1pl><loc>: گیرديغيميزدا
+   اوزو<adj><subst><px2sg><dat> : اوزویا
+   أردم<n><px3sp><nom>: أردمی
+   گیر<v><iv><ger_past><px1pl><loc>: گیردیغیمزدا
 "[twol] {s} s:س":
- حمایه‌<n><px3sp><dat>: حمایه‌سینه
- أونجه<n><px3sp><dat>: أونجه‌سینه
+ حمایه<n><px3sp><dat>: حمایەسینه
+ أونجه<n><px3sp><dat>: أونجەسینه
 
      
     
