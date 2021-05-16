@@ -28,7 +28,7 @@ Multichar_Symbols
 
 %<dub%>           ! dubitative
 %<nec%>           ! necessitive
-
+%{ь%}         ! Force front harmony
 ! Number morphology
 %<p1%>            ! First person
 %<p2%>            ! Second person
@@ -4106,6 +4106,7 @@ CD:CD N1 ;
 حیسبلاما:حیسلاما N1 ;
 هدیه:هدیه N1 ;
 دیزی:دیزی N1 ;
+نسبه:نسبه N1 ;
 فونکسیون:فونکسیون N1 ;
 قویون:قویون N1 ;
 شوئون% خارجیه:شوئون% خارجیه N1 ;
@@ -4132,7 +4133,7 @@ TV:TV NP-AL ;
 Perl:Perl NP-AL ;
 www:www NP-AL ;
 MİT:MİT NP-ORG ;
-ABD:ABD NP-TOP-ACR ;
+ABD:ABD%{ь%} NP-TOP-ACR ;
 AB:AB NP-TOP-ACR ;
 گوگول:گوگول NP-AL ;
 اد:اد NP-AL ;
@@ -4145,6 +4146,7 @@ LEXICON ProperNouns
 پوتین:پوتین NP-COG-MF ;
 اوباما:اوباما NP-COG-MF ; 
 سلطان:سلطان NP-COG-MF ;
+قدافی:قدافی NP-COG-MF ;
 پویرازز:پویرازز NP-COG-MF ;
 إوزتورك:إوزتورك NP-COG-MF ;
 أرقوت:أرقوت NP-COG-MF ;
@@ -4179,6 +4181,7 @@ LEXICON ProperNouns
 أونال:أونال NP-COG-MF ;
 طلعت:طلعت NP-COG-MF ;
 شکیب:شکیب NP-ANT-M ;
+ویلیامس:ویلیامس NP-ANT-M ;
 رافت:رافت NP-ANT-M ;
 طلعت:طلعت NP-ANT-M ;
 حلمی:حلمی NP-ANT-M ;
@@ -4313,6 +4316,8 @@ LEXICON ProperNouns
 سیولای:سیولای NP-ANT-F ;
 ممەد:ممەد NP-ANT-M ;
 تورکیا:تورکیا NP-TOP ;
+یابان:یابان NP-TOP ;
+افغانستان:افغانستان NP-TOP ;
 أزربیجان:أزربیجان NP-TOP ;
 تانری:تانری NP-TOP ;
 مەن:مەن NP-TOP ;
@@ -4562,6 +4567,8 @@ LEXICON ProperNouns
 بوغازایچی:بوغازایچی NP-TOP ;
 بحر% الابیض:بحز% الابیض NP-TOP ;
 بسطاملی:بسطاملی NP-TOP ;
+لیبیا:لیبیا NP-TOP ; 
+ 
 
 !!!Orginzation!!
 ریال% مدرید:ریال% مدرید NP-ORG ;
