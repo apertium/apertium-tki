@@ -204,12 +204,16 @@ LEXICON CASE
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 !%<ins%>:%>%{y%}ل%{A%} GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
 
+LEXICON COPULA-MIMIS
+V-COP ;
+
 LEXICON GENPOSS-GENERAL
 !V-COP ; 
 # ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
 %<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
 %<attr%>:%>کی # ;
+COPULA-MIMIS ;
 
 LEXICON PRON-RECIP
 
@@ -573,6 +577,7 @@ LEXICON NUM
 %<num%>%<ord%>:%>%{i%}نج%{I%} V-COP ;               ! Beşinci evi görüyorum.
 %<num%>%<ord%>%<subst%>:%>%{i%}نج%{I%} SUBST ;      ! Beşinciyi görüyorum.
 %<num%>%<subst%>: SUBST ;
+%<num%>%<subst%>:%' SUBST ;
 
 !LEXICON N1
 !%<n%>%<attr%>: # ;
