@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Turkmen of Iraq], [0.1.0], [sevilaybayatli@gmail.com], [apertium-tki], [http://wiki.apertium.org/wiki/Apertium-tki])
+AC_INIT([Apertium Turkmen of Iraq], [0.1.0], [sevilaybayatli@gmail.com], [apertium-tki], [https://wiki.apertium.org/wiki/Apertium-tki])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
