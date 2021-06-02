@@ -178,6 +178,7 @@ Verbs ;
 Punctuation ;
 Abbreviations ;
 Interjections ;
+Digits ;
 !DIGITLEX ;
 !BARB ;
 
@@ -462,6 +463,11 @@ LEXICON N-INFL-COMMON
 CASE-NONOM ;
 LI-POSTPOSITION ;
 
+LEXICON SUBST-NONOM
+
+CASE-NONOM ; 
+!%<pl%>:%>l%{A%}r N-INFL-COMMON ;
+
 
 
 LEXICON SUBST
@@ -473,6 +479,13 @@ GENPOSS-ETC ;
 !%<pl%>:%>ل%{A%}ر CASE ;
 %<subst%>%<pl%>:%>%{L%}%{a%}ر CASE ; !N-INFL-COMMON ;
 !%<pl%>:لار CASE ;
+
+LEXICON NUM-DIGIT
+
+%<num%>: # ;
+%<num%>%<subst%>%<nom%>: # ;
+%<num%>%<subst%>:%' SUBST-NONOM ;
+%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
 
 LEXICON N-COMMON
 SUBST ;
@@ -1051,6 +1064,7 @@ LEXICON Adjectives
 شیرین:شیرین A1 ;
 بزات:بزات A1 ;
 بشارلی:بشارلی A1 ;
+بلە:بلە A1 ;
 قاستن:قاستن A1 ;
 اولملو:اولملو A1 ;
 یالچن:یالچن A1 ;
@@ -1894,8 +1908,10 @@ LEXICON Adjectives
 دیشن:دیشن A1 ;
 گلملی:گلملی A1 ;
 إیستکلی:إیستکلی A2 ;
+ممتاز:ممتاز A2 ;
 فخم:فخم A1 ;
 گچمیش:گچمیش A2 ;
+یارالی:یارالی A2 ;
 موحتشم:موحتشم A1 ;
 نادر:نادر A1 ;
 باشاران:باشاران A1 ;
@@ -1905,6 +1921,9 @@ LEXICON Adjectives
 عملی:عملی A1 ;
 مسل:مسل A1 ;
 نووی:نووی A1 ;
+اشری:اشری A1 ;
+
+
 
 
 
@@ -1923,7 +1942,9 @@ LEXICON Adverbs
 رسمل:رسما ADV1 ;
 ساغلم:ساغلم ADV1 ;
 مسل:مسل ADV1 ;
+اشری:اشری ADV1 ; 
 نیجا:نیجا ADV-ITG ;
+بلە:بلە ADV1 ;
 أوزینده:أوزینده ADV1 ;
 شبهسیز:شبهسیز ADV2 ;
 هادێ:هادێ ADV1 ;
@@ -1954,7 +1975,7 @@ LEXICON Adverbs
 أیلارجه:أیلارجه ADV1 ; !
 گونلارجه:گونلارجه ADV1 ; !
 بوخصوص:بوخصوص ADV1 ;
-بوگون:بوگون ADV1 ;
+بوگون:بوگون ADV4 ;
 موندان% سورا:موندان% سورا ADV1 ;
 أساسەن:أساسەن ADV3 ;
 بربر:بربر ADV3 ;
@@ -2334,6 +2355,7 @@ LEXICON Determiners
 او:او DET-DEM ;
 بير% چوخ:بير% چوخ DET-QNT ; 
 بيرر:بيرر DET-QNT ;
+بلە:بلە DET-IND ;
 إشته% بو:إشته% بو DET-DEM ;
 إشته:إشته DET-DEM ;
 إيشبو:إيشبو DET-DEM ;
@@ -2596,12 +2618,15 @@ LEXICON Nouns
 قارا:قارا N1 ;
 آن:آن N1 ;
 جبر:جبر N1 ;
+إیش:إیش N1 ;
 کورکن:کورکن N1 ;
 خطا:خطا N1 ;
 دوا:دوا N1 ;
+بوگون:بوگون N1 ;
 تقریر:تقریر N1 ;
 یولداش:یولداش N1 ;
 شعار:شعار N1 ;
+محامی:محامی N1 ;
 مبرمج:مبرمج N1 ;
 صبرسزلغ:صبرسزلغ N1 ;
 تمبلیغ:تمبلیغ N1 ;
@@ -3337,6 +3362,7 @@ CD:CD N1 ;
 دوأیر:دوأیر N1 ;
 شوکور:شوکور N1 ;
 أوز:أوز N1 ;
+یولادش:یولادش N1 ;
 إهرامات:إهرامات N1 ;
 عاقلغ:عاقلغ N1 ;
 تداول:تداول N1 ;
@@ -4133,6 +4159,13 @@ CD:CD N1 ;
 ارتش:ارتش N1 ;
 بویوگلوغ:بویوکلوغ N1 ;
 جنازا:جنازا N1 ;
+نفت:نفت N1 ; 
+موسورمان:موسورمان N1 ;
+إسلام:إسلام N1 ; 
+أمریکلای:أمریکلای N1 ;
+مرسوم:مرسوم N1 ;
+درجه:درجه N1 ;
+معنی:معنی N1 ;
 
 
 
@@ -4147,6 +4180,7 @@ CD:CD N1 ;
 ارگینیون:ارگینیون NP-ORG ;
 فنرباهچه:فنرباهچه NP-ORG ;
 الیونسکو:الیونسکو NP-ORG ;
+ویکیلیکس:ویکیلیکس NP-ORG ;
 AKP:AKP NP-ORG ;
 YÖK:YÖK NP-ORG ;
 فتو:فتو NP-ORG ;
@@ -4161,6 +4195,7 @@ www:www NP-AL ;
 MİT:MİT NP-ORG ;
 ABD:ABD%{ь%} NP-TOP-ACR ;
 AB:AB NP-TOP-ACR ;
+KKTC:KKTC%{î%} NP-ORG ;
 گوگول:گوگول NP-AL ;
 اد:اد NP-AL ;
 PKK:PKK NP-ORG ;
@@ -4208,6 +4243,7 @@ LEXICON ProperNouns
 طلعت:طلعت NP-COG-MF ;
 شکیب:شکیب NP-ANT-M ;
 ویلیامس:ویلیامس NP-ANT-M ;
+روبیا:روبیا NP-ANT-M ;
 رافت:رافت NP-ANT-M ;
 طلعت:طلعت NP-ANT-M ;
 حلمی:حلمی NP-ANT-M ;
@@ -4325,11 +4361,12 @@ LEXICON ProperNouns
 اردوغان:اردوغان NP-COG-MF ;
 بالبای:بالبای NP-COG-MF ;
 یلماز:یلماز NP-COG-MF ;
+کارزای:کارزای NP-COG-MF ;
 قلیجلر% اوغلو:قلیجیلر% اوغلو NP-COG-MF ;
 داود% اوغلو:داود% اوغلو NP-COG-MF ;
 تونجای:تونجای NP-ANT-M ;
 أحمد:أحمد NP-ANT-M ;
-
+إسلام:إسلام NP-ANT-M ;
 مزفر:مزفر NP-ANT-M ;
 سدات:سدات NP-ANT-M ;
 أمیر:أمیر NP-ANT-M ;
@@ -4597,6 +4634,9 @@ LEXICON ProperNouns
 لیبیا:لیبیا NP-TOP ; 
 إیطالیا:إیطالیا NP-TOP ;
 سودان:سودان NP-TOP ; 
+فلسطین:فلسطین NP-TOP ;
+‌أرمنیستان:‌أرمنیستان NP-TOP ;
+
  
 
 !!!Orginzation!!
@@ -5464,7 +5504,17 @@ X:X NUM-ROMAN ; ! ""
 
 
 
+LEXICON LASTDIGIT
 
+۱:۱%{ь%}%{b%}           NUM-DIGIT ; ! "bir"
+۲:۲%{ь%}                NUM-DIGIT ; ! "iki"
+۳:۳%{ö%}%{p%}           NUM-DIGIT ; ! "üç"
+۴:۴%{ö%}%{p%}           NUM-DIGIT ; ! "dört"
+۵:۵%{ь%}%{p%}           NUM-DIGIT ; ! "beş"
+٦:٦%{ı%}                NUM-DIGIT ; ! "altı"
+۷:۷%{ь%}                NUM-DIGIT ; ! "yedi"
+۸:۸%{ь%}%{b%}           NUM-DIGIT ; ! "sekiz"
+۹:۹%{o%}%{b%}           NUM-DIGIT ; ! "dokuz"
 
 LEXICON Punctuation
 
@@ -5514,12 +5564,14 @@ LEXICON Punctuation
 ？:？%<sent%> # ;
 ！:！%<sent%> # ;
 
-
-
+LEXICON Digits
+%0:%0 NUM ;  ! Use/Circ
+LASTDIGIT ;
 
 !<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
 !LEXICON DIGITLEX
+
 
 !%<num%>: # ; 
 !%<num%>%<subst%>: SUBST-2 ;
