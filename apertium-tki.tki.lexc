@@ -726,7 +726,8 @@ LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:م # ;!CLITICS ;
 %<p2%>%<sg%>:ن # ;!CLITICS ;
-%<p3%>%<sg%>:ى # ; !CLITICS ;
+!%<p3%>%<sg%>:ى # ; !CLITICS ;
+%<p3%>%<sg%>: # ; !CLITICS ;
 !%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p1%>%<pl%>:یغ # ; ! CLITICS ;
 %<p2%>%<pl%>:نیز # ; ! CLITICS ;
@@ -735,7 +736,8 @@ LEXICON V-IFI-PERS
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
 %<p2%>%<sg%>:سان # ;
-%<p3%>%<sg%>:ی # ;
+!%<p3%>%<sg%>:ی # ;
+%<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
 %<p3%>%<pl%>:لار # ;
@@ -766,12 +768,10 @@ LEXICON V-AOR
 %<neg%>%<aor%>:%>م%{A%}ز V-COP-COMMON ;
 
 LEXICON V-PROG
-%<prog%>:%>%{y%}%{I%}ر V-PROG-PERS ;
-%<prog%>:%>%{y%}%{I%}ر V-COP ;
-!%<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
-%<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
-%<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<prog%>:%>%{y%}ر V-PROG-PERS ;
+%<prog%>:%>%{y%}%{I%}ر V-COP ;
+!%<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
+!%<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<neg%>%<prog%>:%>م%{A%}%{y%}%{I%}ر V-COP-PERS ;
 
 LEXICON V-IFI
@@ -2289,7 +2289,7 @@ LEXICON Adverbs
 إیلك:إیلك ADV1 ;
 زور:زور ADV1 ;
 آجله:آجله ADV1 ;
-پك:ثك ADV3 ;
+پك:پك ADV3 ;
 سبح:سبح ADV3 ;
 نیهایت:نیهایت ADV3 ;
 گچن% سنه:گچن% سنه ADV3 ;
@@ -2301,7 +2301,7 @@ LEXICON Adverbs
 نیندن% دوغما:نیندن% دوغما ADV1 ;
 بیر% گون:بیر% گون ADV1 ;
 أوزرینه:أوزرینه ADV1 ;
-شکیلده:سکیلده ADV1 ;
+شکیلده:شکیلده ADV1 ;
 اوزو:اوزو ADV1 ;
 دایر:دایر ADV1 ;
 بیرنچه:بیرنجه ADV1 ;
@@ -4933,6 +4933,7 @@ LEXICON Verbs
 قابول% أت:قابول% أ V-TV ;
 یاز:یاز V-TV ;
 ‌‌إشلە:إشلە V-TV ;
+دە:دە V-TV ;
 إیتیر:إیتیر V-TV ;
 أپار:أپار V-TV ;
 أوگرن:أوگرن V-TV ;

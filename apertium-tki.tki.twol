@@ -1,6 +1,8 @@
 Alphabet
 
-آ ا أ إ ب پ ت ث ج چ ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك گ ل م ن و ه ى ي 
+آ ا أ إ ب پ ت ث ج چ ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك گ ل م ن و وو ؤ ه ى ێ ي
+    
+
 
 
 
@@ -13,14 +15,14 @@ Alphabet
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0 %{i%}:ي %{i%}:و %{i%}:ى
-%{I%}:ي %{I%}:و !it could be {إ,و,ى,ي}
+%{I%}:ى %{I%}:و !it could be {إ,و,ى,ي}
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
 %{s%}:0 %{s%}:س
 %{n%}:0 %{n%}:ن
 %{a%}:0
 %{e%}:0
-!%{y%}:0 !%{y%}:ى !%{y%}:ى
+!%{y%}:ی !%{y%}:ی !%{y%}:ى
 %{N%}:0 %{N%}:ن %{N%}:ي
 %{ü%}:أو
 %{P%}:ب
@@ -28,10 +30,12 @@ Alphabet
 
 Sets
 Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
-Vowel = آ أ إ و ى ا ;    
-SoftVow =  ى إ أ ه ; 
-HardVow = آ و  ا ; 
+Vowel = ێ ا ه و ؤ وو ی ; !    
+ShortVow = و ا ی ه ; 
+LongVow = ێ  ؤ وو ; 
 Nasal= م ن ;
+
+!ا=:a !ه:ɛ !و=‎u !ؤ=oː !وو=:u !ی=iː !ێ=eː
 
   
 
@@ -43,10 +47,10 @@ Rules
 
 
 "I becomes و when last vowel is و in a word"
-%{I%}:ا <=> [ :و :Consonant :Consonant* ]/:0* _ ;
+%{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
 
-"I becomes ی when last vowel is  in a word"
-%{I%}:و <=> [ :ى :Consonant :Consonant* ]/:0* _ ;
+!"I becomes ی when last vowel is و in a word"
+!%{I%}:و <=> [ :ى :Consonant :Consonant* ]/:0* _ ;
 
 "realize {s} as س if after morpheme-final vowel "
 %{s%}:س <=> :Vowel :0* _ ;
@@ -56,7 +60,7 @@ Rules
 %{n%}:ن <=> _ %>: %{D%}: ;
             _ %>: %{y%}: ;
 
-"realize {y} as y after a morpheme-final vowel "
+"realize {y} as ي after a morpheme-final vowel "
 %{y%}:ي <=> :Vowel :0* _ ;
 
 "realize {D} as n after a n or m "
