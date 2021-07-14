@@ -754,7 +754,7 @@ LEXICON V-AOR-PERS
 
 LEXICON V-AOR
 
-%<aor%>:ر V-COP ; 
+%<aor%>:%>%{a%}ر V-COP ; 
 !%<aor%>:%>ر V-COP ; 
 !%<aor3%>:%>%{U%}%{r%} V-COP ;
 !%<aor%>:%>%{A%}%{r%} V-COP ;

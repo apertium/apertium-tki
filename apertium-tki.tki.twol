@@ -20,7 +20,7 @@ Alphabet
 %{u%}:0 %{u%}:و
 %{s%}:0 %{s%}:س
 %{n%}:0 %{n%}:ن
-%{a%}:0
+%{a%}:0 %{a%}:ا
 %{e%}:0
 !%{y%}:ی !%{y%}:ی !%{y%}:ى
 %{N%}:0 %{N%}:ن %{N%}:ي
@@ -29,11 +29,12 @@ Alphabet
 %>:0 ;
 
 Sets
-Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
+Consonant = ب ت ث ج چ ح خ ر د ذ ر زس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
 Vowel = ێ ا ه و ؤ وو ی ; !    
 ShortVow = و ا ی ه ; 
 LongVow = ێ  ؤ وو ; 
 Nasal= م ن ;
+BackVow = و ا ;  ! FIXME
 
 !ا=:a !ه:ɛ !و=‎u !ؤ=oː !وو=:u !ی=iː !ێ=eː
 
@@ -65,6 +66,9 @@ Rules
 
 "realize {D} as n after a n or m "
 %{D%}:ن <=> :Nasal :0* _ ;
+
+"a is realised as ا after back vowel"
+%{a%}:ا <=> :BackVow [ :Consonant | %>: ]* _ ;
 
 
 
