@@ -72,8 +72,8 @@ Rules
 %{y%}:ی <=> :Vowel :0* _ ;
             _ %>: %{n%}: ; ! in genitive case in a few words
 
-"realize {D} as n after a n or m "
-%{D%}:ن <=> :Nasal :0* _ ;
+"realize {D} as n between nasal codas"
+%{D%}:ن <=> :Nasal :0* _ :Vowel* :Nasal ;
 
 "{a} is realised as ا after back vowel"
 %{a%}:ا <=> :BackVow [ :Consonant | %>: ]* _ ;
