@@ -28,20 +28,18 @@ Tests:
   "[twol] genitive in -un":
     قورت<n><gen>: قورتون
     تلفون<n><gen>: تلفونون
-<<<<<<< HEAD
-    
-=======
+
 
   "[twol] genitive in just -n":
     شخص<n><gen>: شخصن
     مال<n><gen>: مالن
->>>>>>> 324b84cd06b8b50a4a87d1c042c29c24eb4e9568
+
 
   "[twol] genitive in -yün":
     گوزلوغ<n><gen>: گوزلوغیون
     مکتوپ<n><gen>: مکتوبیون
 
-<<<<<<< HEAD
+
   "[twol] locative {D}:د":
    
     يل<n><loc>: يلدا
@@ -87,10 +85,10 @@ Tests:
      ا‌حمد<n><abl>: احمدتان
   "[twol] ins {D}:د" :
      دایی<n><abl>: داییدان
-=======
-#  "[twol] {y}:0":
+  "[twol] dative {y}:د" :
+     تپه<n><abl>: تپیه
    
->>>>>>> 324b84cd06b8b50a4a87d1c042c29c24eb4e9568
+
 
 
 
