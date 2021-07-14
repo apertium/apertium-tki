@@ -12,9 +12,9 @@ Tests:
     تورکمانجه<n><gen>: تورکمانجەنین
     دیزی<n><gen>: دیزینین
     باغلاما<n><gen>: باغلامانین
-    بالا<n><gen>: بالانن
-    زوق<n><gen>: زوقونون
-    وجدان<n><gen>: وجدانن
+    بالا<n><gen>: بالانین
+    زوق<n><gen>: زوقنون
+    وجدان<n><gen>: وجدانین
     داهی<n><gen>: داهینین
 
   "[twol] genitive in -in":
@@ -22,33 +22,69 @@ Tests:
     هدف<n><gen>: هدفین
     إیو<n><gen>: إیوین
     برنامج<n><gen>: برنامجین
+    شخص<n><gen>: شخصین
+    مال<n><gen>: مالین
     
   "[twol] genitive in -un":
     قورت<n><gen>: قورتون
     تلفون<n><gen>: تلفونون
-    شخص<n><gen>: شخصن
-    مال<n><gen>: مالن
+    
 
   "[twol] genitive in -yün":
     گوزلوغ<n><gen>: گوزلوغیون
     مکتوپ<n><gen>: مکتوبیون
 
+  "[twol] locative {D}:د":
    
+    يل<n><loc>: يلدا
+    دام<n><loc>: دامدا
+  "[twol] locative {D}:ت":
+    قیش<n><loc>: قیشته
+    حاپیس<n><loc>: حاپیسته
+    عدد<n><loc>: عددته
+    دولت<n><loc>: دولتته
+  "[twol] locative {A}:ه" :     
+    قیش<n><loc>: قیشته
+    إیو<n><loc>: ‌إیوده    
+  "[twol] locative {A}:ا" :   
+    دام<n><loc>: دامدا 
+    يل<n><loc>: يلدا 
 
+  "[twol] accuasative {y}:ي" : 
+    خورما<n><acc>: خورمایی
+    باغچا<n><acc>: باغچایی
+  "[twol] accusative {y}:0" : 
+    اوز<n><acc>: اوزو
+    اوشاغ<n><acc>: اوشاغی
+  "[twol] accusative {I}:و" : 
+    قورت<n><acc>: قورتو
+    اوز<n><acc>: اوزو
+  "[twol] accusative {I}:ی" :
+    خورما<n><acc>: خورمایی
+    اوشاغ<n><acc>: اوشاغی
+    دیل<n><acc>: دیلی
+  "[twol] ablative {D}:د" :
+    دام<n><abl>: دامدان
+    دار<n><abl>: داردان 
+
+  "[twol] ablative {D}:0" :
+
+     یالان<n><abl>: یالانان
+     نردوان<n><abl>: نردوانان
+     الت<n><abl>: التان
+  "[twol] ablative {D}:ت" :
+     قیش<n><abl>: قیشتان
+  "[twol] ins {D}:ت" :
+     ات<n><abl>: اتتان
+     ا‌حمد<n><abl>: احمدتان
+  "[twol] ins {D}:د" :
+     دایی<n><abl>: داییدان
+
+
+
+
+ 
+                                                                         
     
 
-  "[twol] {y}:0":
-   
 
-  "[twol] {D}:د":
-    يل<n><px2sg><loc>: يلندا
-    يل<n><px3sp><loc>: يلندا
-    يل<n><px2sg><loc>+i<cop><aor><p3><sg>: يلندا
-    يل<n><px3sp><loc>+i<cop><aor><p3><sg>: يلندا
-
-  "[twol] {A}:0":
-    كييف<n><pl><px1sg><abl>: كييفلارمنن
-
-  "[twol] {I}:ي":
-    دیل<n><px2sg><acc>: دیلینی
-    دیل<n><px3sp><acc>: دیلینی

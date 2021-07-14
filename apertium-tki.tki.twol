@@ -1,7 +1,7 @@
 Alphabet
 
 آ ا أ إ ب پ ت ث ج چ ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك گ ل م ن و وو ؤ ه ى ێ ي
-    
+ ی   
 
 
 
@@ -15,25 +15,28 @@ Alphabet
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
 %{i%}:0 %{i%}:ي %{i%}:و %{i%}:ى
-%{I%}:ى %{I%}:و !it could be {إ,و,ى,ي}
+%{I%}:ی %{I%}:و !it could be {إ,و,ى,ي}
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
 %{s%}:0 %{s%}:س
 %{n%}:0 %{n%}:ن
-%{a%}:0
+%{a%}:0 %{a%}:ا
 %{e%}:0
 !%{y%}:ی !%{y%}:ی !%{y%}:ى
 %{N%}:0 %{N%}:ن %{N%}:ي
 %{ü%}:أو
 %{P%}:ب
+%{T%}:ت %{T%}:د
 %>:0 ;
 
 Sets
-Consonant = ب ت ث ج چ ح خ ردذرزس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ى ;
+Consonant = ب ت ث ج چ ح خ ر د ذ ر زس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ي ; ! ى ;
 Vowel = ێ ا ه و ؤ وو ی ; !    
 ShortVow = و ا ی ه ; 
 LongVow = ێ  ؤ وو ; 
 Nasal= م ن ;
+BackVow = و ا ;  ! FIXME
+BackCons = ق ق ع غ ;
 
 !ا=:a !ه:ɛ !و=‎u !ؤ=oː !وو=:u !ی=iː !ێ=eː
 
@@ -48,6 +51,8 @@ Rules
 
 "I becomes و when last vowel is و in a word"
 %{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
+        except
+            :إ :ی :و %>: %{n%}: _ ;
 
 !"I becomes ی when last vowel is و in a word"
 !%{I%}:و <=> [ :ى :Consonant :Consonant* ]/:0* _ ;
@@ -59,14 +64,25 @@ Rules
 "realize {n} as n if it is before locative case and accusative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
             _ %>: %{y%}: ;
+            [ :Vowel | :ن ] %>: _ ;  ! at beginning of genitive after a vowel or n
+        except
+            :إ :ی :و %>: _ ;
 
 "realize {y} as ي after a morpheme-final vowel "
 %{y%}:ي <=> :Vowel :0* _ ;
+            _ %>: %{n%}: ; ! in genitive case in a few words
 
 "realize {D} as n after a n or m "
 %{D%}:ن <=> :Nasal :0* _ ;
 
+"{a} is realised as ا after back vowel"
+%{a%}:ا <=> :BackVow [ :Consonant | %>: ]* _ ;
 
+"{T} is realised as د between vowels"
+%{T%}:د <=> _ %>:* [ :Vowel | %{a%}: ] ;
+
+"intervocalic lenition at morpheme boundaries"
+پ:ب <=> :Vowel _ (%{y%}:) %>: (:0*) :Vowel ;
 
 
 ! Resources:
@@ -75,6 +91,7 @@ Rules
 ! https://github.com/hfst/
 ! https://wiki.apertium.org/wiki/Twol
 ! https://wiki.apertium.org/wiki/Hfst
+
 
 
 
