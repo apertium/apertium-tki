@@ -233,7 +233,8 @@ CASE ;
 %<px1sg%>:%>%{i%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
 %<px2sg%>:%>%{i%}ی CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
 %<px2sg%>:%>%{y%}%{I%}%{n%} CASE ; 
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
+!%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
+%<px3sp%>:%>%{s%}%{I%} CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
 !%<px2pl%>:%>%{i%}ی%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
 %<px2pl%>:%>ی%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz

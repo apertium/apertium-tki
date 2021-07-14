@@ -9,37 +9,43 @@ Tests:
     
    
 
-  "[twol] {i} i:0" :
-    التن<n><px3sp><acc> : التننی
+  "[twol] Possessive {I}:ی and {s}:0" :
+    التن<n><px3sp><nom>+i<cop><aor><p3><sg> : التنی
     کتاب<n><px2sg><nom>: کتابی
-    اد<n><px3sp><nom>: ادی
-    عربه<n><px2sg><nom>: عربهی
-    باخچا<n><px3sp><acc> : باخچاسنی
-    إیش<n><px2sg><nom> : إیشی
-    یازی<n><px2sg><nom> : یازیی
     بالا<n><px2sg><nom>: بالای
-    بول<v><tv><pass><aor>: بولنر
-    بلیرت<v><tv><pass><aor>: بلیرتنر
+    إیش<n><px2sg><nom> : إیشی
+    اد<n><px3sp><nom>: ادی
+قونشو<n><px2sg><nom> : قونشوی
+  "[twol] Possessive {I}:ی and {s}:س" :
 
-  "[twol] {i}C forms":
+    عربه<n><px2sg><nom>: عربهسی
+    باخچا<n><px3sp> : باخچاسی
+    یوا<n><px3sp> : یواسی
+
+    
+    
+
+  "[twol] Possessive {i}:0":
     اد<n><px1sg><nom> : ادم
     بابا<n><px1sg><nom> : بابام
     قیز<n><px1sg><nom> : قیزم
     قونشو<n><px1sg><nom> : قونشوم
-    گون<n><px1sg><nom> : گونونوم
+    نینه<n><px1sg><nom> : نینم
+
+
+    
 
    
-  "[twol] {i} i:و":
-    قونشو<n><px2sg><nom> : قونشوی
+  "[twol] possessive {i}:و":
+    
     یول<n><px2sg><nom> : یولوی
     توپ<n><px2sg><nom>: توپوی
     اویون<n><px2sg><nom> : اویونوی
     سورو<n><px3sp><nom>: سورسو
     توپ<n><px2pl><nom> : توپیوز
-    گوز<n><px1pl><nom>: گوزموزو
-    خوی<n><px3sp><acc> : خویونو 
-    کود<n><px3sp><acc>: کودونو
-"[twol] {i} i:ی":
+    گوز<n><px1pl><nom>: گوزموز
+    گون<n><px1sg><nom> : گونوم
+  "[twol] possessive {i}:ی":
     ال<n><px1pl><nom>: الیمیز
     باخچا<n><px2pl><nom> : باخچایز
     گیون<n><px3sp><nom>: گیونی
@@ -53,7 +59,7 @@ Tests:
    اوزو<adj><subst><px2sg><dat> : اوزویا
    أردم<n><px3sp><nom>: أردمی
    گیر<v><iv><ger_past><px1pl><loc>: گیردیغیمزدا
-"[twol] {s} s:س":
+  "[twol] possessive {s}:س":
  حمایه<n><px3sp><dat>: حمایەسینه
  أونجه<n><px3sp><dat>: أونجەسینه
 
