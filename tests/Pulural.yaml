@@ -6,10 +6,10 @@ Config:
 
 Tests:
 
-  "[twol] {L} l:ن" :
-گون<n><pl><gen>: گوننرین
+  "[twol] plural {L} l:ن" :
+گونgün<n><pl><nom>:  گوننر
 
-  "[twol] {L} l:ل" :
+  "[twol] plural {L} l:ل" :
 أیو<n><pl><nom>: أیولار
  
 

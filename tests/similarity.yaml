@@ -5,8 +5,11 @@ Config:
     Morph:  ../tki.automorf.hfst
 
 Tests:
- "[twol] {ج} sim":
-ترك<n><sim>: تکچه
+ "[twol] similarity {C%}:چ":
+ترك<n><sim>: ترکچه
+یه<n><sim>: یدغچه
+"[twol] similarity {C%}:ج":
+
 الا<n><px2sg><sim> : الانجا
 عرب<n><sim>+i<cop><aor><p3><sg>: عربجه
-انگلیز<n><sim>+i<cop><aor><p3><sg>: انگلیزجه
+إنگلیز<n><sim>+i<cop><aor><p3><sg>: إنگلیزجه

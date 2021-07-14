@@ -6,9 +6,9 @@ Config:
 
 Tests:
 
-  "[twol] {A} A:0" :
+  "[twol] future tense {A} A:0" :
   گل<v><iv><fut>: گلر
   گیت<v><iv><fut>: گیدر
-  "[twol] {A} A:ا" :
+  "[twol] future tense {A} A:ا" :
   یات<v><iv><fut>: یاتار
   یاز<v><iv><fut>: یازار

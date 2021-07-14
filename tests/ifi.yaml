@@ -6,7 +6,11 @@ Config:
 
 Tests:
 
-  "[twol] {t}": 
-  گچ<v><iv><ifi><p3><sg>: گچتیی
-  گل<v><iv><ifi><p3><sg>: گلدیی
-  یات<v><iv><ifi><p3><sg>: یاتیی
+  "[twol] ifi tense {D}:ت": 
+  گچ<v><iv><ifi><p3><sg>: گچتی
+  "[twol] ifi tense {D}:د": 
+  گل<v><iv><ifi><p3><sg>: گلدی
+  "[twol] ifi tense {D}:0":
+  یات<v><iv><ifi><p3><sg>: یاتی
+  "[twol] ifi tense {A}:و":
+  یورول<v><iv><ifi><p3><sg>: یورولدو
