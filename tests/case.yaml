@@ -26,6 +26,8 @@ Tests:
   "[twol] genitive in -un":
     قورت<n><gen>: قورتون
     تلفون<n><gen>: تلفونون
+
+  "[twol] genitive in just -n":
     شخص<n><gen>: شخصن
     مال<n><gen>: مالن
 

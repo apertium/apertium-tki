@@ -191,7 +191,7 @@ LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
 !%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-%<gen%>:%>%{N%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
 !%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
 !%<gen%>:%>%{y%}%{I%ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
 %<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım öz -> özünü
@@ -426,7 +426,7 @@ POSSESSION ;
 
 LEXICON CASE-NONOM
 %<nom%>: V-COP ;
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      
 !%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;   
 %<dat%>:%>ه GENPOSS-GENERAL ;
 !%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
@@ -3022,7 +3022,7 @@ TV:TV N1 ;
 علاقه:علاقه N1 ;
 حال:حال N1 ;
 عباره:عباره N1 ;
-مکتوپ:مکتوپ N1 ;
+مکتوپ:مکتوپ%{y%} N1 ;
 دعوت:دعوت N1 ;
 تهدید:تهدید N1 ;
 چ:چ N1 ;
@@ -3258,7 +3258,7 @@ CD:CD N1 ;
 عصمان:عصمان N1;
 دوار:دوار N1 ;
 دام:دام N1 ;
-گوزلوغ:گوزلوغ N1 ; 
+گوزلوغ:گوزلوغ%{y%} N1 ; 
 خرخیز:خرخیز N1 ;
 شرطه:شرطه N1 ;
 عسکر:عسکر N1 ;
