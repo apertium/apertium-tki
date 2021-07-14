@@ -1,6 +1,6 @@
 Alphabet
 
-آ ا أ إ ب پ ت ث ج چ ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك گ ل م ن و وو ؤ ه ى ێ ي ە
+آ ا أ إ ب پ ت ث ج چ ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك گ ل م ن و وو ؤ ه ی ێ ي
  ی   
 
 
@@ -14,15 +14,15 @@ Alphabet
 %{D%}:د
 %{L%}:ل ! for passive {ن}
 %{C%}:چ
-%{i%}:0 %{i%}:ي %{i%}:و %{i%}:ى
-%{I%}:ی %{I%}:و !it could be {إ,و,ى,ي}
+%{i%}:0 %{i%}:ي %{i%}:و %{i%}:ی
+%{I%}:ی %{I%}:و !it could be {إ,و,ی,ي}
 %{U%}:و ! it could be {إ,و}
 %{u%}:0 %{u%}:و
 %{s%}:0 %{s%}:س
 %{n%}:0 %{n%}:ن
 %{a%}:0 %{a%}:ا
 %{e%}:0
-!%{y%}:ی !%{y%}:ی !%{y%}:ى
+!%{y%}:ی !%{y%}:ی !%{y%}:ی
 %{N%}:0 %{N%}:ن %{N%}:ي
 %{ü%}:أو
 %{P%}:ب
@@ -30,8 +30,8 @@ Alphabet
 %>:0 ;
 
 Sets
-Consonant = ب ت ث ج چ ح خ ر د ذ ر زس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ي ; ! ى ;
-Vowel = ێ ا و ؤ وو ی ە ; !    
+Consonant = ب ت ث ج چ ح خ ر د ذ ر زس ش ص ض ط ظ ع غ ف ق ق ك گ ل م ن و ه ي ; ! ی ;
+Vowel = ێ ا ه و ؤ وو ی ; !    
 ShortVow = و ا ی ه ; 
 LongVow = ێ  ؤ وو ; 
 Nasal= م ن ;
@@ -50,12 +50,12 @@ Rules
 
 
 "I becomes و when last vowel is و in a word"
-%{I%}:و <=> [ :و :Consonant [ :Consonant | %{y%}: ]* ]/:0* _ ;
+%{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
         except
             :إ :ی :و %>: %{n%}: _ ;
 
 !"I becomes ی when last vowel is و in a word"
-!%{I%}:و <=> [ :ى :Consonant :Consonant* ]/:0* _ ;
+!%{I%}:و <=> [ :ی :Consonant :Consonant* ]/:0* _ ;
 
 "realize {s} as س if after morpheme-final vowel "
 %{s%}:س <=> :Vowel :0* _ ;
@@ -64,16 +64,16 @@ Rules
 "realize {n} as n if it is before locative case and accusative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
             _ %>: %{y%}: ;
-            [ :Vowel - %{y%}: ] %>: _ ;  ! at beginning of genitive after a vowel or n
+            [ :Vowel | :ن ] %>: _ ;  ! at beginning of genitive after a vowel or n
         except
             :إ :ی :و %>: _ ;
 
 "realize {y} as ي after a morpheme-final vowel "
-%{y%}:ی <=> :Vowel :0* _ ;
+%{y%}:ي <=> :Vowel :0* _ ;
             _ %>: %{n%}: ; ! in genitive case in a few words
 
-"realize {D} as n between nasal codas"
-%{D%}:ن <=> :Nasal :0* _ :Vowel* :Nasal ;
+"realize {D} as n after a n or m "
+%{D%}:ن <=> :Nasal :0* _ ;
 
 "{a} is realised as ا after back vowel"
 %{a%}:ا <=> :BackVow [ :Consonant | %>: ]* _ ;

@@ -131,7 +131,7 @@ Multichar_Symbols
 
 %{G%}                 ! realised as گ or ك or غ or ق
 %{K%}                 ! realised as ك or ق
-%{A%}                 ! realised as آ or أ sometimes ى or null
+%{A%}                 ! realised as آ or أ sometimes ی or null
 %{E%}                 ! realised as إ  or sometimes ی and also ی
 %{D%}                 ! realised as د or ت
 %{i%}                 ! epenthetic ی : realised as 
@@ -310,7 +310,7 @@ LEXICON PRON-PERS-BIZ
 LEXICON PRON-PERS-SIZ
 %<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:‌ین # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ى # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ی # ; ! 
 %<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:دان # ; !
@@ -444,8 +444,7 @@ LEXICON CASE-2
 !%<loc%>:%>%{D%}%{A%} CLITICS ;
 !%<loc%>%<attr%>:%>%{D%}%{A%}%>کی CLITICS ;
 !%<abl%>:%>%{D%}ن CLITICS ;
-!%<gen%>:%>نىڭ CLITICS ;
-!%<acc%>:%>نى CLITICS ;
+
 
 LEXICON CASE-ETC
 CASE ;
@@ -728,9 +727,8 @@ LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:م # ;!CLITICS ;
 %<p2%>%<sg%>:ن # ;!CLITICS ;
-!%<p3%>%<sg%>:ى # ; !CLITICS ;
+!%<p3%>%<sg%>:ی # ; !CLITICS ;
 %<p3%>%<sg%>: # ; !CLITICS ;
-!%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
 %<p1%>%<pl%>:یغ # ; ! CLITICS ;
 %<p2%>%<pl%>:نیز # ; ! CLITICS ;
 %<p3%>%<pl%>:لار # ; ! CLITICS ;
@@ -1677,14 +1675,14 @@ LEXICON Adjectives
 گچیجی:گجیجی A1 ;
 بوش:بوش A1 ;
 بيزات:بيزات A1 ;
-مالى:مالى A2 ;
+مالی:مالی A2 ;
 گچ:گچ A2 ;
 مخدرات:مخدرات A2 ;
 مستقل:مستقل A2 ;
 قانوني:قانوني A2 ;
 هدفلی:هدفلی A2 ;
 بنزڕ:بنزڕ A2 ;
-صونراكى:صونراكى A1 ;
+صونراكی:صونراكی A1 ;
 مجموع:مجموع A1 ;
 ایللغ:ایللغ A1 ;
 أیدن:أیدن A1 ;
@@ -2402,15 +2400,15 @@ LEXICON Determiners
 عینی:عینی DET-QNT ;
 او% بير:او% بير DET-DEM ;
 تك:تك DET-IND ;
-ناخسى:ناخسى DET-ITG ;
-هاسى:هاسى DET-ITG ; !which
-ناخسى% بيری:ناخسى% بيری DET-IND ;
+ناخسی:ناخسی DET-ITG ;
+هاسی:هاسی DET-ITG ; !which
+ناخسی% بيری:ناخسی% بيری DET-IND ;
 اوزو:اوزو DET-REF ;
 هر% شيكلدن:هر% شيكلدن DET-QNT ;
 اوندان:اوندان DET-QNT ;
 بیرتاخم:بیرتاخم DET-QNT ;
 هر:هر DET-DEM ; ! each
-أوتكى:أوتكى DET-DEM ;
+أوتكی:أوتكی DET-DEM ;
 بير:بير DET-IND ;
 
 
@@ -2424,7 +2422,7 @@ LEXICON Postpositions
 اولارغ:اولارغ POST ;
 اوغرونا:اوغرونا POST ;
 دایر:دایر POST ;
-أرتسى:أرتسى POST ;
+أرتسی:أرتسی POST ;
 یانندا:یانندا POST ;
 زواید:زواید POST ;
 إیستینده:إیستینده POST ;
@@ -2465,10 +2463,10 @@ LEXICON Postpositions
 حالنه:حالنه POST ;
 كيمن:كيمن POST ; 
 خاص:خاص POST ;
-متالى:متالى POST ;
+متالی:متالی POST ;
 رغمن:رغمن POST ; 
 إيلا:إيلا POST ;
-علاقلالى:علاقلالى POST ;
+علاقلالی:علاقلالی POST ;
 إيسه:إيسه POST ;
 داهی:داهی POST ;
 بوخصوص:بوخصوص POST ;
@@ -2504,27 +2502,27 @@ LEXICON Conjunctions
 یادا:یادا CC ; ! or
 أەما:أەما  CC ; ! but
 تابی% کی:تابی% کی CA ;
-بەلكى:بەلكى CC ; ! 
+بەلكی:بەلكی CC ; ! 
 إيچينده:إيچينده CC ;
 أگر:أگر CC ;
 أما:أما CC ;
 دا:دا CC ;
 همده:همده CC ;
-يعنى:يعنى CC ;
+يعنی:يعنی CC ;
 انجاغ:انجاغ CC ;
 زايد:زايد CC ; ! Plus
 ها:ها CC ;
 هم:هم CC ;
 هرنيسه:هرنيسه CC ;
-إيكيسى:إيكيسى CC ;
-إيلاى:إيلاى CC ;
+إيكيسی:إيكيسی CC ;
+إيلای:إيلای CC ;
 نه:نه CC ;
 يا:يا CC ;
 عكسينه:عكسينه CC ;
-كيمى:كيمى CA ;
+كيمی:كيمی CA ;
 ديه:ديه CS ;
 اولارغ:اولارغ CS ;
-بلكى:بلكى CA ;
+بلكی:بلكی CA ;
 بيلعكس:بيلعكس CA ;
 بكه:بكه CA ;
 بيله:بيله CA ;
@@ -2536,9 +2534,9 @@ LEXICON Conjunctions
 كشكه:كشكه CA ;
 مسله:مسله CA ;
 نيسه:نيسه CA ;
-كى:كى CA ;
-كى:كى CC ;
-كى:كى CS ;
+كی:كی CA ;
+كی:كی CC ;
+كی:كی CS ;
 صورا:صورا CA ;
 واي% حاصل:واي% حاصل CA ;
 يالغز:يالغز CA ;
@@ -2556,7 +2554,7 @@ LEXICON Conjunctions
 تقريبيا:تقريبيا CA ;
 هلا:هلا CA ;
 مسلن:مسلن CA ;
-ياعنى:ياعنى CC ;
+ياعنی:ياعنی CC ;
 يادا:يادا CC ;
 إيسه:إيسه CC ;
 كأنما:كأنما CC ;
@@ -2572,16 +2570,16 @@ LEXICON Numerals
 
 سفر:سفر NUM ;
 بير:بير NUM ;
-إيكى:إيكى NUM ;
+إيكی:إيكی NUM ;
 أوچ:أوچ NUM ;
 دورت:دورت NUM ; 
 بيش:بيش NUM ;
-التى:التى NUM ;
+التی:التی NUM ;
 یدی:یدی NUM ;	
 سكيز:سكيز NUM ;
 دوقوز:دوقوز NUM ;
 اون:اون NUM ;
-ايگرمى:ايگرمى NUM ;
+ايگرمی:ايگرمی NUM ;
 اوتوز:اوتوز NUM ;
 قي:قيرخ NUM ;
 اللي:اللي NUM ;
@@ -2788,7 +2786,7 @@ LEXICON Nouns
 زراعت:زراعت N1 ;
 ترروست:ترروست N1 ;
 یوریوش:یوریوش N1 ;
-حقوقچى:حقوقچى N1 ;
+حقوقچی:حقوقچی N1 ;
 قازا:قازا N1 ;
 تأکید:تأکید N1 ;
 زابط:زابط N1 ;
@@ -4103,7 +4101,7 @@ CD:CD N1 ;
 إیشیغ:إیشیسغ N1 ;
 حجره:حجره N1 ;
 دوستلوغ:دوستلوغ N1 ;
-باى:باى N1 ;
+بای:بای N1 ;
 قاچاقچلغ:قاچاقچلغ N1 ;
 زلزال:زلزال N1 ;
 زافر:زافر N1 ;
