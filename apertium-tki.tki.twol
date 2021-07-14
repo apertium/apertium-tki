@@ -26,6 +26,7 @@ Alphabet
 %{N%}:0 %{N%}:ن %{N%}:ي
 %{ü%}:أو
 %{P%}:ب
+%{T%}:ت %{T%}:د
 %>:0 ;
 
 Sets
@@ -67,10 +68,11 @@ Rules
 "realize {D} as n after a n or m "
 %{D%}:ن <=> :Nasal :0* _ ;
 
-"a is realised as ا after back vowel"
+"{a} is realised as ا after back vowel"
 %{a%}:ا <=> :BackVow [ :Consonant | %>: ]* _ ;
 
-
+"{T} is realised as د between vowels"
+%{T%}:د <=> _ %>:* [ :Vowel | %{a%}: ] ;
 
 
 ! Resources:

@@ -151,6 +151,7 @@ Multichar_Symbols
 %{l%}                 ! for l deletion 
 %{y%}                 ! realised as ی or null
 %{r%}                 ! realised as  or ل or null
+%{T%}                 ! realised as ت or د
 
 
 ! Other symbols
@@ -5067,7 +5068,8 @@ LEXICON Verbs
 مکله:مکله V-IV ;
 أسیر% دوش:أسیر% دوش V-IV ;
 رام% ات:رام% ات V-TV ;
-ئت:ئت V-TV ;
+ئت:ئ{T} V-TV ;   ! "do/make"
+گیت:گی{T} V-IV ; ! "go"
 إدیل:إدیل V-IV ;
 حساب% صور:حساب% صور V-IV ;
 حمد% ئت:حمد% ئت V-IV ;
