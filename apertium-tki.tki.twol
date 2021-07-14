@@ -50,7 +50,7 @@ Rules
 
 
 "I becomes و when last vowel is و in a word"
-%{I%}:و <=> [ :و :Consonant :Consonant* ]/:0* _ ;
+%{I%}:و <=> [ :و :Consonant [ :Consonant | %{y%}: ]* ]/:0* _ ;
         except
             :إ :ی :و %>: %{n%}: _ ;
 
@@ -64,12 +64,12 @@ Rules
 "realize {n} as n if it is before locative case and accusative case "
 %{n%}:ن <=> _ %>: %{D%}: ;
             _ %>: %{y%}: ;
-            [ :Vowel ] %>: _ ;  ! at beginning of genitive after a vowel or n
+            [ :Vowel - %{y%}: ] %>: _ ;  ! at beginning of genitive after a vowel or n
         except
             :إ :ی :و %>: _ ;
 
 "realize {y} as ي after a morpheme-final vowel "
-%{y%}:ي <=> :Vowel :0* _ ;
+%{y%}:ی <=> :Vowel :0* _ ;
             _ %>: %{n%}: ; ! in genitive case in a few words
 
 "realize {D} as n after a n or m "
