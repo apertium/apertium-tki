@@ -40,7 +40,7 @@ Tests:
 
   "[twol] locative {D}:د":
    
-    يل<n><loc>: يلدا
+    یل<n><loc>: یلدا
     دام<n><loc>: دامدا
   "[twol] locative {D}:ت":
     قیش<n><loc>: قیشته
@@ -52,7 +52,7 @@ Tests:
     إیو<n><loc>: ‌إیوده    
   "[twol] locative {A}:ا" :   
     دام<n><loc>: دامدا 
-    يل<n><loc>: يلدا 
+    یل<n><loc>: یلدا 
 
   "[twol] accuasative {y}:ي" : 
     خورما<n><acc>: خورمایی
