@@ -1,0 +1,8 @@
+# [twol] ifi tense {D}:ت
+گچتی
+# [twol] ifi tense {D}:د
+گلدی
+# [twol] ifi tense {D}:0
+یاتی
+# [twol] ifi tense {A}:و
+یورولدو

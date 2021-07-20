@@ -1,0 +1,66 @@
+# [twol] genitive in -nin
+تورکیانین
+هدیەنین
+تورکمانجەنین
+دیزینین
+باغلامانین
+بالانین
+زوقنون
+داهینین
+# [twol] genitive in -in
+أوشاغین
+هدفین
+إیوین
+برنامجین
+شخصین
+مالین
+وجدانین
+# [twol] genitive in -un
+قورتون
+تلفونون
+# [twol] genitive in -yün
+گوزلوغیون
+مکتوبیون
+# [twol] locative {D}:د
+یلدا
+دامدا
+# [twol] locative {D}:ت
+قیشته
+حاپیسته
+عددته
+دولتته
+# [twol] locative {A}:ه
+قیشته
+‌إیوده
+# [twol] locative {A}:ا
+دامدا
+یلدا
+# [twol] accuasative {y}:ي
+خورمایی
+باغچایی
+# [twol] accusative {y}:0
+اوزو
+اوشاغی
+# [twol] accusative {I}:و
+قورتو
+اوزو
+# [twol] accusative {I}:ی
+خورمایی
+اوشاغی
+دیلی
+# [twol] ablative {D}:د
+دامدان
+داردان
+# [twol] ablative {D}:0
+یالانان
+نردوانان
+التان
+# [twol] ablative {D}:ت
+قیشتان
+# [twol] ins {D}:ت
+اتتان
+احمدتان
+# [twol] ins {D}:د
+داییدان
+# [twol] dative {y}:د
+تپیه

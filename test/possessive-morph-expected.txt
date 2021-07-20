@@ -1,0 +1,72 @@
+[2DTo-xjcq6X_#0] ^یولوی/یول<n><px2sg><nom>/یول<n><px2sg><nom>+i<cop><aor><p3><sg>$
+[/2DTo-xjcq6X_]
+[76asbfE519qh#0] ^حمایەسینه/*حمایەسینه$
+[/76asbfE519qh]
+[87Fjnhwwihhr#0] ^توپیوز/*توپیوز$
+[/87Fjnhwwihhr]
+[AVZWiBk9UvYt#0] ^کتابی/کتاب<n><px2sg><nom>/کتاب<n><px3sp><nom>/کتاب<n><px2sg><nom>+i<cop><aor><p3><sg>/کتاب<n><px3sp><nom>+i<cop><aor><p3><sg>$
+[/AVZWiBk9UvYt]
+[AXMdIPaOepvA#0] ^ادم/اد<n><px1sg><nom>/اد<n><nom>+i<cop><aor><p1><sg>/اد<np>\<al\><px1sg><nom>/اد<np>\<al\><nom>+i<cop><aor><p1><sg>/اد<n><px1sg><nom>+i<cop><aor><p3><sg>/اد<np>\<al\><px1sg><nom>+i<cop><aor><p3><sg>$
+[/AXMdIPaOepvA]
+[BV_NO27xrsIq#0] ^باخچاسی/باخچا<n><px3sp><nom>/باخچا<n><px3sp><nom>+i<cop><aor><p3><sg>$
+[/BV_NO27xrsIq]
+[CjIxWutR2DSf#0] ^إمبراطوریەسینه/*إمبراطوریەسینه$
+[/CjIxWutR2DSf]
+[Du4HIk08D0GW#0] ^أردمی/أردم<n><px2sg><nom>/أردم<n><px3sp><nom>/أردم<np><ant><m><px2sg><nom>/أردم<np><ant><m><px3sp><nom>/أردم<n><px2sg><nom>+i<cop><aor><p3><sg>/أردم<n><px3sp><nom>+i<cop><aor><p3><sg>/أردم<np><ant><m><px2sg><nom>+i<cop><aor><p3><sg>/أردم<np><ant><m><px3sp><nom>+i<cop><aor><p3><sg>$
+[/Du4HIk08D0GW]
+[FU4LWGcc5Qos#0] ^قونشوم/قونشو<n><px1sg><nom>/قونشو<adj><subst><px1sg><nom>/قونشو<adj>+i<cop><aor><p1><sg>/قونشو<n><nom>+i<cop><aor><p1><sg>/قونشو<adj><subst><nom>+i<cop><aor><p1><sg>/قونشو<n><px1sg><nom>+i<cop><aor><p3><sg>/قونشو<adj><subst><px1sg><nom>+i<cop><aor><p3><sg>$
+[/FU4LWGcc5Qos]
+[G3UTp6wadVyB#0] ^گونوم/گون<n><px1sg><nom>/گون<n><px3sp><nom>+i<cop><aor><p1><sg>/گون<n><px1sg><nom>+i<cop><aor><p3><sg>$
+[/G3UTp6wadVyB]
+[H5QcMA0VUknP#0] ^توپوی/*توپوی$
+[/H5QcMA0VUknP]
+[HkA_2fdyIhvP#0] ^بابام/بابا<n><px1sg><nom>/بابا<n><nom>+i<cop><aor><p1><sg>/بابا<n><px1sg><nom>+i<cop><aor><p3><sg>$
+[/HkA_2fdyIhvP]
+[L27qyiV96_Io#0] ^باخچایز/*باخچایز$
+[/L27qyiV96_Io]
+[LZe2bveCpMP2#0] ^ادی/اد<n><px2sg><nom>/اد<n><px3sp><nom>/اد<np>\<al\><px2sg><nom>/اد<np>\<al\><px3sp><nom>/اد<n><px2sg><nom>+i<cop><aor><p3><sg>/اد<n><px3sp><nom>+i<cop><aor><p3><sg>/اد<np>\<al\><px2sg><nom>+i<cop><aor><p3><sg>/اد<np>\<al\><px3sp><nom>+i<cop><aor><p3><sg>$
+[/LZe2bveCpMP2]
+[MwEpsQYG42Jq#0] ^قیزم/قیز<n><px1sg><nom>/قیز<v><iv><abil><p1><sg>/قیز<n><nom>+i<cop><aor><p1><sg>/قیز<n><px1sg><nom>+i<cop><aor><p3><sg>$
+[/MwEpsQYG42Jq]
+[Nl5X4ri63awb#0] ^خاترلادیغینی/*خاترلادیغینی$
+[/Nl5X4ri63awb]
+[QOidcsRMOZ4i#0] ^حمایه‌سینه/*حمایه‌سینه$ ^حمایەسینە/*حمایەسینە$
+[/QOidcsRMOZ4i]
+[RQHUO8XnCkP-#0] ^الیمیز/*الیمیز$
+[/RQHUO8XnCkP-]
+[RofeCMWsE06V#0] ^گیونی/گیون<n><px2sg><nom>/گیون<n><px2sg><nom>+i<cop><aor><p3><sg>$
+[/RofeCMWsE06V]
+[UDwxb5xnkarR#0] ^اویونوی/اویون<n><px2sg><nom>/اویون<n><px2sg><nom>+i<cop><aor><p3><sg>$
+[/UDwxb5xnkarR]
+[Ucp54LU3mq_w#0] ^اوزویا/*اوزویا$
+[/Ucp54LU3mq_w]
+[_Qo3z5yW0i83#0] ^التنی/التن<n><px2sg><nom>/التن<n><px3sp><nom>/التن<n><px2sg><nom>+i<cop><aor><p3><sg>/التن<n><px3sp><nom>+i<cop><aor><p3><sg>$
+[/_Qo3z5yW0i83]
+[aHoDW6w57J2S#0] ^کتابینی/*کتابینی$
+[/aHoDW6w57J2S]
+[botzDDml-d4o#0] ^إیشی/إیش<n><px2sg><nom>/إیش<n><px3sp><nom>/إیش<n><px2sg><nom>+i<cop><aor><p3><sg>/إیش<n><px3sp><nom>+i<cop><aor><p3><sg>$
+[/botzDDml-d4o]
+[brygsFqqJaOG#0] ^إیوینی/*إیوینی$
+[/brygsFqqJaOG]
+[c84a6nHs31jX#0] ^سورسو/*سورسو$
+[/c84a6nHs31jX]
+[cEixsl7ZEJn6#0] ^یواسی/یوا<n><px3sp><nom>/یوا<n><px3sp><nom>+i<cop><aor><p3><sg>$
+[/cEixsl7ZEJn6]
+[cXdIdBKh5P-k#0] ^أونجەسینه/*أونجەسینه$
+[/cXdIdBKh5P-k]
+[gqa3OZ4mMBY-#0] ^عربهسی/*عربهسی$
+[/gqa3OZ4mMBY-]
+[myO0PZzDOfZI#0] ^بالای/بالا<n><px2sg><nom>/بالا<n><px2sg><nom>+i<cop><aor><p3><sg>$
+[/myO0PZzDOfZI]
+[o9SpQbBdYXdp#0] ^نینم/*نینم$
+[/o9SpQbBdYXdp]
+[oCIpk4EaHzO7#0] ^سفاتلارینی/*سفاتلارینی$
+[/oCIpk4EaHzO7]
+[ptllqX81xYFy#0] ^عاصمسی/*عاصمسی$
+[/ptllqX81xYFy]
+[vNHarzh15Fb-#0] ^قونشوی/قونشو<n><px2sg><nom>/قونشو<adj><subst><px2sg><nom>/قونشو<n><px2sg><nom>+i<cop><aor><p3><sg>/قونشو<adj><subst><px2sg><nom>+i<cop><aor><p3><sg>$
+[/vNHarzh15Fb-]
+[w8Ap490CZVwD#0] ^گوزموز/*گوزموز$
+[/w8Ap490CZVwD]
+[wgSTxDwFue0u#0] ^گیردیغیمزدا/*گیردیغیمزدا$
+[/wgSTxDwFue0u]

@@ -1,0 +1,8 @@
+# [twol] ifi tense {D}:ت
+^گچ<v><iv><ifi><p3><sg>$
+# [twol] ifi tense {D}:د
+^گل<v><iv><ifi><p3><sg>$
+# [twol] ifi tense {D}:0
+^یات<v><iv><ifi><p3><sg>$
+# [twol] ifi tense {A}:و
+^یورول<v><iv><ifi><p3><sg>$

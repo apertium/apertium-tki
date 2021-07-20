@@ -1,0 +1,4 @@
+# [twol] plural {L} l:ن
+^گونgün<n><pl><nom>$
+# [twol] plural {L} l:ل
+^أیو<n><pl><nom>$

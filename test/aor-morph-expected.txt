@@ -1,0 +1,20 @@
+[2EeW8OFTbPzC#0] ^یاتار/یات<v><iv><aor>/یات<v><iv><fut><p3><sg>/یات<v><iv><aor>+i<cop><aor><p3><sg>/یات<v><iv>\<ger_aor\><nom>/یات<v><iv>\<ger_aor\><nom>+i<cop><aor><p3><sg>$
+[/2EeW8OFTbPzC]
+[5LWtHwRKRESW#0] ^اویولان/*اویولان$
+[/5LWtHwRKRESW]
+[IaezhLqVPE5R#0] ^توتار/توت<v><tv><aor>/توتار<n><attr>/توتار<n><nom>/توت<v><tv><fut><p3><sg>/توت<v><tv><aor>+i<cop><aor><p3><sg>/توت<v><tv>\<ger_aor\><nom>/توتار<n><nom>+i<cop><aor><p3><sg>/توت<v><tv>\<ger_aor\><nom>+i<cop><aor><p3><sg>$
+[/IaezhLqVPE5R]
+[QEy0VscSWdGF#0] ^گیرەبیلر/*گیرەبیلر$
+[/QEy0VscSWdGF]
+[cu7s_om4UDCD#0] ^گیدر/گید<v><iv><aor>/گیت<v><iv><aor>/گید<v><iv><aor>+i<cop><aor><p3><sg>/گیت<v><iv><aor>+i<cop><aor><p3><sg>$
+[/cu7s_om4UDCD]
+[ewh9EMgy2Gc7#0] ^اوزانابیلر/*اوزانابیلر$
+[/ewh9EMgy2Gc7]
+[hdxu-SEqzNXQ#0] ^سوەبیلر/*سوەبیلر$
+[/hdxu-SEqzNXQ]
+[mZIp0RyNnY16#0] ^قولانابیلر/*قولانابیلر$
+[/mZIp0RyNnY16]
+[qnuk5apLjEJD#0] ^ئدر/ئت<v><tv><aor>/ئت<v><tv><aor>+i<cop><aor><p3><sg>$
+[/qnuk5apLjEJD]
+[xK1IY0NsAWHh#0] ^گوستریلن/*گوستریلن$
+[/xK1IY0NsAWHh]

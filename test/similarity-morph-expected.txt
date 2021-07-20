@@ -1,0 +1,10 @@
+[GQJwV5ciqHuR#0] ^إنگلیزجه/إنگلیزجه<n><attr>/إنگلیزجه<n><nom>/إنگلیزجه<n><nom>+i<cop><aor><p3><sg>$
+[/GQJwV5ciqHuR]
+[H0_NDeYpEn75#0] ^ترکچه/*ترکچه$
+[/H0_NDeYpEn75]
+[W10yErnujr94#0] ^الانجا/*الانجا$
+[/W10yErnujr94]
+[np8jKaCCLGWX#0] ^عربجه/*عربجه$
+[/np8jKaCCLGWX]
+[ye7QvdTi504d#0] ^یدغچه/*یدغچه$
+[/ye7QvdTi504d]

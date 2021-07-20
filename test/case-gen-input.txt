@@ -1,0 +1,66 @@
+# [twol] genitive in -nin
+^تورکیا<np><top><gen>$
+^هدیە<n><gen>$
+^تورکمانجە<n><gen>$
+^دیزی<n><gen>$
+^باغلاما<n><gen>$
+^بالا<n><gen>$
+^زوق<n><gen>$
+^داهی<n><gen>$
+# [twol] genitive in -in
+^‌أوشاغ<n><gen>$
+^هدف<n><gen>$
+^إیو<n><gen>$
+^برنامج<n><gen>$
+^شخص<n><gen>$
+^مال<n><gen>$
+^وجدان<n><gen>$
+# [twol] genitive in -un
+^قورت<n><gen>$
+^تلفون<n><gen>$
+# [twol] genitive in -yün
+^گوزلوغ<n><gen>$
+^مکتوپ<n><gen>$
+# [twol] locative {D}:د
+^یل<n><loc>$
+^دام<n><loc>$
+# [twol] locative {D}:ت
+^قیش<n><loc>$
+^حاپیس<n><loc>$
+^عدد<n><loc>$
+^دولت<n><loc>$
+# [twol] locative {A}:ه
+^قیش<n><loc>$
+^إیو<n><loc>$
+# [twol] locative {A}:ا
+^دام<n><loc>$
+^یل<n><loc>$
+# [twol] accuasative {y}:ي
+^خورما<n><acc>$
+^باغچا<n><acc>$
+# [twol] accusative {y}:0
+^اوز<n><acc>$
+^اوشاغ<n><acc>$
+# [twol] accusative {I}:و
+^قورت<n><acc>$
+^اوز<n><acc>$
+# [twol] accusative {I}:ی
+^خورما<n><acc>$
+^اوشاغ<n><acc>$
+^دیل<n><acc>$
+# [twol] ablative {D}:د
+^دام<n><abl>$
+^دار<n><abl>$
+# [twol] ablative {D}:0
+^یالان<n><abl>$
+^نردوان<n><abl>$
+^الت<n><abl>$
+# [twol] ablative {D}:ت
+^قیش<n><abl>$
+# [twol] ins {D}:ت
+^ات<n><abl>$
+^ا‌حمد<n><abl>$
+# [twol] ins {D}:د
+^دایی<n><abl>$
+# [twol] dative {y}:د
+^تپه<n><dat>$

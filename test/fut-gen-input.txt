@@ -1,0 +1,6 @@
+# [twol] future tense {A} A:0
+^گل<v><iv><fut>$
+^گیت<v><iv><fut>$
+# [twol] future tense {A} A:ا
+^یات<v><iv><fut>$
+^یاز<v><iv><fut>$

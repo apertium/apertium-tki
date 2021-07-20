@@ -1,0 +1,16 @@
+# [twol] {A} pass after soft vowel
+گوستریلن
+# [twol] {A} pass after hard vowel
+اویولان
+# [twol] {ت} aor after soft vowel
+ئدر
+گیدر
+# [twol] {ت} aor after hard vowel
+توتار
+یاتار
+# [twol] {A} abil hard vowel
+قولانابیلر
+اوزانابیلر
+# [twol] {A} abil soft vowel
+سوەبیلر
+گیرەبیلر

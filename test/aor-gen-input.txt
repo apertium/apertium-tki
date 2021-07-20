@@ -1,0 +1,16 @@
+# [twol] {A} pass after soft vowel
+^گوستر<v><tv><pass><ger_impf><nom>$
+# [twol] {A} pass after hard vowel
+^اوی<v><iv><pass><ger_impf><nom>+i<cop><aor><p3><sg>$
+# [twol] {ت} aor after soft vowel
+^ئت<v><tv><aor>+i<cop><aor><p3><sg>$
+^گیت<v><iv><ger_aor><nom>+i<cop><aor><p3><sg>$
+# [twol] {ت} aor after hard vowel
+^توت<v><tv><aor>+i<cop><aor><p3><sg>$
+^یات<v><iv><aor>+i<cop><aor><p3><sg>$
+# [twol] {A} abil hard vowel
+^قولان<v><tv><abil><aor>+i<cop><aor><p3><sg>$
+^اوزان<v><iv><abil><aor>+i<cop><aor><p3><sg>$
+# [twol] {A} abil soft vowel
+^سو<v><tv><abil><aor>+i<cop><aor><p3><sg>$
+^گیر<v><tv><pot><aor>+i<cop><aor><p3><sg>$
