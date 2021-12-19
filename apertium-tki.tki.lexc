@@ -1007,7 +1007,7 @@ LEXICON Interjections
 آه:آه INTERJ ;
 تمام:تمام INTERJ ;
 یو:یو INTERJ ;
-یعنی:یعنی INTERJ ;
+يعنى:يعنى INTERJ ;
 یوخ:یوخ INTERJ ;
 هە:هە INTERJ ;
 
@@ -1018,8 +1018,8 @@ LEXICON Pronouns
 أوز:أوز PRON-REF ;
 بورا:بورا PRON-ADV ;
 اورا:اورا PRON-ADV ;
-مەن:مەن PRON-PERS-MAN ;
-سەن:سەن PRON-PERS-SEN ;
+من:من PRON-PERS-MAN ;
+سن:سن PRON-PERS-SEN ;
 بیز:بیز PRON-PERS-BIZ ;
 سیز:سیز PRON-PERS-SIZ ;
 اولار:اولار PRON-PERS-OLAR ;
@@ -1706,7 +1706,7 @@ LEXICON Adjectives
 اشاغی:اشاغی A1 ;
 أتکین:أتکین A1 ;
 تقافی:تقافی A1 ;
-مەن:مەن A1 ;
+من:من A1 ;
 خوش:خوش A2 ;
 عدلی:عدلی A2 ;
 خوش:خوش A1 ;
@@ -2243,7 +2243,7 @@ LEXICON Adverbs
 کیم:کیم ADV1 ;
 بلا:بلا ADV1 ;
 دیمغ% بلا:دیمغ% بلا ADV1 ;
-یعنی% بلا:یعنی% بلا ADV1 ;
+يعنى% بلا:يعنى% بلا ADV1 ;
 اردنن:اردنن ADV1 ;
 بیزیم% کیمین:بیزیم% کیمین ADV1 ;
 أوزوکویون:أوزوکویون ADV1 ;
@@ -2492,10 +2492,10 @@ LEXICON Conjunctions
 فیهوت:فیهوت CC ;
 مسله:مسله CA ;
 پکی:پکی CA ;
-یعنی:یعنی CA ;
+يعنى:يعنى CA ;
 یوخسا:یوخسا CA ;
 إیلا:إیلا CC ;
-یعنی:یعنی CC ;
+يعنى:يعنى CC ;
 یاهوت:یاهوت CC ;
 چونكو:چونكو CA ; ! "because"
 ھەم:ھەم CC ; ! "and"
@@ -2508,7 +2508,7 @@ LEXICON Conjunctions
 أما:أما CC ;
 دا:دا CC ;
 همده:همده CC ;
-یعنی:یعنی CC ;
+يعنى:يعنى CC ;
 انجاغ:انجاغ CC ;
 زاید:زاید CC ; ! Plus
 ها:ها CC ;
@@ -2569,7 +2569,7 @@ LEXICON Conjunctions
 LEXICON Numerals
 
 سفر:سفر NUM ;
-بیر:بیر NUM ;
+بير:بير NUM ;
 إیكی:إیكی NUM ;
 أوچ:أوچ NUM ;
 دورت:دورت NUM ; 
@@ -4187,6 +4187,7 @@ CD:CD N1 ;
 عشرت:عشرت N1 ;
 شافق:شافق N1 ;
 التن:التن N1 ;
+ير:ير N1 ;
 
 
 
@@ -4405,7 +4406,7 @@ LEXICON ProperNouns
 افغانستان:افغانستان NP-TOP ;
 أزربیجان:أزربیجان NP-TOP ;
 تانری:تانری NP-TOP ;
-مەن:مەن NP-TOP ;
+من:من NP-TOP ;
 عوسمانیه:عوسمانیه NP-TOP ;
 قبرص:قبرص NP-TOP ;
 اناضلو:ناضلو NP-TOP ;
@@ -4936,6 +4937,7 @@ LEXICON Verbs
 ‌‌إشلە:إشلە V-TV ;
 دە:دە V-TV ;
 یه:یه V-TV ;
+دی:دی V-TV ;
 إیتیر:إیتیر V-TV ;
 أپار:أپار V-TV ;
 أوگرن:أوگرن V-TV ;
