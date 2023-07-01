@@ -10,7 +10,7 @@ Multichar_Symbols
 %<v%>           ! Verb
 
 %<cnjcoo%>        ! Co-ordinating conjunction
-%<cnjsub%>        ! Subordinating conjunction
+%<cnjsub%>        !  Subordinating conjunction
 %<cnjadv%>        ! Adverbial conjunction
 %<num%>           ! Numeral
 %<prn%>           ! Pronoun
@@ -28,7 +28,7 @@ Multichar_Symbols
 
 %<dub%>           ! dubitative
 %<nec%>           ! necessitive
-
+%{ь%}         ! Force front harmony
 ! Number morphology
 %<p1%>            ! First person
 %<p2%>            ! Second person
@@ -131,25 +131,27 @@ Multichar_Symbols
 
 %{G%}                 ! realised as گ or ك or غ or ق
 %{K%}                 ! realised as ك or ق
-%{A%}                 ! realised as آ or أ sometimes ى or null
-%{E%}                 ! realised as إ or  or sometimes ى and also ي
+%{A%}                 ! realised as آ or أ sometimes ی or null
+%{E%}                 ! realised as إ  or sometimes ی and also ی
 %{D%}                 ! realised as د or ت
-%{i%}                 ! epenthetic ى : realised as 
-%{I%}                 ! realised as إ orى or ى
+%{i%}                 ! epenthetic ی : realised as 
+%{I%}                 ! realised as إ or ی or ی
 %{U%}                 ! realised as و and أ
 %{ü%}                 ! realised as و or null
 %{u%}                 ! realised as و or null 
 %{a%}                 ! realised as و or null
-%{s%}                 ! realised as س or null
+%{s%}                 ! realised as  س or null
 %{n%}                 ! realised as ن or null
-%{q%}		          ! for loanwords, devoicing suffixes
+%{N%}                 ! realised as ن or ی or null
+%{q%}		              ! for loanwords, devoicing suffixes
 %{ğ%}                 ! ^^ opposite
 %{e%}                 ! forces front harmony
 %{a%}                 ! forces back harmony
 %{L%}                 ! for passive: ل or ن
 %{l%}                 ! for l deletion 
-%{y%}                 ! realised as ي or null
+%{y%}                 ! realised as ی or null
 %{r%}                 ! realised as  or ل or null
+%{T%}                 ! realised as ت or د
 
 
 ! Other symbols
@@ -162,7 +164,7 @@ Multichar_Symbols
 
 LEXICON Root
 
-NounRoot ;
+
 Nouns ;
 Numerals ;
 Conjunctions ;
@@ -177,8 +179,9 @@ Verbs ;
 Punctuation ;
 Abbreviations ;
 Interjections ;
-DIGITLEX ;
-BARB ;
+Digits ;
+!DIGITLEX ;
+!BARB ;
 
 LEXICON ABBR
 
@@ -187,34 +190,55 @@ LEXICON ABBR
 LEXICON CASE
 !# ;
 %<nom%>: GENPOSS-GENERAL ;
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
-!%<gen%>:%>%{n%}%{U%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
-!%<gen%>:%>%{y%}%{I%}ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
-%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım
+!%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      !uşağ->uşağımın, kurt->kurtun, baba->babayın, gözlüğ->gözlüğyün
+!%<gen%>:%>ن%{I%}ن GENPOSS-GENERAL ;      !kurt->kurtun      
+!%<gen%>:%>%{y%}%{I%ن GENPOSS-GENERAL ;      !baba->babayın !gözlüğ->gözlüğyün
+%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;        !hurma->hurmayı yedim, uşağ->uşağı yahadım öz -> özü
 !%<acc%>:%>%{n%}%{U%} GENPOSS-GENERAL ;        !kurt->kurtu, karğa->karğanı tututtums   
-%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
+!%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  
+%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye  tepe-> tepeye
+!%<dat%>:%>ه GENPOSS-GENERAL ;        !baş->başa, göz->gözye, üz->üzye
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;        !kiş->kişte, dam-damda
-!%<loc%>:%>%{D%}%{A%}كى GENPOSS-GENERAL ;   
+!%<loc%>:%>%{D%}%{A%}کی GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;      !dam->damdan, dar->dardan
 !%<abl%>:%>%{N%}%{A%}ن GENPOSS-GENERAL ;      !nerdewan->nerdewnan, yalan->yalanan
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+!%<ins%>:%>%{y%}ل%{A%} GENPOSS-GENERAL ;         !at->attan("atla"), ingiliz->ingilizden("ingilizle"), dayı->dayıydan("dayıyla")
+
+LEXICON COPULA-MIMIS
+V-COP ;
 
 LEXICON GENPOSS-GENERAL
 !V-COP ; 
 # ;
 !%<gen%>%<subst%>:%>%{N%}%{I%}nki%{n%} CASE ;
 %<sim%>:%>%{C%}%{A%} # ;  !Eştlik durumu eki +CA EX: çalınca"çaldığında"
-%<attr%>:%>كى # ;
+%<attr%>:%>کی # ;
+COPULA-MIMIS ;
+
+LEXICON PRON-RECIP
+
+%<prn%>%<recip%>: POSSESSION ;
+
+LEXICON PRON-IND
+
+%<prn%>%<ind%>: N-COMMON ; ! FIXME: Check contlex
+
+
   
 
 LEXICON POSSESSION
 CASE ;
-%<px1sg%>:%>%{I%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
-%<px2sg%>:%>%{I%}ي CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
-%<px1pl%>:%>%{I%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
-%<px2pl%>:%>%{I%}ي%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
-!%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
+%<px1sg%>:%>%{i%}م CASE ;               !ad->adım, baba->babam, kiz->kizim, ana>anam, konşu->konşum, gün->günüm, yol->yolum
+%<px2sg%>:%>%{i%}ی CASE ;               !iş->işiy, yazı->yazıy, konuşu-> konşuy, yol->yoluy
+%<px2sg%>:%>%{y%}%{I%}%{n%} CASE ; 
+!%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;           !ad->adı, yuwa->yuwası, suru->surusu 
+%<px3sp%>:%>%{s%}%{I%} CASE ;
+%<px1pl%>:%>%{i%}م%{I%}ز CASE ;         !el->elimiz, mal->malımız, ruh->ruhumuz, göz-gözümüz
+!%<px2pl%>:%>%{i%}ی%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz 
+%<px2pl%>:%>ی%{I%}ز CASE ; !       !bahça->bahçayız, ard->ardıyız, top->topyuz, göz->gözyüz
+!%<px3sg%>%<frm%>:%>لیری‬ CASE ;
 %<px3pl%>:%>ل%{A%}ر%{I%} CASE ;          !kanat-> kanatlarım, tepe->tepelerin, göz yaşı->göz yaşlarım
 %<px3sg%>:%>ل%{A%}ر%{I%} CASE ; 
 
@@ -228,25 +252,25 @@ LEXICON CLITICS
 
 LEXICON PRON-PERS-MAN 
 %<prn%>%<pers%>%<p1%>%<sg%>: CLITICS;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ى # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>یم # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ی # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ن  # ; !
 
 LEXICON PRON-PERS-SEN 
 %<prn%>%<pers%>%<p2%>%<sg%>: # ;
-%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ئيي # ; ! 
-%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ئي # ; ! 
-%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ى # ; !
-%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دى # ;
-%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نىن # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ئیی # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ئی # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:ه # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:دا # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:نن # ; !
 
 LEXICON PRON-DEM-BU
 
 %<prn%>%<dem%>: CASE-2 ;
 %<prn%>%<dem%>%<gen%>:نون # ;
-%<prn%>%<dem%>%<dat%>:نا #  ;
+%<prn%>%<dem%>%<dat%>:نه #  ;
 %<prn%>%<dem%>%<acc%>:نو # ;
 %<prn%>%<dem%>%<abl%>:ندان # ;
 %<prn%>%<dem%>%<loc%>:ندا # ;
@@ -254,38 +278,48 @@ LEXICON PRON-DEM-BU
 !%<prn%>%<dem%>%<loc%>%<attr%>:ndaki ATTR-SUBST ;
 %<prn%>%<dem%>%<ins%>:نونلا # ;
 !%<prn%>%<dem%>%<px3sp%>:nu%{n%} CASE ;
-!%<prn%>%<dem%>%<pl%>:nlar CASE-ETC ;
+!%<prn%>%<dem%>%<pl%>:نلار CASE-ETC ;
 !%<prn%>%<dem%>%<pl%>%<px3sp%>:nları%{n%} CASE ;
+
+LEXICON PRON-REF
+%<prn%>%<ref%>: CASE-ETC ;                
+!%<prn%>%<ref%>%<px1sg%>:%>%{i%}m CASE-ETC ;                
+%<prn%>%<ref%>%<px2sg%>:%>%{i%}ن CASE-ETC ;                 
+%<prn%>%<ref%>%<px3sg%>:%>%{s%}%{I%}ن CASE-ETC ; 
+%<prn%>%<ref%>%<px3sp%>:%>%{s%}%{I%}ن CASE-ETC ; 
+!%<prn%>%<ref%>%<px1pl%>:%>%{i%}m%{I%}z CASE-ETC ;           
+!%<prn%>%<ref%>%<px2pl%>:%>%{i%}n%{I%}z CASE-ETC ;      
+!%<prn%>%<ref%>%<px3pl%>:%>l%{A%}r%{I%}%{n%} CASE-ETC ;  
 
 LEXICON PRON-PERS-O
 %<prn%>%<pers%>%<p3%>%<sg%>: # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نون # ; ! 
 %<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نو # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نا # ; !
-%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندى # ;
-%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نىن # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نه # ; !
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندی # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:نن # ; !
 
 LEXICON PRON-PERS-BIZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:يم # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ي # ; ! 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ئه # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دى # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:یم # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ی # ; ! 
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:ه # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:دی # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:دان # ; !
 
 LEXICON PRON-PERS-SIZ
 %<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:ئن # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ى # ; ! 
-%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ا # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:‌ین # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:ی # ; ! 
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:ه # ; !
 %<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:دان # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:يلا # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:یلا # ; !
 
 LEXICON PRON-PERS-OLAR
 %<prn%>%<pers%>%<p3%>%<pl%>: # ;
-%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:ىن # ; ! 
-%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:ي # ; ! 
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:‌ین # ; ! 
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:ی # ; ! 
 %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:ئه # ; !
 %<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:دا # ;
 %<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:دان # ; !
@@ -293,35 +327,35 @@ LEXICON PRON-PERS-OLAR
 LEXICON PRON-PERS-OZ
 %<prn%>%<pers%>%<p1%>%<sg%>: # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:م # ; ! 
-%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ي # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:ين # ; !
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:مى # ; ! 
-%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:يى # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ی # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:ین # ; !
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:می # ; ! 
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:یی # ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نی # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:مه # ; !
-%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:يه # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:یه # ; !
 %<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نه # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:مده # ; !
-%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:يده # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:یده # ;
 %<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نده # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:مدان # ; !
-%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:يدان # ; !
+%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:یدان # ; !
 %<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:ندان # ; !
 %<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:موز # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:يوز # ; !
-%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:لاري # ; !
-%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:موزى # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:يوزى # ; !
-%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:لارى # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:یوز # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:لاری # ; !
+%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:موزی # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:یوزی # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:لاری # ; !
 %<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:موزه # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:يوزه # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:یوزه # ; !
 %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:لارنه # ; !
 %<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:موزده # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:يوزده # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:یوزده # ; !
 %<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:لارنده # ; !
 %<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:موزدان # ; !
-%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:يوزدان # ; !
-%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:لاريندان # ; !
+%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:یوزدان # ; !
+%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:لاریندان # ; !
 
 
 
@@ -333,30 +367,38 @@ LEXICON V-COP-IFI-PERS
 !%<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p1%>%<pl%>:%>ك # ;
 %<p2%>%<pl%>:%>%{i%}ن%{I%}ز # ;
-%<p3%>%<pl%>:%>ل%{A%}ر # ;
+%<p3%>%<pl%>:%>%{L%}%{a%}رر # ;
+!%<p3%>%<pl%>:لار # ;
 
 LEXICON V-COP-IFI
 %<ifi%>:%{D%}%{I%} V-COP-IFI-PERS ;
 
+LEXICON V-IFI-COP
+%<cond%>:%>s%{A%} V-COND-PERS;
+
+
 LEXICON V-COP-PERS
 
 %<p1%>%<sg%>:%>%{y%}%{I%}م  # ;
-%<p2%>%<sg%>:%>s%{I%}ن  # ;
+%<p2%>%<sg%>:%>س%{I%}ن  # ;
 %<p3%>%<sg%>: # ;
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر  # ;
-%<p1%>%<pl%>:%>%{y%}%{I%}ز  # ;
-%<p2%>%<pl%>:%>s%{I%}n%{I%}ز  # ;
+!%<p1%>%<pl%>:%>%{y%}%{I%}ز  # ;
+%<p1%>%<pl%>:%>غ # ; 
+%<p2%>%<pl%>:%>س%{I%}ن%{I%}ز  # ;
 !%<p3%>%<pl%>:%>ل%{A%}ر # ;
 
 LEXICON COPULA-P3-PERS
 
 %<p3%>%<frm%>%<sg%>:%>%{D%}%{I%}ر # ;
 %<p3%>%<sg%>: # ;
-%<p3%>%<pl%>:%>l%{A%}ر # ;
+%<p3%>%<pl%>:%>%{L%}%{a%}ر # ;
+!%<p3%>%<pl%>:لار # ;
 
 
 LEXICON V-COP
 %+i%<cop%>:%>%{y%} V-COP-IFI ;
+%+i%<cop%>:%>%{y%} V-IFI-COP ;
 %+i%<cop%>%<aor%>: V-COP-PERS ;
 %+i%<cop%>%<aor%>: V-AOR-PERS ;
 %+i%<cop%>%<aor%>: COPULA-P3-PERS ;
@@ -384,9 +426,12 @@ LEXICON NP-COMMON
 POSSESSION ;
 
 LEXICON CASE-NONOM
-%<gen%>:%>%{y%}%{n%}%{I%}ن GENPOSS-GENERAL ;      
-%<dat%>:%>%{y%}%{A%} GENPOSS-GENERAL ;   
-%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
+%<nom%>: V-COP ;
+%<gen%>:%>%{n%}%{I%}ن GENPOSS-GENERAL ;      
+!%<dat%>:%>%{y%}ه GENPOSS-GENERAL ;   
+%<dat%>:%>ه GENPOSS-GENERAL ;
+!%<acc%>:%>%{n%}%{I%} GENPOSS-GENERAL ;
+%<acc%>:%>%{y%}%{I%} GENPOSS-GENERAL ;
 %<loc%>:%>%{D%}%{A%} GENPOSS-GENERAL ;   
 %<abl%>:%>%{D%}%{A%}ن GENPOSS-GENERAL ;  
 %<ins%>:%>%{y%}%{D%}%{A%}ن GENPOSS-GENERAL ;
@@ -397,24 +442,32 @@ LEXICON CASE-2
 %<nom%>: V-COP ;
 !%<dat%>:%>%{G%}%{A%} CLITICS ;
 !%<loc%>:%>%{D%}%{A%} CLITICS ;
-!%<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
-!%<abl%>:%>%{D%}ىن CLITICS ;
-!%<gen%>:%>نىڭ CLITICS ;
-!%<acc%>:%>نى CLITICS ;
+!%<loc%>%<attr%>:%>%{D%}%{A%}%>کی CLITICS ;
+!%<abl%>:%>%{D%}ن CLITICS ;
 
 
+LEXICON CASE-ETC
+CASE ;
+GENPOSS-ETC ;
 
-LEXICON PP-PERS
-# ;
+
+!LEXICON PP-PERS
+!# ;
 
 
 
 LEXICON LI-POSTPOSITION
-%+لی%<post%>:%>ل%{I%} PP-PERS ;  	
+
+%+لی%<post%>:%>ل%{I%} # ; !PP-PERS ;  	
 
 LEXICON N-INFL-COMMON
 CASE-NONOM ;
 LI-POSTPOSITION ;
+
+LEXICON SUBST-NONOM
+
+CASE-NONOM ; 
+!%<pl%>:%>l%{A%}r N-INFL-COMMON ;
 
 
 
@@ -422,14 +475,24 @@ LEXICON SUBST
 !# ;
 N-INFL-COMMON ;
 GENPOSS-ETC ;
-POSSESSION ;
-%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
-%<pl%>:%>ل%{A%}ر CASE ;
+!POSSESSION ;
+!%<subst%>%<pl%>:%>ل%{A%}ر CASE ; !N-INFL-COMMON ;
+!%<pl%>:%>ل%{A%}ر CASE ;
+%<subst%>%<pl%>:%>%{L%}%{a%}ر CASE ; !N-INFL-COMMON ;
+!%<pl%>:لار CASE ;
+
+LEXICON NUM-DIGIT
+
+%<num%>: # ;
+%<num%>%<subst%>%<nom%>: # ;
+%<num%>%<subst%>:%' SUBST-NONOM ;
+%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
 
 LEXICON N-COMMON
 SUBST ;
 NP-COMMON ;
-%<pl%>:%>ل%{A%}ر NP-COMMON ;
+%<pl%>:%>%{L%}%{a%}ر NP-COMMON ;
+!%<pl%>:%>لار NP-COMMON ;
 !POST-SUFFIX ; 
 
 LEXICON N1
@@ -443,7 +506,10 @@ LEXICON N2 ! Compound nouns with compulsory possession.
            ! e.g. dikiş makinası, dikiş makinaları, ...
 
 %<n%>: # ; !POSS-REAL ; 
-%<n%>%<pl%>:%>l%{A%}r # ; !POSS-REAL ; 
+!%<n%>%<pl%>:%>l%{A%}r # ; !POSS-REAL ;
+!%<n%>%<pl%>:لار # ; !POSS-REAL ;
+
+ 
 
 
 LEXICON N3 ! Nationalities which can form language, etc.
@@ -500,10 +566,10 @@ LEXICON NP-TOP-ACR
 %<np%>%<top%>%<attr%>: # ;
 
 
-LEXICON RegNounInfl
+!LEXICON RegNounInfl
 
-%<n%>%<sg%>: # ;
-%<n%>%<pl%>:%>s # ;
+!%<n%>%<sg%>: # ;
+!%<n%>%<pl%>:%>s # ;
 
 LEXICON CC 
 
@@ -525,6 +591,7 @@ LEXICON NUM
 %<num%>%<ord%>:%>%{i%}نج%{I%} V-COP ;               ! Beşinci evi görüyorum.
 %<num%>%<ord%>%<subst%>:%>%{i%}نج%{I%} SUBST ;      ! Beşinciyi görüyorum.
 %<num%>%<subst%>: SUBST ;
+%<num%>%<subst%>:%' SUBST ;
 
 !LEXICON N1
 !%<n%>%<attr%>: # ;
@@ -567,6 +634,8 @@ LEXICON ADV1
 %<adv%>: # ;
 %<adv%>: V-COP ;
 %<adv%>%<attr%>: # ;
+%<adv%>%<attr%>:%>ک%{I%} # ;
+
 
 LEXICON ADV2
 
@@ -584,7 +653,7 @@ LEXICON ADV4
 %<adv%>: # ; ! this is for when the adverb is used as an adverb
 %<adv%>: V-COP ;
 !%<adv%>%<subst%>: SUBST ;
-%<adv%>%<attr%>:%>k%{I%} # ;
+%<adv%>%<attr%>:%>ک%{I%} # ;
 LEXICON PRON-ADV 
 
 %<prn%>%<adv%>: CASE-NONOM ;
@@ -622,8 +691,8 @@ LEXICON PRON-ITG-INFL !inflectional suffix
 %<prn%>%<itg%>: N-COMMON ; 
 
 LEXICON PRON-QNT
-%<prn%>%<qnt%>: # ;
-%<prn%>%<qnt%>%<pl%>:%>l%{A%}r # ;
+%<prn%>%<qnt%>: N-COMMON ;
+%<prn%>%<qnt%>%<pl%>:%>لار # ;
 
 LEXICON PRON-NEG
 
@@ -639,7 +708,7 @@ LEXICON V-FUT-PERS
 %<p3%>%<sg%>:%> # ; 
 %<p1%>%<pl%>:%>غ # ; 
 %<p2%>%<pl%>:%>سز # ; 
-%<p3%>%<pl%>:%>ل%{A%}ر # ;
+%<p3%>%<pl%>:%>لار # ;
 
 LEXICON INTERJ
 
@@ -648,29 +717,30 @@ LEXICON V-PAST-PERS
 
 %<p1%>%<sg%>:%>م # ;!CLITICS ; 
 %<p2%>%<sg%>:%>سەن # ;!CLITICS ; 
-!%<p2%>%<sg%>%<frm%>:%>سىز CLITICS ; 
+!%<p2%>%<sg%>%<frm%>:%>سز CLITICS ; 
 %<p3%>%<sg%>: # ;  ! CLITICS ; 
-%<p1%>%<pl%>:%>يغ # ; ! CLITICS ; 
+%<p1%>%<pl%>:%>یغ # ; ! CLITICS ; 
 %<p2%>%<pl%>:%>سز # ; ! CLITICS ; 
-%<p3%>%<pl%>:%>ل%{A%}ر # ; ! CLITICS ;
+%<p3%>%<pl%>:لار # ; ! CLITICS ;
 
 LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:م # ;!CLITICS ;
 %<p2%>%<sg%>:ن # ;!CLITICS ;
-%<p3%>%<sg%>:ى # ; !CLITICS ;
-!%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
-%<p1%>%<pl%>:يغ # ; ! CLITICS ;
-%<p2%>%<pl%>:نيز # ; ! CLITICS ;
-%<p3%>%<pl%>:ل%{A%}ر # ; ! CLITICS ;
+!%<p3%>%<sg%>:ی # ; !CLITICS ;
+%<p3%>%<sg%>: # ; !CLITICS ;
+%<p1%>%<pl%>:یغ # ; ! CLITICS ;
+%<p2%>%<pl%>:نیز # ; ! CLITICS ;
+%<p3%>%<pl%>:لار # ; ! CLITICS ;
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:م # ;
 %<p2%>%<sg%>:سان # ;
-%<p3%>%<sg%>:ى # ;
+!%<p3%>%<sg%>:ی # ;
+%<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 LEXICON V-AOR-PERS
 %<p1%>%<sg%>:م # ;
@@ -678,12 +748,13 @@ LEXICON V-AOR-PERS
 %<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+!%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 
 LEXICON V-AOR
 
-%<aor%>:ر V-COP ; 
+%<aor%>:%>%{a%}ر V-COP ; 
 !%<aor%>:%>ر V-COP ; 
 !%<aor3%>:%>%{U%}%{r%} V-COP ;
 !%<aor%>:%>%{A%}%{r%} V-COP ;
@@ -697,12 +768,10 @@ LEXICON V-AOR
 %<neg%>%<aor%>:%>م%{A%}ز V-COP-COMMON ;
 
 LEXICON V-PROG
-%<prog%>:%>%{y%}%{I%}ر V-PROG-PERS ;
-%<prog%>:%>%{y%}%{I%}ر V-COP ;
-!%<prog2%>:%>%{y%}%{U%}ر V-PROG-PERS ;
-%<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
-%<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<prog%>:%>%{y%}ر V-PROG-PERS ;
+%<prog%>:%>%{y%}%{I%}ر V-COP ;
+!%<prog%>:%>%{y%}%{I%} V-PROG-PERS ;
+!%<prog%>:%>%{y%}%{U%} V-PROG-PERS ;
 %<neg%>%<prog%>:%>م%{A%}%{y%}%{I%}ر V-COP-PERS ;
 
 LEXICON V-IFI
@@ -721,9 +790,11 @@ LEXICON V-PAST
 %<past%>:%>م%{A%}م%{I%}ش V-PAST-PERS ;
 
 LEXICON V-FUT
-%<fut%>:%>%{A%}ج%{A%}غ V-FUT-PERS ;
-%<fut%>%<fut%>:%>م%{A%}ي%{A%}ج%{A%}غ V-FUT-PERS ;
-!%<fut%>%<dub%>:%>%{E%}%>دى%{G%}%{A%}ن V-COP-PERS ;
+!%<fut%>:%>%{A%}ج%{A%}غ V-FUT-PERS ;
+%<fut%>:%>%{A%}ر V-FUT-PERS ;
+!%<fut%>%<fut%>:%>م%{A%}ی%{A%}ج%{A%}غ V-FUT-PERS ;
+%<fut%>%<neg%>:%>م%{A%}ز V-FUT-PERS ;
+!%<fut%>%<dub%>:%>%{E%}%>دی%{G%}%{A%}ن V-COP-PERS ;
 
 LEXICON V-ABIL-PERS
 %<p1%>%<sg%>:م # ;
@@ -733,7 +804,7 @@ LEXICON V-ABIL-PERS
 %<p1%>%<pl%>:غ # ;
 %<p2%>%<pl%>:سز # ;
 %<p3%>%<pl%>:ن%{A%} # ;
-%<p3%>%<pl%>:ل%{A%}ر # ;
+%<p3%>%<pl%>:لار # ;
 
 
 
@@ -742,12 +813,11 @@ LEXICON V-TENSE-ABIL
 %<abil%>:%>%{y%}%{I%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{U%} V-ABIL-PERS ;
 %<abil%>:%>%{y%}%{A%} V-ABIL-PERS ;
-%<abil%>:%>%{y%}%{A%} V-AOR ;
+%<abil%>:%>%{y%}%{A%}بیل V-AOR ;
 %<abil%>:%>س%{A%}ن V-ABIL-PERS ;      
 %<abil%>:%>س%{U%}ن V-ABIL-PERS ;
 %<abil%>:%>%{A%} V-ABIL-PERS ;
 %<abil%>:%> V-ABIL-PERS ;
-%<abil%>:%>%{y%}%{A%}بیل V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}بیلم V-ABIL-PERS ;
 %<abil%>%<neg%>:%>%{y%}%{A%}م V-PROG ;
 %<abil%>%<neg%>:%>%{y%}%{A%}م%{A%} V-IFI ;
@@ -763,9 +833,9 @@ LEXICON IMP-PERS
 %<p2%>%<sg%>:گ%{U%}ن%{A%}ن # ;
 %<p3%>%<sg%>:%>س%{I%}ن # ;
 %<p3%>%<sg%>:%>س%{U%}ن # ;
-%<p1%>%<pl%>:%>ي%{A%}غ # ;
-%<p1%>%<pl%>:%>ي%{A%}غن # ;
-%<p2%>%<pl%>:%>ي%{I%}ن # ; 
+%<p1%>%<pl%>:%>ی%{A%}غ # ;
+%<p1%>%<pl%>:%>ی%{A%}غن # ;
+%<p2%>%<pl%>:%>ی%{I%}ن # ; 
 %<p2%>%<pl%>:%>%{y%}%{U%}ن # ;
 %<p3%>%<pl%>:%>س{I%}نل%{A%}ر # ;
 %<p3%>%<pl%>:%>س{I%}نن%{A%} # ;
@@ -776,10 +846,18 @@ LEXICON GER-CASE-ETC
 
 CASE ;
 !GER-GENPOSS-ETC ;
+LEXICON GER-POSS-REAL
+
+%<px1sg%>:%>%{i%}م GER-CASE-ETC ;
+%<px2sg%>:%>%{i%}ن GER-CASE-ETC ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} GER-CASE-ETC ;
+%<px1pl%>:%>%{i%}م%{I%}ز GER-CASE-ETC ;
+%<px2pl%>:%>%{i%}ن%{I%}ز GER-CASE-ETC ;
+%<px3pl%>:%>لار%{I%}%{n%} GER-CASE-ETC ;
 
 LEXICON GER-N-INFL-COMMON
 
-!GER-POSS-REAL ;
+GER-POSS-REAL ;
 GER-CASE-ETC ;
 
 LEXICON GER-SUBST
@@ -792,20 +870,23 @@ LEXICON V-GER
 %<gpr_rsub%>:%>%{y%}%{a%}ن SUBST ; ! 
 %<gpr_rsub%>:%>ن%{A%}ن SUBST ; !
 %<gpr_impf%>:%>%{y%}%{A%}ن SUBST ; !
+%<ger_fut%>:%>%{y%}%{A%}ج%{A%}غ%{v%} GER-SUBST ;
 %<gpr_past%>%<subst%>:%>%{D%}%{I%}غ SUBST ; !
 %<gpr_past%>:%>%{D%}%{I%}غ SUBST ; !
 %<gpr_past%>:%>%{D%}%{I%}ه SUBST ; !
 %<gpr_when%>:%>%{y%}%{I%}نج%{A%} SUBST ; !nead to be tested
 %<gna_when%>:%>%{I%}نج%{A%} SUBST ; !nead to be tested
 %<gna_perf%>:%>%{y%}%{I%}%{P%} SUBST ; !nead to be tested
-%<gna_aor%>:%>كن SUBST ; !nead to be tested Ex:geçerken
+%<gna_aor%>:%>کن SUBST ; !nead to be tested Ex:geçerken
+%<gna_impf%>:%>%{y%}%{A%}ر%{A%}ك # ;
 %<gna_neg%>:%>م%{A%}د%{A%}ن SUBST ; !nead to be tested Ex:olmadan
 %<ger_past%>:%>%{D%}%{I%}غ NP-COMMON ;
+%<ger_impf%>:%>%{y%}%{A%}ن GER-SUBST ;
 %<ger%>:%>م%{A%} GER-SUBST ;
 
 LEXICON V-GERUNDS-AOR-AR
 
-%<ger_aor%>:%>%{A%}ر SUBST ; 
+%<ger_aor%>:%>%{A%}ر GER-N-INFL-COMMON ; 
 
 LEXICON V-IMP
 %<imp%>: IMP-PERS ;
@@ -814,15 +895,16 @@ LEXICON V-IMP
 LEXICON V-COND-PERS
 
 %<p1%>%<sg%>:%>م CLITICS ; 
-%<p2%>%<sg%>:%>ي CLITICS ; ! Dir/LR
+%<p2%>%<sg%>:%>ی CLITICS ; ! Dir/LR
 %<p3%>%<sg%>: CLITICS ; 
 %<p1%>%<pl%>:%>غ CLITICS ; 
-%<p2%>%<sg%>:%>ين CLITICS ; 
-%<p2%>%<pl%>:%>يز CLITICS ; 
+%<p2%>%<sg%>:%>ین CLITICS ; 
+%<p2%>%<pl%>:%>یز CLITICS ; 
 %<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
 
 LEXICON V-COND 
 %<gna_cond%>:%>س%{A%} V-COND-PERS ;
+%<cond%>:%>س%{A%} V-COND-PERS ;
 
 LEXICON V-NEG
 %<neg%>:م%{A%} V-NEG-COMMON ;
@@ -831,6 +913,14 @@ LEXICON V-NEG
 LEXICON V-DERIV
 V-COMMON ;
 !V-NEG-COMMON ;
+
+LEXICON V-PRC
+
+%<prc%>:%>مغ # ;
+%<neg%>%<prc%>:%>م%{A%}%>مغ # ;
+
+LEXICON V-GERUNDS
+%<ger_inf%>:%>مغ GER-SUBST ; 
 
 
 LEXICON V-NEG-COMMON
@@ -843,6 +933,7 @@ V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
 V-COND ;
+V-PRC ;
 
 
 LEXICON V-COMMON
@@ -857,16 +948,20 @@ V-FUT ;
 V-TENSE-ABIL ;	
 V-IMP ;
 V-COND ;
+V-PRC ;
+V-GERUNDS ;
+
+
 
 LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
 
-%<v%>%<iv%>%<pass%>:%>%{i%}ل V-DERIV  ;
+%<v%>%<iv%>%<pass%>:%>%{i%}%{%L%} V-DERIV ;
 
 LEXICON V-TV 
 %<v%>%<tv%>: V-COMMON ;
 
-%<v%>%<tv%>%<pass%>:%>%{i%}ل V-DERIV ;
+%<v%>%<tv%>%<pass%>:%>%{i%}%{%L%} V-DERIV ;
 
 
 
@@ -877,19 +972,20 @@ LEXICON V-TV
 
 
 LEXICON PRON-ITG 
-كيم:كيم PRON-ITG-INFL ;
-كيم% كيمه:كيم% كيمه PRON-ITG-INFL ;
+کیم:کیم PRON-ITG-INFL ;
+بیربیری:بیربیری PRON-RECIP ;
+کیم% کیمه:کیم% کیمه PRON-ITG-INFL ;
 نه:نه PRON-ITG-INFL ;
-نيي:نيي PRON-ITG-INFL ;
-نيچن:نيچن PRON-ITG-INFL ;
-هاسى:هاسى PRON-ITG-INFL ;
-ناخسى:ناخسى PRON-ITG-INFL ;
+نیی:نیی PRON-ITG-INFL ;
+نیچن:نیجن PRON-ITG-INFL ;
+هاسی:هاسی PRON-ITG-INFL ;
+ناخسی:ناخسی PRON-ITG-INFL ;
 نادی:نادی PRON-ITG-INFL ;
 هاردا:هاردا PRON-ITG-INFL ;
 نانجا:نانجا PRON-ITG-INFL ;
-هانى:هانى PRON-ITG-INFL ;
+هانی:هانی PRON-ITG-INFL ;
 هرا:هرا PRON-ITG-INFL ;
-نيى:نيى PRON-ITG-INFL ;
+نیی:نیی PRON-ITG-INFL ;
 هرناخسی:هرناخسی PRON-ITG-INFL ;
 ناخسی:ناخسی PRON-ITG-INFL ;
 
@@ -898,81 +994,103 @@ LEXICON Interjections
 یو:یو INTERJ ;
 فلان:فلان INTERJ ;
 فلان% فستان:فلان% فستان INTERJ ;
-أى:أى INTERJ ;
+أی:أی INTERJ ;
 إه:إه INTERJ ;
 هه:هه INTERJ ;
+يو:يو INTERJ ;
+مرحبا:مرحبا INTERJ ;
 إنشالله:إنشالله INTERJ ;
 پکی:پکی INTERJ ;
 مسله:مسله INTERJ ;
 عجبا:عجبا INTERJ ;
-هادى:هادى INTERJ ;
+هادی:هادی INTERJ ;
+وای:وای INTERJ ;
+آه:آه INTERJ ;
+تمام:تمام INTERJ ;
+یو:یو INTERJ ;
+يعنی:يعنی INTERJ ;
+یوخ:یوخ INTERJ ;
+هە:هە INTERJ ;
 
 
 LEXICON Pronouns 
 
 اوزو:اوزو PRON-PERS-OZ ;
+أوز:أوز PRON-REF ;
 بورا:بورا PRON-ADV ;
 اورا:اورا PRON-ADV ;
-مه‌ن:مه‌ن PRON-PERS-MAN ;
-سىن:سىن PRON-PERS-SEN ;
-بيز:بيز PRON-PERS-BIZ ;
-سيز:سيز PRON-PERS-SIZ ;
+من:من PRON-PERS-MAN ;
+سن:سن PRON-PERS-SEN ;
+بیز:بیز PRON-PERS-BIZ ;
+سیز:سیز PRON-PERS-SIZ ;
 اولار:اولار PRON-PERS-OLAR ;
 او:او PRON-PERS-O ;
-هامسى:هامسى PRON-QNT ;
-هر% شي:هر% شي PRON-QNT ;
-هيج:هيج PRON-QNT ;
-كيمسه:كيمسه PRON-QNT ;
+هامسی:هامسی PRON-QNT ;
+هر% شی:هر% شی PRON-QNT ;
+هیچ:هیچ PRON-QNT ;
+کیمسه:کیمسه PRON-QNT ;
 چوخو:چوخو PRON-QNT ;
-هيچ% بير:هيچ% بير PRON-QNT ;
-هر% بير:هر% بير PRON-QNT ;
-هركش:هركش PRON-QNT ;
+هیچ% بیر:هیچ% بیر PRON-QNT ;
+هر% بیر:هر% بیر PRON-QNT ;
+هرکش:هرکش PRON-QNT ;
 بیر:بیر PRON-PERS-O ;
-إیکیسی:إیکیسی PRON-PERS-O ;
+أیکیسی:أیکیسی PRON-PERS-O ;
 بیربیر:بیربیر PRON-PERS-BIZ ;
 بو:بو PRON-DEM-BU ;
 هیچ% بیر% شی:هیچ% بیر% شی PRON-PERS-MAN ;
 إیکی:إیکی PRON-QNT ;
 هیچ:هیچ PRON-QNT ;
-بیری:بیری PRON-PERS-O ;
+بیزی:بیزی PRON-PERS-O ;
+بیری:بیری PRON-IND ;
 هپ:هپ PRON-QNT ;
 هیچبیر% شی:هیچبیر% شی PRON-NEG ;
-هیچبیر:هیچبیر PRON-QNT ;
+هیچبیر:هیجبیر PRON-QNT ;
 بیرسی:بیرسی PRON-QNT ;
 بیرسی:بیرسی PRON-PERS-O ;
+بیربیر:بیربیر PRON-PERS-O ;
 بعزلاری:بعزلاری PRON-QNT ;
 بعزی:بعزی PRON-QNT ;
 هرکش:هرکش PRON-QNT ;
-كيم:كيم PRON-ITG ;
-هبسى:هبسى PRON-QNT ;
-هبسى:هبسى DET-QNT ;
-!بیربیری:بیربیری PRON-RECIP ;
+کیم:کیم PRON-ITG ;
+ندی:ندی PRON-ITG ;
+هپسی:هپسی PRON-QNT ;
+هپسی:هپسی DET-QNT ;
+بیربیری:بیربیری PRON-RECIP ;
 PRON-ITG ;
 
 
 
 
 LEXICON Adjectives
-بير:بير A1 ;
+بیر:بیر A1 ;
 گوزل:گوزل A1 ;
 موجود:موجود A1 ;
-ديمقراطى:ديمقراطى A1 ;
+دیمقراطی:دیمقراطی A1 ;
 شیرین:شیرین A1 ;
 بزات:بزات A1 ;
-بشارلى:بشارلى A1 ;
+آلکترونی:آلکترونی A1 ;
+ياخن:ياخن A1 ;
+بشارلی:بشارلی A1 ;
+بلە:بلە A1 ;
 قاستن:قاستن A1 ;
+يوخ:يوخ A1 ;
 اولملو:اولملو A1 ;
+يالغز:يالغز A1 ;
 یالچن:یالچن A1 ;
+تمام:تمام A1 ;
 ازاب:ازاب A1 ;
-علاقلالى:علاقلالى A1 ;
+علاقلای:علاقلی A1 ;
 اوسته:اوسته A1 ;
-علاقلی:علاقلی A1 ;
+
 ساغلغلی:ساغلغلی A1 ;
 باغرساغ:باغرساغ A1 ;
 اوست:اوست A1 ;
+دار:دار A1 ;
+یرلی:یرلی A2 ;
 منحصر:منحصر A1 ;
 بویوك:بویوك A1 ;
 یاخن:یاخن A1 ;
+شخصی:شخصی A1 ;
 ارتغ:ارتغ A1 ;
 إختیار:إختیار A1 ;
 تابی:تابی A1 ;
@@ -980,182 +1098,182 @@ LEXICON Adjectives
 ارخا:ارخا A1 ;
 یوکسك:یوکسك A1 ;
 بویوك:بویوك A2 ;
-سريع:سريع A2 ;
+سریع:سریع A2 ;
 عجله:عجله A2 ;
 اوخومش:اوخومش A1 ;
-اورتا% حالی:اورتا% حالی A1 ;
-يارم:يارم A1 ;
-أسكى:أسكى A1 ;
-أسكى:أسكى A2 ;
+اورتا% حالی:اورتا% ‌حالی A1 ;
+یارم:یارم A1 ;
+أسکی:أسکی A1 ;
+أسکی:أسکی A2 ;
 بربر:بربر A1 ;
 إسلامی:إسلامی A1 ;
 کیفلی:کیفلی A2 ;
 کوچوك:کوچوك A2 ;
 بیرنجی:بیرنجی A1 ;
-إكينجى:إكينجى A1 ;
+إکینجی:إکینجی A1 ;
 ساوغ:ساوغ A1 ;
-تكشر:تكشر A1 ;
-إكشر:إكشر A1 ;
+تکشر:تکشر A1 ;
+إکشر:إکشر A1 ;
 دوردر:دوردر A1 ;
 أوچونجو:أوچونجو A1 ;
 دوردونجو:دوردونجو A1 ;
 أوزو:أوزو A1 ;
-هر% شكيل:هر% شكيل A1 ;
+هر% شکیل:هر% شکیل A1 ;
 واطانسز:واطانسز A1 ;
-پچاغلى:پچاغلى  A1 ;
-سبحكى:سبحكى A1 ;
-على% قدر:على% قدر A1 ;
-سعتلى:سعتلى A1 ;
+پچاغلی:پچاغلی  A1 ;
+سبحکی:سبحکی A1 ;
+علی% قدر:علی% قدر A1 ;
+سعتلی:سعتلی A1 ;
 قاچاغ:قاچاغ A1 ;
-إنانجلى:إنانجلى A1 ;
-خزمثچى:خزمثچى A1 ;
+إنانجلی:إنانجلی A1 ;
+خزمتچی:خزمتچی A1 ;
 قالان:قالان A1 ;
 آپاران:آپاران A1 ;
 بتر:بتر A1 ;
-مه‌كلهين:مه‌كلهين A1 ;
+مەکلهین:مەکلهین A1 ;
 قونشان:قونشان A1 ;
-سلشن:سهلشن A1 ;
-نامسسز:نامسسز A1 ;
-إيمانلى:إيمانلى A1 ;
-گه‌لن:گه‌لن A1 ;
+سلشن:سلشن A1 ;
+نامسز:نامسز A1 ;
+إیمانلی:إیمانلی A1 ;
+گەلن:گەلن A1 ;
 متواضع:متواضع A1 ;
 آلچاغ% گونلو:آلچاغ% گونلو A1 ; 
-تربيلى:تربيلى A1 ;
-گيدهن:گيدهن A1 ;
-كارلى:كارلى A1 ;
-آروادلى:آروادلى A1 ;
+تربیلی:تربیلی A1 ;
+گیدن:گیدن A1 ;
+کارلی:کارلی A1 ;
+آروادلی:آروادلی A1 ;
 سوسوز:سوسوز A1 ;
-آتاشلى:آتاشلى A1 ;
-ميليونلارجا:ميليونلارجا A1 ;
+آناشلی:آناشلی A1 ;
+میلیونلارجا:میلیونلارجا A1 ;
 تامام:تامام A1 ;
 مونتزام:مونتزام A1 ;
-حاقانى:حاقانى A1 ;
-غيابي:غيابي A1 ;
+حاقانی:حاقاحنی A1 ;
+غیابی:غیابی A1 ;
 قوربانلغ:قوربانلغ A1 ;
-خيسيم:خيسيم A1 ;
-اخلاقزس:اخلاقزس A1 ;
-دآيمی:دآيمی A1 ;
-أن% ايی:أن% ايی A1 ;
-صاحيب:صاحيب A1 ;
-مرحمتلى:مرحمتلى A1 ;
-مدنى:مدنى A1 ;
-حقير:حقير A1 ;
+خیسیم:خیسیم A1 ;
+اخلاقسز:اخلاقسز A1 ;
+دآیمی:دآیمی A1 ;
+أن% ایی:أن% ایی A1 ;
+صاحیب:صاحیب A1 ;
+مرحمتلی:مرحمتلی A1 ;
+مدنی:مدنی A1 ;
+حقیر:حقیر A1 ;
 طبی:طبی A1 ;
-باقى:باقى A1 ;
-يورلاغ:يورلاغ A1 ;
-حيلاچی:حيلاچی A1 ;
-خالى:خالى A1 ;
+باقی:باقی A1 ;
+یورلاغ:یورلاغ A1 ;
+حیلاچی:حیلاجی A1 ;
+خالی:خالی A1 ;
 موآفق:موآفق A1 ;
-گري% قالمش:گري% قالمش A1 ;
+گری% قالمش:گری% قالمش A1 ;
 گونحسز:گونحسز A1 ;
 عمومی:عمومی A1 ;
 سادا:سادا A1 ;
-بيله‌ن:بيله‌ن A1 ;
+بیلەن:بیلەن A1 ;
 حربی:حربی A1 ;
 ققه:ققه A1 ;
-كاميل:كاميل A1 ;
-قارٍشغ:قارٍشغ A1 ;
-إيلاهى:إيلاهى A1 ;
-جاليب:جاليب A1 ;
+کامیل:کامیل A1 ;
+قارشغ:قارشغ A1 ;
+إیلاهی:إیلاهی A1 ;
+جالیب:جالیب A1 ;
 دول:دول A1 ;
-يكه:يكه A1 ;
-اييغ:اييغ A1 ;
-كچل:كچل A1 ;
+یکه:یکه A1 ;
+اییغ:اییغ A1 ;
+کچل:کچل A1 ;
 اخار% سو:اخار% سو A1 ;
-حالقالى:حالقالى A1 ;
-إيكينجى:إيكينجى A1 ;
-قحيرلی:قحيرلی A1 ;
-ماليك:ماليك A1 ;
-ايان:ايان A1 ;
-بايغن:بايغن A1 ;
-واجيب:واجيب A1 ;
-ماراقلى:ماراقلى A1 ;
+حالقالی:حالقالی A1 ;
+إیکینجی:إیکینجی A1 ;
+قحیرلی:قحیرلی A1 ;
+مالیك:مالیك A1 ;
+ایان:ایان A1 ;
+بایغن:بایغن A1 ;
+واجیب:واجیب A1 ;
+ماراقلی:ماراقلی A1 ;
 باطل:باطل A1 ;
-شكيلى:شكيلى A1 ;
+شکلیی:شکلیی A1 ;
 دوغرو:دوغرو A1 ;
-إبتدائى:إبتدائى A1 ;
-أوستوندكى:أوستوندكى A1 ;
-أدن:أدن A1 ;
-گه‌تيرن:گه‌تيرن A1 ;
+إبتدائی:إبتداێی A1 ;
+أوستوندکی:أوستوندکی A1 ;
+أدن:‌أدن A1 ;
+گەتیرن:گەتیرن A1 ;
 اج% گوزلو:اج% گوزلو A1 ;
-يلانجى:يلانجى A1 ;
+یلانجی:یلانجی A1 ;
 عاشق:عاشق A1 ;
-بىسلمه:بىسلمه A1 ;
-خويلو:خويلو A1 ;
-مازاقچى:مازاقچى A1 ;
-بعزى:بعزى A1 ;
-اوتاندرجى:اوتاندرجى A1 ;
-قرآنى:قرآنى A1 ;
+بسلمه:بسلمه A1 ;
+خویلو:خویلو A1 ;
+مازاقچی:مازاقچی A1 ;
+بعزی:بعزی A1 ;
+اوتاندرجی:اوتاندرجی A1 ;
+قرآنی:قرآنی A1 ;
 رحمان:رحمان A1 ;
-عينى:عينى A1 ;
+عینی:عینی A1 ;
 أرحم:أرحم A1 ;
-موته‌سر:موته‌سر A1 ;
+موتەسر:موتەسر A1 ;
 موتقف:موتقف A1 ;
-كولتورلو:كولتورلو A1 ; 
-يارنكى:يارنكى A1 ;
-أسيك:أسيك A1 ;
+کولتورلو:کولتورلو A1 ; 
+یارنکی:یارنکی A1 ;
+أسیك:أسیك A1 ;
 ماغدور:ماغدور A1 ;
 چاتلانمش:چاتلانمش A1 ;
-تقه‌تسيز:تقه‌تسيز A1 ;
-ياخنداكى:ياخنداكى A1 ;
-سابسارى:سابسارى A1 ;
+تقەتسز:تقەتسز A1 ;
+یاخنداکی:یاخنداکی A1 ;
+سابساری:سابساری A1 ;
 صوفلو:صوفلو A1 ;
-يونلو:يونلو A1 ;
+یونلو:یونلو A1 ;
 ضاتسز:ضاتسز A1 ;
-حايرانلغ:حايرانلغ A1 ;
-تورپاغلى:تورپاغلى A1 ;
-دسته‌:دسته‌ A1 ;
-عايلالى:عايلالى A1 ;
-مه‌وألى:مه‌وألى A1 ;
-چتالى:چتالى A1 ;
+حایرانلغ:‌‌حایرانلغ A1 ;
+تورپاغلی:تورپاغلی A1 ;
+دستە:دستە A1 ;
+عایلالی:عایلالی A1 ;
+مەوألی:مەوألی A1 ;
+چتالی:چتالی A1 ;
 غملی:غملی A1 ;
 داها% چوخ:داها% چوخ A1 ;
 تاپان:تاپان A1 ;
 چغاران:چغاران A1 ;
-باغلايان:باغلايان A1 ;
-بكلاين:بكلاين A1 ;
-اويونجو:اويونجو A1 ;
-بويلو:بويلو A1 ;
-بوينوزلو:بوينوزلو A1 ;
-بيرأز:بيرأز A1 ;
-ده‌وز:ده‌وز A1 ;
+باغلایان:باغلایان A1 ;
+بکلین:بکلین A1 ;
+اویونجو:اویونجو A1 ;
+بویلو:بویلو A1 ;
+بوینوزلو:بوینوزلو A1 ;
+بیرأز:بیرأز A1 ;
+دەوز:دەوز A1 ;
 ماقبول:ماقبول A1 ;
 گورموش:گورموش A1 ;
 شن:شن A1 ;
-گونحكار:گونحكار A1 ;
+گونحکار:گونحکار A1 ;
 مجبور:مجبور A1 ;
 ارخا:ارخا A1 ;
-سه‌قلى:سه‌قلى A1 ;
-يارپاغلى:يارپاغلى A1 ;
-إشيغلى:إشيغلى A1 ;
-گچه‌ن:گچه‌ن A1 ;
+سەقلی:سەقلی A1 ;
+یارپاغلی:یارپاغلی A1 ;
+إشیغلی:إشیغلی A1 ;
+گچەن:گچەن A1 ;
 لوزوملو:لوزوملو A1 ;
-حوريتزيز:حوريتزيز A1 ;
-باهتزز:باهتزز A1 ;
+حوریتسیز:حوریتسز A1 ;
+باهتسز:باهتسز A1 ;
 توخ:توخ A1 ;
-اوشاغلى:اوشاغلى A1 ;
+اوشاغلی:اوشاغلی A1 ;
 بولانغ:بولانغ A1 ;
-ليولوين:ليولوين A1 ;
-خوصوصو:خوصوصو A1 ;
-پارلى:پارلى A1 ;
-مانزارلى:مانزارلى A1 ;
+لیولوین:لیولون A1 ;
+خوصوصی:خوصوصی A1 ;
+پارالی:پارالی A1 ;
+مانزارالی:مانزارالی A1 ;
 اولان:اولان A1 ;
-ياپان:ياپان A1 ;
+یاپان:یاپان A1 ;
 ورن:ورن A1 ;
 قارا:قارا A1 ;
-دگيشمز:دگيشمز A1 ;
+دگیشمز:دگیشمز A1 ;
 عاقلسز:عاقلسز A1 ;
 قارارسز:قارارسز A1 ;
-أتلى:أتلى A1 ;
-يانمش:يانمش A1 ;
-نيجا:نيجا A1 ;
-أوگ:أوگ A1 ;
+أتلی:أتلی A1 ;
+یانمش:یانمش A1 ;
+نیجا:نیجا A1 ;
+إوگ:إوگ A1 ;
 مناسب:مناسب A1 ;
 هر:هر A1 ;
 بیر:بیر A1 ;
 ماهیر:ماهیر A1 ;
 یغیشمش:یغیشمش A1 ;
-تتور% أتمش:تتور% أتمش A1 ;
+تطور% أتمس:تطور% أتمش A1 ;
 قات% قات:قات% قات A1 ;
 بیزات:بیزات A1 ;
 جوت:جوت A1 ;
@@ -1182,7 +1300,7 @@ LEXICON Adjectives
 اج:اج A1 ;
 معنوی:معنوی A1 ;
 معقول:معقول A1 ;
-نهایی:نهایی A1 ;
+نهایی:نهحایی A1 ;
 الاجا:الاجا A1 ;
 قرارمش:قرارمش A1 ;
 قحرلی:قحرلی A1 ;
@@ -1192,7 +1310,7 @@ LEXICON Adjectives
 قازاغ:قازاغ A1 ;
 یونان:یونان A1 ;
 سایسز:سایسز A1 ;
-استناعی:استناعی A1 ;
+إستناعی:إستناعی A1 ;
 خیرلی:خیرلی A1 ;
 اوغورلو:اوغورلو A1 ;
 قارشی:قارشی A1 ;
@@ -1205,25 +1323,25 @@ LEXICON Adjectives
 باشقا:باشقا A1 ;
 مرکز:مرکز A1 ;
 مرکزی:مرکزی A1 ;
-کازانجلی:کازانجلی A1 ;
+قازانجلی:قازانجلی A1 ;
 سولو:سولو A1 ;
-گوندوز:گوندوز A1 ;
+گونوز:گونودوز A1 ;
 عسکرلغ:عسکرلغ A1 ;
-فارقدلیر:فارقدلیر A2 ;
+فاردلیر:فارقدلیر A2 ;
 یاغلی:یاغلی A1 ;
 چوخ:چوخ A1 ;
-علاوی:علاوی A1 ;
-بیتیشک:بیتیشک A1 ;
+علاوه:علاوه A1 ;
+بیتیشیك:بیتیشیك A1 ;
 شمال:شمال A2 ;
 غرب:غرب A2 ;
 جنوب:جنوب A2 ;
 جنوب% امریکا:جنوب% امریکا A4 ;
 هربیر:هربیر A1 ;
 اساس:اساس A1 ;
-أمنیتلی:أمنیتلی A2 ;
+أمنیتلی:أمنتلی A2 ;
 ساخلی:ساخلی A2 ;
-یازک:یازک A1 ;
-ساعتلک:ساعتلک A1 ;
+یازك:یازك A1 ;
+ساعتلغ:ساعتلغ A1 ;
 دایمی:دایمی A1 ;
 یازلی:یازلی A1 ;
 راقملی:راقملی A1 ;
@@ -1242,7 +1360,7 @@ LEXICON Adjectives
 باشلغلی:باشلغلی A2 ;
 باشلی:باشلی A2 ;
 حقوقی:حقوقی A2 ;
-شوپهلی:شوپهلی A2 ;
+سوپهلی:شوپهلی A2 ;
 خاین:خاین A1 ;
 تیجاری:تیجاری A1 ;
 سیلاحلی:سیلاحلی A1 ;
@@ -1254,19 +1372,19 @@ LEXICON Adjectives
 عجایب:عجایب A1 ;
 کپچاغ:کپچاغ A1 ;
 رحت:رحت A1 ;
-إچتیماعی:إچتیماعی A1 ;
+إجتیماعی:إجتیماعی A1 ;
 قدیم:قدیم A1 ;
 ماحروم:ماحروم A1 ;
 وار:وار A2 ;
 یوخ:یوخ A2 ;
-إیکلی:إیکلی A1 ;
+إیکی:إیکی A1 ;
 بلی:بلی A2 ;
 داغلغ:داغلغ A3 ;
 أوچلو:أوچلو A1 ;
 حقوقسوز:حقوقسوز A1 ;
 ایلغ:ایلغ A1 ;
 ماحکوم:ماحکوم A1 ;
-إخیار:إخیار A1 ;
+إخبار:إخبار A1 ;
 أولکی:أولکی A1 ;
 ادی% گچن:ادی% گچن A1 ;
 علمی:علمی A1 ;
@@ -1302,7 +1420,7 @@ LEXICON Adjectives
 کحوایی:کحوایی A2 ;
 خاکی:خاکی A2 ;
 ختالی:ختالی A1 ;
-دوشونجلی:دوشونجلی A2 ;
+دوشنجلی:دوشنجلی A2 ;
 دلی:دلی A1 ;
 کیفلی:کیفلی A2 ;
 سجاق% قانلی:سجاق% قانلی A1 ;
@@ -1315,23 +1433,23 @@ LEXICON Adjectives
 عقلی:عقلی A1 ;
 گورکملی:گورکملی A2 ;
 نملی:نملی A2 ;
-وچدانلی:وچدانلی A1 ;
+وجدانلی:وجدانلی A1 ;
 قانلی:قانلی A2 ;
 تیکنلی:تیکنلی A2 ;
 مرتب:مرتب A1 ;
-عسبی:عسبی A2 ;
-تبی:تبی A1 ;
-أچنبی:أچنبی A1 ;
+عبسی:عبسی A2 ;
+طبی:طبی A1 ;
+أجنبی:أجنبی A1 ;
 حربی:حربی A1 ;
 غریب:غریب A1 ;
-إقتیسادی:إقتیسادی A1 ;
+إقتصادی:إقتصادی A1 ;
 جغرافی:جغرافی A1 ;
 إضافی:إضافی A1 ;
 مودمن:مودمن A1 ;
 زکی:زکی A1 ;
 ترکی:ترکی A1 ;
 أسکی:أسکی A1 ;
-باهلی:باهلی A1 ;
+پهالی:پهالی A1 ;
 إیندکی:إیندکی A1 ;
 قاپلی:قاپلی A1 ;
 خطر:خطر A1 ;
@@ -1339,10 +1457,10 @@ LEXICON Adjectives
 فایدلی:فایدلی A2 ;
 متقاعد:متقاعد A1 ;
 مستمر:مستمر A1 ;
-ایری% شکیل:ایری% شکیل A1 ;
+ایری%شکیل:ایری% شکیل A1 ;
 ایری:ایری A2 ;
 موهیم:موهیم A1 ;
-اغرباشلی:اغرباشلی A1 ;
+اغر% باشلی:اغر% باشلی A1 ;
 اسلی:اسلی A2 ;
 دیشلی:دیشلی A2 ;
 یاغشلی:یاغشلی A1 ;
@@ -1356,32 +1474,32 @@ LEXICON Adjectives
 تورشو:تورشو A2 ;
 أرککسی:أرککسی A1 ;
 یاسی:یاسی A1 ;
-بالك% أتلی:بالك% أتلی A1 ;
+بالغ% إتلی:بالغ% ‌إتلی A1 ;
 پینتی:پینتی A1 ;
 معنوی:معنوی A1 ;
 متوازی:متوازی A1 ;
-کپکرمزی:کپکرمزی A1 ;
+قپقرمزی:قپقرمزی A1 ;
 موستاحق:موستاحق A1 ;
-قورخاخ:قورخاخ A1 ;
+قورخاغ:قورخاغ A1 ;
 پارلغ:پارلغ A1 ;
 یاش:یاش A1 ;
 موتلاق:موتلاق A1 ;
 موشاغ:موشاغ A1 ;
 أرکك:أرکك A2 ;
-أوسکك:أوسکك A2 ;
+أوسكك:أوسکك A2 ;
 گفشك:گفشك A2 ;
 تاندغ:تاندغ A1 ;
-دیک:دیک A1 ;
+دیك:دیك A1 ;
 دقیق:دقیق A1 ;
-چکیک:چکیک A1 ;
+چکیك:چکیك A1 ;
 إیلغ:إیلغ A1 ;
 داغنغ:داغنغ A1 ;
 قریغ:قریغ A1 ;
-قارشیغ:قارشیغ A1 ;
+قارشیغ:قاریشیغ A1 ;
 لاستغ:لاستغ A1 ;
-نازک:نازک A2 ;
-إیلک:إیلک A1 ;
-سوگک:سوگک A1 ;
+نازك:نازك A2 ;
+إیلك:إیلك A1 ;
+سوگك:وسگك A1 ;
 سر:سر A1 ;
 تمبل:تمبل A1 ;
 محتمل:محتمل A1 ;
@@ -1397,15 +1515,15 @@ LEXICON Adjectives
 مولازیم:مولازیم A1 ;
 معلوم:معلوم A1 ;
 بلابن:بلابن A1 ;
-کهرمان:کهرمان A1 ;
+قهرمان:قهرمان A1 ;
 یامان:یامان A1 ;
 حیران:حیران A1 ;
 گزگن:گزگن A1 ;
 گوچمن:گوچمن A1 ;
 خاین:خاین A1 ;
 زنگین:زنگین A1 ;
-بایگن:بایگن A1 ;
-ازگن:ازگن A1 ;
+بایغن:بایغن A1 ;
+أزگن:أزگن A1 ;
 یاخن:یاخن A1 ;
 چیرکن:چیرکن A1 ;
 کسکین:کسکین A1 ;
@@ -1437,7 +1555,8 @@ LEXICON Adjectives
 تابع:تابع A1 ;
 أبدی:أبدی A1 ;
 یوخارکی:یوخارکی A1 ;
-بریکی:بریکی A1 ;
+برکی:برکی A1 ;
+إستراتیجی:إستراتیجی A4 ;
 بوگونکو:بوگونکو A1 ;
 واسفلی:واسفلی A1 ;
 اصلی:اصلی A1 ;
@@ -1445,7 +1564,7 @@ LEXICON Adjectives
 حزرتی:حزرتی A1 ;
 یرالتی:یرالتی A1 ;
 چولپاغ:چولپاغ A1 ;
-مبارک:مبارک A1 ;
+مبارك:مبارك A1 ;
 مسول:مسول A1 ;
 حرام:حرام A1 ;
 مزلوم:مزلوم A1 ;
@@ -1462,7 +1581,7 @@ LEXICON Adjectives
 حجیملی:حجیملی A1 ;
 رسیملی:رسیملی A1 ;
 نیشانلی:نیشانلی A1 ;
-شخسیلی:شخسیلی A1 ;
+شخصیلی:شخصیلی A1 ;
 مملکتلی:مملکتلی A1 ;
 زهیرلی:زهیرلی A1 ;
 انلایشلی:انلایشلی A1 ;
@@ -1470,7 +1589,7 @@ LEXICON Adjectives
 قدرتلی:قدرتلی A1 ;
 غیرتلی:غیرتلی A1 ;
 مانیع:مانیع A1 ;
-ایدنلغ:ایدنلغ A1 ;
+آیدنلغ:ایدنلغ A1 ;
 اساس:اساس A1 ;
 موقابیل:موقابیل A1 ;
 موعمول:موعمول A1 ;
@@ -1479,13 +1598,13 @@ LEXICON Adjectives
 یارالانن:یارالانن A1 ;
 اوتران:اوتران A1 ;
 یول% گوسترن:یول% گوسترن A1 ;
-ادی% گچن:ادی% گچن A1 ;
+ادی% گچن:ادی% گجن A1 ;
 مناسیب:مناسیب A1 ;
 موتورلو:موتورلو A1 ;
-معرفتلى:معرفتلى A1 ;
+معرفتلی:معرفتلی A1 ;
 ینگی:ینگی A1 ;
-فارقلى:فارقلى A1 ;
-نهايه:نهايه A2 ;
+فارقلی:فارقلی A1 ;
+نهایه:نهایه A2 ;
 تعلیم:تعلیم A1 ;
 ادلی:ادلی A2 ;
 او:او A1 ;
@@ -1496,8 +1615,12 @@ LEXICON Adjectives
 زراعت:زراعت A4 ;
 تاریخلی:تاریخلی A2 ;
 سیاسی:سیاسی A2 ;
-داهى:داهى A1 ;
+داهی:داهی A1 ;
 اویغون:اویغون A1 ;
+أیدیولوجی:أیدولوجی A4 ;
+نفسی:نفسی A4 ;
+دستوری:دستوری A4 ;
+پیسکولجیك:پیسکولجیك A4 ; 
 بلا:بلا A1 ;
 اورتا:اورتا A1 ;
 شرق:شرق A1 ;
@@ -1506,45 +1629,45 @@ LEXICON Adjectives
 صاحب:صاحب A1 ;
 از:از A1 ;
 گرکلی:گرکلی A2 ;
-باشلغلى:باشلغلى A2 ;
-وطنى:وطنى A2 ;
+باشلغلی:باشلغلی A2 ;
+وطنی:وطنی A2 ;
 اچك:اچك A1 ;
 مقستلی:مقستلی A1 ;
 یازی:یازی A1 ;
 مزفر:مزفر A1 ;
 حفله:حفله A1 ;
-ساكلى:ساكلى A1 ;
-تسجلى:تسجلى A1 ;
-ممكن:ممكن A2 ;
+ساکلی:ساکلی A1 ;
+تسجلی:تسجلی A1 ;
+ممکن:ممکن A2 ;
 منوع:منوع A2 ;
-اساسى:اساسى A1 ;
+اساسی:اساسی A1 ;
 بوخصوص:بوخصوص A1 ;
 ضد:ضد A1 ;
 تانش:تانش A1 ;
-رسمى:رسمى A1 ;
-وطني:وطني A1 ;
+رسمی:رسمی A1 ;
+وطنی:وطنی A1 ;
 بیرقاچ:بیرقاچ A1 ;
-إقتصادى:إقتصادى A1 ;
-بیرنچه:بیرنچه A1 ;
-دولى:دولى A2 ;
+إقتصادی:إقتصادی A1 ;
+بیرنجی:بیرنجی A1 ;
+دولی:دولی A2 ;
 چخن:چخن A1 ;
-بللى:بللى A2 ;
-دواملى:دواملى A2 ;
-جدى:جدى A2 ;
+بللی:بللی A2 ;
+دواملی:دواملی A2 ;
+جدی:جدی A2 ;
 حازر:حازر A2 ;
 مخول:مخول A2 ;
 داخل:داخل A1 ;
 اغر:اغر A1 ;
 قسا:قسا A1 ;
-تنظيملى:تنظيملى A1 ;
-يتيشكين:يتيشكين A1 ;
+تنضیملی:تنضیملی A1 ;
+یتیشکین:یتیشکین A1 ;
 علمی:علمی A1 ;
 اچتماعی:اچتماعی A1 ;
 غلت:غلت A1 ;
 
-أونجكى:أونجكى A1 ;
-بيرر:بيرر A1 ;
-إنى:إنى A1 ;
+أونجکی:أونجکی A1 ;
+بیرر:بیرر A1 ;
+إنی:إنی A1 ;
 تقریبا:تقریبا A2 ;
 بنزر:بنزر A2 ;
 سربست:سربست A2 ;
@@ -1552,60 +1675,60 @@ LEXICON Adjectives
 یابانجی:یابانجی A1 ;
 سورملو:سورملو A1 ;
 قیمتلی:قیمتلی A1 ;
-فني:فني A1 ;
-شخصي:شخصي A1 ;
-گچیجی:گچیجی A1 ;
+فنی:فنی A1 ;
+شخصی:شخصی A1 ;
+گچیجی:گجیجی A1 ;
 بوش:بوش A1 ;
-بيزات:بيزات A1 ;
-مالى:مالى A2 ;
+بیزات:بیزات A1 ;
+مالی:مالی A2 ;
 گچ:گچ A2 ;
 مخدرات:مخدرات A2 ;
 مستقل:مستقل A2 ;
-قانوني:قانوني A2 ;
+قانونی:قانونی A2 ;
 هدفلی:هدفلی A2 ;
 بنزڕ:بنزڕ A2 ;
-صونراكى:صونراكى A1 ;
+صونراكی:صونراكی A1 ;
 مجموع:مجموع A1 ;
-ايللغ:ايللغ A1 ;
-أيدن:أيدن A1 ;
+ایللغ:ایللغ A1 ;
+أیدن:أیدن A1 ;
 مونزم:مونزم A2 ;
 عبارت:عبارت A2 ;
 اوزاغ:اوزاغ A2 ;
-إعتيبارى:إعتيبارى A2 ;
+إعتباری:إعتباری A2 ;
 محلی:محلی A1 ;
 زورونلو:زورونلو A1 ;
 اك:اك A1 ;
-بياز:بياز A1 ;
-عاطفي:عاطفي A1 ;
+بیاز:بیاز A1 ;
+عاطفی:عاطفی A1 ;
 رحتسز:رحتسز A1 ;
 چاتلی:چاتلی A1 ;
-متساوي:متساوي A1 ;
-قانونى:قانونى A1 ;
-أننى:أننى A1 ;
+متساوی:متساوی A1 ;
+قانونی:قانونی A1 ;
+أننی:أننی A1 ;
 آسانت:آسانت A1 ;
-كافى:كافى A2 ;
+کافی:کافی A2 ;
 فعال:فعال A2 ;
-اشاغى:اشاغى A1 ;
-أتكين:أتكين A1 ;
-تقافى:تقافى A1 ;
-مه‌ن:مه‌ن A1 ;
+اشاغی:اشاغی A1 ;
+أتکین:أتکین A1 ;
+تقافی:تقافی A1 ;
+من:من A1 ;
 خوش:خوش A2 ;
-عدلى:عدلى A2 ;
+عدلی:عدلی A2 ;
 خوش:خوش A1 ;
 اوبر:اوبر A1 ;
 ایرنتلی:ایرنتلی A1 ;
 یوجه:یوجه A1 ;
-ثورى:ثورى A1 ;
-علمي:علمي A1 ;
+توری:توری A1 ;
+علمی:علمی A1 ;
 معقد:معقد A1 ;
-ادلى:ادلى A1 ;
-ادلى:ادلى A2 ;
+ادلی:ادلی A1 ;
+ادلی:ادلی A2 ;
 گچرلی:گچرلی A2 ;
 بلیرلی:بلیرلی A2 ;
-يشيل:يشيل A2 ;
-غير% شرعي:غير% شرعي A2 ;
+یشیل:یشیل A2 ;
+غیر% شرعی:غیر% شرعی A2 ;
 ملموس:ملموس A2 ;
-باغلنتلى:باغلنتلى A2 ;
+باغلنتلی:باغلنتلی A2 ;
 ممنوع:ممنوع A2 ;
 گونلوك:گونلوك A1 ;
 مراك:مراك A1 ;
@@ -1616,12 +1739,12 @@ LEXICON Adjectives
 سول:سول A1 ;
 توقع:توقع A1 ;
 نت:نت A1 ;
-طبيعى:طبيعى A1 ;
-الكترونى:الكترونى A1 ;
+طبیعی:طبیعی A1 ;
+الکترونی:الکترونی A1 ;
 غازی:غازی A1 ;
 فعال:فعال A1 ;
-يشاين:يشاين A1 ;
-حاقلى:حاقلى A1 ;
+یشاین:یشاین A1 ;
+حاقلی:حاقلی A1 ;
 دگر:دگر A1 ;
 ساغلم:ساغلم A1 ;
 قاپالی:قاپالی A1 ;
@@ -1630,53 +1753,200 @@ LEXICON Adjectives
 گونلوغ:گونلوغ A1 ;
 سخطه:سخطه A1 ;
 غیر:غیر A1 ;
-إرتباطلى:إرتباطلى A1 ;
-بيرلشمش:بيرلشمش A1 ;
+إرتباطلی:إرتباطلی A1 ;
+بیرلشمس:بیرلشمس A1 ;
 حر:حر A1 ;
-الکترونیک:الکترونیک A1 ;
+الکترونیك:الکترونیك A1 ;
 مخابر:مخابر A1 ;
-أكتيف:أكتيف A1 ;
-استثنائي:استثنائي A1 ;
-بورجوازي:بورجوازي A1 ;
+أکتیف:أکتیف A1 ;
+استتنائی:استتنائی A1 ;
+بورجوازی:بورجوازی A1 ;
 اجی:اجی A1 ;
 مزکور:مزکور A1 ;
 توقیعلی:توقیعلی A1 ;
-شرعي:شرعي A1 ;
-أوتكى:أوتكى A1 ;
-صميمى:صميمى A1 ;
+شرعی:شرعی A1 ;
+أوتکی:أوتکی A1 ;
+صمیمی:صمیمی A1 ;
 اکتریه:اکتریه A1 ;
-وطنى:وطنى A1 ;
+وطنی:وطنی A1 ;
 مخصوص:مخصوص A1 ;
-علاقلى:علاقلى A1 ;
-معنوى:معنوى A1 ;
+علاقلی:علاقلی A1 ;
+معنوی:معنوی A1 ;
 مختلف:مختلف A1 ;
 سابت:سابت A1 ;
-ساغلغلى:ساغلغلى A1 ;
-علماني:علماني A1 ;
+ساغلغلی:ساغلغلی A1 ;
+علمانی:علمانی A1 ;
 قارانلغ:قارانلغ A1 ;
 باغچالی:باغچالی A1 ;
-تفصيلى:تفصيلى A1 ;
-جانلى:جانلى A1 ;
-مصدرلى:مصدرلى A1 ;
-مدعى:مدعى A1 ;
-زيرك:زيرك A1 ;
+تفصیلی:تفصیلص A1 ;
+جانلی:جانلی A1 ;
+مصدرلی:مصدرلی A1 ;
+مدعی:مدعی A1 ;
+زیرك:زیرك A1 ;
 اولومسوز:اولومسوز A1 ;
 خبردار:خبردار A1 ;
 مشترك:مشترك A1 ;
 قالبالغ:قالبالغ A1 ;
-إلرله‌ين:إلرله‌ين A1 ;
-سياسي:سياسي A1 ;
-بسيط:بسيط A1 ;
+إلرلەین:إلرلەین A1 ;
+سیاسی:سیاسی A1 ;
+بسیط:بسیط A1 ;
 ساغلغلی:ساغلغلی A1 ;
-سكى:سكى A1 ;
+سکی:سکی A1 ;
 إیلگی:إیلگی A1 ;
 یونان:یونان A1 ;
 حقسز:حقسز A1 ;
 هزلا:هزلا A1 ;
-مساعيد:مساعيد A1 ;
-کوچوک:کوچوک A1 ;
+مساعید:مساعید A1 ;
+کوچوك:کوچوك A1 ;
 ساری:ساری A2 ;
- 
+نفسی% خستالغ:نفسی% خستالغ A1 ;
+تمیز:تمیز A1 ;
+یرارلی:یرارلی A1 ;
+تمیز:تمیز A2 ;
+قوتلی:قوتلی A2 ;
+دیقاتلی:دیقاتلی A2 ;
+إمپریالی:إمپریالی A2 ;
+چاغداش:چاغداش A1 ;
+مهیم:مهیم A2 ;
+فناا:فنانا A2 ;
+شخصی:شخصی A1 ;
+اولاغان:اولاغان A1 ;
+خسته:خسته A1 ;
+زغیف:زغیف A1 ;
+محدد:محدد A1 ;
+حاسل:حاسل A1 ;
+مقدس:مقدس A1 ;
+تخرج:تخرج A1 ;
+عسکری:عسکری A3 ;
+ممنون:ممنون A1 ;
+إنجه:إنجه A1 ;
+دونر:دونر A1 ;
+پلاکالی:پلاکالی A1 ;
+دوز:دوز A1 ;
+قانونی:قانونی A1 ;
+دوست:دوست A1 ;
+تاریخی:تاریخی A1 ;
+متعقب:متعقب A1 ;
+قاچنلماز:قاچنلماز A1 ;
+إرتجائی:إرتجائی A1 ;
+عجیب:عجیب A1 ;
+إضافی:إضافی A1 ;
+أننی:أننی A1 ;
+أنرجی:أنرجی A1 ;
+ماوی:ماوی A1 ;
+واصل:واصل A1 ;
+‌‌هادئ:هادئ A1 ;
+بیرلشیك:بیرلشیك A1 ;
+اشتراکی:اشتراکی A1 ;
+متعلق:متعلق A1 ;
+سند:سند A1 ;
+محتاج:محتاج A1 ;
+بولوجو:بولوجو A1 ;
+قانونی:قانونی A1 ;
+أسمی:أسمی A1 ; 
+أمریکی:أمریکی A1 ;
+رومیلی:رومیلی A1 ;
+معروز:معروز A1 ;
+روخساتسز:روخساتسز A1 ;
+یرلشیم:یرلشیم A1 ;
+عکسی:عکسی A1 ;
+عالمی:عالمی A1 ;
+ممل:ممل A1 ;
+دینچی:دینچی A1 ;
+دینج:دینج A1 ;
+أمانت:أمانت A1 ;
+ایرلمش:ایرلمش A1 ;
+جسمی:جسمی A1 ;
+شخصی:شخصی A1 ;
+بدلی:بدلی A1 ;
+محلی:محلی A1 ;
+میلتجی:میلتجی A1 ;
+دیقاتلی:دیقاتلی A2 ;
+بولوجو:بولوجو A1 ;
+دونوك:دونوك A1 ;
+نوع:نوع A1 ;
+سورلی:سورلی A2 ;
+شیدتلی:شیدتلی A2 ;
+شپهسیز:شپهسیز A1 ;
+ألوریشلی:ألوریشلی A2 ;
+وریملی:وریملی A2 ;
+رسما:رسما A1 ;
+سوزلو:سوزلو A1 ;
+شرف:ششرف A1 ;
+خسوسی:خسوسی A1 ;
+عقلی:عقلی A1 ;
+مبارك:مبارك A1 ;
+قورخونج:قورخونج A1 ;
+کوکنلی:کوکنلی A1 ;
+واهیم:واهیم A1 ;
+یانلی:یانلی A1 ;
+رئیسی:رئیسی A1 ;
+متتوع:متتوع A1 ;
+مدهش:مدهش A1 ;
+وطن% سور:وطن% سور A1 ;
+نادر:نادر A1 ;
+بدیل:بدیل A1 ;
+معیین:معین A1 ;
+محالف:محالف A1 ;
+مالی:مالی A1 ;
+دوشوگ:دوشوگ A1 ;
+شفاف:شفاف A1 ;
+گونلی:گونلی A1 ;
+گونلی:گونلی A2 ;
+عینن:عینن A2 ;
+خطر:خطر A2 ;
+هرمی:هرمی A1 ;
+غیر% مباشر:غیر% مباشر A1 ;
+فازلا:فازلا A1 ;
+سونسوز:سونسوز A1 ;
+ترافسز:ترافسز A1 ;
+سسزیز:سسزیز A1 ;
+موفق:موفق A1 ;
+نیتلکلی:نیتلکلی A1 ;
+سرعتلا:سرعتلا A1 ;
+أولکی:أولکی A1 ;
+غریزی:غریزی A1 ;
+فسیولوجیه:فسیولوجیه A1 ;
+متغیر:متغیر A1 ;
+إیرادلی:‌إیرادلی A1 ;
+حوزورسوز:حوزورسوز A1 ;
+إدراکی:إدراکی A1 ;
+عاطفی:عاطفی A1 ;
+پیسکولجیك:پیسکولجیك A4 ;
+فسیولوجی:فسیولوجی A1 ;
+دیشن:دیشن A1 ;
+گلملی:گلملی A1 ;
+إیستکلی:إیستکلی A2 ;
+ممتاز:ممتاز A2 ;
+فخم:فخم A1 ;
+گچمیش:گچمیش A2 ;
+یارالی:یارالی A2 ;
+أوزاغ:أوزاغ A2 ;
+موحتشم:موحتشم A1 ;
+نادر:نادر A1 ;
+باشاران:باشاران A1 ;
+حضری:حضری A1 ;
+حیسابی:حیسابی A1 ;
+معیاری:معیاری A1 ;
+عملی:عملی A1 ;
+مسل:مسل A1 ;
+نووی:نووی A1 ;
+اشری:اشری A1 ;
+فاشل:فاشل A1 ;
+دنیملی:دنیملی A1 ;
+یاپشقان:یاپشقان A1 ;
+إستراتجیك:إستراتجیك A1 ;
+تمسیلن:تمسیلن A1 ;
+زامانلی:زامانلی A1 ;
+هیکلی:هیکلی A1 ;
+یلکی:یلکی A1 ;
+سسلی:سسلی A1 ;
+محلی:محلی A1 ;
+
+
+
+
+
 
 
 
@@ -1687,142 +1957,159 @@ LEXICON Adjectives
 	
 
 LEXICON Adverbs
-بير:بير ADV1 ;
+بیر:بیر ADV1 ;
 بیرقاچ:بیرقاچ ADV1 ;
+رسمل:رسما ADV1 ;
 ساغلم:ساغلم ADV1 ;
-نيجا:نيجا ADV-ITG ;
-أوزرينده:أوزرينده ADV1 ;
+مسل:مسل ADV1 ;
+اشری:اشری ADV1 ; 
+نیجا:نیجا ADV-ITG ;
+نیجی:نیجی ADV-ITG ;
+بلە:بلە ADV1 ;
+بیربیرینه:بیربیرینه ADV1 ;
+أوزینده:أوزینده ADV1 ;
+شبهسیز:شبهسیز ADV2 ;
+هادێ:هادێ ADV1 ;
 تقریبا:تقریبا ADV1 ;
+إلری:إلری ADV3 ;
+کونترلو:کونترلو ADV1 ;
 نت:نت ADV1 ;
 تمامن:تمامن ADV3 ;
+هاردایسا:هاردایسا ADV3 ;
 دائم:دائم ADV3 ;
 درحل:درحل ADV3 ;
+عادت:عادت ADV3 ;
 هله:هله ADV3 ;
 آسانت:آسانت ADV1 ;
-دواملى:دواملى ADV3 ;
+فناا:فناا ADV1 ;
+دواملی:دواملی ADV3 ;
 هاردان:هاردان ADV3 ;
-بيزات:بيزات ADV3 ;
+بیزات:بیزات ADV3 ;
 زورونلو:زورونلو ADV3 ;
 بزات:بزات ADV3 ;
 بورا:بورا ADV1 ;
 قاستن:قاستن ADV3 ;
 هاردا:هاردا ADV-ITG ;
-نيه:نيه ADV-ITG ;
+نیه:نیه ADV-ITG ;
+نچی:نچی ADV-ITG ;
 هارا:هارا ADV-ITG ;
-يلارجە:يلارجە ADV1 ; !
-أيلارجه:أيلارجه ADV1 ; !
+نيجه:نيجه ADV-ITG ;
+یلارجه:ییلارجه ADV1 ; !
+أیلارجه:أیلارجه ADV1 ; !
 گونلارجه:گونلارجه ADV1 ; !
 بوخصوص:بوخصوص ADV1 ;
-بوگون:بوگون ADV1 ;
+بوگون:بوگون ADV4 ;
 موندان% سورا:موندان% سورا ADV1 ;
 أساسەن:أساسەن ADV3 ;
 بربر:بربر ADV3 ;
 داها:داها ADV3 ;
-پەك:پەك ADV1 ; ! clean
-نھايت:نھايت ADV1 ;
+پەك:پەک ADV1 ; ! clean
+نهایت:نهایت ADV1 ;
 یاوش:یاوش ADV1 ;
 یاوش% یاوش:یاوش% یاوش ADV3 ;
-أندی:أندی ADV1 ;
-نيه:نيه ADV1 ;
-إیچینده‌:إیچینده‌ ADV1 ;
+إندی:إندی ADV1 ;
+نیە:نیە ADV1 ;
+إیچینده:إیچینده ADV1 ;
 دیه:دیه ADV1 ;
 دیقاتلی:دیقاتلی ADV3 ;
 عجله:عجله ADV2 ;
-اشاغى:اشاغى ADV2 ;
+اشاغی:اشاغی ADV2 ;
 اوردا:اوردا ADV1 ;
-إيجه:إيجه ADV3 ;
+رئیسی:رئیسی ADV2 ;
+إیچه:إیچه ADV3 ;
 بربر:بربر ADV3 ;
 دونن:دونن ADV1  ; 
 هاردا:هاردا ADV3 ; 
 دأم:دأم ADV1 ;
 
-أندى:أندى ADV1 ;
-يارن:يارن ADV1 ;
-گەنە:گەنە ADV1 ;
+إندی:إندی ADV1 ;
+یارن:یارن ADV1 ;
+گەنه:گەنە ADV1 ;
 أخشام:أخشام ADV1 ;
-سبه%-ح:سبه%-ح ADV1 ;
+سبە%-ح:سبە%-ه ADV1 ;
 أو% زامان:أو% زامان ADV1 ;
-مونون% إيچين:مونون% إيچين ADV1 ;
-أوشخكان:أوشخكان ADV1 ;
-نه% قدر:نه% قدر ADV1 ;
+مونون% أیچین:مونون% إیچین ADV1 ;
+أوشخکان:أوشخکان ADV1 ;
+نە% قدر:نە% قدر ADV1 ;
 برابر:برابر ADV1 ;
 داها% دا:داها% دا ADV1 ;
 سورادا:سورادا ADV1 ;
 أن% فازلا:أن% فازلا ADV1 ;
 سونرادا:سونرادا ADV1 ;
-نه‌أيلا:نه‌أيلا ADV1 ;
+نەأیلا:نەأیلا ADV1 ;
 هارداسا:هارداسا ADV1 ;
-چوخ% أيى:چوخ% أيى ADV1 ;
-نيچين:نيچين ADV1 ;
-بيلدير:بيلدير ADV1 ;
-نه‌% أولورسا% أولسون:نه‌% أولورسا% أولسون ADV1 ;
-نيچين% بونجا:نيچين% بونجا ADV1 ;
+چوخ% أیی:چوخ% أیی ADV1 ;
+نیچین:نیچین ADV1 ;
+بیلدیر:بیلدیر ADV1 ;
+نە% أولورسا% أولسون:نە% ‌أولورسا% أولسون ADV1 ;
+نیچین% بونجا:نیچین% بونجا ADV1 ;
 چوخ% أز:چوخ% أز ADV1 ;
 هازامانا:هازامانا ADV1 ;
-نه:نه ADV1 ;
+نە:نە ADV1 ;
 اولارا% گورا:اولارا% گورا ADV1 ;
-بونن% إيچين:بونن% إيچين ADV1 ;
-إيندی:إيندی ADV1 ;
+بونن% إیچین:بونون% إیچین ADV1 ;
+إیندی:إیندی ADV1 ;
 تك:تك ADV1 ;
 آما:آما ADV1 ;
-نيجا:نيجا ADV1 ;
-فازلاسيلا:فازلاسيلا ADV1 ;
+نیجا:ننیجا ADV1 ;
+فازلاسیلا:فازلاسیلا ADV1 ;
 أن% أوسته:أن% أوسته ADV1 ;
-گورأ:گورأ ADV1 ;
+گورا:گورا ADV1 ;
 أوردا:أوردا ADV1 ;
-نيجه:نيجه ADV1 ;
-بيراز% صورا:بيراز% صورا ADV1 ;
-إوچ% كره:إوچ% كره ADV1 ;
+نیجه:نیجه ADV1 ;
+بیراز% صورا:بیراز% صورا ADV1 ;
+إوچ% کره:إوچ% کره ADV1 ;
 هر% زامان:هر% زامان ADV1 ;
 حته:حته ADV1 ;
-أياغ% يالن:أياغ% يالن ADV1 ;
+أیاغ% یالن:إیاغ% یالن ADV1 ;
 قفلت% تن:قفلت% تن ADV1 ;
 قدر:قدر ADV1 ;
-بكىه:بكىه ADV1 ;
-هرنيسه:هرنيسه ADV1 ;
+بکه:بکه ADV1 ;
+هرنیسه:هرنیسه ADV1 ;
 اوندان% صورا:اوندان% صورا ADV1 ;
-نه% يازغ:نه% يازغ ADV1 ;
-لوزومسز% يره:لوزومسز% يره ADV1 ;
+نە% یازغ:نه% یازغ ADV1 ;
+لوزومسز% یره:لوزومسز% یره ADV1 ;
 هردان:هردان ADV1 ;
 هر% سنه:هر% سنه ADV1 ;
 أولدن:أولدن ADV1 ;
-ارى%-سرا:ارى%-سرا ADV1 ;
-هاقأيلا:هاقأيلا ADV1 ;
-فارقلى% شكيلده:فارقلى% شكيلده ADV1 ;
-يوخارى:يوخارى ADV1 ;
-دوم% دوس% دوغرو:دوم% دوس% دوغرو ADV1 ;
-أشاغيا:أشاغيا ADV1 ;
-يوخاردا:يوخاردا ADV1 ;
-يوخاردان:يوخاردان ADV1 ;
+ارا%-سرا:اری%-سرا ADV1 ;
+حاقیلا:حاقیلا ADV1 ;
+فارقلی% شکیلده:فارقلی% شکیلده ADV1 ;
+یوخاری:یوخاری ADV1 ;
+دوم% دوز% دوغرو:دوم% دوس% دوغرو ADV1 ;
+أشاغیا:أشاغیا ADV1 ;
+یوخاردا:یوخاردا ADV1 ;
+یوخاردان:یوخاردان ADV1 ;
 بعزن:بعزن ADV1 ;
 حالدا:حالدا ADV1 ;
 هرحالدا:هرحالدا ADV1 ;
-شيكلينده:شيكلينده ADV1 ;
-أوزاختان:أوزاختان ADV1 ;
+شیکلینده:شیکلینده ADV1 ;
+أوزاغدان:أوزغدان ADV1 ;
 چوختان:چوختان ADV1 ;
 قسته% نه:قسته% نه ADV1 ;
-هر% يل:هر% يل ADV1 ;
-هر% آي:هر% آي ADV1 ;
+هر% یل:هر% یل ADV1 ;
+هر% آی:هر% آی ADV1 ;
 هر% سنه:هر% سنه ADV1 ;
 هر% زامان:هر% زامان ADV1 ;
 هر% واخت:هر% واخت ADV1 ;
 هر% گلن:هر% گلن ADV1 ;
-بويزا:بويزا ADV1 ;
-يوخارى:يوخارى ADV1 ;
-يازدا:يازدا ADV1 ;
-آشاغدآ:آشاغدآ ADV1 ;
+بویزا:بویزا ADV1 ;
+یوخاری:یوخاری ADV1 ;
+یازدا:یازدا ADV1 ;
+آشاغدا:آشاغدا ADV1 ;
 آلتا:آلتا ADV1 ;
-إيسته:إيسته ADV1 ;
-أن% إيسته:أن% إيسته ADV1 ;
-بيلفيعل:بيلفيعل ADV2 ;
+إیسته:إیسته ADV1 ;
+أن% إیسته:أن% إیسته ADV1 ;
+بیلفعل:بیلفعل ADV2 ;
 سوزده:سوزده ADV3 ;
 گچ:گچ ADV2 ;
 قسمن:قسمن ADV2 ;
+بدات:بدات ADV2 ;
 
 أول:أول ADV4 ; 
 سورا:سورا ADV4 ;
 سورادان:سورادان ADV3 ;
-بیرزدان:بیرزدان ADV3 ;
+بیرازدان:بیرازدان ADV3 ;
 إندیدن:إندیدن ADV3 ;
 نیهایت:نیهایت ADV3 ;
 گچن% سنه:گچن% سنه ADV3 ;
@@ -1840,7 +2127,8 @@ LEXICON Adverbs
 بوینا:بوینا ADV3 ;
 او% داکادی:او% داکادی ADV3 ; 
 تام:تام ADV1 ;
-إیشیدینجه:إیشیدینجه ADV1 ;
+نيچى:نيچى ADV1 ;
+أیشیدینجه:إیشیدینجه ADV1 ;
 بوردا:بوردا ADV1 ;
 هرکش:هرکش ADV1 ;
 اولونجا:اولونجا ADV1 ;
@@ -1854,14 +2142,14 @@ LEXICON Adverbs
 اولسا% دا:اولسا% دا ADV1 ;
 کرا:کرا ADV1 ;
 انجاغ:انجاغ ADV1 ;
-یلدن% یله‌:یلدن% یله‌ ADV1 ;
+یلدن% یله:یلدن% یله ADV1 ;
 تا:تا ADV1 ;
 قاچ:قاچ ADV1 ;
 ایلا:ایلا ADV1 ;
-تبیعی:تبیعی ADV1 ;
+طبیعی:طبیعی ADV1 ;
 حالن:حالن ADV1 ;
 عمومن:عمومن ADV1 ;
-او% قدر% چوخ:او% قدر% چوخ ADV1 ;
+او% قدر% جوخ:او% قدر% چوخ ADV1 ;
 بیرچوخ:بیرچوخ ADV1 ;
 او% قدر:او% قدر ADV1 ;
 یامان:یامان ADV1 ;
@@ -1876,14 +2164,14 @@ LEXICON Adverbs
 داها% دا:داها% دا ADV1 ;
 سورا% دا:سورا% دا ADV1 ;
 أن% فازلا:أن% فازلا ADV1 ;
-نه‌أیلا:نه‌أیلا ADV1 ;
-نه‌% زمانا% قدر:نه‌% زمانا% قدر ADV1 ;
-نیه:نیه ADV1 ;
-نه% اولرسا% اولسون:نه% اولرسا% اولسون ADV1 ;
+نەأیلا:نەأیلا ADV1 ;
+نە% زمانا% قدر:نە% زمانا% قدر ADV1 ;
+نیە:نیە ADV1 ;
+نە% اولرسا% اولسون:نە% اولرسا% اولسون ADV1 ;
 چوخ% از:چوخ% از ADV1 ;
 أن% از:أن% از ADV1 ;
-نه:نه ADV1 ;
-انورا% گوره:انورا% گوره ADV1 ;
+نە:نە ADV1 ;
+انورا% گورە:انورا% گوره ADV1 ;
 بونن% إیچین:بونن% إیچین ADV1 ;
 إیندی:إیندی ADV1 ;
 أن% أوستا:أن% أوستا ADV3 ;
@@ -1941,7 +2229,7 @@ LEXICON Adverbs
 أحتیمال:أحتیمال ADV3 ;
 گجلاری:گجلاری ADV3 ;
 حقیقه:حقیقه ADV3 ;
-گویا:گویا ADV3 ;
+گوبا:گوبا ADV3 ;
 هلا:هلا ADV3 ;
 هانی:هانی ADV3 ;
 همن:همن ADV3 ;
@@ -1960,12 +2248,12 @@ LEXICON Adverbs
 کورهن:کورهن ADV3 ;
 کشکه:کشکه ADV3 ;
 کسه:کسه ADV3 ;
-قیشته:قیشته ADV3 ;
+!قیشته:قیشته ADV3 ;
 کورلامدان:کورلامدان ADV3 ;
 معلاسف:معلاسف ADV3 ;
 مجبور:مجبور ADV3 ;
 داها% فازلا:داها% فازلا ADV3 ;
-أسیک:أسیک ADV3 ;
+أسیك:أسیك ADV3 ;
 غیابی:غیابی ADV3 ;
 أگیر:أگیر ADV3 ;
 هر% میلات:هر% میلات ADV1 ;
@@ -1973,13 +2261,13 @@ LEXICON Adverbs
 کیم:کیم ADV1 ;
 بلا:بلا ADV1 ;
 دیمغ% بلا:دیمغ% بلا ADV1 ;
-یعنی% بلا:یعنی% بلا ADV1 ;
+يعنی% بلا:يعنی% بلا ADV1 ;
 اردنن:اردنن ADV1 ;
 بیزیم% کیمین:بیزیم% کیمین ADV1 ;
 أوزوکویون:أوزوکویون ADV1 ;
 گجه% گوندوز:گجه% گوندوز ADV1 ;
 هاردا:هاردا ADV1 ;
-یارم% یاملغ:یارم% یاملغ ADV1 ;
+یارم% یاملغ :یارم%یاملغ ADV1 ;
 دورمادان:دورمادان ADV1 ;
 باخب:باخب ADV1 ;
 چیخب:چیخب ADV1 ;
@@ -1994,10 +2282,10 @@ LEXICON Adverbs
 یاخن% زامنده:یاخن% زامنده ADV1 ;
 إیستمدن:إیستمدن ADV1 ;
 بیر% بیر:بیر% بیر ADV1 ;
-فی% سبیل% إڵه:فی% سبیل% إڵه ADV1 ;
+فی% سبیل% إله:فی% سبیل% إله ADV1 ;
 ارد% ارد:ارد% ارد ADV1 ;
 هر% زامان:هر% زامان ADV1 ;
-گون% گچتیکچه:گون% گچتیکچه ADV1 ;
+گون% گچتیکچه:گون% گچتیکجه ADV1 ;
 مسله:مسله ADV1 ;
 زورلا:زورلا ADV1 ;
 فازلا:فازلا ADV1 ;
@@ -2010,56 +2298,71 @@ LEXICON Adverbs
 بیلا:بیلا ADV1 ;
 اشاغی:اشاغی ADV1 ;
 بیرتراف:بیرتراف ADV1 ;
-بس% بلی:بس% بلی ADV1 ;
+بس% بله:بس% بله ADV1 ;
 بیلفعل:بیلفعل ADV1 ;
 سریع:سریع ADV1 ;
-دیرک:دیرک ADV1 ;
+دیرك:دیرك ADV1 ;
 گری:گری ADV1 ;
-گیت% گیده:گیت% گیده ADV1 ;
-إیلک:إیلک ADV1 ;
+گیت% گیده:گیت% گیدە ADV1 ;
+إیلك:إیلك ADV1 ;
 زور:زور ADV1 ;
-آجله‌:آجله‌ ADV1 ;
-پک:پک ADV3 ;
+آجله:آجله ADV1 ;
+پك:پك ADV3 ;
 سبح:سبح ADV3 ;
 نیهایت:نیهایت ADV3 ;
 گچن% سنه:گچن% سنه ADV3 ;
 اولسا% اولسا:اولسا% اولسا ADV3 ;
 بله:بله ADV3 ;
-اسلى:اسلى ADV3 ;
+اسلی:اسلی ADV3 ;
 حالن:حالن ADV3 ;
 إیستمدن:إیستمدن ADV1 ;
 نیندن% دوغما:نیندن% دوغما ADV1 ;
 بیر% گون:بیر% گون ADV1 ;
-أوزرينه:أوزرينه ADV1 ;
-شكيلده:شكيلده ADV1 ;
+أوزرینه:أوزرینه ADV1 ;
+شکیلده:شکیلده ADV1 ;
 اوزو:اوزو ADV1 ;
 دایر:دایر ADV1 ;
-بیرنچه:بیرنچه ADV1 ;
+بیرنچه:بیرنجه ADV1 ;
 گچیجی:گچیجی ADV1 ;
- عینن:عینن ADV3 ;
+عینن:عینن ADV3 ;
 أونجدن:أونجدن ADV3 ;
 دوغرسو:دوغرسو ADV3 ;
-سبه‌بیله:سبه‌بیله ADV1 ;
-سبه‌بیله:سبه‌بیله ADV1 ;
+سبەبیله:سبەبیله ADV1 ;
 بورادا:بورادا ADV1 ;
-بالنسبهبالنسبه ADV1 ;
-تأكيد:تأكيد ADV3 ;
-كأنما:كأنما ADV3 ;
-غايت:غايت ADV3 ;
+تأکید:تأکید ADV3 ;
+کأنما:كأنما ADV3 ;
+غایت:غایت ADV3 ;
 او% سببتن:او% سببتن ADV1 ;
 مسله:مسله ADV1 ;
-أونجليكه:أونجليكه ADV3 ;
+أونجلیکله:أونجلیکله ADV3 ;
 اولملو:اولملو ADV1 ;
-ألبتته:ألبتته ADV3 ;
+ألبتته:ألببته ADV3 ;
 هالا:هالا ADV3 ;
-فعلن:فعلن ADV3 ;
+فعلن:ففعلن ADV3 ;
 إحتمال:إحتمال ADV3 ;
+اورادا:اورادا ADV3 ;
+بویلالیکله:بویلالیکه ADV3 ;
+هاردایسا:هاردایسا ADV3 ;
+موحتملن:موحتملن ADV3 ;
+رأساا:رأسا ADV3 ;
 یرینه:یرینه ADV1 ;
 گریه:گریه ADV1 ;
 زارفنده:زارفنده ADV1 ;
 أوته:أوته ADV1 ;
 أوزوزندن:أوزوزندن ADV1 ;
 هزلا:هزلا ADV1 ;
+تومویله:تومویله ADV1 ;
+موجیبینجه:موجیبینجه ADV1 ;
+سورسینجه:سورسینجه ADV1 ;
+عینی:عینی ADV1 ;
+بوردا:بوردا ADV1 ;
+عجله:عجله ADV1 ;
+متنوع:متنوع ADV1 ;
+مسلن:مسلن ADV1 ;
+عینن:عینن ADV1 ;
+انن:انن ADV1 ;
+ندی:ندی ADV1 ;
+یوزیوزه:یوزیوزه ADV1 ;
 
 
 
@@ -2076,36 +2379,37 @@ LEXICON Adverbs
 LEXICON Determiners
 بو:بو DET-DEM ;
 او:او DET-DEM ;
-بير% چوخ:بير% چوخ DET-QNT ; 
-بيرر:بيرر DET-QNT ;
-إشته% بو:إشته% بو DET-DEM ;
-إشته:إشته DET-DEM ;
-إيشبو:إيشبو DET-DEM ;
+بیر% چوخ:بیر% چوخ DET-QNT ; 
+بیرر:بیرر DET-QNT ;
+بلە:بلە DET-IND ;
+أيشته% بو:أيشته% بو DET-DEM ;
+أيشته:أيشته DET-DEM ;
+إیشبو:إیشبو DET-DEM ;
 هیچبیر:هیچبیر DET-QNT ;
 هیچبیر:هیچبیر DET-NEG ;
 حبسی:حبسی DET-QNT ;
 هپ:هپ DET-QNT ;
 بوتون:بوتون DET-QNT ;
 قاچ:قاچ DET-QNT ;
-هر% بير:هر% بير DET-QNT ;
-بير:بير DET-IND ;
+هر% بیر:هر% بیر DET-QNT ;
+بیر:بیر DET-IND ;
 اوبر:اوبر DET-IND ;
 بیرنچه:بیرنچه DET-IND ;
 بیرقاچ:بیرقاچ DET-IND ;
 باشقا:باشقا DET-IND ;
 هرناخسی:هرناخسی DET-IND ;
-بيرقاچ:بيرقاچ DET-IND ;
+بیرقاچ:بیرقاچ DET-IND ;
 بله:بله DET-IND ;
 بیراز:بیراز DET-QNT ;
 نچچا:نچچا DET-QNT ;
 ناخسی:ناخسی DET-ITG ;
-هيچ% بير:هيچ% بير DET-NEG ;
-بير% تاخم:بير% تاخم DET-QNT ;
+هیچ% بیر:هیچ% بیر DET-NEG ;
+بیر% تاخم:بیر% تاخم DET-QNT ;
 
-بير% ميقدار:بير% ميقدار DET-QNT ; 
+بیر% میقدار:بیر% میقدار DET-QNT ; 
 بعزی:بعزی DET-QNT ;
-كيمي:كيمي DET-QNT ;
-بير% قسيم:بير% قسيم DET-QNT ;
+كیمی:كیمی DET-QNT ;
+بیر% قسیم:بیر% قسیم DET-QNT ;
 بو% قدر:بو% قدر DET-QNT ;
 او% قدر:او% قدر DET-QNT ;
 نه% قدر:نه% قدر DET-QNT ;
@@ -2113,45 +2417,48 @@ LEXICON Determiners
 چوخو:چوخو DET-QNT ;
 توم:توم DET-QNT ;
 عینی:عینی DET-QNT ;
-او% بير:او% بير DET-DEM ;
+او% بیر:او% بیر DET-DEM ;
 تك:تك DET-IND ;
-ناخسى:ناخسى DET-ITG ;
-هاسى:هاسى DET-ITG ; !which
-ناخسى% بيری:ناخسى% بيری DET-IND ;
+
+ناخسی:ناخسی DET-ITG ;
+هاسی:هاسی DET-ITG ; !which
+ناخسی% بیری:ناخسی% بیری DET-IND ;
 اوزو:اوزو DET-REF ;
-هر% شيكلدن:هر% شيكلدن DET-QNT ;
+هر% شیكلدن:هر% شیكلدن DET-QNT ;
 اوندان:اوندان DET-QNT ;
 بیرتاخم:بیرتاخم DET-QNT ;
 هر:هر DET-DEM ; ! each
-أوتكى:أوتكى DET-DEM ;
-بير:بير DET-IND ;
+أوتكی:أوتكی DET-DEM ;
+بیر:بیر DET-IND ;
 
 
 
 LEXICON Postpositions 
 قیاسلا:قیاسلا POST ;
+انن:انن POST ;
 قیاسلاندغندا:قیاسلاندغندا POST ;
 سراسندا:سراسندا POST ;
 یولیلا:یولیلا POST ;
+اولارغ:اولارغ POST ;
 اوغرونا:اوغرونا POST ;
 دایر:دایر POST ;
-أرتسى:أرتسى POST ;
+أرتسی:أرتسی POST ;
 یانندا:یانندا POST ;
 زواید:زواید POST ;
 إیستینده:إیستینده POST ;
 قانشراندا:قانشراندا POST ;
 دنک:دنک POST ;
 منمدن:منمدن POST ; !with 
-إيچين:إيچين POST ; ! for
-بوينجه:بوينجه POST ; ! "along, througout"
-عينن:عينن POST ; ! such as
-إيچنن:إيچنن POST ; ! Through 
+إیچین:إیچین POST ; ! for
+بوینجه:بوینجه POST ; ! "along, througout"
+عینن:عینن POST ; ! such as
+إیچنن:إیچنن POST ; ! Through 
 حه% قنده:حه% قنده POST ; ! "about" 
 أساسەن:أساسەن POST ; ! "based on"
 قانشار:قانشار POST ;
 گرك:گرك POST ;
 گورأ:گورأ POST ; !necessity
-گرغين:گرغين POST ;
+گرغین:گرغین POST ;
 دوغرو:دوغرو POST ;
 قدر:قدر POST ;
 عاید:عاید POST ;
@@ -2172,15 +2479,15 @@ LEXICON Postpositions
 اولمادغی% إیچین:اولمادغی% إیچین POST ;
 بلکی:بلکی POST ;
 بنزیه‌ین:بنزیه‌ین POST ;
-إيستينه:إيستينه POST ; 
+أوزره:أوزره POST ; 
 حالنه:حالنه POST ;
-كيمن:كيمن POST ; 
+كیمن:كیمن POST ; 
 خاص:خاص POST ;
-متالى:متالى POST ;
+متالی:متالی POST ;
 رغمن:رغمن POST ; 
-إيلا:إيلا POST ;
-علاقلالى:علاقلالى POST ;
-إيسه:إيسه POST ;
+إیا:إیلا POST ;
+علاقلالی:علاقلالی POST ;
+إیسه:إیسه POST ;
 داهی:داهی POST ;
 بوخصوص:بوخصوص POST ;
 ضد:ضد POST ;
@@ -2190,6 +2497,8 @@ LEXICON Postpositions
 علیهینه:علیهینه POST ;
 منسوب:منسوب POST ;
 مونسوز:مونسوز POST ;
+حالینده:حالینده POST ;
+إیچین:إیچین POST ;
 
 
 
@@ -2197,71 +2506,80 @@ LEXICON Conjunctions
 عکسینه:عکسینه CA ;
 بیلعکس:بیلعکس CA ;
 بالنسبه:بالنسبه CA ;
+گونکو:گونکو CA ;
 بیله:بیله CA ;
-وأ:وأ CC ; ! and
-فيهوت:فيهوت CC ;
+وا:وا CC ; ! and
+فیهوت:فیهوت CC ;
 مسله:مسله CA ;
 پکی:پکی CA ;
-إيلا:إيلا CC ;
+يعنی:يعنی CA ;
+یوخسا:یوخسا CA ;
+إیلا:إیلا CC ;
+يعنى:يعنى CC ;
 یاهوت:یاهوت CC ;
 چونكو:چونكو CA ; ! "because"
 ھەم:ھەم CC ; ! "and"
-يآدا:يآدا CC ; ! or
+یادا:یادا CC ; ! or
 أەما:أەما  CC ; ! but
 تابی% کی:تابی% کی CA ;
-بەلكى:بەلكى CC ; ! 
-إيچينده:إيچينده CC ;
+بەلكی:بەلكی CC ; ! 
+إیچینده:إیچینده CC ;
 أگر:أگر CC ;
 أما:أما CC ;
 دا:دا CC ;
 همده:همده CC ;
-يعني:يعني CC ;
+يعنى:يعنى CC ;
 انجاغ:انجاغ CC ;
-زايد:زايد CC ; ! Plus
+زاید:زاید CC ; ! Plus
 ها:ها CC ;
 هم:هم CC ;
-هرنيسه:هرنيسه CC ;
-إيكيسى:إيكيسى CC ;
-إيلاى:إيلاى CC ;
+هرنیسه:هرنیسه CC ;
+إیكیسی:إیكیسی CC ;
+إیلای:إیلای CC ;
 نه:نه CC ;
-يا:يا CC ;
-عكسينه:عكسينه CC ;
-كيمى:كيمى CA ;
-ديه:ديه CS ;
-بلكى:بلكى CA ;
-بيلعكس:بيلعكس CA ;
+یا:یا CC ;
+عكسینه:عكسینه CC ;
+كیمی:كیمی CA ;
+دیه:دیه CS ;
+اولارغ:اولارغ CS ;
+بلكی:بلكی CA ;
+بیلعكس:بیلعكس CA ;
 بكه:بكه CA ;
-بيله:بيله CA ;
+بیله:بیله CA ;
 دمغ:دمغ CA ;
 حتته:حتته CA ;
 هله:هله CA ;
-إيشته:إيشته CA ;
-إيستر:إيستر CA ;
+إیشته:إیشته CA ;
+إیستر:إیستر CA ;
 كشكه:كشكه CA ;
 مسله:مسله CA ;
-نيسه:نيسه CA ;
-كى:كى CA ;
-كى:كى CC ;
-كى:كى CS ;
+نیسه:نیسه CA ;
+كی:كی CA ;
+كی:كی CC ;
+كی:كی CS ;
 صورا:صورا CA ;
-واي% حاصل:واي% حاصل CA ;
-يالغز:يالغز CA ;
-يوخ:يوخ CA ;
+وای% حاصل:وای% حاصل CA ;
+یالغز:یالغز CA ;
+یوخ:یوخ CA ;
 زاتن:زاتن CA ;
 بس:بس CA ;
-هيچ% اولمسا:هيچ% اولمسا CA ;
+هیچ% اولمسا:هیچ% اولمسا CA ;
 اولسن:اولسن CA ;
-يوختو:يوختو CA ;
-بونون% يرينه:بونون% يرينه CA ;
-يوخسا:يوخسا CA ;
+یوختو:یوختو CA ;
+بونون% یرینه:بونون% یرینه CA ;
+یوخسا:یوخسا CA ;
 دیه:دیه CS ;
 حاتا:حاتا CA ;
 سورا:سورا CA ;
-تقريبيا:تقريبيا CA ;
-ياعنى:ياعنى CC ;
-يادا:يادا CC ;
-إيسه:إيسه CC ;
+تقریبیا:تقریبیا CA ;
+هلا:هلا CA ;
+مسل:مسل CA ;
+یاعنی:یاعنی CC ;
+یادا:یادا CC ;
+إیسه:إیسه CC ;
 كأنما:كأنما CC ;
+هالبوکی:هالبوکی CC ;
+إلا:إلا CC ;
 
 
 
@@ -2270,30 +2588,30 @@ LEXICON Conjunctions
 
 LEXICON Numerals
 
-صفر:صِفر NUM ;
+سفر:سفر NUM ;
 بير:بير NUM ;
-إيكی:إيكی NUM ;
-إوچ:إوچ NUM ;
+إیكی:إیكی NUM ;
+أوچ:أوچ NUM ;
 دورت:دورت NUM ; 
-بيش:بيش NUM ;
-التىِ:التىِ NUM ;
-يدي:يدي NUM ;	
-سكيز:سكيز NUM ;
+بیش:بیش NUM ;
+التی:التی NUM ;
+یدی:یدی NUM ;	
+سكیز:سكیز NUM ;
 دوقوز:دوقوز NUM ;
-آون:آون NUM ;
-إيگرمي:إيگرمي NUM ;
+اون:اون NUM ;
+ایگرمی:ایگرمی NUM ;
 اوتوز:اوتوز NUM ;
-قيرخ:قيرخ NUM ;
-اللي:اللي NUM ;
+قی:قیرخ NUM ;
+اللی:اللی NUM ;
 التمش:التمش NUM ;
-يتميش:يتميش NUM ;
+یتمیش:یتمیش NUM ;
 سكسن:سكسن NUM ; 
 دوخسان:دوخسان NUM ;
-يوز:يوز NUM ;
-بيين:بيين NUM ;
-مليون:مليون NUM ; 
-مليار:مليار NUM ;	
-تيريليون:تيريليون NUM ;
+یوز:یوز NUM ;
+بیین:بیین NUM ;
+ملیون:ملیون NUM ; 
+ملیار:ملیار NUM ;	
+تیریلیون:تیریلیون NUM ;
 بوچوغ:بوچوغ NUM ; 
 
 I:I NUM-ROMAN ; ! ""
@@ -2322,104 +2640,302 @@ XXII:XXII NUM-ROMAN ; ! ""
 
 
 
-LEXICON NounRoot
 
-house:house RegNounInfl ; ! A noun
-ئېغىرلىق:ئېغىرلىق RegNounInfl ; ! ""
-زىيان:زىيان RegNounInfl ; ! "
+
 LEXICON Nouns
 آلله:آلله N1 ;
 تپه:تپه N1 ;
 قاست:قاست N1 ;
 قارا:قارا N1 ;
 آن:آن N1 ;
+أمنيت:أمنيت N1 ;
+نتيجه:نتيجه N1 ;
+موتیف:موتیف N1 ;
+إستراتجی:إستراتجی N1 ;
+ياد:ياد N1 ;
+مستوا:مستوا N1 ;
+سیاح:سیاح N1 ;
+مسوده:مسوده N1 ;
+تان:تان N1 ;
+پانو:پانو N1 ;
+أون% یارغی:أون% یارغی N1 ;
+جبر:جبر N1 ;
+طیار:طیار N1 ;
+رادیو:رادیو N1 ;
+اوچروم:اوچروم N1 ;
+أوسكك:أوسكك N1 ;
+جاز:جاز N1 ;
+مودا:مودا N1 ;
+موسلات:موسلات N1 ;
+حاله% نفسیه:حاله% نفسیه N1 ;
+إیش:إیش N1 ;
+مدنی% حالی:مدنی% حالی N1 ;
+آدام:آدام N1 ;
+کورکن:کورکن N1 ;
+خطا:خطا N1 ;
+خسم:خسم N1 ;
+يولادش:يولادش N1 ;
+توی:توی N1 ;
+دوه:دوه N1 ;
+یاد:یاد N1 ;
+بوگون:بوگون N1 ;
+تقریر:تقریر N1 ;
+یولداش:یولداش N1 ;
+شعار:شعار N1 ;
+إبتدائی:إبتدائی N1 ;
+محامی:محامی N1 ;
+مبرمج:مبرمج N1 ;
+الله:الله N1 ;
+صبرسزلغ:صبرسزلغ N1 ;
+تمبلیغ:تمبلیغ N1 ;
+گونی% دوغو:گونی% دوغو N1 ;
 قاپی:قاپی N1 ;
-يشيل:يشيل N1 ;
-سلجوق:سلجوق N1 ;
-اجی:اجی N1 ;
-رسيم:رسيم N1 ;
-ممنوع:ممنوع N1 ;
-تصديق:تصديق N1 ;
+یشیل:یشیل N1 ;
+هادێ:هادێ N1 ;
+گوزلیغ:گوزلیغ N1 ;
+گلمه:گلمه N1 ;
+مناقشه:مناقشه N1 ;
+گلیشیم:گلیشیم N1 ;
+اویانغلغ:اویانغلغ N1 ;
+فاعل% خیر:فاعل% خیر N1 ;
+دونوغلوغ:دونوغلوغ N1 ;
+اوزاما:اوزاما N1 ;
+إفتراء:إفتراء N1 ;
+إنسجام:إنسجام N1 ;
+چاتی:چاتی N1 ;
 زراعت:زراعت N1 ;
-وارلك:وارلك N1 ;
+نغمه:نغمه N1 ;
+بدل:بدل N1 ;
+اورتام:اورتام N1 ;
+داکره:داکره N1 ;
+گرچکسی:گرچکسی N1 ;
+تبریك:تبریك N1 ;
+دوشوك:دوشوك N1 ;
+فاعل:فاعل N1 ;
+گلیش:گلیش N1 ;
+مهمات:مهمات N1 ;
+محالف:محالف N1 ;
+جسم:جسم N1 ;
+باغ:باغ N1 ;
+نکته:نکته N1 ;
+ردهه:ردهه N1 ;
+حزور:حزور N1 ;
+مسافه:مسافه N1 ;
+معاش:معاش N1 ;
+قابیل:قابیل N1 ;
+پاساپورت:پاساپورت N1 ;
+میلتجی:میلتجی N1 ;
+معلوم:معلون N1 ;
+حسن:حسن N1 ;
+تفتیش:تفتیش N1 ;
+خارج:خارج N1 ;
+سیاحه:سیاحه N1 ;
+متطوع:متطوع N1 ;
+تحقیق:تحقیق N1 ;
+فحص:فحص N1 ;
+حساس:حساس N1 ;
+کیتله:کیتله N1 ;
+إیشیری:إیشیری N2 ;
+إیستم:إیستم N1 ;
+کرت% قدم:کرت% قدم N1 ;
+جهاز:جهاز N1 ;
+جبهه:جبهه N1 ;
+مدعی% عام:مدعی% عام N1 ;
+بدیل:بدیل N1 ;
+إلری:إلری N1 ;
+فلك:فلك N1 ;
+بشاری:بشاری N1 ;
+بیرلشیك:بیرلشیك N1 ;
+تإمینات:تإمینات N1 ;
+حال:حال N1 ;
+رجیم:رجیم N1 ;
+یرلی:یرلی N1 ;
+قرار:قرار N1 ;
+مترا:مترا N1 ;
+شرط:شرط N1 ;
+إستقلال:إستقلال N1 ;
+ألو:ألو N1 ;
+نقل:نقل N1 ;
+تأیید:تأیید N1 ;
+دوگش:دوگش N1 ;
+سییر:سییر N1 ;
+بیرلیغ:بیرلیغ N1 ;
+منزیل:منزیل N1 ;
+اورتاغلغ:اورتاغلغ N1 ;
+پارمغ:پارمغ N1 ;
+حکم% الذاتی:حکم% الذاتی N1 ;
+بغلاما:بغلاما N1 ;
+إمحاء:إمحاء N1 ;
+فایز:فایز N1 ;
+خزینه:خزینه N1 ;
+توپ:توپ N1 ;
+سرعت:سرعت N1 ;
+حادسه:حادسه N1 ;
+شرف:شرف N1 ;
+إرتیجاء:إرتیجاء N1 ;
+حواله:حواله N1 ;
+قیا:قیا N1 ;
+إعلان:أعلان N1 ;
+منفعت:منفعت N1 ;
+کوپك:کوپك N1 ;
+قوربان:قوربان N1 ;
+إتفاق:إتفاق N1 ;
+پروبلم:پروبلم N1 ;
+عسیان:عسیان N1 ;
+مدیریه:مدیریه N1 ;
+ترتیب:ترتیب N1 ;
+مسابقه:مسابقه N1 ;
+ملکیت:ملکیت N1 ;
+میس:میس N1 ;
+سلجوق:سلجوق N1 ;
+میتاق:میتاق N1 ;
+اجی:اجی N1 ;
+کافر:کافر N1 ;
+پادیشاه:پادیشاه N1 ;
+مقست:مقست N1 ;
+إقتصاد:إقتصاد N1 ;
+مرتبه:مرتبه N1 ;
+هانم:هانم N1 ;
+دمیر:دمیر N1 ;
+قورتولوش:قورتولوش N1 ;
+موضوع:موضوع N1 ;
+ملکی:ملکی N1 ;
+مدعی% عام:مدعی% عام N1 ;
+لوتفن:لوتفن N1 ;
+قانونی:قانونی N1 ;
+إمام:إمام N1 ;
+معروز:معروز N1 ;
+خیال:خیال N1 ;
+دیسك:دیسك N1 ;
+چاغری:چاغری N1 ;
+سند:سند N1 ;
+نفر:نفر N1 ;
+شخص:شخص N1 ;
+پارا:پارا N1 ;
+حکم% الذاتی:حکم% الذاتی N1 ;
+مقدار:مقدار N1 ;
+هلاك:هلاك N1 ;
+رسیم:رسیم N1 ;
+عشق:عشق N1 ;
+توتانك:توتانك N1 ;
+وزیفه:وزیفه N1 ;
+مدافعه:مدافعه N1 ;
+مییلت:مییلت N1 ;
+ممنوع:ممنوع N1 ;
+تصدیق:تصدیق N1 ;
+بویون:بویون N1 ;
+مودیل:مودیل N1 ;
+گوکتاش:گوکتاش N1 ;
+زراعت:زراعت N1 ;
+ترروست:ترروست N1 ;
+یوریوش:یوریوش N1 ;
+حقوقچی:حقوقچی N1 ;
+قازا:قازا N1 ;
+تأکید:تأکید N1 ;
+زابط:زابط N1 ;
+چیچك:چیچك N1 ;
+معارضه:معارضه N1 ;
+وارلغ:وارلغ N1 ;
+سیاسه:سیاسه N1 ;
+الچی:الچی N1 ;
 یونان:یونان N1 ;
-ياردم:ياردم N1 ;
-مظاهرا:مظاهرا N1 ;
-بيناء:بيناء N1 ;
+یاردم:یاردم N1 ;
+مضاهره:مضاهره N1 ;
+کوشه:کوشه N1 ;
+مافیا:مافیا N1 ;
+تهلیکه:تهلیکه N1 ;
+خسته:خسته N1 ;
+بیناء:بیناء N1 ;
 اولملو:اولملو N1 ;
 درس:درس N1 ;
+ارزو:ارزو N1 ;
+پای:پای N1 ;
+کونفرنس:کونفرنس N1 ;
+توره:توره N1 ;
+علمانیه:علمانیه N1 ;
+غیرت:غیرت N1 ;
+موسولمان:موسلمان N1 ;
 مشکله:مشکله N1 ;
 زیاده:زیاده N1 ;
 ساری:ساری N1 ;
 مملکت:مملکت N1 ;
-إيزين:إيزين N1 ;
-أزمة:أزمة N1 ;
-ميزانية:ميزانية N1 ;
+إیزین:إیزین N1 ;
+أزمه:أزمه N1 ;
+میزانیه:میزانیه N1 ;
 إحاله:إحاله N1 ;
 فرمان:فرمان N1 ;
 هز:هز N1 ;
 رد% فعل:رد% فعل N1 ;
-جيلد:جيلد N1 ;
+جیلد:جیلد N1 ;
+دشیفره:دشیفره N1 ;
+بانقا:بانقا N1 ;
+کمالیست:کمالیست N1 ;
 إقناع:إقناع N1 ;
 قائد:قائد N1 ;
-إستيفاده:إستيفاده N1 ;
+إستیفاده:إستیفاده N1 ;
+رئیس% جامعه:رئیس% جامعه N1 ;
 سخنتی:سخنتی N1 ;
-أرضى:أرضى N1 ;
-أسير:أسير N1 ;
+أرضی:أرضی N1 ;
+أسیر:أسیر N1 ;
 حرکت:حرکت N1 ;
-زيرك:زيرك N1 ;
+زیرك:زیرك N1 ;
 شعار:شعار N1 ;
 گروب:گروب N1 ;
 هیکل:هیکل N1 ;
-أكتيف:أكتيف N1 ;
+أکتیف:أکتیف N1 ;
 قارانلغ:قارانلغ N1 ;
-إيليغ:إيليغ N1 ;
-إيلكه:إيلكه N1 ;
+إیلیغ:إیلیغ N1 ;
+إیلکه:إیلکه N1 ;
 ضمان:ضمان N1 ;
 گومرك:گومرك N1 ;
-يمين:يمين N1 ;
-استثمار:استثمار N1 ;
-فسيكا:فسيكا N1 ;
-ترافيك:ترافيك N1 ;
+یمین:یمین N1 ;
+استتمار:استتمار N1 ;
+فسیکا:فسیکا N1 ;
+ترافیك:ترافیك N1 ;
 هجوم:هجوم N1 ;
 مقام:مقام N1 ;
 توهم:توهم N1 ;
 قولوغ:قولوغ N1 ;
 زابط:زابط N1 ;
 موقع:موقع N1 ;
-نيتلك:نيتلك N1 ;
+نیتلك:نیتلك N1 ;
 گیون:گیون N1 ;
 حقارت:حقارت N1 ;
 إستهزاء:إستهزاء N1 ;
-فيشك:فيشك N1 ;
-خبير:خبير N1 ;
+فیشك:فیشك N1 ;
+خبیر:خبیر N1 ;
 معنوی:معنوی N1 ;
 اوغور:اوغور N1 ;
 قارشلغ:قارشلغ N1 ;
-تصفيه:تصفيه N1 ;
-تاهمین:تاهمین N1 ;
-رنين:رنين N1 ;
-ادلى:ادلى N1 ;
+تصفیه:تصفیه N1 ;
+تاخمین:تاخمین N1 ;
+رنین:رنین N1 ;
+ادلی:ادلی N1 ;
 عاجیل:عاجیل N1 ;
-حاكم:حاكم N1 ;
-شپهه‌:شپهه‌ N1 ;
-إستيعاب:إستيعاب N1 ;
+حاکم:حاکم N1 ;
+شپهه:شپهه N1 ;
+إستیعاب:إستیعاب N1 ;
 کود:کود N1 ;
-ديوان:ديوان N1 ;
-تحصيل:تحصيل N1 ;
+دیوان:دیوان N1 ;
+تحصیل:تحصیل N1 ;
 محالفت:محالفت N1 ;
 دعایه:دعایه N1 ;
 باشقان:باشقان N1 ;
-كلمه:كلمه N1 ;
+کلمه:کلمه N1 ;
+تعهد:تعهد N1 ;
+فرسات:فرسات N1 ;
 تعهد:تعهد N1 ;
 بیلیم:بیلیم N1 ;
-الکترونیک:الکترونیک N1 ;
+الکترونیك:الکترونیك N1 ;
 جمهورباشقانلغی:جمهورباشقانلغی N1 ;
+چالی% قوشو:جالی% قوشو N1 ;
+سکرتیر:سکرتیر N1 ;
+وکیل:وکیل N1 ;
 محافزا:محافزا N1 ;
-تخصيص:تخصيص N1 ;
+تخصیص:تخصیص N1 ;
 قرمزی:قرمزی N1 ;
 البای:البای N1 ;
-تدقيق:تدقيق N1 ;
+تدقیق:تدقیق N1 ;
 باهالغ:باهالغ N1 ;
 إنتقال:إنتقال N1 ;
 باشورو:باشورو N1 ;
@@ -2430,34 +2946,36 @@ LEXICON Nouns
 محاوله:محاوله N1 ;
 دگرلندرمه:دگرلندرمه N1 ;
 رسیم:رسیم N1 ;
-فارق:فارق N1 ;
+
 تقافه:تقافه N1 ;
 گونش:گونش N1 ;
 بومبا:بومبا N1 ;
 منسوب:منسوب N1 ;
 إرتباط:إرتباط N1 ;
 إشتراك:إشتراك N1 ;
-تطبيق:تطبيق N1 ;
-يورتمه:يورتمه N1 ;
+تطبیق:تطبیق N1 ;
+یورتمه:یورتمه N1 ;
 حایز:حایز N1 ;
 اراجلغ:اراجلغ N1 ;
-ثورى:ثورى N1 ;
-تسبيت:تسبيت N1 ;
+توری:توری N1 ;
+اجلغ:اجلغ N1 ;
+تسبیت:تسبیت N1 ;
 حریه:حریه N1 ;
-نتيجه:نتيجه N1 ;
+نتیجه:ننتیجه N1 ;
 خطه:خطه N1 ;
 إعاده:إعاده N1 ;
 إوراق:إوراق N1 ;
-سيجل:سيجل N1 ;
+سیجل:سیجل N1 ;
 صلح:صلح N1 ;
 دگر:دگر N1 ;
-رياضه:رياضه N1 ;
+ریاضه:ریاضه N1 ;
 اورمان:اورمان N1 ;
 أتش:أتش N1 ;
 اولچو:اولچو N1 ;
 غازی:غازی N1 ;
-رئيس:رئيس N1 ;
-قضائي:قضائي N1 ;
+رئیس:رئیس N1 ;
+قضائی:قضائی N1 ;
+
 سوحبت:سوحبت N1 ;
 انتاج:انتاج N1 ;
 مراق:مراق N1 ;
@@ -2472,47 +2990,49 @@ LEXICON Nouns
 تاسیس:تاسیس N1 ;
 نورمال:نورمال N1 ;
 حرب:حرب N1 ;
-صحفى:صحفى N1 ;
+صحفی:صحفی N1 ;
 گونلوك:گونلوك N1 ;
-دگرلندریرمه:دگرلندریرمه N1 ;
-مراك:مراك N1 ;
+دگرلندریمه:دگرلندریمه N1 ;
+مراق:مراق N1 ;
 اودا:اودا N1 ;
 منطقه:منطقه N1 ;
-دوزى:دوزى N1 ;
+دوزی:دوزی N1 ;
 تجربه:تجربه N1 ;
 اتصال:اتصال N1 ;
 خوش:خوش N1 ;
-هيئة:هيئة N1 ;
+هیئه:هیئه N1 ;
 شاهد:شاهد N1 ;
-اشاغى:اشاغى N1 ;
+اشاغی:اشاغی N1 ;
 مزبوط:مزبوط N1 ;
-دقيقه:دقيقه N1 ;
+دقیقه:دقیقه N1 ;
 مجموع:مجموع N1 ;
-شيددت:شيددت N1 ;
+شیدت:شیدت N1 ;
 صفحالك:صفحالك N1 ;
 أولوم:أولوم N1 ;
-ايللغ:ايللغ N1 ;
+ایللغ:ایللغ N1 ;
 معنون:معنون N1 ;
 حزرت:حزرت N1 ;
 مساج:مساج N1 ;
-ديل:ديل N1 ;
+دیل:دیل N1 ;
 نائب% عام:نائب% عام N1 ;
 گوزالت:گوزالت N1 ;
 قسم:قسم N1 ;
 هدف:هدف N1 ;
-قسم:قسم N1 ;
+
 تعلیمات:تعلیمات N1 ;
-جنسيه:جنسيه N1 ;
+جنسیه:جنسیه N1 ;
 آت:آت N1 ;
 شخص:شخص N1 ;
 عنوان:عنوان N1 ;
+لقب:لقب N1 ;
+سلتانات:سلتانات N1 ;
+شاهد:شاهد N1 ;
 وقت:وقت N1 ;
 عدالت:عدالت N1 ;
 مخدرات:مخدرات N1 ;
 إعلام:إعلام N1 ;
 بنزر:بنزر N1 ;
 شعبه:شعبه N1 ;
-بنزڕ:بنزڕ N1 ;
 ارز:ارز N1 ;
 TV:TV N1 ;
 گچ:گچ N1 ;
@@ -2520,54 +3040,60 @@ TV:TV N1 ;
 ف:ف N1 ;
 سورملو:سورملو N1 ;
 نوع:نوع N1 ;
+إهمال:إهمال N1 ;
 گچیجی:گچیجی N1 ;
 عایله:عایله N1 ;
-فني:فني N1 ;
+فنی:فنی N1 ;
 غلت:غلت N1 ;
 تشکیل:تشکیل N1 ;
 باخم:باخم N1 ;
 طبع:طبع N1 ;
 حل:حل N1 ;
 قائد:قائد N1 ;
-ملاحظه:ملاحظه N1 ;
-جيش:جيش N1 ;
+ملاحضه:ملاحضه N1 ;
+جیش:جیش N1 ;
 نائب:نائب N1 ; 
 ساوش:ساوش N1 ;
 اچی:اچی N1 ;
 یوخاری:یوخاری N1 ;
 قومتانلغ:قومتانلغ N1 ;
-يورد:يورد N1 ;
-ياردمجى:ياردمجى N1 ;
-رئيس% جمهوريه:رئيس% جمهوريه N1 ;
-فيلان:فيلان N1 ;
+یورد:یورد N1 ;
+یاردمجی:یاردمجی N1 ;
+رئیس% جمهوریه:رئیس% جمهوریه N1 ;
+فیلان:فیلان N1 ;
 علاقه:علاقه N1 ;
 حال:حال N1 ;
 عباره:عباره N1 ;
-مکتوپ:مکتوپ N1 ;
+مکتوپ:مکتوپ%{y%} N1 ;
 دعوت:دعوت N1 ;
-تهديد:تهديد N1 ;
+تهدید:تهدید N1 ;
 چ:چ N1 ;
 جریده:جریده N1 ;
 برنامج:برنامج N1 ;
-يلان:يلان N1 ;
+یالان:یالان N1 ;
 مال:مال N1 ;
 ا:ا N1 ;
 ب:ب N1 ;
 ج:ج N1 ;
-يه:يه N1 ;
+یه:یه N1 ;
 محامی:محامی N1 ;
 معالجه:معالجه N1 ;
 أودمه:أودمه N1 ;
-مدير:مدير N1 ;
-الأركان% العامة:الأركان% العامة N1 ;
+مودیر:مودیر N1 ;
+إلیرلمه:إلیرلمه N1 ;
+فازلالشما:فازلالشما N1 ;
+قابلیت:قابلیت N1 ;
+الأرکان% العامه:الأرکان% العامه N1 ;
 درجه:درجه N1 ;
-ديمقراطية:ديمقراطية N1 ;
+دیمقراطیه:دیمقراطیه N1 ;
 یاردمجی:یاردمجی N1 ;
-تأسير:تأسير N1 ;
+فاز:فاز N1 ;
+تأسیر:تأسیر N1 ;
 میدان:میدان N1 ;
-حكوم:حكوم N1 ;
+حکوم:حکوم N1 ;
 صفحه:صفحه N1 ;
-چرچفه‌:چرچفه‌ N1 ;
+كییف:کییف N1 ;
+چرچفه:چرجفه N1 ;
 عملیه:عملیه N1 ;
 صنف:صنف N1 ;
 إسلام:إسلام N1 ;
@@ -2591,59 +3117,62 @@ TV:TV N1 ;
 استاد:استاد N1 ;
 سنه:سنه N1 ;
 مؤسسه:مؤسسه N1 ;
-حكم:حكم N1 ;
+حکم:حکم N1 ;
 قسا:قسا N1 ;
 اوی:اوی N1 ;
 گجه:گجه N1 ;
 درنك:درنك N1 ;
 علام:علام N1 ;
-وثيقة:وثيقة N1 ;
-قوشاتن:قوشاتن N1 ;
-إنترنيت:إنترنيت N1 ;
-إيزين:إيزين N1 ;
+وتیقه:وتیقه N1 ;
+قوشتان:قوشتان N1 ;
+إنترنیت:إنترنیت N1 ;
+إیزین:إیزین N1 ;
 CD:CD N1 ;
-وتيقه:وتيقه N1 ;
-تمامن:تمامن N1 ;
-سيرى:سيرى N1 ;
-سرعت:سرعت N1 ;
-أوزرى:أوزرى N1 ;
 
-إستخبارات:إستخبارات N1 ;
+تمامن:تمامن N1 ;
+سیری:سیرس N1 ;
+سرعت:سرعت N1 ;
+أوزری:أوزری N1 ;
+
+إستخبارت:إستخبارت N1 ;
 دعوه:دعوه N1 ;
 مسول:مسول N1 ;
-مشكله:مشكله N1 ;
+مشکله:مشکله N1 ;
 جزا:جزا N1 ;
 میلت:میلت N1 ;
-محافظه:محافظه N1 ;
+محافضه:محافضه N1 ;
 داخل:داخل N1 ;
 هدف:هدف N1 ;
 داهی:داهی N1 ;
-إيش:إيش N1 ;
+إیش:إیش N1 ;
 جمهور:جمهور N1 ;
 دفعه:دفعه N1 ;
 حق:حق N1 ;
 باشلغ:باشلغ N1 ;
-ماركا:ماركا N1 ;
-تسليم:تسليم N1 ;
+مارکا:مارکا N1 ;
+تسلیم:تسلیم N1 ;
 مزفر:مزفر N1 ;
 اچك:اچك N1 ;
-شخص:شخص N1 ;
+شخص:شخض N1 ;
 انلاشما:انلاشما N1 ;
-اساسى:اساسى N1 ;
+اساسی:اساسی N1 ;
 موجود:موجود N1 ;
 إداره:إداره N1 ;
-عضو:عضو N1 ;
-إيو:إيو N1 ;
+عصو:عضو N1 ;
+إیو:إیو N1 ;
 نفوس:نفوس N1 ;
 مددت:مددت N1 ;
-اناياسا:اناياسا N1 ;
-أمنيت:أمنيت N1 ;
-ماليه:ماليه N1 ;
+انایاسا:انایاسا N1 ;
+أمنیت:أمنیت N1 ;
+اوسلوب:اوسلوب N1 ;
+مالیه:مالیه N1 ;
 صاحب:صاحب N1 ;
 اوست:اوست N1 ;
 اوست:اوست N4 ;
+أوزر:أوزر N4 ;
+رومیلی:رومیلی N1 ;
 قانون:قانون N1 ;
-مدنى:مدنى N1 ;
+مدنی:مدنی N1 ;
 کرا:کرا N1 ;
 پاشا:پاشا N1 ;
 قورول:قورول N1 ;
@@ -2652,18 +3181,18 @@ CD:CD N1 ;
 ارتغ:ارتغ N1 ;
 اورتا:اورتا N1 ;
 قرار:قرار N1 ;
-نهايه:نهايه N1 ;
+نهایه:نهایه N1 ;
 شی:شی N1 ;
-حركت:حركت N1 ;
-يل:يل N1 ;
-بلا:بلا N1 ;
+حرکت:حرکت N1 ;
+یل:یل N1 ;
+بالا:بالا N1 ;
 دولت:دولت N1 ;
 وازیفه:وازیفه N1 ;
 عدد:عدد N1 ;
 عادت:عادت N1 ;
-منظمه:منظمه N1 ;
+منضمه:منضمه N1 ;
 ا:ا N1 ;
-إيش:إيش N1 ;
+إیش:إیش N1 ;
 جمهوریت:جمهوریت N1 ;
 فیدیو:فیدیو N1 ;
 أوگ:أوگ N4 ;
@@ -2678,7 +3207,7 @@ CD:CD N1 ;
 تورکچه:تورکچه N1 ;
 یاخن:یاخن N1 ;
 إختیار:إختیار N1 ;
-أترأف:أترأف N1 ;
+أتراف:أتراف N1 ;
 ماده:ماده N1 ;
 مشروع:مشروع N1 ;
 جماعت:جماعت N1 ;
@@ -2686,18 +3215,18 @@ CD:CD N1 ;
 زمان:زمان N1 ;
 باش:باش N1 ;
 پنجره:پنجره N1 ;
-سوال:سوال N1 ;
+سؤال:سؤال N1 ;
 إیی:إیی N1 ;
-پیسیگ:پیسیگ N1 ;
+پیسیك:پیسیك N1 ;
 حیوان:حیوان N1 ;
 أل:أل N1 ;
 یوا:یوا N1 ;
-إیسکمبیل:إیسکمبیل N1 ;
+إیسکمبیل:إسیکمبیل N1 ;
 جواب:جواب N1 ;
-مه‌یز:مه‌یز N1 ;
-أسكى:أسكى N1 ;
+مەیز:مەیز N1 ;
+أسکی:أسکی N1 ;
 ساوغ:ساوغ N1 ;
-
+مودتت:مودتت N1 ;
 اویون:اویون N1 ;
 أتراف:أتراف N1 ;
 بویوك:بویوك N1 ;
@@ -2706,84 +3235,84 @@ CD:CD N1 ;
 چوپان:چوپان N1 ;
 یاش:یاش N1 ;
 وار:وار N1 ;
-کوپگ:کوپگ N1 ;
+کوپك:کوپك N1 ;
 اغاج:اغاج N1 ;
-سجاغ:سجاغ N1 ;
-تورکمانجه:تورکمانجه N1 ; 
-حاكت:حاكت N1 ;
-مكتب:مكتب N1 ;
+سجاغ:سچاغ N1 ;
+تورکمانجە:تورکمانجە N1 ; 
+حاکت:حاکت N1 ;
+مکتب:مکتب N1 ;
 باخچا:باخچا N1 ;
 خستاخانه:خستاخانه N1 ; 
 گول:گول  N1 ;
-أفندي:أفندي N1 ;
+‌إفندی:‌أفندی N1 ;
 تلابه:تلابه N1 ;
 أوشاغ:أوشاغ N1 ;
-قيز:قيز N1 ;
 اوغلان:اوغلان N1 ;
 بالاه:بالاه N1 ;
-گه% نج:گه% نج N1 ;!
-إختيار:إختيار N1 ;
+بولوجو:بولوجو N1 ;
+گنج:گنج N1 ;!
+إختیار:إختیار N1 ;
 ارواد:ارواد N1 ;
 ادام:ادام N1 ;
-بيان:بيان N1 ;
+بیان:بیان N1 ;
 عته:عته N1 ;
 توخوم:توخوم N1 ;
-دايزا:دايزا N1 ;! aunty
+دایزا:دایزا N1 ;! aunty
 چادر:چادر N1 ; 
-دايى:دايى N1 ;
+دایی:دایی N1 ;
 شرق:شرق N1 ;
-عمى:عمى N1 ;!
-نينه:نينه N1 ;
+عمی:عمی N1 ;!
+نینه:نینه N1 ;
 آد:آد N1 ;
-ده‌ده‌:ده‌ده‌ N1 ;
+دەدە:دەدە N1 ;
 عننه:عننه N1 ;
 بابه:بابه N1 ;
 پارا:پارا N1 ;
 قارداش:قارداش N1 ;
 باجی:باجی N1 ;
-پانکه:پانکه N1 ;
+پانکا:پانکا N1 ;
 کیشی:کیشی N1 ;
 پرده:پرده N1 ;
-كوليیه:كوليیه N1 ;
+کولییه:کولییه N1 ;
 جامعه:جامعه N1 ;
 آمانه:آمانه N1 ;
 اسپاب:اسپاب N1 ;
 گوز:گوز N1 ;
 بورون:بورون N1 ; 
 قولاغ:قولاغ N1 ;
-نيجا:نيجا N1 ;
-آغز:آغز N1 ;
-كيپرك:كيپرك N1 ;
+نیجا:نیجا N1 ;
+آغز:‌آغز N1 ;
+کیپرك:کیپرك N1 ;
 قاش:قاش N1 ;
 ساچ:ساچ N1 ;
 قوتو:قوتو N1 ;
 دیرناغ:دیرناغ N1 ;
-دیرناغ% بیاغی:دئرناغ% بیاغی N1 ;
+دیرناغ% بیاغی:دیرناغ% بیاغی N1 ;
 جده:جده N1 ;
-گوناح:گوناح N1 ;
+گونا‌ح:گوناح N1 ;
 سوقاق:سوقاق N1 ;
-مه‌حله:مه‌حله N1 ;
-دكان:دكان N1 ;
+مەحله:مەحله N1 ;
+دکان:دکان N1 ;
 مخزن:مخزن N1 ;
 اسواق:اسواق N1 ;
-ماركت:ماركت N1 ;
-ير:ير N1 ;
+مارکت:مارکت N1 ;
+یر:یر N1 ;
 عصمان:عصمان N1;
 دوار:دوار N1 ;
 دام:دام N1 ;
-گوزلوغ:گوزلوغ N1 ; 
-خرخيس:خرخيس N1 ;
+گوزلوغ:گوزلوغ%{y%} N1 ; 
+خرخیز:خرخیز N1 ;
 شرطه:شرطه N1 ;
-عسكر:عسكر N1 ;
-اوتومبيل:اوتومبيل N1 ;
-سيارا:سيارا N1 ;
+عسکر:عسکر N1 ;
+اوتومبیل:اوتومبیل N1 ;
+سیارا:سیارا N1 ;
 عربنه:عربنه N1 ;
-ده‌رزی:ده‌رزی N1 ;
-به‌ربر:به‌ربر N1 ;
+دەرزی:دەرزی N1 ;
+بەربر:بەربر N1 ;
 بقال:بقال N1 ;
-سه‌بزه:سه‌بزه N1 ;
-ميوأ:ميوأ N1 ;
-يمغ:يمغ N1 ;
+سەبزه:سەبزه N1 ;
+میوا:میوا N1 ;
+یمغ:یمغ N1 ;
 آش:آش N1 ;
 أسر:أسر N1 ;
 تورباغ:تورباغ N1 ;
@@ -2793,28 +3322,28 @@ CD:CD N1 ;
 نهر:نهر N1 ;
 بحر:بحر N1 ;
 قوش:قوش N1 ;
-چاي:چاي N1 ;
-معلمه:معلمه N1 ;
+چای:چای N1 ;
+معلمە:معلمه N1 ;
 إنسان:إنسان N1 ;
-إنگليز:إنگليز N1 ;
-إنگليزجه:إنگليزجه N1 ;
+إنگلیز:إنگلیز N1 ;
+إنگلیزجه:إنگلیزجه N1 ;
 عرب:عرب N1 ;
-توركمان:توركمان N1 ;
-كورد:كورد N1 ;
-خرستيان:خرستيان N1 ;
-مسيح:مسيح N1 ;
+تورکمان:تورکمان N1 ;
+کورد:کورد N1 ;
+خرستیان:خرستیان N1 ;
+مسیح:مسیح N1 ;
 موسلمان:موسلمان N1 ;
-لاتين:لاتين N1 ;
+لاتین:لاتین N1 ;
 قازاق:قازاق N1 ;
 تاتار:تاتار N1 ;
-أزربيجان:أزربيجان N1 ;
-كرغز:كرغز N1 ;
+أزربیجان:أزربیجان N1 ;
+قرغز:قرغز N1 ;
 روس:روس N1 ;
-قيش:قيش N1 ;
-چيله:چيله N1 ;
-ياز:ياز N1 ;
+قیش:قیش N1 ;
+چیله:چیله N1 ;
+یاز:یاز N1 ;
 بهار:بهار N1 ;
-على:على N1 ; 
+علی:علی N1 ; 
 شمبه:شمبه N1 ;
 خورما:خورما N1 ;
 جمعه:جمعه N1 ;
@@ -2829,33 +3358,33 @@ CD:CD N1 ;
 پغمبر:پغمبر N1;
 آدم:آدم N1 ;
 گون:گون N1 ;
-اي:اي N1 ;
+ای:ای N1 ;
 دوشك:دوشك N1 ;
-ياستغ:ياستغ N1 ;
-يورغان:يورغان N1 ;
-ياتاغ:ياتاغ N1 ;
-كوپرو:كوپرو N1 ;
+یاستغ:یاستغ N1 ;
+یورغان:یورغان N1 ;
+یاتاغ:یاتاغ N1 ;
+کوپرو:کوپرو N1 ;
 زولوم:زولوم N1 ;
 زالملغ:زالملغ N1 ;
 اصل:اصل N1 ;
 قارغا:قارغا N1 ;
-دينسيز:دينسيز N1 ;
-إيمانسز:إيمانسز N1 ;	
+دینسیز:دینسیز N1 ;
+إیمانسز:إیمانسز N1 ;	
 سوت:سوت N1 ;
 شربت:شربت N1 ;
-عيرن:عيرن N1 ;
-ميفأ% سويو:ميفأ% سويو N1 ;
-جكت:جكت N1 ;
+عیرن:عیرن N1 ;
+میوا% سویو:میوا% سویو N1 ;
+چکت:چکت N1 ;
 بلوز:بلوز N1 ;
-كوينك:كوينك N1 ;
+کوینگ:کوینگ N1 ;
 بجمه:بجمه N1 ;
-تلفيزيون:تلفيزيون N1 ;
-راديو:راديو N1 ;
-حاسيبه:حاسيبه N1 ;
-كومپيتر:كومپيتر N1 ;
-موبايل:موبايل N1 ;
+تلفزیون:تلفزیون N1 ;
+رادیو:رادیو N1 ;
+حاسیبه:حاسیبه N1 ;
+کومپیتر:کومپیتر N1 ;
+موبایل:موبایل N1 ;
 سعت:سعت N1 ;
-قول% سعاتي:قول% سعاتي N1 ;
+قول% سعاتی:قول% سعاتی N1 ;
 تلاجه:تلاجه N1 ;
 موجمده:موجمده N1 ;
 قیز:قیز N1 ;
@@ -2865,7 +3394,7 @@ CD:CD N1 ;
 زوپا:زوپا N1 ;
 بارداغ:بارداغ N1 ;
 گلاص:گلاص N1 ;
-كتاب:كتاب N1 ;
+کتاب:کتاب N1 ;
 قاب:قاب N1 ;
 طاس:طاس N1 ;
 طاوا:طاوا N1 ;
@@ -2875,147 +3404,148 @@ CD:CD N1 ;
 پچاغ:پچاغ N1 ;
 چنگل:چنگل N1 ;
 قازان:قازان N1 ;
-إستيكآن:إستيكآن N1 ;
+إستیکان:إستیکان N1 ;
 طبق:طبق N1 ;
 تپشی:تپشی N1 ;
-كوب:كوب N1 ;
-سيني:سيني N1 ;
+کوپ:کوپ N1 ;
+سینی:سینی N1 ;
 مسف:مسف N1 ;
-سلاحيه:سلاحيه N1 ;
+سلاحیه:سلاحیه N1 ;
 قونشو:قونشو N1 ;
-اسابى:اسابى N1 ;
-چاي:چاي N1 ;
+عصبی:عصبی N1 ;
+چای:چای N1 ;
+ایی:ایی N1 ;
 ماراق:ماراق N1 ;
-دأوير:دأوير N1 ;
-شوكور:شوكور N1 ;
+دوأیر:دوأیر N1 ;
+شوکور:شوکور N1 ;
 أوز:أوز N1 ;
+یولادش:یولادش N1 ;
 إهرامات:إهرامات N1 ;
 عاقلغ:عاقلغ N1 ;
 تداول:تداول N1 ;
-ال% يازسى:ال% يازسى N1 ;
+ال% یازسی:ال% یازسی N1 ;
 تورون:تورون N1 ;
-باش% إسكمبيل:باش% إسكمبيل N1 ;
-او% سأحبي:او% سأحبي N1 ;
+باش% إسکمبیل:باش% إسکمبیل N1 ;
+او% ساحبی:او% ساحبی N1 ;
 ضرورت:ضرورت N1 ;
-پيشمانلغ:پيشمانلغ N1 ;
-بيين% يل:بيين% يل N1 ;
+پیشمانلغ:پیشمانلغ N1 ;
+بیین% یل:بیین% یل N1 ;
 مقدار:مقدار N1 ;
-تنميه:تنميه N1 ;
-ياكن:ياكن N1 ;
-حكيملغ:حكيملغ N1 ;
-تعمير:تعمير N1 ;
+تنمیه:تنمیه N1 ;
+یاخن:یاخن N1 ;
+حکیملیغ:حکیملیغ N1 ;
+تعمیر:تعمیر N1 ;
 ترك:ترك N3 ;
-رأي% عام:رأي% عام N2 ;
-أرمنى:أرمنى N3 ;
-كاتيب:كاتيب N1 ;
+رأی% عام:رأی% عام N2 ;
+أرمنی:أرمنی N3 ;
+کاتیب:کاتیب N1 ;
 براءت:براءت N1 ;
 قالبالغ:قالبالغ N1 ;
 سس:سس N1 ;
 س:س N1 ;
 إیچری:إیچری N1 ;
 تلفون:تلفون N1 ;
-تركمانجه:تركمانجه N1 ;
 سلام:سلام N1 ;
 قانات:قانات N1 ;
 موفاجئه:موفاجئه N1 ;
-سأحه:سأحه N1 ;
-سوپريز:سوپريز N1 ;
-تأمين:تأمين N1 ;
+ساحه:ساحه N1 ;
+سوپریز:سوپریز N1 ;
+تأمین:تأمین N1 ;
 سفر:سفر N1 ;
 جومله:جومله N1 ;
 جمعت:جمعت N1 ;
 شاه:شاه N1 ;
-ناقليت:ناقليت N1 ;
-ريجا:ريجا N1 ;
-تمديد:تمديد N1 ;
-بيوكلوك:بيوكلوك N1 ;
+ناقلیت:ناقلیت N1 ;
+ریجا:ریجا N1 ;
+تمدید:تمدید N1 ;
+بیوکلوك:بیوکلوك N1 ;
 ندأن:ندأن N1 ;
-أوز% ميلتی:أوز% ميلتی N1 ;
+أوز% میلتی:أوز% میلتی N1 ;
 بورج:بورج N1 ; ! dept
-طازمينات:طازمينات N1 ;
-تفريقه:تفريقه N1 ;
-حيسه:حيسه N1 ;
+تازمینات:تازمینات N1 ;
+تفریقه:تفریقە N1 ;
+حیسه:حیسه N1 ;
 سورو:سورو N1 ;
-يول:يول N1 ;
+یول:یول N1 ;
 إدعاء:إدعاء N1 ;
-اومود:اومود N1 ; ! Hope
+أومود:‌أومود N1 ; ! Hope
 قمشولوغ:قمشولوغ N1 ; ! neighborhod
-دين% آدامى:دين% آدامى N1 ;
+دین% آدامی:دین% آدامی N1 ;
 إدخال:إدخال N1 ;  ! importation
 کومرجو:کومرجو N1 ;
 إخراج:إخراج N1 ; ! exportation
 سنعتچی:سنعتچی N1 ; ! artist
-فريق:فريق N1 ;
+فریق:فریق N1 ;
 تانش:تانش N1 ;
 قورت:قورت N1 ;
-شيكات:شيكات N1 ; ! complaint
-أوجرة:أوجرة N1 ; !rent
-تعقيب:تعقيب N1 ; ! pursuit
-موافقا:موافقا N1 ; !approve
-خاريج:خاريج N1 ; !aborad
-پارتي% عزو:پارتي% عزو N1 ;
-آصلى:آصلى N1 ; !origin
-خوصصيات:خوصصيات N1 ;
+شیکات:سیکات N1 ; ! complaint
+أوجرت:أوجرت N1 ; !rent
+تعقیب:تعقیب N1 ; ! pursuit
+قابول:قابول N1 ; !approve
+خاریج:خخاریج N1 ; !aborad
+پارتی% عزو:پارتی% عزو N1 ;
+آصلی:آصلی N1 ; !origin
+خوصصیات:خوصصیات N1 ;
 سوچ:سوچ N1 ;
 ماعراز:ماعراز N1 ;
-ماعلومات:ماعلومات N1 ;
+ماعلونات:ماعلومات N1 ;
 سوچلو:سوچلو N1 ;
-فيكير:فيكير N1 ; !idea
-ديقات:ديقات N1 ; !attention
-ياردم:ياردم N1 ; !help
-تكنلوجيا:تكنلوجيا N1 ;
+فیکیر:فیکیر N1 ; !idea
+دیقات:دیقات N1 ; !attention
+یاردم:یاردم N1 ; !help
+تکنلوجیا:تکنلوجیا N1 ;
 راقام:راقام N1 ;
-جائزه:جائزه N1 ; !award
-حوريه:حوريه N1 ;
-كريز:كريز N1 ;
+جائزه:ججائزه N1 ; !award
+حوریه:حوریه N1 ;
+کریز:کریز N1 ;
 إسبات:إسبات N1 ;
 مسئول:مسئول N1 ;
-عاسقى:عاسقى N1 ; ! rack
+عاسقی:عاسقی N1 ; ! rack
 قاچاقچلغ:قاچاقچلغ N1 ; !sumuggling
 إنتاج:إنتاج N1 ; !production
-هاوا% ديشيغليغی:هاوا% ديشيغليغی N1 ;
-تكليف:تكليف N1 ; !proposal
+هاوا% دیشیغلیغی:هاوا% دیشیغلیغی N1 ;
+تکلیف:تلیف N1 ; !proposal
 إحترام:إحترام N1 ; !respect
-تدبير:تدبير N1 ;
+تدبیر:تدبیر N1 ;
 مجموعه:مجموعه N1 ;
-تاوصية:تاوصية N1 ; !recomandation
+تاوصیه:تاوصیه N1 ; !recomandation
 نسحت:نسحت N1 ; ! 
-خبير:خبير N1 ; !expert
+خبیر:خبیر N1 ; !expert
 شهاد:شهاد N1 ; !witness
-مومسيل:مومسيل N1 ; ! actor
+مومسیل:مومسیل N1 ; ! actor
 جاسوس:جاسوس N1 ; !agent
-بيرنجيليغ:بيرنجيليغ N1 ;
+بیرنجیلیغ:بیرنجیلیغ N1 ;
 وسوسه:وسوسه N1 ;
 پارچا:پارچا N1 ;
 قات:قات N1 ;
 سما:سما N1 ;
 تمبیه:تمبیه N1 ;
 هلاك:هلاك N1 ;
-یل:یل N1 ;
+یل:ی N1 ;
 گونحکار:گونحکار N1 ;
-إنكار:إنكار N1 ;
+إنکار:إنکار N1 ;
 دینار:دینار N1 ;
 حپیس:حپیس N1 ;
 أولاد:أولاد N1 ;
-إعتيماد:إعتيماد N1 ;
+إعتماد:إعتماد N1 ;
 علامات:علامات N1 ;
 سلامات:سلامات N1 ;
 ربی:ربی N1 ;
 فقیر:فقیر N1 ;
-یلاغز:یلاغز N1 ;
-تقویی:تقویی N1 ;
-شفاأ:شفاأ N1 ;
+یلغز:یلغز N1 ;
+تقویه:تقویه N1 ;
+شفا:شفا N1 ;
 أمان:أمان N1 ;
 تك:تك N1 ;
-عباسی:عباسی N1 ;
+عباس:عباسی N1 ;
 حال:حال N1 ;
-سرات-أل% مستقيم:سرات-أل% مستقيم N1 ;
-ريا:ريا N1 ;
-تحليل:تحليل N1 ;
+سرات-أل% مستقیم:سرات-أل% مستقیم N1 ;
+ریا:ریا N1 ;
+تحلیل:تحلیل N1 ;
 عمود:عمود N1 ;
 مشهور:مشهور N1 ;
-أميزدرما:أميزدرما N1 ;
-أشيأ:أشيأ N1 ;
+أمیزدرما:أمیزدرما N1 ;
+أشیاء:أشیاء N1 ;
 أسلوب:أسلوب N1 ;
 أوستاد:أوستاد N1 ;
 مسجد:مسجد N1 ;
@@ -3027,27 +3557,30 @@ CD:CD N1 ;
 خستالغ:خستالغ N1 ;
 خلیفلغ:خلیفلغ N1 ;
 اوجلغ:اوجلغ N1 ;
-أيرلغ:أيرلغ N1 ;
-چوقورلغ:چوقورلغ N1 ;
-تحقق:تحقق N1 ;
-چوخلوغ:چوخلوغ N1 ;
+أیرلغ:أیرلغ N1 ;
+چوقورلوغ:چوقورلوغ N1 ;
+تحقیق:تحقیق N1 ;
+جوخلوغ:چوخلوغ N1 ;
 حاکیم:حاکیم N1 ;
 سوغان:سوغان N1 ;
 خریستیان:خریستیان N1 ;
-أوكسجين:أوكسجين N1 ;
+أوکسجین:أوکسجین N1 ;
 هورمون:هورمون N1 ;
 کاتیب:کاتیب N1 ;
 پنجر:پنجر N1 ;
-أزبر:أزبر N1 ;
-وزير:وزير N1 ;
+أزیر:أزیر N1 ;
+وزیر:وزیر N1 ;
 پطاطا:پطاطا N1 ;
+تعمیر:تعمیر N1 ;
+إعدام:إعدام N1 ;
+تداوی:تداوی N1 ;
 جیبس:جیبس N1 ;
-حركت:حركت N1 ;
+حرکت:حرکت N1 ;
 روتبت:روتبت N1 ;
-شركه:شركه N1 ;
-وكلات:وكلات N1 ;
+شرکه:شرکه N1 ;
+وکلات:وکلات N1 ;
 إشارت:إشارت N1 ;
-مسوليت:مسوليت N1 ;
+مسولیت:مسولیت N1 ;
 ریازی:ریازی N1 ;
 یازی:یازی N1 ;
 نوروز:نوروز N1 ;
@@ -3056,51 +3589,51 @@ CD:CD N1 ;
 سیلیکون:سیلیکون N1 ;
 کوچوك:کوچوك N1 ;
 دینامیك:دینامیك N1 ;
-أيلول:أيلول N1 ;
-حجيم:حجيم N1 ;
-حزيران:حزيران N1 ;
-نيسان:نيسان N1 ;
-مايس:مايس N1 ;
+أیلول:أیلول N1 ;
+حجیم:حجیم N1 ;
+حزیران:حزیران N1 ;
+نیسان:نیسان N1 ;
+مایس:مایس N1 ;
 أوس:أوس N1 ;
 شباط:شباط N1 ;
-تعديلات:تعديلات N1 ;
+تعدیلات:تعدیلات N1 ;
 حساد:حساد N1 ;
 أدار:أدار N1 ;
-أصطناعى:أصطناعى N1 ;
+أصطناعی:أصطناعی N1 ;
 مصدر:مصدر N1 ;
-حيسبلاما:حيسبلاما N1 ;
-اويناما:اويناما N1 ;
-كازانما:كازانما N1 ;
-قاندرما:قاندرما N1 ;
+حیسبلاما:حیسبلاما N1 ;
+اویناما:اویناما N1 ;
+قازانما:قازانما N1 ;
+قاندرنا:قاندرما N1 ;
 انلاتما:انلاتما N1 ;
-ايدنلاتما:ايدنلاتما N1 ;
+ایدنلاتما:ایدنلاتما N1 ;
 تانتما:تانتما N1 ;
 ارتما:ارتما N1 ;
 قازما:قازما N1 ;
-قزمى:قزمى N1 ;
+قزمی:قزمی N1 ;
 گوچمه:گوچمه N1 ;
 یوکلمه:یوکلمه N1 ;
 دگیشتیرمه:دگیشتیرمه N1 ;
 گلمه:گلمه N1 ;
 بیلدیرمه:بیلدیرمه N1 ;
 افتمه:افتمه N1 ;
-أريتمه:أريتمه N1 ;
+أریتمه:أریتمه N1 ;
 گوزه:گوزه N1 ;
-أسكى:أسكى N1 ;
-بيرسى:بيرسى N1 ;
+أسکی:أسکی N1 ;
+بیرسی:بیرسی N1 ;
 پك:پك N1 ;
 قدیم:قدیم N1 ;
-کوچوك% قيز:کوچوك% قيز N1 ;
-أكيز:أكيز N1 ;
-تخريب:تخريب N1 ;
-تكلى:تكلى N1 ;
+کوچوك% قیز:كوچوك% قیز N1 ;
+أکیز:أکیز N1 ;
+تخریب:تخریب N1 ;
+تکلی:تکلی N1 ;
 سفر:سفر N1 ;
-ساحيل:ساحيل N1 ;
+ساحیل:ساحیل N1 ;
 سر:سر N1 ;
 کاغد:کاغد N1 ;
 تاعین:تاعین N1 ;
 حکایه:حکایه N1 ;
-گولچه:گولچه N1 ;
+کولچه:کولجه N1 ;
 پروتین:پروتین N1 ;
 مریخ:مریخ N1 ;
 سدی:سدی N1 ;
@@ -3108,16 +3641,16 @@ CD:CD N1 ;
 موقع:موقع N1 ;
 مطار:مطار N1 ;
 د:د N1 ;
-إكيلى:إكيلى N1 ;
+إکیلی:إکیلی N1 ;
 ترس:ترس N1 ;
-مسلى:مسلى N1 ;
+مسل:مسل N1 ;
 سوچلاما:سوچلاما N1 ;
 وزین:وزین N1 ;
 عام:عام N1 ;
 ترجمانلغ:ترجمانلغ N1 ;
 یمغلغ:یمغلغ N1 ;
-أرواد% كيشى:أرواد% كيشى N1 ;
-تداوي% اولما:تداوي% اولما N1 ;
+أرواد% کیشی:أرواد% کیشی N1 ;
+تداوی% اولما:تداوی% اولما N1 ;
 مشغول% اولما:مشغول% اولما N1 ;
 جمعه:جمعه N1 ;
 اوخما% یازما:اوخما% یازما N1 ;
@@ -3125,45 +3658,45 @@ CD:CD N1 ;
 موسلمنشما:موسلمنشما N1 ;
 دونیا:دونیا N1 ;
 دمه:دمه N1 ;
-أكلمه:أكلمه N1 ;
-إيشلمه:إيشلمه N1 ;
-شاعيرى:شاعيرى N1 ;
-مسيح:مسيح N1 ;
-شيعى:شيعى N1 ;
-فلستطنلى:فلستطنلى N1 ;
-صينلى:صينلى N1 ;
-هيندلى:هيندلى N1 ;
-گونش% تکویمی:گونش% تکویمی N1 ;
+أکلمه:أکلمه N1 ;
+إیشلمه:إیشلمه N1 ;
+شاغیری:شاغیری N1 ;
+مسیح:مسیح N1 ;
+شیعی:شیعی N1 ;
+فلستطنلی:فلستطنلی N1 ;
+صینلی:صینلی N1 ;
+هیندلی:هیندلی N1 ;
+گونش% تقویمی:گونش% تقویمی N1 ;
 سبیت:سبیت N1 ;
 أحد:أحد N1 ;
-دیز% قاپاغى:دیز% قاپاغى N1 ;
+دیز% قاپاغی:دیز% قاپاغی N1 ;
 سامرساغ:سامرساغ N1 ;
-أوسكك:أوسكك N1 ;
+أوسکك:أوسکك N1 ;
 مال% مولك:مال% مولك N1 ;
-پغمر:پغمر N1 ;
+پغمبر:پغمبر N1 ;
 اودون:اودون N1 ;
 اخوب% یازار:اخوب% یازار N1 ;
 پوستا:پوستا N1 ;
 تندر:تندر N1 ;
 یاقوت:یاقوت N1 ;
 بورجلو:بورجلو N1 ;
-إيشسز:إيشسز N1 ;
+إیشسیز:إیشسیز N1 ;
 مشهور:مشهور N1 ;
-رافطى:رافطى N1 ;
+رافطه:رافطه N1 ;
 گوك% أوزو:گوك% أوزو N1 ;
-عصمانلى:عصمانلى N1 ;
-مسرلى:مسرلى N1 ;
+عصمانلی:عصمانلی N1 ;
+مسرلی:مسرلی N1 ;
 
-ياشلى:ياشلى N1 ;
-رسميت:رسميت N1 ;
-يومروك:يومروك N1 ;
-سببكار:سببكار N1 ;
-سيركى:سيركى N1 ;
-سيريجى:سيريجى N1 ;
-كيرلتمى:كيرلتمى N1 ;
+یاشلی:یاشلی N1 ;
+رسمیت:رسمیت N1 ;
+یومروك:یومروك N1 ;
+سببکار:سببکار N1 ;
+سیرکه:سیرکه N1 ;
+سیریجی:سیریجی N1 ;
+کیرلتمه:کیرلتمه N1 ;
 چوروك: چوروك N1 ;
-أجنبى% دولت:أجنبى% دولت N1 ;
-کاچاکچی:کاچاکچی N1 ;
+أجنبی% دولت:أجنبی% دولت N1 ;
+قاچاقچی:قاچاقچی N1 ;
 ولی:ولی N1 ;
 بهارلغ:بهارلغ N1 ;
 تامینات:تامینات N1 ;
@@ -3180,42 +3713,42 @@ CD:CD N1 ;
 صدقات:صدقات N1 ;
 زاحمت:زاحمت N1 ;
 واعز:واعز N1 ;
-أون% باشى:أون% باشى N1 ;
-يوز% باشى:يوز% باشى N1 ;
+أون% باشی:أون% باشی N1 ;
+یوز% باشی:یوز% باشی N1 ;
 ارتك:ارتك N1 ;
-فالجى:فالجى N1 ;
-فالجلك:فالجلك N1 ;
-يلانجلك:يلانجلك N1 ;
+فالجی:فالجی N1 ;
+فالجلغ:فالجلغ N1 ;
+یلانجلغ:یلانجلغ N1 ;
 قحر:قحر N1 ;
 بابا:بابا N1 ;
-آدم% بابا:آدم% بابا N1 ;
-مسيحى:مسيحى N1 ;
-بابلى:بابلى N1 ;
-كلدانى:كلدانى N1 ;
-پیخمبرلك:پیخمبرلك N1 ;
-وافازسلغ:وافازسلغ N1 ;
+آدم% بابا:ادم% بابا N1 ;
+مسیحی:مسیحی N1 ;
+بابلی:بابلی N1 ;
+کلدانی:كلدانی N1 ;
+پیخمبرلیك:پیخمبرلیك N1 ;
+وافاسزلغ:وافاسلغ N1 ;
 پرنسس:پرنسس N1 ;
 أدب:أدب N1 ;
 نامسوزلوغ:نامسوزلوغ N1 ;
-فاتحى:فاتحى N1 ;
-ديريلش:ديريلش N1 ;
+فاتحه:فاتحه N1 ;
+دیریلش:دیریلش N1 ;
 بال:بال N1 ;
-تعبير:تعبير N1 ;
+تعبیر:تعبیر N1 ;
 دجال:دجال N1 ;
 تالان:تالان N1 ;
 تجاوز:تجاوز N1 ;
 بوشنما:بوشنما N1 ;
-كولوغ:كولوغ N1 ;
-إيبرانى:إيبرانى N1 ;
-إنجيل:إنجيل N1 ;
-فيرعون:فيرعون N1 ;
+کولوغ:کولوغ N1 ;
+إیبرانی:إیبرانی N1 ;
+إنجیل:إنجیل N1 ;
+فیرعون:فیرعون N1 ;
 دوشمان:دوشمان N1 ;
-كور:كور N1 ;
+کور:کور N1 ;
 رزا:رزا N1 ;
 طواف:طواف N1 ;
 سورأ:سورأ N1 ;
-تقرير:تقرير N1 ;
-جان:جان N1 ;
+تقریر:تقریر N1 ;
+جان:بجان N1 ;
 دوشمانلغ:دوشمانلغ N1 ;
 إعتقاد:إعتقاد N1 ;
 تاج:تاج N1 ;
@@ -3224,16 +3757,17 @@ CD:CD N1 ;
 بگیر:بگیر N1 ;
 سغیر:سغیر N1 ;
 سفا:سفا N1 ;
-هودی:هودی N1 ;
+‌هودا:هودا N1 ;
 یازلغ:یازلغ N1 ;
 فتر:فتر N1 ;
-ديولوك:ديولوك N1 ;
-رزيليغ:رزيليغ N1 ;
-يار:يار N1 ;
+دیولوك:دیولوك N1 ;
+رزیلیغ:رزیلیغ N1 ;
+یار:یار N1 ;
 دوام:دوام N1 ;
 مندوب:مندوب N1 ;
 فایدا:فایدا N1 ;
 مشارك:مشارك N1 ;
+غریزی:غریزی N1 ;
 موناسبه:موناسبه N1 ;
 تعلیم:تعلیم N1 ;
 موسسه:موسسه N1 ;
@@ -3242,8 +3776,8 @@ CD:CD N1 ;
 خبر:خبر N1 ;
 تاریخ:تاریخ N1 ;
 اد:اد N1 ;
-شكيل:شكيل N1 ;
-بيز:بيز N1 ;
+شکیل:شکیل N1 ;
+بیز:بیز N1 ;
 تسبیت:تسبیت N1 ;
 ابی:ابی N1 ;
 دانه:دانه N1 ;
@@ -3255,34 +3789,34 @@ CD:CD N1 ;
 سلاح:سلاح N1 ;
 حقوق:حقوق N1 ;
 فصل:فصل N1 ;
-فعاليات:فعاليات N1 ;
+فعالیات:فعالیات N1 ;
 اون:اون N1 ;
-أمن:أمن N1 ;
+أمن:‌من N1 ;
 ملف:ملف N1 ;
 مجادله:مجادله N1 ;
-اتجاه:اتجاه N1 ;
+إتجاه:إتجاه N1 ;
 طلب:طلب N1 ;
 اومود:اومود N1 ;
 صحافه:صحافه N1 ;
 اوردا:اوردا N1 ;
-إنجى:إنجى N1 ;
-شهرة:شهرة N1 ;
+إنجی:إنجی N1 ;
+شهرت:شهرت N1 ;
 ك:ك N1 ;
 ت:ت N1 ;
 إه:إه N1 ;
-بيى:بيى N1 ;
-كيمسه:كيمسه N1 ;
+بیی:بیی N1 ;
+کیمسه:کیمسه N1 ;
 مجلس:مجلس N1 ;
-بیرلغ:بیرلغ N1 ;
+ببیرلغ:بیرلغ N1 ;
 تقدیر:تقدیر N1 ;
 موراد:موراد N1 ;
 باشقانلغ:باشقانلغ N1 ;
 یالچن:یالچن N1 ;
 بیچیم:بیچیم N1 ;
 مدورلوغ:مدورلوغ N1 ;
-وزاره:وزاره N1 ;
+وزاره:وزاه N1 ;
 سرا:سرا N1 ;
-ليره:ليره N1 ;
+لیره:لیره N1 ;
 قوات:قوات N1 ;
 إداره:إداره N1 ;
 سلجوق:سلجوق N1 ;
@@ -3290,93 +3824,98 @@ CD:CD N1 ;
 مرکز:مرکز N1 ;
 دین:دین N1 ;
 إقتدار:إقتدار N1 ;
-رئيس% وزراء:رئيس% وزراء N1 ;
-كونترول:كونترول N1 ;
+رئیس% وزراء:رئیس% وزراء N1 ;
+کونترول:کونترول N1 ;
 اوغول:اوغول N1 ;
 زارار:زارار N1 ;
-يان:يان N1 ;
-أونجكى:أونجكى N1 ;
+یان:یان N1 ;
+أونجکی:أونجکی N1 ;
 یلدرم:یلدرم N1 ;
 بارش:بارش N1 ;
-مجلس% الدولة:مجلس% الدولة N1 ;
+مجلس% الدوله:مجلس% الدوله N1 ;
 یابانجی:یابانجی N1 ;
+خاص:خاص N1 ;
 دولار:دولار N1 ;
 بحت:بحت N1 ;
 سایی:سایی N1 ;
-عملية:عملية N1 ;
+عملیه:عملیه N1 ;
 تاخم:تاخم N1 ;
-ديمقراطيه:ديمقراطيه N1 ;
-سياست:سياست N1 ;
+دیمقراطیه:دیمقراطیه N1 ;
+سیاست:سیاست N1 ;
 تسجیل:تسجیل N1 ;
 نتوك:نتوك N1 ;
 حساب:حساب N1 ;
 مسلك:مسلك N1 ;
-أمير:أمير N1 ;
-نكته:نكته N1 ;
+أمیر:أمیر N1 ;
+نکته:نکته N1 ;
 إعلان:إعلان N1 ;
-تسجيل:تسجيل N1 ;
-موژف:موژف N1 ;
-چیڵه:چیڵه N1 ;
-چیڵه:چیڵه N5 ;
+تسجیل:تسجیل N1 ;
+موزف:موزف N1 ;
+چیله:چیله N1 ;
+چیله:چیله N5 ;
 قضاء:قضاء N1 ;
-أيدن:أيدن N1 ;
+أیدن:أیدن N1 ;
 کوی:کوی N1 ;
+قوناغ:قوناغ N1 ;
 مداخله:مداخله N1 ;
 وطن:وطن N1 ;
 خط:خط N1 ;
-إحتياج:إحتياج N1 ;
+مشارك:مشارك N1 ;
+صبر:صبر N1 ;
+إحتیاج:إحتیاج N1 ;
 إتجاه:إتجاه N1 ;
 تدقیق:تدقیق N1 ;
 بنایه:بنایه N1 ;
 تشویق:تشویق N1 ;
 مرشح:مرشح N1 ;
 إجرا:إجرا N1 ;
-إيشبيرليغ:إيشبيرليغ N1 ;
+إیشبیرلیغ:إیشبیرلیغ N1 ;
 اوسول:اوسول N1 ;
 دفاع:دفاع N1 ;
 سیاره:سیاره N1 ;
-ضريبة:ضريبة N1 ;
+ضریبه:ضریبه N1 ;
 تجارت:تجارت N1 ;
 سورا:سورا N4 ;
-زيارت:زيارت N1 ;
-بياز:بياز N1 ;
+زیارت:زیارت N1 ;
+بیاز:بیاز N1 ;
 توقیع:توقیع N1 ;
-إيفاد:إيفاد N1 ;
-محڵه:محڵه N1 ;
-شخصيه:شخصيه N1 ;
+إیفاد:إیفاد N1 ;
+محله:محله N1 ;
+شخصیه:شخصیه N1 ;
 أونجه:أونجه N1 ;
 قان:قان N1 ;
 إلغاء:إلغاء N1 ;
 أسنا:أسنا N1 ;
-أهميه:أهميه N1 ;
-متساوي:متساوي N1 ;
+أهمیه:أهمیه N1 ;
+متساوی:متساوی N1 ;
 إعتراض:إعتراض N1 ;
-حمايه:حمايه N1 ;
+حمایه:حمایه N1 ;
 مجلس:مجلس N1 ;
+بورا:بورا N1 ;
 دلیل:دلیل N1 ;
 نقطه:نقطه N1 ;
-قناة:قناة N1 ;
+قنات:قنات N1 ;
 آسانت:آسانت N1 ;
-إقامة:إقامة N1 ;
+إقامت:إقامت N1 ;
 سبب:سبب N1 ;
 اغا:اغا N1 ;
 ملف:ملف N1 ;
 دوشونجه:دوشونجه N1 ;
-کوستاه:کوستاه N1 ;
+کوستاه:کسوستاه N1 ;
 واسته:واسته N1 ;
 موزف:موزف N1 ;
-ایچریك:ایچریك N1 ;
+إیچریك:إیچریك N1 ;
 یاشم:یاشم N1 ;
-ديشيكليك:ديشيكليك N1 ;
-یارگلما:یارگلما N1 ;
+دیسیغلیغ:دیشیغلیغ N1 ;
+یارغلما:یارغلما N1 ;
 أون:أون N1 ;
 دوغوم:دوغوم N1 ;
-تبليغ:تبليغ N1 ;
+تبلیغ:تبلیغ N1 ;
 إشغال:إشغال N1 ;
 تفنگ:تفنگ N1 ;
-حيات:حيات N1 ;
+حیات:حیات N1 ;
 انلام:انلام N1 ;
-شهيد:شهيد N1 ;
+شهید:شهید N1 ;
 إنشاء:إنشاء N1 ;
 خان:خان N3 ;
 خان:خان N1 ;
@@ -3388,25 +3927,25 @@ CD:CD N1 ;
 إستفاء:إستفاء N1 ;
 مملکت:مملکت N1 ;
 گونلوغ:گونلوغ N1 ;
-نظام:نظام N1 ;
+نضام:نضام N1 ;
 صرف:صرف N1 ;
-إيزاح:إيزاح N1 ;
+إیراح:إیزاح N1 ;
 إحلال:إحلال N1 ;
 أرن:أرن N1 ;
 حوزور:حوزور N1 ;
 توپ:توپ N1 ;
-إنتحار:إنتحار N1 ;
+إنتحار:‌إنتحار N1 ;
 صناعه:صناعه N1 ;
 عقل:عقل N1 ;
 نائب% عام:نائب% عام N1 ;
-حپیس:حپیس N1 ;
+حیپس:حیپس N1 ;
 إمتحان:إمتحان N1 ;
 إشلتمه:إشلتمه N1 ;
 کردی:کردی N1 ;
 گونول:گونول N1 ;
 مراجعت:مراجعت N1 ;
 نزار:نزار N1 ;
-إيميل:إيميل N1 ;
+إیمیل:إیمیل N1 ;
 تماس:تماس N1 ;
 داش:داش N1 ;
 اکتریه:اکتریه N1 ;
@@ -3414,21 +3953,22 @@ CD:CD N1 ;
 عموله:عموله N1 ;
 سورو:سورو N1 ;
 مخصوص:مخصوص N1 ;
-تنزيم:تنزيم N1 ;
-قرض:قرض N1 ;
+تنزیم:تنزیم N1 ;
+قرص:قرص N1 ;
 خاطره:خاطره N1 ;
-كادرو:كادرو N1 ;
+کادرو:کادرو N1 ;
 کارت:کارت N1 ;
-أياغ:أياغ N1 ;
-عسكرلغ:عسكرلغ N1 ;
-أولدورمه:أولدورمه N1 ;
-ديانت:ديانت N1 ;
+أیاغ:أیاغ N1 ;
+عسکرلغ:عسکلرغ N1 ;
+أولدرمه:أولدرمه N1 ;
+دیانت:دیانت N1 ;
 وطن% داش:وطن% داش N1 ;
-سياسى:سياسى N1 ;
-شيخ:شيخ N1 ;
+سیاسی:سیاسی N1 ;
+نووی:نووی N1 ;
+شیخ:شیخ N1 ;
 أوته:أوته N1 ;
-فيرار:فيرار N1 ;
-ماليه:ماليه N1 ;
+فیرار:فیرار N1 ;
+مالیه:مالیه N1 ;
 کشیی:کشیی N1 ;
 وزعیت:وزعیت N1 ;
 عضو:عضو N1 ;
@@ -3436,7 +3976,7 @@ CD:CD N1 ;
 محقق:محقق N1 ;
 چابا:چابا N1 ;
 تاحلیه:تاحلیه N1 ;
-التعليم% العالي:التعليم% العالي N1 ;
+التعلیم% العالی:التعلیم% العالی N1 ;
 وارلغ:وارلغ N1 ;
 تاپو:تاپو N1 ;
 قائمه:قائمه N1 ;
@@ -3444,26 +3984,287 @@ CD:CD N1 ;
 لغم:لغم N1 ;
 حاپیس:حاپیس N1 ;
 زراعت:زراعت N1 ; 
-إیلگی:إیلگی N1 ;
+إیلکی:إیلکی N1 ;
 مساعده:مساعده N1 ;
 حکم:حکم N1 ;
 ترجیح:ترجیح N1 ;
 إهانت:إهانت N1 ;
-تحريك:تحريك N1 ;
+تحریك:تحریك N1 ;
 خطوه:خطوه N1 ;
+إیو:إیو N1 ;
+رفطه:رفطه N1 ;
+چاغداش:چاغداش N1 ;
+إیسك:إیستك N1 ;
+إنسانلغ:إنسانلغ N1 ;
+حزب% لجنسی:حزب% لجنسی N1 ;
+لوزم:لوزم N1 ;
+بایراغ:بایراغ N1 ;
+تشواس:تشواس N1 ;
+إستخدام:إستخدام N1 ;
+دفتر:دفتر N1 ;
+بوجاغ:بوجاغ N1 ;
+کیلومترا:کیلومترا N1 ;
+تمسیل:تمسیل N1 ;
+اسلوب:اسلوب N1 ;
+نشر:نشر N1 ;
+تخرج:تخرج N1 ;
+جخارما:جخارما N1 ;
+ملزمه:ملزمه N1 ;
+تشکیلات:تشکیلات N1 ;
+کورسل:کورسل N1 ;
+إزادی:أزادی N1 ;
+دویر:دویر N1 ;
+توسیه:توسیه N1 ;
+إیمان:إیمان N1 ;
+رهان:رهان N1 ;
+جدول:جدول N1 ;
+یولجو:یولجو N1 ;
+معمل:معمل N1 ;
+چاپغن:چاپغن N1 ;
+أز:أز N1 ;
+صایه:صایه N1 ;
+عەلم:عەلم N1 ;
+سنعت:سنعت N1 ;
+بزار:بزار N1 ;
+قورخو:قورخو N1 ;
+معرض:معرض N1 ;
+وسیله:وسیله N1 ;
+عنسر:عنسر N1 ;
+گمی:گمی N1 ;
+تاشرا:تاشرا N1 ;
+وزیفه:وزیفه N1 ;
+موزوعات:موزوعات N1 ;
+دعاء:دعاء N1 ;
+أولدوز:أولدوز N1 ;
+تشکل:تشکل N1 ;
+روح:روح N1 ;
+دوکش:دوکش N1 ;
+خصوصیه:خصوصیه N1 ;
+دوره:دوره N1 ;
+إضافه:إضافه N1 ;
+خندق:خندق N1 ;
+والی:والی N1 ;
+مجنون:مجنون N1 ;
+أنرجی:أنرجی N1 ;
+تمسیلیه:تمسیلیه N1 ;
+تأمین:تأمین N1 ;
+ماوی:ماوی N1 ;
+رحمت:رحمت N1 ;
+بیانات:بیانات N1 ;
+اشتراکی:اشتراکی N1 ;
+وجدان:وجدان N1 ;
+ألی:ألی N1 ;
+سکن:سکن N1 ;
+زوق:زوق N1 ;
+غم:غم N1 ;
+دیرك:دیرك N1 ;
+بشاق:بشاق N1 ;
+تشرین% الاول:تشرین% الاول N1 ;
+إسرار:إسرار N1 ;
+إمکان:إمکان N1 ;
+فعیل:فعیل N1 ;
+تأسیر:تأسیر N1 ;
+بحریه:بحریه N1 ;
+لحضه:لحضه N1 ;
+واقع:واقع N1 ;
+جنرال% لواء:جنرال% لواء N1 ;
+محتاج:محتاج N1 ; 
+دیوان:دیوان N1 ;
+إراده:إراده N1 ;
+بولوجو:بولوجو N1 ;
+چورا:چورا N1 ;
+إمریکی:إمریکی N1 ;
+یرلشیم:یرلشیم N1 ;
+والی:والی N1 ;
+تاخت:تاخت N1 ;
+اتحاد:اتحاد N1 ;
+تقدیم:تقدیم N1 ;
+کلیه:کلیه N1 ;
+تانری:تانری N1 ;
+حریت:حریت N1 ;
+فرانسز:فرانسز N3 ;
+اد:اد N1 ;
+غرور:غرور N1 ;
+کیبیرلیك:کیبیرلیك N1 ;
+عرزه:عرزه N1 ;
+جمعیه:جمعیه N1 ;
+تلغراف:تلغراف N1 ;
+مجله:مجله N1 ;
+أمانت:أمانت N1 ;
+پارك:پارك N1 ;
+منفعت:منفعت N1 ;
+فایده:فایده N1 ;
+عصابه:عصابه N1 ;
+إتصال:إتصال N1 ;
+تجاوز:تجاوز N1 ;
+
+پاموغ:پاموغ N1 ;
+إنتخاب:إنتخاب N1 ;
+شرکه:شرکه N1 ;
+عجله:عجله N1 ;
+حکومت:حکومت N1 ;
+بیوکشهیر:بیوکشهیر N1 ;
+ملکی:ملکی N1 ;
+حدر:حدر N1 ;
+عزور:عزور N1 ;
+خطوه:خطوه N1 ;
+‌أسلوب:أسلوب N1 ;
+زایت:زایت N1 ;
+سفات:سفات N1 ;
+تحریر:تحریر N1 ;
+دوختور:دوختور N1 ;
+إعتبار:إعتبار N1 ;
+تکتیك:تکتیك N1 ;
+کوکنلی:کوکنلی N1 ;
+بند:بند N1 ;
+حکات:حکات N1 ;
+قلم:قلم N1 ;
+عیار:عیار N1 ;
+کائنات:کائنات N1 ;
+کامیرا:کامیرا N1 ;
+إیشورن:إیشورن N1 ;
+إستتمار:إسستتمار N1 ;
+إمکان:إمکان N1 ;
+بنیباشی:بینباشی N1 ;
+عدد% صحیح:عدد% صحیح N1 ;
+عدد% عشری:عدد% عشری N1 ;
+شر:شر N1 ;
+موازی:موازی N1 ;
+مدهش:مدهش N1 ;
+تامین:تامین N1 ;
+تنسیق:تنسیق N1 ;
+نادر:نادر N1 ;
+شفق:شفق N1 ;
+قول:قول N1 ;
+قوول:قوول N1 ;
+تحلیل:تحلیل N1 ;
+خاتر:خاتر N1 ;
+زولم:زولم N1 ;
+ترتیب:ترتیب N1 ;
+احترام:احترام N1 ;
+اوتراك:اوتراك N1 ;
+محاسبه:محاسبه N1 ;
+إیشیغ:إیشیسغ N1 ;
+حجره:حجره N1 ;
+دوستلوغ:دوستلوغ N1 ;
+بای:بای N1 ;
+قاچاقچلغ:قاچاقچلغ N1 ;
+زلزال:زلزال N1 ;
+زافر:زافر N1 ;
+إختصاص:إختصاص N1 ;
+مقدم:مقدم N1 ;
+معنا:معنا N1 ;
+إعدم:إعدام N1 ;
+انلاشما:انلاشما N1 ;
+یورو:یورو N1 ;
+سیاده:سیاده N1 ;
+أردم:أردم N1 ;
+میراس:میراس N1 ;
+إستخدام:إستخدام N1 ;
+إیجاب:إیجاب N1 ;
+موعد:موعد N1 ;
+مرمی:مرمی N1 ;
+خطر:خطر N1 ;
+زورونلوغ:زورونلوغ N1 ;
+توتکلاما:توتوکلاما N1 ;
+پاتلاما:پاتلاما N1 ;
+سلبیه:سلبیه N1 ;
+عصبیه:عصبیه N1 ;
+إقترا‌‌ح:إقتراح N1 ;
+زوق:زوق N1 ;
+خوی:خوی N1 ;
+عاطفی:عاطفی N1 ;
+دیمقراسی:دیمقراسی N1 ;
+باغلاما:باغلاما N1 ;
+قوجغلاما:قوجغلاما N1 ;
+رحتلامه:رحتلامه N1 ;
+واجب:واجب N1 ;
+لجنه:لجنه N1 ;
+بوزوغلوغ:بوزوغلوغ N1 ;
+کییف:کییف N1 ;
+مسامحه:مسامحه N1 ;
+توتار:توتار N1 ;
+إمپراطوریه:إمپراطوریه N1 ;
+عاصمه:عاصمه N1 ;
+گچمیش:گچمیش N1 ;
+دیلیم:دیلیم N1 ;
+الان:الان N1 ;
+حیمایه:حیمایه N1 ;
+مناخ:مناخ N1 ;
+گچیش:گچیش N1 ;
+برمجه:برمجه N1 ;
+درلیجی:درلیجی N1 ;
+مکنه:مکنه N1 ;
+امر:امر N1 ;
+حیسبلاما:حیسلاما N1 ;
+هدیە:هدیە N1 ;
+دیزی:دیزی N1 ;
+نسبه:نسبه N1 ;
+فونکسیون:فونکسیون N1 ;
+قویون:قویون N1 ;
+شوئون% خارجیه:شوئون% خارجیه N1 ;
+لیره:لیره N1 ;
+
+م:م N1 ;
+ا:ا N1 ;
+إ:إ N1 ;
+ب:ب N1 ;
+س:س N1 ;
+چ:چ N1 ;
+ج:ج N1 ;	
+د:د N1 ;
+ی:ی N1 ;
+پ:پ N1 ;
+طیاره:طیاره N1 ; 
+قورترما:قورترما N1 ;
+دیمقراطیه:دیمقراطیه N1 ;
+ارتش:ارتش N1 ;
+بویوگلوغ:بویوکلوغ N1 ;
+جنازا:جنازا N1 ;
+نفت:نفت N1 ; 
+موسورمان:موسورمان N1 ;
+إسلام:إسلام N1 ; 
+أمریکلای:أمریکلای N1 ;
+مرسوم:مرسوم N1 ;
+درجه:درجه N1 ;
+معنی:معنی N1 ;
+و:و N1 ;
+سوز:سوز N1 ;
+أورگ:أورگ N1 ;
+عشرت:عشرت N1 ;
+شافق:شافق N1 ;
+التن:التن N1 ;
+ير:ير N1 ;
+ایچریك:ایچریك N1 ;
+قولانجی:قولانجی N1 ;
+خستلیغ:خستلیغ N1 ;
+فورم:فورم N1 ;
+فیروس:فیروس N1 ;
+إختبار:إختبار N1 ;
+شانس:شانس N1 ;
+سیاحت:سیاحت N1 ;
+پایلشم:پایلشم N1 ;
+ماسرف:ماسرف N1 ;
+منح:منح N1 ;
+جدول% أعمال:جدول% أعمال N1 ;
+علم% البیئه:علم% البیئه N1 ;
+دنمه:دنمه N1 ;
+المانجا:المانجا N1 ;
 
 
 
 
 
-
-نوبيل:نوبيل NP-AL ;
-تويتر:تويتر NP-AL ;
-فيسبوك:فيسبوك NP-ORG ;
+نوبیل:نوبیل NP-AL ;
+تویتر:تویتر NP-AL ;
+فیسبوك:فیسبوك NP-ORG ;
 ناتو:ناتو NP-ORG ;
+غلاتاسرای:غلاتاسرای  NP-ORG ;
 بشیکتاش:بشیکتاش NP-ORG ;
-ارگينيكون:ارگينيكون NP-ORG ;
+ارگینیون:ارگینیون NP-ORG ;
 فنرباهچه:فنرباهچه NP-ORG ;
+الیونسکو:الیونسکو NP-ORG ;
+ویکیلیکس:ویکیلیکس NP-ORG ;
 AKP:AKP NP-ORG ;
 YÖK:YÖK NP-ORG ;
 فتو:فتو NP-ORG ;
@@ -3471,83 +4272,158 @@ CHP:CHP NP-ORG ;
 TCK:TCK NP-ORG ;
 MHP:MHP NP-ORG ;
 TSK:TSK NP-AL ;
+TV:TV NP-AL ;
+ماتلاب:ماتلاب NP-AL ;	
+Perl:Perl NP-AL ;
+www:www NP-AL ;
 MİT:MİT NP-ORG ;
-ABD:ABD NP-TOP-ACR ;
+ABD:ABD%{ь%} NP-TOP-ACR ;
 AB:AB NP-TOP-ACR ;
+KKTC:KKTC%{î%} NP-ORG ;
 گوگول:گوگول NP-AL ;
 اد:اد NP-AL ;
 PKK:PKK NP-ORG ;
-دونيا% كوپاسى:دونيا% كوپاسى NP-AL ;
+دونیا% کوپاسی:دونیا% کوپاسی NP-AL ;
 
 CEE:CEE NP-AL ;
 WMTR:WMTR NP-AL ;
 LEXICON ProperNouns 
-پوتين:پوتين NP-COG-MF ;
+پوتین:پوتین NP-COG-MF ;
+اوباما:اوباما NP-COG-MF ; 
 سلطان:سلطان NP-COG-MF ;
+قدافی:قدافی NP-COG-MF ;
 پویرازز:پویرازز NP-COG-MF ;
 إوزتورك:إوزتورك NP-COG-MF ;
+أرقوت:أرقوت NP-COG-MF ;
 گورسس:گورسس NP-COG-MF ;
+شفق:شفق NP-COG-MF ;
+إننو:إننو NP-COG-MF ;
+یوجل:یوجل NP-COG-MF ;
 سلجوق:سلجوق NP-COG-MF ;
 یلدرم:یلدرم NP-COG-MF ;
+الپ% اسلان:الپ% اسلان NP-COG-MF ;
+أرسوز:أرسوز NP-COG-MF ;
+ارسوی:ارسوی NP-COG-MF ;
 بلنت:بلنت NP-COG-MF ;
-بويوغچلبى:بويوغچلبى NP-COG-MF ;
-أكشى% اوغلو:أكشى% اوغلو NP-COG-MF ;
+توپال:تتوپال NP-COG-MF ;
+بویوغچلبی:بویوغچلبی NP-COG-MF ;
+أکشی% اوغلو:أکشی% اوغلو NP-COG-MF ;
 أوزتورك:أوزتورك NP-COG-MF ;
-أيدن:أيدن NP-COG-MF ;
+أیدن:أیدن NP-COG-MF ;
 أوجلان:أوجلان NP-COG-MF ;
+أوزبای:أوزبای NP-COG-MF ;
 اوجلان:اوجلان NP-COG-MF ;
-أوزكان:أوزكان NP-COG-MF ;
-أرتكين:أرتكين NP-COG-MF ;
+أوزکان:أوزکان NP-COG-MF ;
+أرتکین:أرتکین NP-COG-MF ;
 البای:البای NP-COG-MF ;
 سلجوق:سلجوق NP-COG-MF ;
-اڵپ% ارسلان:اڵپ% ارسلان NP-COG-MF ;
+الپ% ارسلان:الپ% ارسلان NP-COG-MF ;
+أرتغرول:أرتغرول NP-COG-MF ;
+ایدن:ایدن NP-COG-MF ;
 دمیرتاش:دمیرتاش NP-COG-MF ;
+یوکسل:یوکسل NP-COG-MF ;
+أرکان:أرکان NP-COG-MF ;
+أونال:أونال NP-COG-MF ;
+طلعت:طلعت NP-COG-MF ;
+شکیب:شکیب NP-ANT-M ;
+ویلیامس:ویلیامس NP-ANT-M ;
+روبیا:روبیا NP-ANT-M ;
+رافت:رافت NP-ANT-M ;
+طلعت:طلعت NP-ANT-M ;
+حلمی:حلمی NP-ANT-M ;
+شوکرو:شوکرو NP-ANT-M ;
+خالد:خالد NP-ANT-M ;
+ارسلان:ارسلان NP-ANT-M ;
+قابیل:قابیل NP-ANT-M ;
+رهین:رهین NP-ANT-M ;
+تورگوت:تورگوت NP-ANT-M ;
+زافر:زافر NP-ANT-M ;
+سلطان:سلطان NP-ANT-M ;
+سرحان:سرحان NP-ANT-M ;
+سحر:سحر NP-ANT-M ;
+أرهان:أرهان NP-ANT-M ;
+مته:مته NP-ANT-M ;
+دمیرال:دمیرال NP-ANT-M ;
+لطفی:لطفی NP-ANT-M ;
+عبدرالرحمن:عبدرالر‌حمن NP-ANT-M ;
+ندیم:ندیم NP-ANT-M ;
+بدرالدین:بدرالدین NP-ANT-M ;
+زیا:زیا NP-ANT-M ;
 بلنت:بلنت NP-ANT-M ;
+أونال:أونال NP-COG-MF ;
+یحیا:یحیا NP-ANT-M ;
+عزت:عزت NP-ANT-M ;
+ایدن:ایدن NP-ANT-M ;
+توفیق:توفیق NP-ANT-M ;
+گورهان:گورهان NP-ANT-M ;
+براق:براق NP-ANT-M ;
+بشاق:بشاق NP-ANT-F ;
+باشقر:باشقر NP-ANT-F ;
+اسیا:اسیا NP-ANT-F ;
+یوکسل:یوکسل NP-ANT-F ;
+نیهاد:نیهاد NP-ANT-M ;
+لطفی:لطفی NP-ANT-M ;
+أرتغرول:أرتغرول NP-ANT-M ;
+مجنون:مجنون NP-ANT-M ;
+فوزی:فوزی NP-ANT-M ;
+فدات:فدات NP-ANT-M ;
+دمیر:دمیر NP-ANT-M ;
+نوسرت:نوسرت NP-ANT-M ;
+الپ% اسلان:الپ% اسلان NP-ANT-M ;
+فواد:فواد NP-ANT-M ;
+زافر:زافر NP-ANT-M ;
+اوندر:اوندر NP-ANT-M ;
+أرکان:أرکان NP-ANT-M ;
 پکر:پکر NP-ANT-M ;
+چیچك:چیجك NP-ANT-F ;
+اوفوق:اوفوق NP-ANT-M ;
+
 فاروق:فاروق NP-ANT-M ;
 تانر:تانر NP-ANT-M ;
-فكرت:فكرت NP-ANT-M ;
+فکرت:فکرت NP-ANT-M ;
 سلجوق:سلجوق NP-ANT-M ;
-كازم:كازم NP-ANT-M ;
+نورالدین:نورالدین NP-ANT-M ;
+نوری:نوری NP-ANT-M ;
+کازم:کازم NP-ANT-M ;
 ألن:ألن NP-ANT-M ;
 تامر:تامر NP-ANT-M ;
 إحسان:إحسان NP-ANT-M ;
 جمیل:جمیل NP-ANT-M ;
 سونر:سونر NP-ANT-M ;
-رؤوف:رؤوف NP-ANT-M ;
+رئوف:رئوف NP-ANT-M ;
 فرمان:فرمان NP-ANT-M ;
-جيم:جيم NP-ANT-M ;
+جیم:جیم NP-ANT-M ;
 جمهور:جمهور NP-ANT-M ;
-إرجان:إرجان NP-ANT-M ;
-جوشكون:جوشكون NP-ANT-M ;
-اوغور:اوغور NP-ANT-M ;
+أرجان:أرجان NP-ANT-M ;
+جوشکون:جوشکون NP-ANT-M ;
+أوغوز:أوغوز NP-ANT-M ;
 عسمت:عسمت NP-ANT-M ;
-إلكر:إلكر NP-ANT-M ;
-أرگون:أرگون NP-ANT-M ;
+إلکر:إلکر NP-ANT-M ;
+‌أرگون:أرگون NP-ANT-M ;
 طوفان:طوفان NP-ANT-M ;
 فرید:فرید NP-ANT-M ;
 جمال:جمال NP-ANT-M ;
-أوزجان:أوزجان NP-ANT-M ;
+أوزخان:أوزخان NP-ANT-M ;
 سمیح:سمیح NP-ANT-M ;
 أردل:أردل NP-ANT-M ;
 فرید:فرید NP-ANT-M ;
-شاهين:شاهين NP-ANT-M ;
-ايهان:ايهان NP-ANT-M ;
-آتيلا:آتيلا NP-ANT-M ;
+شاهین:شاهین NP-ANT-M ;
+ایهان:ایهان NP-ANT-M ;
+آتیلا:آتیلا NP-ANT-M ;
 طارق:طارق NP-ANT-M ;
-صلاح% الدين:صلاح% الدين NP-ANT-M ;
+صلاح% الدین:صلاح% الدین NP-ANT-M ;
 أنگین:أنگین NP-ANT-M ;
 مسعود:مسعود NP-ANT-M ;
 تورهان:تورهان NP-ANT-M ;
-اڵپ% ارسلان:اڵپ% ارسلان NP-ANT-M ;
-طييب:طييب NP-ANT-M ;
-أوزكان:أوزكان NP-ANT-M ;
+الپ% ارسلان:الپ% ارسلان NP-ANT-M ;
+طییب:طییب NP-ANT-M ;
+أوزکان:أوزکان NP-ANT-M ;
 یشار:یشار NP-ANT-M ;
-هکان:هکان NP-ANT-M ;
+هکانکان:ه NP-ANT-M ;
 عدنان:عدنان NP-ANT-M ;
 اورهان:اورهان NP-ANT-M ;
 جان:جان NP-ANT-M ;
-ياوز:ياوز NP-ANT-M ;
+یاوز:یاوز NP-ANT-M ;
 عیسی:عیسی NP-ANT-M ;
 فاتح:فاتح NP-ANT-M ;
 سردار:سردار NP-ANT-M ;
@@ -3555,8 +4431,8 @@ LEXICON ProperNouns
 أزل:أزل NP-ANT-M ;
 زکریا:زکریا NP-ANT-M ;
 قاسم:قاسم NP-ANT-M ;
-خورشيد:خورشيد NP-ANT-M ;
-سينان:سينان NP-ANT-M ;
+خورشید:خورشید NP-ANT-M ;
+سینان:سینان NP-ANT-M ;
 إرول:إرول NP-ANT-M ;
 یالچن:یالچن NP-ANT-M ;
 یوسف:یوسف NP-ANT-M ;
@@ -3568,76 +4444,85 @@ LEXICON ProperNouns
 چلبی:چلبی NP-COG-MF ;
 تورهان:تورهان NP-COG-MF ;
 اردوغان:اردوغان NP-COG-MF ;
-يلماز:يلماز NP-COG-MF ;
-قليجلر% اوغلو:قليجلر% اوغلو NP-COG-MF ;
+بالبای:بالبای NP-COG-MF ;
+یلماز:یلماز NP-COG-MF ;
+کارزای:کارزای NP-COG-MF ;
+قلیجلر% اوغلو:قلیجیلر% اوغلو NP-COG-MF ;
+داود% اوغلو:داود% اوغلو NP-COG-MF ;
 تونجای:تونجای NP-ANT-M ;
 أحمد:أحمد NP-ANT-M ;
-
+إسلام:إسلام NP-ANT-M ;
 مزفر:مزفر NP-ANT-M ;
 سدات:سدات NP-ANT-M ;
-أمير:أمير NP-ANT-M ;
+أمیر:أمیر NP-ANT-M ;
 کمال:کمال NP-ANT-M ;
 إلهان:إلهان NP-ANT-M ;
 شنر:شنر NP-ANT-M ;
 نورسن:نورسن NP-ANT-F ;
-بهیچ:بهیچ NP-ANT-F ;
+بهیج:بهیج NP-ANT-F ;
 سیوگی:سیوگی NP-ANT-F ;
 دورسون:دورسون NP-ANT-F ;
-سيولاي:سيولاي NP-ANT-F ;
-ممه‌د:ممه‌د NP-ANT-M ;
-توركيا:توركيا NP-TOP ;
-مه‌ن:مه‌ن NP-TOP ;
+سیولای:سیولای NP-ANT-F ;
+ممەد:ممەد NP-ANT-M ;
+تورکیا:تورکیا NP-TOP ;
+یابان:یابان NP-TOP ;
+افغانستان:افغانستان NP-TOP ;
+أزربیجان:أزربیجان NP-TOP ;
+تانری:تانری NP-TOP ;
+من:من NP-TOP ;
+عوسمانیه:عوسمانیه NP-TOP ;
 قبرص:قبرص NP-TOP ;
-اناضلو:اناضلو NP-TOP ;
+اناضلو:ناضلو NP-TOP ;
 سامسونك:سامسونك NP-ORG ;
+حریت:حریت NP-ORG ;
 محکمه:محکمه NP-TOP ;
-غزى:غزى NP-TOP ;
+غزا:غزا NP-TOP ;
 قاراداغ:قاراداغ NP-TOP ;
 دیاربکر:دیاربکر NP-TOP ;
 لفنت:لفنت NP-TOP ;
-مدينه:مدينه NP-TOP ;
-نيل:نيل NP-TOP ;
+مدینه:مدینه NP-TOP ;
+نیل:نیل NP-TOP ;
 دجله:دجله NP-TOP ;
-كركوك:كركوك NP-TOP ;
+کرکوك:کرکوك NP-TOP ;
 موصل:موصل NP-TOP ;
-أربيل:أربيل NP-TOP ;
+أربیل:أربیل NP-TOP ;
 بغداد:بغداد NP-TOP ;
 عراق:عراق NP-TOP ;
 دوزخورماتو:دوزخورماتو NP-TOP ;
-كيفري:كيفري NP-TOP ;
-إيران:إيران NP-TOP ;
-تكريت:تكريت NP-TOP ;
-سليمانيه:سليمانيه NP-TOP ;
+کیفری:کیفری NP-TOP ;
+إیران:إیران NP-TOP ;
+تکریت:تکریت NP-TOP ;
+سلیمانیه:سلیمانیه NP-TOP ;
 دهوك:دهوك NP-TOP ;
 زاخو:زاخو NP-TOP ;
-كربلاء:كربلاء NP-TOP ;
+کربلاء:كربلاء NP-TOP ;
 نجف:نجف NP-TOP ;
 بابل:بابل NP-TOP ;
 أنبار:أنبار NP-TOP ;
 حله:حله NP-TOP ;
 تاوغ:تاوغ NP-TOP ;
 تزه:تزه NP-TOP ;
-اكسو:اكسو NP-TOP ;
+اقسو:اقسو NP-TOP ;
 فرات:فرات NP-TOP ;
-چاي:چاي NP-TOP ; 
+چای:چای NP-TOP ; 
 انقره:انقره NP-TOP ;
 إستطنبول:إستطنبول NP-TOP ;
-إزمير:إزمير NP-TOP ;
+إزمیر:إزمیر NP-TOP ;
 بورصا:بورصا NP-TOP ;
 سامسون:سامسون NP-TOP ;
-إدرينه:إدرينه NP-TOP ;
-تكيرداغ:تكيرداغ NP-TOP ;
+إدرینه:‌إدرینه NP-TOP ;
+تکیرداغ:تکیرداغ NP-TOP ;
 بولو:بولو NP-TOP ;
 چانکلا:چانکلا NP-TOP ;
 قونیا:قونیا NP-TOP ;
-أسكي% شهير:أسكي% شهير NP-TOP ;
-يوزكات:يوزكات NP-TOP ;
-يلاوا:يلاوا NP-TOP ;
-انطاليا:انطاليا NP-TOP ;
-مرسين:مرسين NP-TOP ;
-ماردين:ماردين NP-TOP ;
+أسکی% شهر:أسکی% شهیر NP-TOP ;
+یوزکات:یوزکات NP-TOP ;
+یلاوا:یلاوا NP-TOP ;
+انطالیا:انطالیا NP-TOP ;
+مرسین:مرسین NP-TOP ;
+ماردین:ماردین NP-TOP ;
 ادانا:ادانا NP-TOP ;
-اكسراي:اكسراي NP-TOP ;
+اقسرای:اقسرای NP-TOP ;
 چانقری:چانقری NP-TOP ;
 دنیزلی:دنیزلی NP-TOP ;
 موغلا:موغلا NP-TOP ;
@@ -3645,54 +4530,54 @@ LEXICON ProperNouns
 ماردین:ماردین NP-TOP ;
 شرناق:شرناق NP-TOP ;
 مانیسا:مانیسا NP-TOP ;
-قارا% دنیز:قارا% دنیز NP-TOP ;
+قارا% دینز:قارا% دنیز NP-TOP ;
 اق% دنیز:اق% دنیز NP-TOP ;
-مارمارا% دنیزی:مارمارا% دنیزی NP-TOP ;
-أگه‌% دنیزی:أگه‌% دنیزی NP-TOP ;
-بالک% أسیر:بالک% أسیر NP-TOP ;
+مارمارا% دنیزی :مارمارا% دنیزی NP-TOP ;
+أگە% دنیزی:أگه% دنیزی NP-TOP ;
+بالك% أسیر:بالك% أسیر NP-TOP ;
 مارماریس:مارماریس NP-TOP ;
-بودروم:بودروم NP-TOP ;
+بوردروم:بوردروم NP-TOP ;
 نیده:نیده NP-TOP ;
-اکسرای:اکسرای NP-TOP ;
+
 ریزه:ریزه NP-TOP ;
-کاراپوک:کاراپوک NP-TOP ;
+قارابوك:قارابوك NP-TOP ;
 ارتفین:ارتفین NP-TOP ;
 پاریس:پاریس NP-TOP ;
-إنگیلتره‌:إنگیلتره‌ NP-TOP ;
+إنگیلتره:إنگیلتره NP-TOP ;
 ارزروم:ارزروم NP-TOP ;
 امریکا:امریکا NP-TOP ;
-انطاكيا:انطاكيا NP-TOP ;
-المانيا:المانيا NP-TOP ;
+انطاکیا:انطاکیا NP-TOP ;
+المانیا:المانیا NP-TOP ;
 عمان:عمان NP-TOP ;
 امستردام:امستردام NP-TOP ;
-اريزون:اريزون NP-TOP ;
-ارجنتين:ارجنتين NP-TOP ;
+اریزون:اریزون NP-TOP ;
+ارجنتین:ارجنتین NP-TOP ;
 ارونوت:ارونوت NP-TOP ;
 بیاز% روسیا:بیاز% روسیا NP-TOP ;
-اشكبات:اشكبات NP-TOP ;
+اشکبات:اشکبات NP-TOP ;
 استانا:استانا NP-TOP ;
-اسيا:اسيا NP-TOP ;
-اثينا:اثينا NP-TOP ;
+اسیا:اسیا NP-TOP ;
+اتینا:اتنیا NP-TOP ;
 اتلانتا:اتلانتا NP-TOP ;
-اوروپا:اوروپا NP-TOP ;
+اوروپا:اوراپا NP-TOP ;
 استرالیا:استرالیا NP-TOP ;
 بحرین:بحرین NP-TOP ;
 بالکن:بالکن NP-TOP ;
 بالکنلار:بالکنلار NP-TOP ;
 باکو:باکو NP-TOP ;
-بلجیکیا:بلجیکیا NP-TOP ;
+بلجیکا:بلجیکا NP-TOP ;
 بلاگارد:بلاگارد NP-TOP ;
 برلین:برلین NP-TOP ;
 بیروت:بیروت NP-TOP ;
-بوسنا% هرسک:بوسنا% هرسک NP-TOP ;
+بوسنا% هرسك:بوسنا% هرسك NP-TOP ;
 برازیل:برازیل NP-TOP ;
 بولغریستان:بولغریستان NP-TOP ;
 بریستول:بریستول NP-TOP ;
 قدس:قدس NP-TOP ;
 کویت:کویت NP-TOP ;
 لوس% انجلوس:لوس% انجلوس NP-TOP ;
-کوبا:کوبا NP-TOP ;
-کوردیستان:کوردیستان NP-TOP ;
+کوپا:کوپا NP-TOP ;
+کوردیسان:کوردیستان NP-TOP ;
 لبنان:لبنان NP-TOP ;
 لافکشو:لافکشو NP-TOP ;
 لیفرپول:لیفرپول NP-TOP ;
@@ -3703,11 +4588,11 @@ LEXICON ProperNouns
 مالیزیا:مالیزیا NP-TOP ;
 مالتا:مالتا NP-TOP ;
 مانشستر:مانشستر NP-TOP ;
-مارمارا:مارمارا NP-TOP ;
+
 مریخ:مریخ NP-TOP ;
-ای:ای NP-TOP ;
+
 گونش:گونش NP-TOP ;
-مکسیکا:مکسیکا NP-TOP ;
+مکسیک:مکسیکا NP-TOP ;
 میامی:میامی NP-TOP ;
 موغلستان:موغلستان NP-TOP ;
 مولدوفا:مولدوفا NP-TOP ;
@@ -3715,9 +4600,9 @@ LEXICON ProperNouns
 موسکو:موسکو NP-TOP ;
 نیویورك:نیویورك NP-TOP ;
 نیجیریا:نیجیریا NP-TOP ;
-نرویچ:نرویچ NP-TOP ;
+نرویج:نرویج NP-TOP ;
 اوران:اوران NP-TOP ;
-اورتاکوی:اورتاکوی NP-TOP ;
+اورتورتاکوی:اورتورتاکوی NP-TOP ;
 کادی% کوی:کادی% کوی NP-TOP ;
 أوزپاکیستان:أوزپاکیستان NP-TOP ;
 پاکستان:پاکستان NP-TOP ;
@@ -3725,7 +4610,7 @@ LEXICON ProperNouns
 پکین:پکین NP-TOP ;
 پرو:پرو NP-TOP ;
 پولونیا:پولونیا NP-TOP ;
-پورتکیز:پورتکیز NP-TOP ;
+پورتگیز:پورتگیز NP-TOP ;
 روما:روما NP-TOP ;
 ریاض:ریاض NP-TOP ;
 رومانیا:رومانیا NP-TOP ;
@@ -3733,38 +4618,38 @@ LEXICON ProperNouns
 روملی:روملی NP-TOP ;
 صحراء:صحراء NP-TOP ;
 شام:شام NP-TOP ;
-سلانيك:سلانيك NP-TOP ;
-شيكاغو:شيكاغو NP-TOP ;
-سلوفيكيا:سلوفيكيا NP-TOP ;
-سيدنى:سيدنى NP-TOP ;
+سلانیك:سلانیك NP-TOP ;
+شیکاغو:شیکاغو NP-TOP ;
+سلوفیکیا:سلوفیکیا NP-TOP ;
+سیدنی:سدینی NP-TOP ;
 سودان:سودان NP-TOP ;
-سوريا:سوريا NP-TOP ;
+سوریا:سوریا NP-TOP ;
 سپارتا:سپارتا NP-TOP ;
 تاجیکستان:تاجیکستان NP-TOP ;
 طهران:طهران NP-TOP ;
-صومالى:صومالى NP-TOP ;
-تاشكنت:تاشكنت NP-TOP ;
-تايلند:تايلند NP-TOP ;
-تكساس:تكساس NP-TOP ;
-توكيو:توكيو NP-TOP ;
+صومالی:صومالی NP-TOP ;
+تاشکنت:تاشکنت NP-TOP ;
+تایلند:تایلند NP-TOP ;
+تکساس:تکساس NP-TOP ;
+توکیو:توکیو NP-TOP ;
 تونا:تونا NP-TOP ;
-تونوس:تونوس NP-TOP ;
-توركمنستان:توركمنستان NP-TOP ;
+تونونس:تونوس NP-TOP ;
+تورکمنستان:تورکمنستان NP-TOP ;
 توزلا:توزلا NP-TOP ;
 طرابلوس:طرابلوس NP-TOP ;
 اوغندا:اوغندا NP-TOP ;
-اوكرانيا:اوكرانيا NP-TOP ;
+اوکرانیا:اوکرانیا NP-TOP ;
 عمان:عمان NP-TOP ;
-اورغواي:اورغواي NP-TOP ;
-فيكتوريا:فيكتوريا NP-TOP ;
-فتيكان:فتيكان NP-TOP ;
-فنزويلا:فنزويلا NP-TOP ;
+اورغوای:اورغوای NP-TOP ;
+فیکتوریا:فیکتوریا NP-TOP ;
+فتیکان:فتیکان NP-TOP ;
+فنزویلا:فنزویلا NP-TOP ;
 فنوس:فنوس NP-TOP ;
-فيتنام:فيتنام NP-TOP ;
-واشينطون:واشينطون NP-TOP ;
-فيانيا:فيانيا NP-TOP ;
-يوغسلافيا:يوغسلافيا NP-TOP ;
-يونانيسان:يونانيسان NP-TOP ;
+فیتنام:فیتنام NP-TOP ;
+واشینطون:واشینطون NP-TOP ;
+فیانیا:فیانیا NP-TOP ;
+یوغسلافیا:یوغسلافیا NP-TOP ;
+یونانیستان:یونانیستان NP-TOP ;
 زامبیا:زامبیا NP-TOP ;
 چاویشستان:چاویشستان NP-TOP ;
 بیزانس:بیزانس NP-TOP ;
@@ -3772,10 +4657,10 @@ LEXICON ProperNouns
 داغستان:داغستان NP-TOP ;
 عربیستان:عربیستان NP-TOP ;
 شانلی% اورفا:شانلی% اورفا NP-TOP ;
-حزار% بحری:حزار% بحری NP-TOP ;
+حزار% بحری:حزار% حهری NP-TOP ;
 بحر% اسود:بحر% اسود NP-TOP ;
 یونان% بحری:یونان% بحری NP-TOP ;
-إيجا% بحري:إيجا% بحري NP-TOP ;
+إیجا% بحری:إیجا% بحری NP-TOP ;
 بلاروس:بلاروس NP-TOP ;
 روم:روم NP-TOP ;
 گریسون:گریسون NP-TOP ;
@@ -3783,59 +4668,90 @@ LEXICON ProperNouns
 جافا:جافا NP-TOP ;
 سینجان:سینجان NP-TOP ;
 قزلای:قزلای NP-TOP ;
-چینگاهای:چینگاهای NP-TOP ;
+چینگاهای:جینگاهای NP-TOP ;
 اورهون:اورهون NP-TOP ;
 افرین:افرین NP-TOP ;
 الماتا:الماتا NP-TOP ;
-إيدليب:إيدليب NP-TOP ;
-بيي% اوغلو:بيي% اوغلو NP-TOP ;
+إیدلیب:إیدلیب NP-TOP ;
+بیی% اوغلو:بیی% اوغلو NP-TOP ;
 چرکز:چرکز NP-TOP ;
 گوموش% هانه:گوموش% هانه NP-TOP ;
 موش:موش NP-TOP ;
 فلورنسا:فلورنسا NP-TOP ;
-سيفاس:سيفاس NP-TOP ;
-سوريا:سوريا NP-TOP ;
+سیفاس:سیفاس NP-TOP ;
+سوریا:سوریا NP-TOP ;
 جیزره:جیزره NP-TOP ;
 فان:فان NP-TOP ;
-توران:توران NP-TOP ;
+توران:وتران NP-TOP ;
 ترابزون:ترابزون NP-TOP ;
-إسرائيل:إسرائيل NP-TOP ;
+إسرائیل:إسرائیل NP-TOP ;
 مصر:مصر NP-TOP ;
 جزایر:جزایر NP-TOP ;
 بشیکتاش:بشیکتاش NP-TOP ;
-أسكى% شهير:أسكى% شهير NP-TOP ;
-هكارى:هكارى NP-TOP ;
+أسکی% شهیر:أسکی% شهیر NP-TOP ;
+هکاری:هکاری NP-TOP ;
 فرنسا:فرنسا NP-TOP ;
-أرزينجان:أرزينجان NP-TOP ;
+أزربیجان:أزربیجان NP-TOP ;
 فرانکفورت:فرانکفورت NP-TOP ;
-كوجاألى:كوجاألى NP-TOP ;
-چانکایا:چانکایا NP-TOP ;
+قوجاإلی:قوجاألی NP-TOP ;
+چانقایا:چانقایا NP-TOP ;
+اورتادوغو:اورتادوغو NP-TOP ;
+گونی% دوغو:گونی% دوغو NP-TOP ;
+چناقلا:چناقلا NP-TOP ;
+یوکسك% اوبا:یوکسك% اوبا NP-TOP ;
+مالتیا:مالتیا NP-TOP ;
+بالگ% اسیر:بالگ% اسیر NP-TOP ;
+گیرسون:گیرسون NP-TOP ;
+چین:چین NP-TOP ;
+عمرانیه:عمرانیه NP-TOP ;
+قزلای:قزلای NP-TOP ;
+قیسری:قیسری NP-TOP ;
+فرانسز:فرانسز NP-TOP ;
+غازی% عنتب:عازی% عنتب NP-TOP ;
+
+معممار:معممار NP-TOP ;
+إسپانیا:إسپانیا NP-TOP ;
+اماسیا:اماسیا NP-TOP ;
+بیکوز:بیکوز NP-TOP ;
+بوغازایچی:بوغازایچی NP-TOP ;
+بحر% الابیض:بحز% الابیض NP-TOP ;
+بسطاملی:بسطاملی NP-TOP ;
+لیبیا:لیبیا NP-TOP ; 
+إیطالیا:إیطالیا NP-TOP ;
+سودان:سودان NP-TOP ; 
+فلسطین:فلسطین NP-TOP ;
+‌أرمنیستان:‌أرمنیستان NP-TOP ;
+أولوداغ:أولوداغ NP-TOP ;
+
+ 
+
 !!!Orginzation!!
 ریال% مدرید:ریال% مدرید NP-ORG ;
 رویال:رویال NP-ORG ;
+قزلای:قزلای NP-ORG ;
 أپل:أپل NP-ORG ;
-ويندوز:ويندوز NP-ORG ; 
+ویندوز:ویندوز NP-ORG ; 
 لینوکس:لینوکس NP-ORG ;
-ديزنى:ديزنى NP-ORG ;
-أندرويد:أندرويد NP-ORG ; 
-نوكيا:نوكيا NP-ORG ;
-مايكروسوفت:مايكروسوفت NP-ORG ;
+دیزنی:دیزنی NP-ORG ;
+أندروید:أندروید NP-ORG ; 
+نوکیا:نوکیا NP-ORG ;
+مایکروسوفت:مایکروسوفت NP-ORG ;
 سامسونك:سامسونك NP-ORG ;
-هواوى:هواوى NP-ORG ;
+هواوی:هواوی NP-ORG ;
 گوگول:گوگول NP-ORG ;
 امازون:امازون NP-ORG ;
-إتش% إم% دي:إتش% إم% دي NP-ORG ;
-کروم:کروم NP-ORG ;
+إتش% إم% دی:إتش% إم% دی NP-ORG ;
+کروم:کورم NP-ORG ;
 فیسبوك:فیسبوك NP-ORG ;
 یاهو:یاهو NP-ORG ;
 ایفون:ایفون NP-ORG ;
 فوکس:فوکس NP-ORG ;
 تایم:تایم NP-ORG ;
 ویکیپیدیا:ویکیپیدیا NP-ORG ;
-الولایات% المتحده‌:الولایات% المتحده‌ NP-ORG ;
+الولایات% المتحده:الولایات% المتحده NP-ORG ;
 حماس:حماس NP-ORG ;
 طالبان:طالبان NP-ORG ;
-صاني:صاني NP-ORG ;
+صانی:صانی NP-ORG ;
 ویکیمدیا:ویکیمدیا NP-ORG ;
 فیکی% سالی:فیکی% سالی NP-ORG ;
 فیکی% فری:فیکی% فری NP-ORG ;
@@ -3849,51 +4765,54 @@ TBMM:TBMM NP-ORG ; !
 
 
 
-إسكندر:إسكندر NP-ANT-M ;
+إسکندر:إسکندر NP-ANT-M ;
 جبار:جبار NP-ANT-M ;
-ناتلايا:ناتلايا NP-ANT-F ;
-رمزى:رمزى NP-ANT-M ;
+ناتلایا:ناتلایا NP-ANT-F ;
+تانجو:تانجو NP-ANT-M ;
+رمزی:رمزی NP-ANT-M ;
 روسلان:روسلان NP-ANT-M ;
 جلال:جلال NP-ANT-M ;
-يلماز:يلماز NP-ANT-M ;
-إلياس:إلياس NP-ANT-M ;
+یلماز:یلماز NP-ANT-M ;
+إلیاس:إلیاس NP-ANT-M ;
 فازل:فازل NP-ANT-M ;
 رامزان:رامزان NP-ANT-M ;
-إيبراهيم:إيبراهيم NP-ANT-M ;
-تاييب:تاييب NP-ANT-M ;
-سليم:سليم NP-ANT-M ;
-حريه:حريه NP-ANT-F ;
-نوريه:نوريه NP-ANT-F ;
-دريه:دريه NP-ANT-F ;
+إیبراهیم:إیبراهیم NP-ANT-M ;
+تاییب:تاییب NP-ANT-M ;
+فیسل:فیسل NP-ANT-M ;
+سلیم:سلیم NP-ANT-M ;
+حریه:حریه NP-ANT-F ;
+نوریه:نوریه NP-ANT-F ;
+ارجمنت:ارجمنت NP-ANT-M ;
+دریه:دریه NP-ANT-F ;
 عبدالرحمان:عبدالرحمان NP-ANT-M ;
-عبدالرحیم:عبدالرحیم NP-ANT-M ;
+عبدالرحیم:حبدالرحیم NP-ANT-M ;
 عبدالله:عبدالله NP-ANT-M ;
-عبدالجليل:عبدالجليل NP-ANT-M ;
+عبدالجلیل:عبدالجلیل NP-ANT-M ;
 عبدالقادر:عبدالقادر NP-ANT-M ;
 زاکیر:زاکیر NP-ANT-M ;
-عبدالرشيد:عبدالرشيد NP-ANT-M ;
-زكيه:زكيه NP-ANT-F ;
-سامى:سامى NP-ANT-M ;
+عبدالرشید:عبدالرشید NP-ANT-M ;
+زکیه:زکیه NP-ANT-F ;
+سامی:سامی NP-ANT-M ;
 سامیه:سامیه NP-ANT-M ;
 إسحاق:إسحاق NP-ANT-M ;
 سلانه:سلانه NP-ANT-F ;
-نصرالدين:نصرالدين NP-ANT-M ;
-عبداللطيف:عبداللطيف NP-ANT-M ;
-عبدالجليل:عبدالجليل NP-ANT-M ;
-مريم:مريم NP-ANT-F ;
+نصرالدین:نصرالدین NP-ANT-M ;
+عبداللطیف:عبداللطیف NP-ANT-M ;
+عبدالجلیل:عبدالجلیل NP-ANT-M ;
+مریم:مریم NP-ANT-F ;
 بلال:بلال NP-ANT-M ;
 دجله:دجله NP-ANT-F ;
 فرات:فرات NP-ANT-F ;
-نيل:نيل NP-ANT-F ;
+نیل:نیل NP-ANT-F ;
 عبدالمناف:عبدالمناف NP-ANT-M ;
-عبدالمطليب:عبدالمطليب NP-ANT-M ;
-عبدالكريم:عبدالكريم NP-ANT-M ;
-عبدالحكيم:عبدالحكيم NP-ANT-M ;
-عبدالعزيز:عبدالعزيز NP-ANT-M ;
+عبدالمطلیب:عبدالمطلیب NP-ANT-M ;
+عبدالکریم:عبدالکریم NP-ANT-M ;
+عبدالحکیم:عبدالحکیم NP-ANT-M ;
+عبدالعزیز:عبدالعزیز NP-ANT-M ;
 عبدالعالم:عبدالعالم NP-ANT-M ;
 عبدو:عبدو NP-ANT-M ;
-رزى:رزى NP-ANT-M ;
-يونس:يونس NP-ANT-M ;
+رازی:رازی NP-ANT-M ;
+یونس:یونس NP-ANT-M ;
 أشرف:أشرف NP-ANT-M ;
 جنگیز:جنگیز NP-ANT-M ;
 عبدالخالق:عبدالخالق NP-ANT-M ;
@@ -3901,39 +4820,39 @@ TBMM:TBMM NP-ORG ; !
 نوره:نوره NP-ANT-F ;
 سزگی:سزگی NP-ANT-F ;
 نریمان:نریمان NP-ANT-F ;
-عایشه‌:عایشه‌ NP-ANT-F ;
+عایشه:عایشه NP-ANT-F ;
 فاتمه:فاتمه NP-ANT-F ;
 مولوده:مولوده NP-ANT-F ;
-رابيه:رابيه NP-ANT-F ;
-نيساء:نيساء NP-ANT-F ;
+رابیه:رابیه NP-ANT-F ;
+نیساء:نیساء NP-ANT-F ;
 شهرزاد:شهرزاد NP-ANT-F ;
 نبات:نبات NP-ANT-F ;
-ماريا:ماريا NP-ANT-F ;
-ريهاننه:ريهاننه NP-ANT-F ;
+ماریا:ماریا NP-ANT-F ;
+ریهاننه:ریهاننه NP-ANT-F ;
 أمل:أمل NP-ANT-F ;
-رمزيه:رمزيه NP-ANT-F ;
-ناجيه:ناجيه NP-ANT-F ;
-ناديه:ناديه NP-ANT-F ;
-ليلى:ليلى NP-ANT-F ;
-سلوى:سلوى NP-ANT-F ;
-إيديل:إيديل NP-ANT-F ;
-الميرا:الميرا NP-ANT-F ;
+رمزیه:رمزیه NP-ANT-F ;
+ناجیه:ناجیه NP-ANT-F ;
+نادیه:نادیه NP-ANT-F ;
+لیلی:لیلی NP-ANT-F ;
+سلوی:سلوی NP-ANT-F ;
+إیدیل:إیدیل NP-ANT-F ;
+المیرا:المیرا NP-ANT-F ;
 ألاا:ألاا NP-ANT-F ;
-ميرا:ميرا NP-ANT-F ;
+میرا:میرا NP-ANT-F ;
 سوسانا:سوسانا NP-ANT-F ;
-كارا:كارا NP-ANT-F ;
-بياز:بياز NP-ANT-F ;
-أمينه:أمينه NP-ANT-F ;
-حليمه:حليمه NP-ANT-F ;
+کارا:کارا NP-ANT-F ;
+بیاز:بیاز NP-ANT-F ;
+أمنیه:أمنیه NP-ANT-F ;
+حلیمه:حلیمه NP-ANT-F ;
 ای% گول:ای% گول NP-ANT-F ;
 حوریه:حوریه NP-ANT-F ;
 هاجر:هاجر NP-ANT-F ;
-أليف:أليف NP-ANT-F ;
+ألیف:ألیف NP-ANT-F ;
 ماقبوله:ماقبوله NP-ANT-F ;
 إقبال:إقبال NP-ANT-F ;
-التن% اي:التن% اي NP-ANT-F ;
+التن% ای:التن% ای NP-ANT-F ;
 اهو:اهو NP-ANT-F ;
-مليكه:مليكه NP-ANT-F ;
+ملیکه:ملیکه NP-ANT-F ;
 أسماء:أسماء NP-ANT-F ;
 الماس:الماس NP-ANT-F ;
 الما:الما NP-ANT-F ;
@@ -3941,20 +4860,20 @@ TBMM:TBMM NP-ORG ; !
 روقیه:روقیه NP-ANT-F ;
 زهراء:زهراء NP-ANT-F ;
 ساره:ساره NP-ANT-F ;
-ايجان:ايجان NP-ANT-F ;
-مارى:مارى NP-ANT-F ;
-اليسا:اليسا NP-ANT-F ;
+ایجان:ایجان NP-ANT-F ;
+ماری:ماری NP-ANT-F ;
+الیسا:الیسا NP-ANT-F ;
 اسل:اسل NP-ANT-F ;
 ألنا:ألنا NP-ANT-F ;
-الانا:الانا NP-ANT-F ;
-اسل:اسل NP-ANT-F ;
+الانا:لانا NP-ANT-F ;
+
 موگه:موگه NP-ANT-F ;
 خاتون:خاتون NP-ANT-F ;
 سوفیا:سوفیا NP-ANT-F ;
 زینپ:زینپ NP-ANT-F ;
 شن% ای:شن% ای NP-ANT-F ;
-یسری:یسری NP-ANT-F ;
-بشری:بشری NP-ANT-F ;
+یسرا:یسرا NP-ANT-F ;
+بشرا:بشرا NP-ANT-F ;
 سو:سو NP-ANT-F ;
 ناز:ناز NP-ANT-F ;
 دنیز:دنیز NP-ANT-F ;
@@ -3970,78 +4889,83 @@ TBMM:TBMM NP-ORG ; !
 محمد:محمد NP-ANT-M ;
 محمود:محمود NP-ANT-M ;
 حامید:حامید NP-ANT-M ;
-رؤوف:رؤوف NP-ANT-M ;
-راسيم:راسيم NP-ANT-M ;
-قاسيم:قاسيم NP-ANT-M ;
+رئووف:رئووف NP-ANT-M ;
+راسیم:راسیم NP-ANT-M ;
+قاسیم:قاسیم NP-ANT-M ;
 جاسم:جاسم NP-ANT-M ;
 صدام:صدام NP-ANT-M ;
-على:على NP-ANT-M ;
+علی:علی NP-ANT-M ;
 حسن:حسن NP-ANT-M ;
-حسين:حسين NP-ANT-M ;
-ولى:ولى NP-ANT-M ;
+حسین:حسین NP-ANT-M ;
+ولی:ولی NP-ANT-M ;
 طه:طه NP-ANT-M ;
-تاقى:تاقى NP-ANT-M ;
+تاقی:تاقی NP-ANT-M ;
 سروت:سروت NP-ANT-M ;
 رجب:رجب NP-ANT-M ;
 شعبان:شعبان NP-ANT-M ;
 عمر:عمر NP-ANT-M ;
-عثمان:عثمان NP-ANT-M ;
-إسماعيل:إسماعيل NP-ANT-M ;
-ياسين:ياسين NP-ANT-M ;
+عتمان:عتمان NP-ANT-M ;
+إسماعیل:إسماعیل NP-ANT-M ;
+یاسین:یاسین NP-ANT-M ;
 نعمان:نعمان NP-ANT-M ;
 دوالفقار:دوالفقار NP-ANT-M ;
-حاجى:حاجى NP-ANT-M ;
-صاحيب:صاحيب NP-ANT-M ;
+حاجی:حاجی NP-ANT-M ;
+صاحیب:صاحیب NP-ANT-M ;
 عباس:عباس NP-ANT-M ;
-مصطفى:مصطفى NP-ANT-M ;
-إيفان:إيفان NP-ANT-M ;
-اصلان:اصلان NP-ANT-M ;
-شاميل:شاميل NP-ANT-M ;
-بكير:بكير NP-ANT-M ;
-تيمور:تيمور NP-ANT-M ;
+مصطفی:مصطفی NP-ANT-M ;
+إیفان:إیفان NP-ANT-M ;
+أصلان:أصلان NP-ANT-M ;
+شامیل:شامیل NP-ANT-M ;
+بکیر:بکیر NP-ANT-M ;
+تیمور:تیمور NP-ANT-M ;
 روستم:روستم NP-ANT-M ;
-موسى:موسى NP-ANT-M ;
-عيسى:عيسى NP-ANT-M ;
-عبدالحميد:عبدالحميد NP-ANT-M ;
-عبدالمجيد:عبدالمجيد NP-ANT-M ;
-خليل:خليل NP-ANT-M ;
-جليل:جليل NP-ANT-M ;
-قيصر:قيصر NP-ANT-M ;
+موسی:موسی NP-ANT-M ;
+عیسی:عیسی NP-ANT-M ;
+عبدالحمید:عبدالحمید NP-ANT-M ;
+عبدالمجید:عبدالمجید NP-ANT-M ;
+خلیل:خلیل NP-ANT-M ;
+جلیل:جلیل NP-ANT-M ;
+قیصر:قیصر NP-ANT-M ;
 ارجان:ارجان NP-ANT-M ;
 اوغوز:اوغوز NP-ANT-M ;
 اردم:اردم NP-ANT-M ;
 حمزه:حمزه NP-ANT-M ;
-عبيده:عبيده NP-ANT-M ;
-ادام:ادام NP-ANT-M ;
-حليم:حليم NP-ANT-M ;
+عبیده:عبیده NP-ANT-M ;
+آدام:آدام NP-ANT-M ;
+حلیم:حلیم NP-ANT-M ;
 جعفر:جعفر NP-ANT-M ;
 احمد:احمد NP-ANT-M ;
-عبدالعزيز:عبدالعزيز NP-ANT-M ;
-علاءالدين:علاءالدين NP-ANT-M ;
-هاشيم:هاشيم NP-ANT-M ;
+عبدالعزیز:عبدالعزیز NP-ANT-M ;
+علاءالدین:علاءالدین NP-ANT-M ;
+هاشیم:هاشیم NP-ANT-M ;
 احمد:احمد NP-ANT-M ;
 فرات:فرات NP-ANT-M ;
-عبدالرشيد:عبدالرشيد NP-ANT-M ;
+عبدالرشید:عبدالرشید NP-ANT-M ;
 براق:براق NP-ANT-M ;
 توغرول:توغرول NP-ANT-M ;
 داود:داود NP-ANT-M ;
 عمران:عمران NP-ANT-M ;
 أنس:أنس NP-ANT-M ;
-سعيد:سعيد NP-ANT-M ;
-حكمت:حكمت NP-ANT-M ;
-أمين:أمين NP-ANT-M ;
+سعید:سعید NP-ANT-M ;
+حکمت:حکمت NP-ANT-M ;
+أمین:أمین NP-ANT-M ;
 نجات:نجات NP-ANT-M ;
 قهرمان:قهرمان NP-ANT-M ;
 ناجی:ناجی NP-ANT-M ;
 نجاح:نجاح NP-ANT-M ;
 حلیم:حلیم NP-ANT-M ;
-رياض:رياض NP-ANT-M ;
-يعقوب:يعقوب NP-ANT-M ;
-أدريس:أدريس NP-ANT-M ;
+ریاض:ریاض NP-ANT-M ;
+یعقوب:یعقوب NP-ANT-M ;
+أدریس:أدریس NP-ANT-M ;
 جمعه:جمعه NP-ANT-M ;
 اونور:اونور NP-ANT-M ;
 اساف:اساف NP-ANT-M ;
-أرن:أرن NP-ANT-M ;
+أرن:أون NP-ANT-M ;
+دمیرال:دمیرال NP-ANT-M ;
+عارف:عارف NP-ANT-M ;
+فتح% الله:فتح% الله NP-ANT-M ;
+رائف:رائف NP-ANT-M ;
+أردم:أردم NP-ANT-M ;
 
 
 
@@ -4072,160 +4996,233 @@ TBMM:TBMM NP-ORG ; !
 LEXICON Verbs
 اوخو:اوخو V-TV ;
 انلاد:انلاد V-TV ;
-ياز:ياز V-TV ;
+قابول% أت:قابول% أ V-TV ;
+یاز:یاز V-TV ;
+‌‌إشلە:إشلە V-TV ;
+پایلاش:پایلاش V-TV ;
+گوروش:گوروش V-IV ;
+بلیر:بلیر V-TV ;
+ارتر:ارتر V-TV ;
+دە:دە V-TV ;
+تماملا:تماملا V-TV ;
+یه:یه V-TV ;
+مناقشه% ات:مناقشه% ات V-TV ;
+دی:دی V-TV ;
+إیتیر:إیتیر V-TV ;
+اختار:اختار V-TV ;
+دولدور:دولدور V-TV ;
+أپار:أپار V-TV ;
 أوگرن:أوگرن V-TV ;
-اوی:اوی V-TV ;
+یارالا:یارالا V-TV ;
+دوشون:دوشون V-TV ;
+خالص% اول:خالص% اول V-IV ;
+اوی:اوی V-IV ;
+ياي:ياي V-TV ;
+إیستە:إیستە V-TV ;
+تمهله:تمهله V-TV ;
+جوش:جوش V-IV ;
+قیز:قیز V-IV ;
+دیله:دیله V-TV ;
+اچکلا:اچکلا V-TV ;
+داین:داین V-IV ;
+إیلارلە:إیلارلە V-IV ;
+ایشلە:ایشلە V-IV ;
+کسیش:کسیش V-IV ;
+یارات:یارات V-TV ;
+یوکلە:یوکلە V-TV ;
+إیرت% أت:أیرت% أت V-TV ;
+حیست:حیست V-TV ;
+توتوکلا:توتوکلا V-IV ;
+قارش:قارش V-IV ;
+أوزن:أوزن V-IV ;
+اوزان:اوزان V-IV ;
+قورو:قورو V-IV ;
+تطبیق% ات:تطبیق% ات V-TV ;
+اغر:اغر V-IV ;
+اغر:اغر V-TV ;
+هدفلە:هدفله V-TV ;
+یوجل:یوجل V-IV ;
 یرت:یرت V-TV ;
+گلیش:گلیش V-IV ;
+یوکلن:یوکلن V-IV ;
+بولون:بولون V-IV ;
+کورک:کورک V-IV ;
+أول:أول V-IV ;
+أکله:أکله V-TV ;
+حضر% ات:حضر% ات V-TV ;
+جزلاندر:جزلاندر V-TV ;
 بارش:بارش V-IV ;
+اتئل:اتئل V-IV ;
+باخ:باخ V-TV ;
+یوکسل: یوکسل V-IV ;
+أر:أر V-IV ;
+اولاش:اولاش V-IV ;
+بکله:بکله V-TV ;
+تطور:تطور V-TV ;
+یاشا:یاشا V-TV ;
+إشلن:إشلن V-IV ;
+أوده:أوده V-TV ;
+چخار:چخار V-TV ;
 إعلان% ات:إعلان% ات V-TV ;
+دەگیشتیر:دەگیشتیر V-TV ;
+دون:دون V-IV ;
+بحست:بحست V-TV ;
+ایرل:ایرل V-IV ;
+سون:سون V-TV ;
+دیین:دیین V-TV ;
 دور:دور V-IV ;
+دیرلندیر:دیرلندیر V-TV ;
 گیون:گیون V-IV ;
-أويان:أويان V-IV ;
-إيزاح% ات:إيزاح% ات V-TV ;
+دویر:دویر V-TV ;
+أویان:أویان V-IV ;
+یاپ:یاپ V-TV ;
+إیزاح% ات:إیزاح% ات V-TV ;
 مشغول% اول:مشغول% اول V-IV ;
 يات:يات V-IV ;
+یوروت:یوروت V-TV ;
 دوش:دوش V-IV ;
 دییل:دییل V-IV ;
-أيله:أيله V-TV ;
+أیلە:أیلە V-TV ;
 سورو:سورو V-TV ;
 اجی:اجی V-IV ;
 آت:آت V-TV ;
 انلاش:انلاش V-IV ;
 سول:سول V-IV ;
-يغش:يغش V-IV ;
+یغش:یغش V-IV ;
 قارا:قارا V-IV ;
-حمایه‌% ات:حمایه‌% ات V-TV ;
+حمایە% ات:حمایە% ات V-TV ;
 گچ:گچ V-IV ;
 خاترلا:خاترلا V-TV ;
 قوی:قوی V-TV ;
 گچ:گچ V-TV ;
-إنجله:إنجله V-IV ;
+إنجلە:إنجلە V-IV ;
 تنزیم% ات:تنزیم% ات V-IV ;
-يان:يان V-IV ;
-گرك:گرك V-IV ;
+یان:یان V-IV ;
+گرک:گرک V-IV ;
 ساغلا:ساغلا V-IV ;
 قال:قال V-IV ;
-گچیر:گچیر V-IV ;
+گچیر:كچیر V-IV ;
 گچیرل:گچیرل V-TV ;
 تانش:تانش V-TV ;
-أوزتله:أوزتله V-TV ;
+‌أوزتلە:أوزتلە V-TV ;
 إن:إن V-IV ;
 چخ:چخ V-IV ;
-دا:دا V-TV ;
-إيشيت:إيشيت V-TV ;
-سيو:سيو V-TV ;
+دە:ده V-TV ;
+إیشیت:إیشیت V-TV ;
+سیو:سیو V-TV ;
 چخارت:چخارت V-TV ;
 حازرلا:حازرلا V-TV ;
-گرچکله:گرچکله V-IV ;
-گرچکلهش:گرچکلهش V-IV ;
-مشارکه% ات:مشارکه% ات V-IV ;
+گرچکلە:گرچکلە V-IV ;
+گرچکلهش:گرچکلش V-IV ;
+مشارکە% ات:مشارکە% ات V-IV ;
 دوزله:دوزله V-TV ;
 إیچ:إیچ V-TV ;
 دینله:دینله V-TV ;
-گیت:گیت V-IV ;
+گید:گید V-IV ;
 گورون:گورون V-IV ;
-إيسته:إيسته V-TV ;
+إیسته:إیسته V-TV ;
 إیشیت:إیشیت V-TV ;
 اوینا:اوینا V-TV ;
 اوینا:اوینا V-IV ;
 گول:گول V-IV ;
 قاچ:قاچ V-IV ;
-ال:ال V-TV ;
+الا:الا V-TV ;
+وار:وار V-IV ;
 ساخلان:ساخلان V-IV ;
 قاخ:قاخ V-IV ;
 اوتو:اوتو V-IV ;
-گيت:گيت V-IV ;
 گل:گل V-IV ;
 سلاملا:سلاملا V-TV ;
-يه:يه V-TV ;
-اچ:اچ V-TV ;
+یه:یه V-TV ;
+
 أوتور:أوتور V-IV ;
 باخ:باخ V-IV ;
 قوخلا:قوخلا V-TV ;
-إفير:إفير V-TV ;
-سيل:سيل V-TV ;
-ياديدان% چاخرت:ياديدان% چاخرت V-TV ;
-مكله:مكله V-IV ;
-أسير% دوش:أسير% دوش V-IV ;
+إفیر:إفیر V-TV ;
+سیل:سیل V-TV ;
+یادیدان% چاخرت:یادیدان% چاخرت V-TV ;
+مکله:مکله V-IV ;
+أسیر% دوش:أسیر% دوش V-IV ;
 رام% ات:رام% ات V-TV ;
-ئت:ئت V-TV ;
-إديل:إديل V-IV ;
+ئت:ئ{T} V-TV ;   ! "do/make"
+گیت:گی{T} V-IV ; ! "go"
+إدیل:إدیل V-IV ;
 حساب% صور:حساب% صور V-IV ;
 حمد% ئت:حمد% ئت V-IV ;
-إيمان% ئت:إيمان% ئت V-IV ;
-تشكور% ئت:تشكور% ئت V-IV ;
-ديقّات% ئت:ديقّات% ئت V-IV ;
-بيربيريزله% گيت:بيربيريزله% گيت V-IV ;
-تعريف% ئت:تعريف% ئت V-TV ;
+إیمان% ئت:إیمان% ئت V-IV ;
+تشکور% ئت:تشکور% ئت V-IV ;
+دیقات% ئت:دیقات% ئت V-IV ;
+بیربیریزله% گیت:بیربیریزله% گیت V-IV ;
+تعریف% ئت:تعریف% ئت V-TV ;
 قابول% ئت:قابول% ئت V-TV ;
 إعلان% ئت:إعلان% ئت V-TV ;
-تصوير% ئت:تصوير% ئت V-TV ;
-عزيت% ئت:عزيت% ئت V-IV ;
-ناماز% قيل:ناماز% قيل V-IV ;
-ديّريلت:ديّريلت V-TV ;
-بايازلات:بايازلات V-TV ;
-تعين% ئت:تعين% ئت V-TV ;
+تصویر% ئت:تصویر% ئت V-TV ;
+عزیت% ئت:عزیت% ئت V-IV ;
+ناماز% قیل:ناماز% قیل V-IV ;
+دیریلت:دیریلت V-TV ;
+بایازلات:بایازلات V-TV ;
+تعین% ئت:تعین% ئت V-TV ;
 اچغ:اچغ V-IV ;
-اوينات:اوينات V-TV ;
+اوینات:اوینات V-TV ;
 اوچورت:اوچورت V-TV ;
-اخئت:اخئت V-TV ;
-أرّيت:أرّيت V-TV ;
+آخئت:اخئت V-TV ;
+أریت:أریت V-TV ;
 باشلات:باشلات V-TV ;
 باشلا:باشلا V-IV ;
-ئنكار% ئت:ئنكار% ئت V-TV ;
+ئنکار% ئت:ئنکار% ئت V-TV ;
 خبر% صال :خبر% صال V-IV ;
-ياواش:ياواش V-IV ;
+یاواش:یاواش V-IV ;
 سوت% ور:سوت% ور V-IV ;
 اوزات:اوزات V-TV ;
-پيشمان% اول:پيشمان% اول V-IV ;
-خيال% ئت:خيال% ئت V-TV ;
-فازلاى% چغ:فازلاى% چغ V-IV ;
-تقدير% ئت:تقدير% ئت V-TV ;
+پیشمان% اول:پیشمان% اول V-IV ;
+خیال% ئت:خیال% ئت V-TV ;
+فازلای% چخ:فازلای% چخ V-IV ;
+تقدیر% ئت:تقدیر% ئت V-TV ;
 باتر:باتر V-TV ;
 أحترام% ئت:أحترام% ئت V-IV ;
 گورله:گورله V-IV ;
 چارپش:چارپش V-TV ;
-خوطّه% قور:خوطّه% قور V-IV ;
+خوطه% قور:خوطه% قور V-IV ;
 بله% إله:بله% إله V-IV ;
 اغارت:اغارت V-TV ;
 ادمله:ادمله V-IV ;
 تورشو:تورشو V-IV ;
-يرينه% گتير:يرينه% گتير V-TV ;
-بيشير:بيشير V-TV ;
+یرینه% گتیر:یرینه% گتیر V-TV ;
+بیشیر:بیشیر V-TV ;
 قورخوت:قورخوت V-TV ;
-سخشتير:سخشتير V-TV ;
-اويدور:اويدور V-TV ;
-بيتير:بيتير V-TV ;
+سخشتیر:سخشتیر V-TV ;
+اویدور:اویدور V-TV ;
+بیتیر:بیتیر V-TV ;
 گور:گور V-IV ;
 بولوشتور:بولوشتور V-TV ;
 چئلدر:چئلدر V-TV ;
 خوروزلان:خوروزلان V-IV ;
-كوپر:كوپر V-TV ;
+کوپر:کوپر V-TV ;
 نازلان:نازلان V-IV ;
 قورخ:قورخ V-IV ;
 سسلن:سسلن V-IV ;
 اوزغلاش:اوزغلاش V-IV ;
-ياخنلش:ياخنلش V-IV ;
-الّ:الّ V-TV ;
+یاخنلاش:یاخنلاش V-IV ;
+ال:ال V-TV ;
 اچ:اچ V-TV ;
-كس:كس V-TV ;
+کس:کس V-TV ;
 إت:إت V-TV ;
 قاپ:قاپ V-TV ;
 اپار:اپار V-TV ;
-بيل:بيل V-TV ;
+بیل:بیل V-TV ;
 بیت:بیت V-IV ;
 قابول% أت:قابول% أت V-TV ;
-كشفت:كشفت V-TV ;
-قير:قير V-TV ;
-قيل:قيل V-TV ;
-قيّرخ:قيّرخ V-TV ;
+کشفت:کشفت V-TV ;
+قیر:قیر V-TV ;
+قیل:قیل V-TV ;
+قیرخ:قیرخ V-TV ;
 أت:أت V-TV ;
-كيرلت:كيرلت V-TV ;
+کیرلت:کیرلت V-TV ;
 قاو:قاو V-TV ;
-قووي:قووي V-TV ;
+قووی:قووی V-TV ;
 قور:قور V-TV ;
-قولاّن:قولاّن V-TV ;
-قور:قور V-TV ;
+قولان:قولان V-TV ;
+
 إستخدام% إت:إستخدام% إت V-TV ;
 ناقلت:ناقلت V-TV ;
 الئش:الئش V-TV ;
@@ -4237,45 +5234,45 @@ LEXICON Verbs
 صال:صال V-TV ;
 ور:ور V-TV ;
 سات:سات V-TV ;
-سَو:سَو V-TV ;
+سو:وس V-TV ;
 سای:سای V-TV ;
 سچ:سچ V-TV ;
 کوپ:کوپ V-IV ;
 سر:سر V-TV ;
 سرپ:سرپ V-TV ;
-سيخ:سيخ V-TV ;
-سيلك:سيلك V-TV ;
+سیخ:سیخ V-TV ;
+سیلك:سیلك V-TV ;
 سوك:سوك V-TV ;
 سوی:سوی V-TV ;
 سور:سور V-TV ;
-سيپير:سيپير V-TV ;
-تاراش% أت:تاراش% أت V-TV ;
-تَرك%أت:تَرك%أت V-TV ;
+سیپیر:سیپیر V-TV ;
+تاراش% أت:تاراش% إت V-TV ;
+ترك%أت:ترك%أت V-TV ;
 توت:توت V-TV ;
 اونوت:اونوت V-TV ;
 اوت:اوت V-TV ;
 أوز:أوز V-TV ;
-چيم:چيم V-TV ;
-وَر:وَر V-TV ;
-يخ:يخ V-TV ;
+چیم:چیم V-TV ;
+ور:ور V-TV ;
+یخ:یخ V-TV ;
 قونوش:قونوش V-TV ;
-يرت:يرت V-TV ;
-يوغور:يوغور V-TV ;
-يور:يور V-TV ;
-يورول:يورول V-IV ;
-يُوم:يُوم V-TV ;
+یرت:یرت V-TV ;
+یوغور:یوغور V-TV ;
+یور:یور V-TV ;
+یورول:یورول V-IV ;
+یوم:یوم V-TV ;
 گل:گل V-IV ;
 اخ:اخ V-IV ;
 یان:یان V-IV ;
 چال:چال V-TV ;
 دوش:دوش V-IV ;
 اول:اول V-IV ;
-آولى:آولى V-TV ;
+آولی:آولی V-TV ;
 ازلات:ازلات V-TV ;
 چاك:چاك V-TV ;
 قان:قان V-IV ;
 دوزلت:دوزلت V-TV ;
-إيشلت:إيشلت V-TV ;
+إیشلت:إیشلت V-TV ;
 ألگلی:ألگلی V-TV ;
 گزدیر:گزدیر V-TV ;
 إنان:إنان V-IV ;
@@ -4285,9 +5282,9 @@ LEXICON Verbs
 تانشتر:تانشتر V-TV ;
 هوالندر:هوالندر V-TV ;
 إناندر:إناندر V-TV ;
-تعيين% ات:تعيين% ات V-TV ;
-ياترت:ياترت V-TV ;
-تعمير% أت:تعمير% أت V-TV ;
+تعیین% ات:تعیین% ات V-TV ;
+یاترت:یاترت V-TV ;
+تعمیر% أت:تعمیر% أت V-TV ;
 رغبت% أت:رغبت% أت V-IV ;
 گز:گز V-IV ;
 بوروش:بوروش V-IV ;
@@ -4298,39 +5295,39 @@ LEXICON Verbs
 گومول:گومول V-IV ;
 باش% اگ:باش% اگ V-IV ;
 حیساب% سور:حیساب% سور V-IV ;
-أسير% دوش:أسير% دوش V-IV ;
+أسیر% دوش:أسیر% دوش V-IV ;
 حمد% أت:حمد% أت V-IV ;
-إيمان% أت:إيمان% أت V-IV ;
-قابول% أت:قابول% أت V-TV ;
-تسوير% أت:تسوير% أت V-TV ;
-عزيت% أت:عزيت% أت V-IV ;
-أوميد% أت:أوميد% أت V-IV ;
-ناماز% قيل:ناماز% قيل V-IV ;
-ادملى:ادملى V-IV ;
-ادىم% ات:ادىم% ات V-IV ;
+إیمان% أت:إیمان% أت V-IV ;
+قابول% أت:قابول% إت V-TV ;
+تسویر% أت:تسویر% أت V-TV ;
+عزیت% إت:عزیت% إت V-IV ;
+أومید% أت:أومید% أت V-IV ;
+ناماز% قیل:ناماز% قیل V-IV ;
+ادملی:ادملی V-IV ;
+ادم% آت:ادم% آت V-IV ;
 تورش:تورش V-IV ;
 باتر:باتر V-TV ;
-خزمت% أت:خزمت% أت V-IV ;
-شيشير:شيشير V-TV ;
+خزمت% إت:خزمت% إت V-IV ;
+شیشیر:شیشیر V-TV ;
 مجبور% أت:مجبور% أت V-TV ;
 مجبور% أول:مجبور% أول V-IV ;
-بيتير:بيتير V-TV ;
+بیتیر:بیتیر V-TV ;
 بولوشتور:بولوشتور V-TV ;
 بروشتور:بروشتور V-TV ;
 ایچیر:ایچیر V-IV ;
 اچل:اچل V-IV ;
 گچیر:گچیر V-TV ;
-بولوشتور:بولوشتور V-TV ;
+
 چالدر:چالدر V-TV ;
 اغرلاش:اغرلاش V-IV ;
 خورزلان:خورزلان V-IV ;
 کوپر:کوپر V-TV ;
 گوچت:گوچت V-IV ;
-پیسلن:پیسلن V-IV ;
+پیلسن:پیلسن V-IV ;
 نازلان:نازلان V-IV ;
 قورخ:قورخ V-IV ;
 سسلن:سسلن V-IV ;
-اوزاغلش:اوزاغلش V-IV ;
+اوزاغلاش:اوزاغلاش V-IV ;
 یاخنلش:یاخنلش V-IV ;
 قاپ:قاپ V-TV ;
 قیل:قیل V-IV ;
@@ -4343,11 +5340,11 @@ LEXICON Verbs
 قوشات:قوشات V-TV ;
 لاغوت:لاغوت V-IV ;
 ناقلت:ناقلت V-TV ;
-اولچ:اولچ V-TV ;
+اولج:اولچ V-TV ;
 اوپ:اوپ V-TV ;
 أور:أور V-TV ;
 أورت:أورت V-TV ;
-أوى:أوى V-TV ;
+أوی:أوی V-TV ;
 رددت:رددت V-TV ;
 رسمت:رسمت V-TV ;
 سال:سال V-TV ;
@@ -4358,38 +5355,38 @@ LEXICON Verbs
 سر:سر V-TV ;
 سرپ:سرپ V-TV ;
 سیو:سیو V-TV ;
-سيك:سيك V-TV ;
-سيخ:سيخ V-TV ;
-سيل:سيل V-TV ;
-سيلك:سيلك V-TV ;
+سیك:سیك V-TV ;
+سیخ:سیخ V-TV ;
+سیل:سیل V-TV ;
+سیلك:سیلك V-TV ;
 سوك:سوك V-TV ;
 سور:سور V-TV ;
-سوي:سوي V-IV ;
+سوی:سوی V-IV ;
 سوز:سوز V-TV ;
 تاك:تاك V-TV ;
 تارت:تارت V-TV ;
 ضاد:ضاد V-TV ;
-تمسيل% ات:تمسيل% ات V-TV ;
+تمسیل% ات:تمسیل% ات V-TV ;
 تپ:تپ V-IV ;
 ترکت:ترکت V-TV ;
 تك:تك V-IV ;
-توكت:توكت V-TV ;
+توکت:توکت V-TV ;
 توت:توت V-TV ;
 اونوت:اونوت V-TV ;
 اوت:اوت V-TV ;
-أوزله:أوزله V-IV ;
+أوزلە:أوزلە V-IV ;
 ور:ور V-TV ;
-يار:يار V-TV ;
-ياي:ياي V-TV ;
-ياز:ياز V-TV ;
+یار:یار V-TV ;
+یای:یای V-TV ;
+یاز:یاز V-TV ;
 یخ:یخ V-TV ;
 یرت:یرت V-TV ;
 یوغور:یوغور V-TV ;
 یورول:یورول V-TV ;
 یوم:یوم V-TV ;
-یوز:یوز V-IV ;
-اچ:اچ V-TV ;
-اف% ات:اف% ات V-TV ;
+یوز:ویز V-IV ;
+
+اف% أت:اف% أت V-TV ;
 ایدنلت:ایدنلت V-TV ;
 عزمت:عزمت V-IV ;
 الش:الش V-IV ;
@@ -4402,7 +5399,8 @@ LEXICON Verbs
 بین:بین V-IV ;
 بوغ:بوغ V-TV ;
 بول:بول V-TV ;
-بورچلان:بورچلان V-IV ;
+تاپ:تاپ V-TV ;
+بورچلان:بوررچلان V-IV ;
 باشار:باشار V-TV ;
 بوشالت:بوشالت V-TV ;
 بوز:بوز V-TV ;
@@ -4413,6 +5411,7 @@ LEXICON Verbs
 چات:چات V-TV ;
 چك:چك V-TV ;
 چویر:چویر V-TV ;
+ویر:ویر V-TV ;
 چرپ:چرپ V-TV ;
 دکور% ات:دکور% ات V-IV ;
 داغت:داغت V-TV ;
@@ -4421,19 +5420,19 @@ LEXICON Verbs
 داگش:داگش V-IV ;
 دال:دال V-TV ;
 داوام% ات:داوام% ات V-IV ;
-تیک:تیک V-TV ;
+تیك:تیك V-TV ;
 دوز:دوز V-TV ;
 أز:أز V-TV ;
-توک:توک V-TV ;
+توك:توك V-TV ;
 دولاش:دولاش V-TV ;
 دوشون:دوشون V-TV ;
-إيگت:إيگت V-IV ;
+أیکت:إیکت V-IV ;
 أك:أك V-TV ;
 أم:أم V-TV ;
 أمرت:أمرت V-IV ;
 گتیر:گتیر V-TV ;
 أس:أس V-IV ;
-جوتله:جوتله V-TV ;
+جوتلە:جوتلە V-TV ;
 أز:أز V-TV ;
 گوم:گوم V-TV ;
 گوندر:گوندر V-TV ;
@@ -4442,17 +5441,17 @@ LEXICON Verbs
 گوون:گوون V-IV ;
 خبرلش:خبرلش V-IV ;
 حالت:حالت V-TV ;
-حبست:حبست V-TV ;
+حپست:حپست V-TV ;
 قینت:قینت V-TV ;
 هازمت:هازمت V-TV ;
 حیست:حیست V-TV ;
 حوکمت:حوکمت V-IV ;
-إعادى% أت:إعادى% أت V-TV ;
-إچ:إچ V-TV ;
+إعادە% أت:إعادە% أت V-TV ;
+إچ:إج V-TV ;
 أن:أن V-IV ;
 إنجیت:إنجیت V-TV ;
-دیشلی:دیشلی V-TV ;
-إیشت:إیشت V-TV ;
+دیشلە:دیشلە V-TV ;
+إیشیت:إیشیت V-TV ;
 إیت:إیت V-TV ;
 إعتراف% ات:إعتراف% ات V-TV ;
 قاخ:قاخ V-IV ;
@@ -4460,125 +5459,131 @@ LEXICON Verbs
 قاتلت:قاتلت V-TV ;
 قاور:قاور V-TV ;
 قاز:قاز V-TV ;
-قاور:قاور V-TV ;
+
 قایر:قایر V-TV ;
 قازان:قازان V-TV ;
 چالن:چالن V-IV ;
 قوالا:قوالا V-TV ;
 گیر:گیر V-TV ;
 گیر:گیر V-IV ;
-إچ:إچ V-TV ;
+إج:إچ V-TV ;
 اوخو:اوخو V-TV ;
 قاچ:قاچ V-IV ;
 اوخوت:اوخوت V-TV ;
 اوسور:اوسور V-IV ;
-سلی:سلی V-TV ;
-بگلی:بگلی V-TV ;
+سلە:سلە V-TV ;
+بکلە:بکلە V-TV ;
 قالدر:قالدر V-TV ;
 اختار:اختار V-TV ;
 الشتر:الشتر V-TV ;
-قيدت:قيدت V-TV ;
-تسجيل% ات:تسجيل% ات V-TV ;
+قیدت:قیدت V-TV ;
+تسجیل% ات:تسجیل% ات V-TV ;
 انلا:انلا V-TV ;
 انلات:انلات V-TV ;
-یادلی:یادلی V-TV ;
+یادلە:یادلە V-TV ;
 اپار:اپار V-TV ;
-عایرلی:عایرلی V-TV ;
+عایرلە:عایرلە V-TV ;
 ایر:ایر V-TV ;
-بسلی:بسلی V-TV ;
-دستکلی:دستکلی V-TV ;
-دیلیملی:دیلیملی V-TV ;
-دیدیکلی:دیدیکلی V-TV ;
-دیرسگلی:دیرسگلی V-TV ;
-دیشلی:دیشلی V-TV ;
-دولا:دولا V-TV ;
+بسلە:بسلە V-TV ;
+دستکلە:دستکلە V-TV ;
+دیلیملە:دیلیملە V-TV ;
+دیدیکلە:دیدیکلە V-TV ;
+دیرسکلە:دیرسکلە V-TV ;
+دیشلە:دیشلە V-TV ;
+دولا:دولا V-TV;
 دولاندر:دولاندر V-TV ;
 دوغرلا:دوغرلا V-TV ;
-دوشی:دوشی V-TV ;
-دوزلی:دوزلی V-TV ;
-دوگملی:دوگملی V-TV ;
-کلیتلی:کلیتلی V-TV ;
-کیرلی:کیرلی V-TV ;
-قازغلی:قازغلی V-TV ;
-کلورلی:کلورلی V-TV ;
-قوخلی:قوخلی V-TV ;
+دوشە:دوشە V-TV ;
+دوزلە:دوزلە V-TV ;
+دوگملە:دوگملە V-TV ;
+کلیتلە:کلیتلە V-TV ;
+کیرلە:کیرلە V-TV ;
+قازغلا:قازغلا V-TV ;
+کلورلا:کلورلا V-TV ;
+قوخلا:قوخلا V-TV ;
 قوپارت:قوپارت V-TV ;
-کورلی:کورلی V-TV ;
-کورکلی:کورکلی V-TV ;
-قوجاغلی:قوجاغلی V-TV ;
+کورلە:کورلە V-TV ;
+کورکلە:کورکلە V-TV ;
+قوجاغلا:قوجاغلا V-TV ;
 قورتاد:قورتاد V-TV ;
-لعنتلی:لعنتلی V-TV ;
-ختملی:ختملی V-TV ;
-موهرلی:موهرلی V-TV ;
-نیتلی:نیتلی V-IV ;
-أودى:أودى V-TV ;
-ناصيحت% ات:ناصيحت% ات V-TV ;
-إيت:إيت V-IV ;
-اورتالى:اورتالى V-TV ;
-اوينا:اوينا V-TV ;
-دمتلی:دمتلی V-TV ;
-دملی:دملی V-TV ;
-درجلی:درجلی V-IV ;
-دنی:دنی V-TV ;
-دنگلی:دنگلی V-IV ;
-دستگلی:دستگلی V-TV ;
-اوينات:اوينات V-TV ;
-أوزلى:أوزلى V-TV ;
-پارچلی:پارچلی V-TV ;
-پایلی:پایلی V-TV ;
-پوستلی:پوستلی V-TV ;
-پودرلی:پودرلی V-TV ;
-رندلی:رندلی V-TV ;
-ساقتلی:ساقتلی V-TV ;
-ساخلی:ساخلی V-TV ;
+لعنتلە:لعنتلە V-TV ;
+ختملە:ختملە V-TV ;
+موهرلە:موهرله V-TV ;
+نیتلە:نیتلە V-IV ;
+أودە:أودە V-TV ;
+ناصیحت% ات:ناصیحت% ات V-TV ;
+إیت:إیت V-IV ;
+اورتالا:اورتالا V-TV ;
+اوینا:اوینا V-TV ;
+دمتلە:دمتلە V-TV ;
+دملە:دملە V-TV ;
+درجلە:درجلە V-IV ;
+دنە:دنە V-TV ;
+دنگلە:دنگلە V-IV ;
+دستگلە:دستگلە V-TV ;
+اوینات:اوینات V-TV ;
+أوزلە:أوزلە V-TV ;
+پارچلا:پارچلا V-TV ;
+پایلا:پایلا V-TV ;
+پوستلا:پوستلا V-TV ;
+پودرلا:پودرلا V-TV ;
+رندلە:رندلە V-TV ;
+ساقتلە:ساقتلە V-TV ;
+ساخلا:ساخلا V-TV ;
 سالا:سالا V-TV ;
-شارتلی:شارتلی V-TV ;
+شارتلە:شارتلە V-TV ;
 ساور:ساور V-TV ;
 سرپیشتیر:سرپیشتیر V-TV ;
-سفرلی:سفرلی V-TV ;
-شفرلی:شفرلی V-TV ;
-سیلاحلی:سیلاحلی V-TV ;
-سیلکلی:سیلکلی V-TV ;
-سنی:سنی V-TV ;
-سنفلی:سنفلی V-TV ;
-سرالی:سرالی V-TV ;
+سفرلە:سفرلە V-TV ;
+شفرلە:شفرلە V-TV ;
+سیلاحلا:سیلاحلا V-TV ;
+سیلکلە:سیلکلە V-TV ;
+سنە:سنە V-TV ;
+سنفلە:سنفلە V-TV ;
+سرالا:سرالا V-TV ;
 سیر:سیر V-TV ;
 سومور:سومور V-TV ;
-سوج:سوج V-TV ;
-سوچلی:سوچلی V-TV ;
+سوچ:سوچ V-TV ;
+سوچلە:سوچلە V-TV ;
 سولا:سولا V-TV ;
-سورکلی:سورکلی V-TV ;
-تانمی:تانمی V-TV ;
-تاری:تاری V-TV ;
-داشلی:داشلی V-TV ;
-تکملی:تکملی V-TV ;
-اعادی% ات:اعادی% ات V-TV ;
-تمهلی:تمهلی V-TV ;
-پکلی:پکلی V-TV ;
-ترسلی:ترسلی V-TV ;
-توزلی:توزلی V-TV ;
-اوغرلی:اوغرلی V-TV ;
-یاغلی:یاغلی V-TV ;
-یاغلملی:یاغلملی V-TV ;
-یالی:یالی V-TV ;
+سورکلە:سورکلە V-TV ;
+تانمە:تانمە V-TV ;
+تارا:تارا V-TV ;
+داشلا:داشلا V-TV ;
+تکملە% ات:تکملە% ات V-TV ;
+إعادە% ات:إعادە% ات V-TV ;
+تمهلە:تمهلە V-TV ;
+پکلە:پکلە V-TV ;
+ترسلە:ترسلە V-TV ;
+توزلا:توزلا V-TV ;
+اوغرلا:اوغرلا V-TV ;
+یاغلا:یاغلا V-TV ;
+یاغلاما:یاغلاما V-TV ;
+یالا:یالا V-TV ;
 یالنلا:یالنلا V-TV ;
-یامی:یامی V-TV ;
-یارلی:یارلی V-TV ;
+یاما:یاما V-TV ;
+یارلا:یارلا V-TV ;
 یاشا:یاشا V-IV ;
-یاغملی:یاغملی V-TV ;
-یالی:یالی V-TV ;
-یالنلی:یالنلی V-TV ;
-یامی:یامی V-TV ;
-یاخی:یاخی V-TV ;
-یوخله:یوخله V-TV ;
-یولاه:یولاه V-TV ;
-یوکله:یوکله V-TV ;
-یومرکله:یومرکله V-TV ;
-زهیرله:زهیرله V-TV ;
-زینجیرلی:زینجیرلی V-TV ;
-زورلی:زورلی V-TV ;
-اخسی:اخسی V-IV ;
-بليرت:بليرت V-TV ;
+یاغملا:یاغملا V-TV ;
+یالا:یالا V-TV ;
+یالنلا:یالنلا V-TV ;
+
+یاخا:یاخا V-TV ;
+یوخلە:یوخلە V-TV ;
+یولاە:یولاە V-TV ;
+یوکلە:یوکلە V-TV ;
+یومرغلە:یومرغلە V-TV ;
+زهیرلە:زهیرلە V-TV ;
+زینجیرلە:زینجیرلە V-TV ;
+زورلا:زورلا V-TV ;
+اخسا:اخسا V-IV ;
+ئدیل:ئدیل V-IV ;
+بلیرت:بلییرت V-TV ;
+إنجلە:إنجلە V-TV ;
+سز:سز V-TV ;
+دستکلە:دستکلە V-TV ;
+پودرلا:پودرلا V-TV ;
+
 LEXICON Abbreviations
 کم:کم ABBR ;
 سم:سم ABBR ;
@@ -4588,16 +5593,18 @@ LEXICON Abbreviations
 غرام:غرام ABBR ;
 قم:قم ABBR ;
 بم:بم ABBR ;
-د:د ABBR ;
-م:م ABBR ;
-ا:ا ABBR ;
-ب:ب ABBR ;
-س:س ABBR ;
-چ:چ ABBR ;
-ج:ج ABBR ;	
-د:د ABBR ;
-ي:ي ABBR ;
-پ:پ ABBR ;
+د%.:د%. ABBR ;
+م%.:م%. ABBR ;
+ا%.:ا%. ABBR ;
+إ%.:إ%. ABBR ;
+ب%.:ب%. ABBR ;
+س%.:س%: ABBR ;
+چ%.:چ%. ABBR ;
+ج%.:ج%. ABBR ;	
+د%.:د%. ABBR ;
+ی%.:ی%. ABBR ;
+پ%.:پ%. ABBR ;
+
 
 X:X NUM-ROMAN ; ! ""
 
@@ -4605,7 +5612,17 @@ X:X NUM-ROMAN ; ! ""
 
 
 
+LEXICON LASTDIGIT
 
+۱:۱%{ь%}%{b%}           NUM-DIGIT ; ! "bir"
+۲:۲%{ь%}                NUM-DIGIT ; ! "iki"
+۳:۳%{ö%}%{p%}           NUM-DIGIT ; ! "üç"
+۴:۴%{ö%}%{p%}           NUM-DIGIT ; ! "dört"
+۵:۵%{ь%}%{p%}           NUM-DIGIT ; ! "beş"
+٦:٦%{ı%}                NUM-DIGIT ; ! "altı"
+۷:۷%{ь%}                NUM-DIGIT ; ! "yedi"
+۸:۸%{ь%}%{b%}           NUM-DIGIT ; ! "sekiz"
+۹:۹%{o%}%{b%}           NUM-DIGIT ; ! "dokuz"
 
 LEXICON Punctuation
 
@@ -4655,30 +5672,34 @@ LEXICON Punctuation
 ？:？%<sent%> # ;
 ！:！%<sent%> # ;
 
+LEXICON Digits
+%0:%0 NUM ;  ! Use/Circ
+LASTDIGIT ;
+
+!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+
+!LEXICON DIGITLEX
 
 
-
-<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
-
-LEXICON DIGITLEX
-
-%<num%>: # ; 
+!%<num%>: # ; 
 !%<num%>%<subst%>: SUBST-2 ;
 
-LEXICON BARB
+!LEXICON BARB
 
-%<barb%>: # ;
+!%<barb%>: # ;
 
 
 
 
 ! Resources:
-! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
-! http://wiki.apertium.org/wiki/Lttoolbox_and_lexc
-! http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
+! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
+! https://wiki.apertium.org/wiki/Lttoolbox_and_lexc
+! https://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
 ! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
 ! https://github.com/hfst/
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
-! http://wiki.apertium.org/wiki/Hfst
+! https://wiki.apertium.org/wiki/Hfst
+
+
 
 

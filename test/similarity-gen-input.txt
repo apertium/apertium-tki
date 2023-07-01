@@ -1,0 +1,7 @@
+# [twol] similarity {C%}:چ
+^ترك<n><sim>$
+^یه<n><sim>$
+# [twol] similarity {C%}:ج
+^الا<n><px2sg><sim>$
+^عرب<n><sim>+i<cop><aor><p3><sg>$
+^إنگلیز<n><sim>+i<cop><aor><p3><sg>$

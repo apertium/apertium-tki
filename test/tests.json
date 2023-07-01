@@ -1,0 +1,66 @@
+{
+  "Pulural": {
+    "input": "Pulural-input.txt",
+    "mode": "tki-morph"
+  },
+  "Pulural-gen": {
+    "input": "Pulural-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "aor": {
+    "input": "aor-input.txt",
+    "mode": "tki-morph"
+  },
+  "aor-gen": {
+    "input": "aor-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "case": {
+    "input": "case-input.txt",
+    "mode": "tki-morph"
+  },
+  "case-gen": {
+    "input": "case-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "fut": {
+    "input": "fut-input.txt",
+    "mode": "tki-morph"
+  },
+  "fut-gen": {
+    "input": "fut-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "ifi": {
+    "input": "ifi-input.txt",
+    "mode": "tki-morph"
+  },
+  "ifi-gen": {
+    "input": "ifi-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "passive": {
+    "input": "passive-input.txt",
+    "mode": "tki-morph"
+  },
+  "passive-gen": {
+    "input": "passive-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "possessive": {
+    "input": "possessive-input.txt",
+    "mode": "tki-morph"
+  },
+  "possessive-gen": {
+    "input": "possessive-gen-input.txt",
+    "mode": "tki-gener"
+  },
+  "similarity": {
+    "input": "similarity-input.txt",
+    "mode": "tki-morph"
+  },
+  "similarity-gen": {
+    "input": "similarity-gen-input.txt",
+    "mode": "tki-gener"
+  }
+}

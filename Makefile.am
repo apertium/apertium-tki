@@ -53,10 +53,10 @@ $(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst
 	hfst-invert $< | hfst-fst2fst -O -o $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
-	hfst-fst2txt $< | gzip -9 -c -n > $@
+	hfst-fst2fst -t $< | hfst-determinise | hfst-fst2txt | gzip -9 -c -n > $@
 
 $(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
-	hfst-fst2txt $< | gzip -9 -c -n > $@
+	hfst-fst2fst -t $< | hfst-determinise | hfst-minimise | hfst-fst2txt | gzip -9 -c -n > $@
 
 $(LANG1).autogen.bin: $(LANG1).autogen.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1).autogen.att
@@ -181,7 +181,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "TODO test sentence" | apertium -d . tki-morph | tee .test-mt
-	@echo "TODO test analysis results" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test

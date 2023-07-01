@@ -1,0 +1,42 @@
+# [twol] Possessive {I}:ی and {s}:0
+^التن<n><px3sp><nom>+i<cop><aor><p3><sg>$
+^کتاب<n><px2sg><nom>$
+^بالا<n><px2sg><nom>$
+^إیش<n><px2sg><nom>$
+^اد<n><px3sp><nom>$
+^قونشو<n><px2sg><nom>$
+# [twol] Possessive {I}:ی and {s}:س
+^عربه<n><px2sg><nom>$
+^باخچا<n><px3sp>$
+^یوا<n><px3sp>$
+# [twol] Possessive {i}:0
+^اد<n><px1sg><nom>$
+^بابا<n><px1sg><nom>$
+^قیز<n><px1sg><nom>$
+^قونشو<n><px1sg><nom>$
+^نینه<n><px1sg><nom>$
+# [twol] possessive {i}:و
+^یول<n><px2sg><nom>$
+^توپ<n><px2sg><nom>$
+^اویون<n><px2sg><nom>$
+^سورو<n><px3sp><nom>$
+^توپ<n><px2pl><nom>$
+^گوز<n><px1pl><nom>$
+^گون<n><px1sg><nom>$
+# [twol] possessive {i}:ی
+^ال<n><px1pl><nom>$
+^باخچا<n><px2pl><nom>$
+^گیون<n><px3sp><nom>$
+^کتاپ<n><px3sp><acc>$
+^إیو<n><px3sp><acc>$
+^عاصمه<n><px3sp><nom>$
+^حمایه<n><px3sp><dat>$
+^إمبراطوریه<n><px2sg><dat>$
+^خاترلاد<v><tv><ger_past><px3sp><acc>$
+^سفات<n><pl><px3sp><acc><@obj>$
+^اوزو<adj><subst><px2sg><dat>$
+^أردم<n><px3sp><nom>$
+^گیر<v><iv><ger_past><px1pl><loc>$
+# [twol] possessive {s}:س
+^حمایه<n><px3sp><dat>$
+^أونجه<n><px3sp><dat>$

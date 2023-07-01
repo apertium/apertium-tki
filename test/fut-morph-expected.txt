@@ -1,0 +1,8 @@
+[2EeW8OFTbPzC#0] ^یاتار/یات<v><iv><aor>/یات<v><iv><fut><p3><sg>/یات<v><iv><aor>+i<cop><aor><p3><sg>/یات<v><iv>\<ger_aor\><nom>/یات<v><iv>\<ger_aor\><nom>+i<cop><aor><p3><sg>$
+[/2EeW8OFTbPzC]
+[Kf-oJMHYAvsN#0] ^گلر/گل<v><iv><aor>/گل<v><iv><aor>+i<cop><aor><p3><sg>$
+[/Kf-oJMHYAvsN]
+[XwS4m-E3z5vY#0] ^یازار/یاز<v><tv><fut><p3><sg>/یاز<v><tv>\<ger_aor\><nom>/یاز<v><tv>\<ger_aor\><nom>+i<cop><aor><p3><sg>$
+[/XwS4m-E3z5vY]
+[cu7s_om4UDCD#0] ^گیدر/گید<v><iv><aor>/گیت<v><iv><aor>/گید<v><iv><aor>+i<cop><aor><p3><sg>/گیت<v><iv><aor>+i<cop><aor><p3><sg>$
+[/cu7s_om4UDCD]

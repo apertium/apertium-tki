@@ -1,0 +1,6 @@
+# [twol] passsive {L} l:ن
+^باشلا<v><iv><pass><past>+i<cop><aor><p3><frm><sg>$
+^اوخو<v><tv><pass><ger><px3sp><nom>$
+# [twol] {L} l:ل
+^ئت<v><tv><pass><ger><px3sp><nom>+i<cop><aor><p3><sg><gm>$
+^سیو<v><tv><pass><ger><px3sp><nom>$

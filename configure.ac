@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Turkmen of Iraq], [0.1.0], [sevilaybayatli@gmail.com], [apertium-tki], [http://wiki.apertium.org/wiki/Apertium-tki])
+AC_INIT([Apertium Turkmen of Iraq], [0.1.0], [sevilaybayatli@gmail.com], [apertium-tki], [https://wiki.apertium.org/wiki/Apertium-tki])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
@@ -33,6 +33,9 @@ AS_IF([test x$HFSTTWOLC = xfalse], [AC_MSG_ERROR([You don't have hfst-twolc inst
 AC_PATH_PROG([CGCOMP], [cg-comp], [false], [$PATH$PATH_SEPARATOR$with_cg_comp/bin])
 AS_IF([test x$CGCOMP = xfalse], [AC_MSG_ERROR([You don't have cg-comp installed])])
 
+
+PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
+                  [AC_MSG_WARN([Running tests requires apertium-regtest])])
 
 AP_MKINCLUDE
 
